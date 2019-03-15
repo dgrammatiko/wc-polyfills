@@ -1,5 +1,7 @@
 ## Web Components polyfills
 
+[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
+
 A repackaging of the polyfills from https://github.com/webcomponents
 - `templates`
 - `customElements`
