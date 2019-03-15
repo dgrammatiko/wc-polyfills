@@ -1,0 +1,41 @@
+{
+  "name": "wc-polyfills",
+  "version": "0.0.1",
+  "description": "Web Components Polyfills",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgrammatiko/wc-polyfills.git"
+  },
+  "author": "Dimitrios Grammatikogiannis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dgrammatiko/wc-polyfills/issues"
+  },
+  "homepage": "https://github.com/dgrammatiko/wc-polyfills#readme",
+  "dependencies": {
+    "@ungap/url-search-params": "^0.1.2",
+    "@webcomponents/custom-elements": "^1.2.1",
+    "@webcomponents/shadycss": "^1.9.0",
+    "@webcomponents/shadydom": "^1.5.0",
+    "@webcomponents/template": "^1.4.0",
+    "@webcomponents/webcomponents-platform": "^1.0.0",
+    "core-js": "^2.6.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@gfx/zopfli": "^1.0.11",
+    "babel-loader": "^8.0.5",
+    "browserslist": "^4.4.2",
+    "caniuse-api": "^3.0.0",
+    "compression-webpack-plugin": "^2.0.0",
+    "recursive-readdir": "^2.2.2",
+    "terser-webpack-plugin": "^1.2.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
