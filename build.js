@@ -82,7 +82,7 @@ readdir("src").then(
                       "browsers": ["ie >= 11"]
                     },
                     modules: false,
-                    useBuiltIns: 'entry',
+                    useBuiltIns: false,
                     forceAllTransforms: true,
                   }]
               ],
@@ -145,7 +145,9 @@ readdir("src").then(
           };
 
           doThePackaging(config);
-        break;
+          break;
+        default:
+          break;
       }
     })
   },

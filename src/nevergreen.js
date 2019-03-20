@@ -5,9 +5,9 @@ import './needs-custom-events.js';
 import '@ungap/url-search-params';
 
 // From https://github.com/zloirock/core-js
-import 'core-js/modules/_array-from-iterable';
-import 'core-js/modules/es6.symbol';
-import 'core-js/modules/es6.promise';
+import 'core-js/features/array/from';
+import 'core-js/features/symbol';
+import 'core-js/features/promise';
 
 // The @webcomponents polyfills
 import '@webcomponents/webcomponents-platform/webcomponents-platform.js';
