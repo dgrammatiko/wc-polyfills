@@ -11,8 +11,6 @@ const webpack = require("webpack");
 const TerserPlugin = require('terser-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 
-let config;
-
 const commonConfig = {
   mode: "production",
   resolve: {
@@ -58,7 +56,7 @@ readdir("src").then(
         // These needs to be ES5
         case 'src/nevergreen.js':
 
-          configEs5 = commonConfig;
+          const configEs5 = commonConfig;
           configEs5.entry = path.resolve(__dirname, file);
           configEs5.output = {
             filename: 'nevergreen.js',
@@ -77,7 +75,7 @@ readdir("src").then(
                         targets: {
                           ie: "11"
                         },
-                        modules: false,
+                        modules: 'auto',
                         useBuiltIns: false,
                         forceAllTransforms: true,
                       }]
@@ -102,12 +100,12 @@ readdir("src").then(
               }),
             ],
           };
-console.dir(configEs5.module.rules)
+
           doThePackaging(configEs5);
           break;
 
         case 'src/evergreen.js':
-        configEs6 = commonConfig;
+        const configEs6 = commonConfig;
         configEs6.entry = path.resolve(__dirname, file);
         configEs6.output = {
           filename: 'evergreen.js',
