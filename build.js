@@ -20,14 +20,6 @@ const commonConfig = {
       path.resolve(__dirname, 'node_modules')
     ]
   },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-      }
-    ]
-  },
   plugins: [
     new CompressionPlugin(
       {
@@ -66,29 +58,36 @@ readdir("src").then(
         // These needs to be ES5
         case 'src/nevergreen.js':
 
-          config = commonConfig;
-          config.entry = path.resolve(__dirname, file);
-          config.output = {
+          configEs5 = commonConfig;
+          configEs5.entry = path.resolve(__dirname, file);
+          configEs5.output = {
             filename: 'nevergreen.js',
             path: path.resolve(__dirname, 'dist')
           };
-          config.module.rules.use = {
-            loader: "babel-loader",
-            options: {
-              presets: [
-                ['@babel/preset-env',
-                  {
-                    targets: {
-                      "browsers": ["ie >= 11"]
-                    },
-                    modules: false,
-                    useBuiltIns: false,
-                    forceAllTransforms: true,
-                  }]
-              ],
-            },
+          configEs5.module = {
+            rules: [
+              {
+                test: /\.js$/,
+                // exclude: /node_modules/, DO NOT
+                loader: "babel-loader",
+                options: {
+                  presets: [
+                    ['@babel/preset-env',
+                      {
+                        targets: {
+                          ie: "11"
+                        },
+                        modules: false,
+                        useBuiltIns: false,
+                        forceAllTransforms: true,
+                      }]
+                  ],
+                }
+              }
+            ],
           };
-          config.optimization = {
+
+          configEs5.optimization = {
             minimizer: [
               new TerserPlugin({
                 terserOptions: {
@@ -103,32 +102,40 @@ readdir("src").then(
               }),
             ],
           };
-
-          doThePackaging(config);
+console.dir(configEs5.module.rules)
+          doThePackaging(configEs5);
           break;
 
         case 'src/evergreen.js':
-        config = commonConfig;
-        config.entry = path.resolve(__dirname, file);
-        config.output = {
+        configEs6 = commonConfig;
+        configEs6.entry = path.resolve(__dirname, file);
+        configEs6.output = {
           filename: 'evergreen.js',
           path: path.resolve(__dirname, 'dist')
         };
-        config.module.rules.use = {
-          loader: "babel-loader",
-          options: {
-            presets: [
-              ['@babel/preset-env',
-              {
-                targets: {
-                  chrome: "70"
-                },
-                modules: 'auto',
-              }]
-            ],
-          },
+
+        configEs6.module = {
+          rules: [
+            {
+              test: /\.js$/,
+              exclude: /node_modules/,
+              loader: "babel-loader",
+              options: {
+                presets: [
+                  ['@babel/preset-env',
+                    {
+                      targets: {
+                        chrome: "70"
+                      },
+                      modules: 'auto',
+                    }]
+                ],
+              }
+            }
+          ],
         };
-          config.optimization = {
+
+        configEs6.optimization = {
             minimizer: [
               new TerserPlugin({
                 terserOptions: {
@@ -144,7 +151,7 @@ readdir("src").then(
             ],
           };
 
-          doThePackaging(config);
+          doThePackaging(configEs6);
           break;
         default:
           break;
