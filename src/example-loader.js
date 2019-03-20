@@ -1,20 +1,3 @@
-// From MDN: https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent
-(function () {
-
-  if ( typeof window.CustomEvent === "function" ) return false;
-
-  const CustomEvent = ( event, params ) => {
-    params = params || { bubbles: false, cancelable: false, detail: null };
-    const evt = document.createEvent( 'CustomEvent' );
-    evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
-    return evt;
-   }
-
-  CustomEvent.prototype = window.Event.prototype;
-
-  window.CustomEvent = CustomEvent;
-})();
-
 /**
  * Web component polyfills loader, based on: https://github.com/webcomponents/webcomponentsjs/blob/master/webcomponents-loader.js
  * and https://github.com/open-wc/open-wc/blob/master/packages/polyfills-loader/polyfills-loader.js
@@ -47,8 +30,12 @@
    * Fire a WebComponentsReady Event
    */
   function fireEvent() {
-    window.WebComponents.ready = true;
-    document.dispatchEvent(new CustomEvent('WebComponentsReady', { bubbles: true }));
+    window.WebComponents = window.WebComponents || {};
+    if (!window.WebComponents.ready) {
+      window.WebComponents.ready = true;
+      document.dispatchEvent(new CustomEvent('WebComponentsReady', { bubbles: true }));
+    }
+    return;
   }
 
   /**
