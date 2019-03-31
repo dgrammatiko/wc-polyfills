@@ -9,8 +9,7 @@ A repackaging of the polyfills from https://github.com/webcomponents
 
 For browsers with ES5 support:
 - `Array.from`, `Object.assign`, `customEvent`, `defaultPrevented` from https://github.com/webcomponents/webcomponents-platform/webcomponents-platform.js
-- `Promise` from https://github.com/zloirock/core-js
-- `URL` and `URLSearchParams` from https://github.com/ungap/url-search-params
+- `Promise`, `URL` and `URLSearchParams` from https://github.com/zloirock/core-js
 - `customElements` as above but ES5 version
 - `ShadowDOM` as above but ES5 version
 
