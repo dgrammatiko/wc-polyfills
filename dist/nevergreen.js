@@ -1,1 +1,12276 @@
-!function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=94)}([function(e,t){function n(e){return(n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}e.exports="object"==("undefined"==typeof window?"undefined":n(window))&&window&&window.Math==Math?window:"object"==("undefined"==typeof self?"undefined":n(self))&&self&&self.Math==Math?self:Function("return this")()},function(e,t,n){var r=n(13)("wks"),o=n(38),i=n(0).Symbol,s=n(57);e.exports=function(e){return r[e]||(r[e]=s&&i[e]||(s?i:o)("Symbol."+e))}},function(e,t,n){var r=n(10),o=n(23);e.exports=n(7)?function(e,t,n){return r.f(e,t,o(1,n))}:function(e,t,n){return e[t]=n,e}},function(e,t,n){var r=n(5);e.exports=function(e){if(!r(e))throw TypeError(String(e)+" is not an object");return e}},function(e,t){var n={}.hasOwnProperty;e.exports=function(e,t){return n.call(e,t)}},function(e,t){function n(e){return(n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}e.exports=function(e){return"object"===n(e)?null!==e:"function"==typeof e}},function(e,t,n){function r(e){return(r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}var o=n(0),i=n(28).f,s=n(2),a=n(15),l=n(21),c=n(63),u=n(43);e.exports=function(e,t){var n,f,d,h,p,v=e.target,m=e.global,y=e.stat;if(n=m?o:y?o[v]||l(v,{}):(o[v]||{}).prototype)for(f in t){if(h=t[f],d=e.noTargetGet?(p=i(n,f))&&p.value:n[f],!u(m?f:v+(y?".":"#")+f,e.forced)&&void 0!==d){if(r(h)===r(d))continue;c(h,d)}(e.sham||d&&d.sham)&&s(h,"sham",!0),a(n,f,h,e)}}},function(e,t,n){e.exports=!n(8)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(e,t){e.exports=function(e){try{return!!e()}catch(e){return!0}}},function(e,t){var n={}.toString;e.exports=function(e){return n.call(e).slice(8,-1)}},function(e,t,n){var r=n(7),o=n(36),i=n(3),s=n(37),a=Object.defineProperty;t.f=r?a:function(e,t,n){if(i(e),t=s(t,!0),i(n),o)try{return a(e,t,n)}catch(e){}if("get"in n||"set"in n)throw TypeError("Accessors not supported");return"value"in n&&(e[t]=n.value),e}},function(e,t){e.exports={}},function(e,t,n){"use strict";var r=n(18),o=function(e){var t,n;this.promise=new e(function(e,r){if(void 0!==t||void 0!==n)throw TypeError("Bad Promise constructor");t=e,n=r}),this.resolve=r(t),this.reject=r(n)};e.exports.f=function(e){return new o(e)}},function(e,t,n){var r=n(0),o=n(21),i=r["__core-js_shared__"]||o("__core-js_shared__",{});(e.exports=function(e,t){return i[e]||(i[e]=void 0!==t?t:{})})("versions",[]).push({version:"3.0.0",mode:n(14)?"pure":"global",copyright:"© 2019 Denis Pushkarev (zloirock.ru)"})},function(e,t){e.exports=!1},function(e,t,n){var r=n(0),o=n(2),i=n(4),s=n(21),a=n(39),l=n(16),c=l.get,u=l.enforce,f=String(a).split("toString");n(13)("inspectSource",function(e){return a.call(e)}),(e.exports=function(e,t,n,a){var l=!!a&&!!a.unsafe,c=!!a&&!!a.enumerable,d=!!a&&!!a.noTargetGet;"function"==typeof n&&("string"!=typeof t||i(n,"name")||o(n,"name",t),u(n).source=f.join("string"==typeof t?t:"")),e!==r?(l?!d&&e[t]&&(c=!0):delete e[t],c?e[t]=n:o(e,t,n)):c?e[t]=n:s(t,n)})(Function.prototype,"toString",function(){return"function"==typeof this&&c(this).source||a.call(this)})},function(e,t,n){var r,o,i,s=n(58),a=n(5),l=n(2),c=n(4),u=n(24),f=n(25),d=n(0).WeakMap;if(s){var h=new d,p=h.get,v=h.has,m=h.set;r=function(e,t){return m.call(h,e,t),t},o=function(e){return p.call(h,e)||{}},i=function(e){return v.call(h,e)}}else{var y=u("state");f[y]=!0,r=function(e,t){return l(e,y,t),t},o=function(e){return c(e,y)?e[y]:{}},i=function(e){return c(e,y)}}e.exports={set:r,get:o,has:i,enforce:function(e){return i(e)?o(e):r(e,{})},getterFor:function(e){return function(t){var n;if(!a(t)||(n=o(t)).type!==e)throw TypeError("Incompatible receiver, "+e+" required");return n}}}},function(e,t,n){var r=n(62),o=n(27);e.exports=function(e){return r(o(e))}},function(e,t){e.exports=function(e){if("function"!=typeof e)throw TypeError(String(e)+" is not a function");return e}},function(e,t,n){var r=n(3),o=n(81),i=n(42),s=n(47),a=n(82),l=n(83),c={};(e.exports=function(e,t,n,u,f){var d,h,p,v,m,y=s(t,n,u?2:1);if(f)d=e;else{if("function"!=typeof(h=a(e)))throw TypeError("Target is not iterable");if(o(h)){for(p=0,v=i(e.length);v>p;p++)if((u?y(r(m=e[p])[0],m[1]):y(e[p]))===c)return c;return}d=h.call(e)}for(;!(m=d.next()).done;)if(l(d,y,m.value,u)===c)return c}).BREAK=c},function(e,t){e.exports=function(e){try{return{e:!1,v:e()}}catch(e){return{e:!0,v:e}}}},function(e,t,n){var r=n(0),o=n(2);e.exports=function(e,t){try{o(r,e,t)}catch(n){r[e]=t}return t}},function(e,t,n){var r=n(5),o=n(0).document,i=r(o)&&r(o.createElement);e.exports=function(e){return i?o.createElement(e):{}}},function(e,t){e.exports=function(e,t){return{enumerable:!(1&e),configurable:!(2&e),writable:!(4&e),value:t}}},function(e,t,n){var r=n(13)("keys"),o=n(38);e.exports=function(e){return r[e]||(r[e]=o(e))}},function(e,t){e.exports={}},function(e,t){var n=Math.ceil,r=Math.floor;e.exports=function(e){return isNaN(e=+e)?0:(e>0?r:n)(e)}},function(e,t){e.exports=function(e){if(null==e)throw TypeError("Can't call method on "+e);return e}},function(e,t,n){var r=n(7),o=n(61),i=n(23),s=n(17),a=n(37),l=n(4),c=n(36),u=Object.getOwnPropertyDescriptor;t.f=r?u:function(e,t){if(e=s(e),t=a(t,!0),c)try{return u(e,t)}catch(e){}if(l(e,t))return i(!o.f.call(e,t),e[t])}},function(e,t){e.exports=["constructor","hasOwnProperty","isPrototypeOf","propertyIsEnumerable","toLocaleString","toString","valueOf"]},function(e,t,n){var r=n(4),o=n(70),i=n(24)("IE_PROTO"),s=n(71),a=Object.prototype;e.exports=s?Object.getPrototypeOf:function(e){return e=o(e),r(e,i)?e[i]:"function"==typeof e.constructor&&e instanceof e.constructor?e.constructor.prototype:e instanceof Object?a:null}},function(e,t,n){var r=n(3),o=n(72),i=n(29),s=n(45),a=n(22),l=n(24)("IE_PROTO"),c=function(){},u=function(){var e,t=a("iframe"),n=i.length;for(t.style.display="none",s.appendChild(t),t.src=String("javascript:"),(e=t.contentWindow.document).open(),e.write("<script>document.F=Object<\/script>"),e.close(),u=e.F;n--;)delete u.prototype[i[n]];return u()};e.exports=Object.create||function(e,t){var n;return null!==e?(c.prototype=r(e),n=new c,c.prototype=null,n[l]=e):n=u(),void 0===t?n:o(n,t)},n(25)[l]=!0},function(e,t,n){var r=n(10).f,o=n(4),i=n(1)("toStringTag");e.exports=function(e,t,n){e&&!o(e=n?e:e.prototype,i)&&r(e,i,{configurable:!0,value:t})}},function(e,t,n){var r=n(34),o=n(0),i=function(e){return"function"==typeof e?e:void 0};e.exports=function(e,t){return arguments.length<2?i(r[e])||i(o[e]):r[e]&&r[e][t]||o[e]&&o[e][t]}},function(e,t,n){e.exports=n(0)},function(e,t,n){var r=n(9),o=n(1)("toStringTag"),i="Arguments"==r(function(){return arguments}());e.exports=function(e){var t,n,s;return void 0===e?"Undefined":null===e?"Null":"string"==typeof(n=function(e,t){try{return e[t]}catch(e){}}(t=Object(e),o))?n:i?r(t):"Object"==(s=r(t))&&"function"==typeof t.callee?"Arguments":s}},function(e,t,n){e.exports=!n(7)&&!n(8)(function(){return 7!=Object.defineProperty(n(22)("div"),"a",{get:function(){return 7}}).a})},function(e,t,n){var r=n(5);e.exports=function(e,t){if(!r(e))return e;var n,o;if(t&&"function"==typeof(n=e.toString)&&!r(o=n.call(e)))return o;if("function"==typeof(n=e.valueOf)&&!r(o=n.call(e)))return o;if(!t&&"function"==typeof(n=e.toString)&&!r(o=n.call(e)))return o;throw TypeError("Can't convert object to primitive value")}},function(e,t){var n=0,r=Math.random();e.exports=function(e){return"Symbol(".concat(void 0===e?"":e,")_",(++n+r).toString(36))}},function(e,t,n){e.exports=n(13)("native-function-to-string",Function.toString)},function(e,t,n){"use strict";var r=n(6),o=n(69),i=n(30),s=n(46),a=n(32),l=n(2),c=n(15),u=n(14),f=n(1)("iterator"),d=n(11),h=n(44),p=h.IteratorPrototype,v=h.BUGGY_SAFARI_ITERATORS,m=function(){return this};e.exports=function(e,t,n,h,y,g,_){o(n,t,h);var S,b,E,w=function(e){if(e===y&&x)return x;if(!v&&e in T)return T[e];switch(e){case"keys":case"values":case"entries":return function(){return new n(this,e)}}return function(){return new n(this)}},N=t+" Iterator",C=!1,T=e.prototype,k=T[f]||T["@@iterator"]||y&&T[y],x=!v&&k||w(y),O="Array"==t&&T.entries||k;if(O&&(S=i(O.call(new e)),p!==Object.prototype&&S.next&&(u||i(S)===p||(s?s(S,p):"function"!=typeof S[f]&&l(S,f,m)),a(S,N,!0,!0),u&&(d[N]=m))),"values"==y&&k&&"values"!==k.name&&(C=!0,x=function(){return k.call(this)}),u&&!_||T[f]===x||l(T,f,x),d[t]=x,y)if(b={values:w("values"),keys:g?x:w("keys"),entries:w("entries")},_)for(E in b)!v&&!C&&E in T||c(T,E,b[E]);else r({target:t,proto:!0,forced:v||C},b);return b}},function(e,t,n){var r=n(4),o=n(17),i=n(66)(!1),s=n(25);e.exports=function(e,t){var n,a=o(e),l=0,c=[];for(n in a)!r(s,n)&&r(a,n)&&c.push(n);for(;t.length>l;)r(a,n=t[l++])&&(~i(c,n)||c.push(n));return c}},function(e,t,n){var r=n(26),o=Math.min;e.exports=function(e){return e>0?o(r(e),9007199254740991):0}},function(e,t,n){var r=n(8),o=/#|\.prototype\./,i=function(e,t){var n=a[s(e)];return n==c||n!=l&&("function"==typeof t?r(t):!!t)},s=i.normalize=function(e){return String(e).replace(o,".").toLowerCase()},a=i.data={},l=i.NATIVE="N",c=i.POLYFILL="P";e.exports=i},function(e,t,n){"use strict";var r,o,i,s=n(30),a=n(2),l=n(4),c=n(14),u=n(1)("iterator"),f=!1;[].keys&&("next"in(i=[].keys())?(o=s(s(i)))!==Object.prototype&&(r=o):f=!0),null==r&&(r={}),c||l(r,u)||a(r,u,function(){return this}),e.exports={IteratorPrototype:r,BUGGY_SAFARI_ITERATORS:f}},function(e,t,n){var r=n(0).document;e.exports=r&&r.documentElement},function(e,t,n){var r=n(74);e.exports=Object.setPrototypeOf||("__proto__"in{}?function(){var e,t=!1,n={};try{(e=Object.getOwnPropertyDescriptor(Object.prototype,"__proto__").set).call(n,[]),t=n instanceof Array}catch(e){}return function(n,o){return r(n,o),t?e.call(n,o):n.__proto__=o,n}}():void 0)},function(e,t,n){var r=n(18);e.exports=function(e,t,n){if(r(e),void 0===t)return e;switch(n){case 0:return function(){return e.call(t)};case 1:return function(n){return e.call(t,n)};case 2:return function(n,r){return e.call(t,n,r)};case 3:return function(n,r,o){return e.call(t,n,r,o)}}return function(){return e.apply(t,arguments)}}},function(e,t,n){var r=n(3),o=n(18),i=n(1)("species");e.exports=function(e,t){var n,s=r(e).constructor;return void 0===s||null==(n=r(s)[i])?t:o(n)}},function(e,t,n){var r,o,i,s=n(0),a=n(9),l=n(47),c=n(45),u=n(22),f=s.setImmediate,d=s.clearImmediate,h=s.process,p=s.MessageChannel,v=s.Dispatch,m=0,y={},g=function(){var e=+this;if(y.hasOwnProperty(e)){var t=y[e];delete y[e],t()}},_=function(e){g.call(e.data)};f&&d||(f=function(e){for(var t=[],n=1;arguments.length>n;)t.push(arguments[n++]);return y[++m]=function(){("function"==typeof e?e:Function(e)).apply(void 0,t)},r(m),m},d=function(e){delete y[e]},"process"==a(h)?r=function(e){h.nextTick(l(g,e,1))}:v&&v.now?r=function(e){v.now(l(g,e,1))}:p?(i=(o=new p).port2,o.port1.onmessage=_,r=l(i.postMessage,i,1)):s.addEventListener&&"function"==typeof postMessage&&!s.importScripts?(r=function(e){s.postMessage(e+"","*")},s.addEventListener("message",_,!1)):r="onreadystatechange"in u("script")?function(e){c.appendChild(u("script")).onreadystatechange=function(){c.removeChild(this),g.call(e)}}:function(e){setTimeout(l(g,e,1),0)}),e.exports={set:f,clear:d}},function(e,t,n){var r=n(0).navigator;e.exports=r&&r.userAgent||""},function(e,t,n){var r=n(3),o=n(5),i=n(12);e.exports=function(e,t){if(r(e),o(t)&&t.constructor===e)return t;var n=i.f(e);return(0,n.resolve)(t),n.promise}},function(e,t){!function(e){"use strict";var t;if(!((t=document.createEvent("Event")).initEvent("foo",!0,!0),t.preventDefault(),t.defaultPrevented)){var n=Event.prototype.preventDefault;Event.prototype.preventDefault=function(){this.cancelable&&(n.call(this),Object.defineProperty(this,"defaultPrevented",{get:function(){return!0},configurable:!0}))}}var r=/Trident/.test(navigator.userAgent);if((!window.CustomEvent||r&&"function"!=typeof window.CustomEvent)&&(window.CustomEvent=function(e,t){t=t||{};var n=document.createEvent("CustomEvent");return n.initCustomEvent(e,Boolean(t.bubbles),Boolean(t.cancelable),t.detail),n},window.CustomEvent.prototype=window.Event.prototype),!window.Event||r&&"function"!=typeof window.Event){var o=window.Event;if(window.Event=function(e,t){t=t||{};var n=document.createEvent("Event");return n.initEvent(e,Boolean(t.bubbles),Boolean(t.cancelable)),n},o)for(var i in o)window.Event[i]=o[i];window.Event.prototype=o.prototype}if(!window.MouseEvent||r&&"function"!=typeof window.MouseEvent){var s=window.MouseEvent;if(window.MouseEvent=function(e,t){t=t||{};var n=document.createEvent("MouseEvent");return n.initMouseEvent(e,Boolean(t.bubbles),Boolean(t.cancelable),t.view||window,t.detail,t.screenX,t.screenY,t.clientX,t.clientY,t.ctrlKey,t.altKey,t.shiftKey,t.metaKey,t.button,t.relatedTarget),n},s)for(var i in s)window.MouseEvent[i]=s[i];window.MouseEvent.prototype=s.prototype}if(Array.from||(Array.from=function(e){return[].slice.call(e)}),!Object.assign){var a=function(e,t){for(var n,r=Object.getOwnPropertyNames(t),o=0;o<r.length;o++)e[n=r[o]]=t[n]};Object.assign=function(e,t){for(var n,r=[].slice.call(arguments,1),o=0;o<r.length;o++)(n=r[o])&&a(e,n);return e}}}(window.WebComponents)},function(e,t,n){e.exports=n(54),n(90),n(91),n(92),n(93)},function(e,t,n){n(55),n(59),n(75),n(79),n(89),e.exports=n(34).Promise},function(e,t,n){var r=n(56),o=Object.prototype;r!==o.toString&&n(15)(o,"toString",r,{unsafe:!0})},function(e,t,n){"use strict";var r=n(35),o={};o[n(1)("toStringTag")]="z",e.exports="[object z]"!==String(o)?function(){return"[object "+r(this)+"]"}:o.toString},function(e,t,n){e.exports=!n(8)(function(){String(Symbol())})},function(e,t,n){var r=n(39),o=n(0).WeakMap;e.exports="function"==typeof o&&/native code/.test(r.call(o))},function(e,t,n){"use strict";var r=n(60),o=n(16),i=n(40),s=o.set,a=o.getterFor("String Iterator");i(String,"String",function(e){s(this,{type:"String Iterator",string:String(e),index:0})},function(){var e,t=a(this),n=t.string,o=t.index;return o>=n.length?{value:void 0,done:!0}:(e=r(n,o,!0),t.index+=e.length,{value:e,done:!1})})},function(e,t,n){var r=n(26),o=n(27);e.exports=function(e,t,n){var i,s,a=String(o(e)),l=r(t),c=a.length;return l<0||l>=c?n?"":void 0:(i=a.charCodeAt(l))<55296||i>56319||l+1===c||(s=a.charCodeAt(l+1))<56320||s>57343?n?a.charAt(l):i:n?a.slice(l,l+2):s-56320+(i-55296<<10)+65536}},function(e,t,n){"use strict";var r={}.propertyIsEnumerable,o=Object.getOwnPropertyDescriptor,i=o&&!r.call({1:2},1);t.f=i?function(e){var t=o(this,e);return!!t&&t.enumerable}:r},function(e,t,n){var r=n(8),o=n(9),i="".split;e.exports=r(function(){return!Object("z").propertyIsEnumerable(0)})?function(e){return"String"==o(e)?i.call(e,""):Object(e)}:Object},function(e,t,n){var r=n(4),o=n(64),i=n(28),s=n(10);e.exports=function(e,t){for(var n=o(t),a=s.f,l=i.f,c=0;c<n.length;c++){var u=n[c];r(e,u)||a(e,u,l(t,u))}}},function(e,t,n){var r=n(65),o=n(68),i=n(3),s=n(0).Reflect;e.exports=s&&s.ownKeys||function(e){var t=r.f(i(e)),n=o.f;return n?t.concat(n(e)):t}},function(e,t,n){var r=n(41),o=n(29).concat("length","prototype");t.f=Object.getOwnPropertyNames||function(e){return r(e,o)}},function(e,t,n){var r=n(17),o=n(42),i=n(67);e.exports=function(e){return function(t,n,s){var a,l=r(t),c=o(l.length),u=i(s,c);if(e&&n!=n){for(;c>u;)if((a=l[u++])!=a)return!0}else for(;c>u;u++)if((e||u in l)&&l[u]===n)return e||u||0;return!e&&-1}}},function(e,t,n){var r=n(26),o=Math.max,i=Math.min;e.exports=function(e,t){var n=r(e);return n<0?o(n+t,0):i(n,t)}},function(e,t){t.f=Object.getOwnPropertySymbols},function(e,t,n){"use strict";var r=n(44).IteratorPrototype,o=n(31),i=n(23),s=n(32),a=n(11),l=function(){return this};e.exports=function(e,t,n){var c=t+" Iterator";return e.prototype=o(r,{next:i(1,n)}),s(e,c,!1,!0),a[c]=l,e}},function(e,t,n){var r=n(27);e.exports=function(e){return Object(r(e))}},function(e,t,n){e.exports=!n(8)(function(){function e(){}return e.prototype.constructor=null,Object.getPrototypeOf(new e)!==e.prototype})},function(e,t,n){var r=n(7),o=n(10),i=n(3),s=n(73);e.exports=r?Object.defineProperties:function(e,t){i(e);for(var n,r=s(t),a=r.length,l=0;a>l;)o.f(e,n=r[l++],t[n]);return e}},function(e,t,n){var r=n(41),o=n(29);e.exports=Object.keys||function(e){return r(e,o)}},function(e,t,n){var r=n(5),o=n(3);e.exports=function(e,t){if(o(e),!r(t)&&null!==t)throw TypeError("Can't set "+String(t)+" as a prototype")}},function(e,t,n){var r=n(76),o=n(77),i=n(0),s=n(2),a=n(1),l=a("iterator"),c=a("toStringTag"),u=o.values;for(var f in r){var d=i[f],h=d&&d.prototype;if(h){if(h[l]!==u)try{s(h,l,u)}catch(e){h[l]=u}if(h[c]||s(h,c,f),r[f])for(var p in o)if(h[p]!==o[p])try{s(h,p,o[p])}catch(e){h[p]=o[p]}}}},function(e,t){e.exports={CSSRuleList:0,CSSStyleDeclaration:0,CSSValueList:0,ClientRectList:0,DOMRectList:0,DOMStringList:0,DOMTokenList:1,DataTransferItemList:0,FileList:0,HTMLAllCollection:0,HTMLCollection:0,HTMLFormElement:0,HTMLSelectElement:0,MediaList:0,MimeTypeArray:0,NamedNodeMap:0,NodeList:1,PaintRequestList:0,Plugin:0,PluginArray:0,SVGLengthList:0,SVGNumberList:0,SVGPathSegList:0,SVGPointList:0,SVGStringList:0,SVGTransformList:0,SourceBufferList:0,StyleSheetList:0,TextTrackCueList:0,TextTrackList:0,TouchList:0}},function(e,t,n){"use strict";var r=n(17),o=n(78),i=n(11),s=n(16),a=n(40),l=s.set,c=s.getterFor("Array Iterator");e.exports=a(Array,"Array",function(e,t){l(this,{type:"Array Iterator",target:r(e),index:0,kind:t})},function(){var e=c(this),t=e.target,n=e.kind,r=e.index++;return!t||r>=t.length?(e.target=void 0,{value:void 0,done:!0}):"keys"==n?{value:r,done:!1}:"values"==n?{value:t[r],done:!1}:{value:[r,t[r]],done:!1}},"values"),i.Arguments=i.Array,o("keys"),o("values"),o("entries")},function(e,t,n){var r=n(1)("unscopables"),o=n(31),i=n(2),s=Array.prototype;null==s[r]&&i(s,r,o(null)),e.exports=function(e){s[r][e]=!0}},function(e,t,n){"use strict";var r,o,i,s="Promise",a=n(14),l=n(0),c=n(6),u=n(5),f=n(18),d=n(80),h=n(9),p=n(19),v=n(84),m=n(48),y=n(49).set,g=n(85),_=n(51),S=n(86),b=n(12),E=n(20),w=n(50),N=n(1)("species"),C=n(16),T=n(43),k=C.get,x=C.set,O=C.getterFor(s),P=l.Promise,A=l.TypeError,M=l.document,D=l.process,L=l.fetch,R=D&&D.versions,j=R&&R.v8||"",I=b.f,H=I,F="process"==h(D),B=!!(M&&M.createEvent&&l.dispatchEvent),U=T(s,function(){var e=P.resolve(1),t=function(){},n=(e.constructor={})[N]=function(e){e(t,t)};return!((F||"function"==typeof PromiseRejectionEvent)&&(!a||e.finally)&&e.then(t)instanceof n&&0!==j.indexOf("6.6")&&-1===w.indexOf("Chrome/66"))}),q=U||!v(function(e){P.all(e).catch(function(){})}),W=function(e){var t;return!(!u(e)||"function"!=typeof(t=e.then))&&t},V=function(e,t,n){if(!t.notified){t.notified=!0;var r=t.reactions;g(function(){for(var o=t.value,i=1==t.state,s=0,a=function(n){var r,s,a,l=i?n.ok:n.fail,c=n.resolve,u=n.reject,f=n.domain;try{l?(i||(2===t.rejection&&Y(e,t),t.rejection=1),!0===l?r=o:(f&&f.enter(),r=l(o),f&&(f.exit(),a=!0)),r===n.promise?u(A("Promise-chain cycle")):(s=W(r))?s.call(r,c,u):c(r)):u(o)}catch(e){f&&!a&&f.exit(),u(e)}};r.length>s;)a(r[s++]);t.reactions=[],t.notified=!1,n&&!t.rejection&&K(e,t)})}},G=function(e,t,n){var r,o;B?((r=M.createEvent("Event")).promise=t,r.reason=n,r.initEvent(e,!1,!0),l.dispatchEvent(r)):r={promise:t,reason:n},(o=l["on"+e])?o(r):"unhandledrejection"===e&&S("Unhandled promise rejection",n)},K=function(e,t){y.call(l,function(){var n,r=t.value,o=z(t);if(o&&(n=E(function(){F?D.emit("unhandledRejection",r,e):G("unhandledrejection",e,r)}),t.rejection=F||z(t)?2:1),o&&n.e)throw n.v})},z=function(e){return 1!==e.rejection&&!e.parent},Y=function(e,t){y.call(l,function(){F?D.emit("rejectionHandled",e):G("rejectionhandled",e,t.value)})},X=function(e,t,n,r){return function(o){e(t,n,o,r)}},$=function(e,t,n,r){t.done||(t.done=!0,r&&(t=r),t.value=n,t.state=2,V(e,t,!0))},J=function e(t,n,r,o){if(!n.done){n.done=!0,o&&(n=o);try{if(t===r)throw A("Promise can't be resolved itself");var i=W(r);i?g(function(){var o={done:!1};try{i.call(r,X(e,t,o,n),X($,t,o,n))}catch(e){$(t,o,e,n)}}):(n.value=r,n.state=1,V(t,n,!1))}catch(e){$(t,{done:!1},e,n)}}};U&&(P=function(e){d(this,P,s),f(e),r.call(this);var t=k(this);try{e(X(J,this,t),X($,this,t))}catch(e){$(this,t,e)}},(r=function(e){x(this,{type:s,done:!1,notified:!1,parent:!1,reactions:[],rejection:!1,state:0,value:void 0})}).prototype=n(87)(P.prototype,{then:function(e,t){var n=O(this),r=I(m(this,P));return r.ok="function"!=typeof e||e,r.fail="function"==typeof t&&t,r.domain=F?D.domain:void 0,n.parent=!0,n.reactions.push(r),0!=n.state&&V(this,n,!1),r.promise},catch:function(e){return this.then(void 0,e)}}),o=function(){var e=new r,t=k(e);this.promise=e,this.resolve=X(J,e,t),this.reject=X($,e,t)},b.f=I=function(e){return e===P||e===i?new o(e):H(e)},a||"function"!=typeof L||c({global:!0,enumerable:!0,forced:!0},{fetch:function(e){return _(P,L.apply(l,arguments))}})),c({global:!0,wrap:!0,forced:U},{Promise:P}),n(32)(P,s,!1,!0),n(88)(s),i=n(34).Promise,c({target:s,stat:!0,forced:U},{reject:function(e){var t=I(this);return t.reject.call(void 0,e),t.promise}}),c({target:s,stat:!0,forced:a||U},{resolve:function(e){return _(a&&this===i?P:this,e)}}),c({target:s,stat:!0,forced:q},{all:function(e){var t=this,n=I(t),r=n.resolve,o=n.reject,i=E(function(){var n=[],i=0,s=1;p(e,function(e){var a=i++,l=!1;n.push(void 0),s++,t.resolve(e).then(function(e){l||(l=!0,n[a]=e,--s||r(n))},o)}),--s||r(n)});return i.e&&o(i.v),n.promise},race:function(e){var t=this,n=I(t),r=n.reject,o=E(function(){p(e,function(e){t.resolve(e).then(n.resolve,r)})});return o.e&&r(o.v),n.promise}})},function(e,t){e.exports=function(e,t,n){if(!(e instanceof t))throw TypeError("Incorrect "+(n?n+" ":"")+"invocation");return e}},function(e,t,n){var r=n(11),o=n(1)("iterator"),i=Array.prototype;e.exports=function(e){return void 0!==e&&(r.Array===e||i[o]===e)}},function(e,t,n){var r=n(35),o=n(1)("iterator"),i=n(11);e.exports=function(e){if(null!=e)return e[o]||e["@@iterator"]||i[r(e)]}},function(e,t,n){var r=n(3);e.exports=function(e,t,n,o){try{return o?t(r(n)[0],n[1]):t(n)}catch(t){var i=e.return;throw void 0!==i&&r(i.call(e)),t}}},function(e,t,n){var r=n(1)("iterator"),o=!1;try{var i=0,s={next:function(){return{done:!!i++}},return:function(){o=!0}};s[r]=function(){return this},Array.from(s,function(){throw 2})}catch(e){}e.exports=function(e,t){if(!t&&!o)return!1;var n=!1;try{var i={};i[r]=function(){return{next:function(){return{done:n=!0}}}},e(i)}catch(e){}return n}},function(e,t,n){var r,o,i,s,a,l,c,u=n(0),f=n(28).f,d=n(9),h=n(49).set,p=n(50),v=u.MutationObserver||u.WebKitMutationObserver,m=u.process,y=u.Promise,g="process"==d(m),_=f(u,"queueMicrotask"),S=_&&_.value;S||(r=function(){var e,t;for(g&&(e=m.domain)&&e.exit();o;){t=o.fn,o=o.next;try{t()}catch(e){throw o?s():i=void 0,e}}i=void 0,e&&e.enter()},g?s=function(){m.nextTick(r)}:v&&!/(iPhone|iPod|iPad).*AppleWebKit/i.test(p)?(a=!0,l=document.createTextNode(""),new v(r).observe(l,{characterData:!0}),s=function(){l.data=a=!a}):y&&y.resolve?(c=y.resolve(void 0),s=function(){c.then(r)}):s=function(){h.call(u,r)}),e.exports=S||function(e){var t={fn:e,next:void 0};i&&(i.next=t),o||(o=t,s()),i=t}},function(e,t,n){var r=n(0);e.exports=function(e,t){var n=r.console;n&&n.error&&(1===arguments.length?n.error(e):n.error(e,t))}},function(e,t,n){var r=n(15);e.exports=function(e,t,n){for(var o in t)r(e,o,t[o],n);return e}},function(e,t,n){"use strict";var r=n(33),o=n(10),i=n(7),s=n(1)("species");e.exports=function(e){var t=r(e),n=o.f;i&&t&&!t[s]&&n(t,s,{configurable:!0,get:function(){return this}})}},function(e,t,n){"use strict";var r=n(33),o=n(48),i=n(51);n(6)({target:"Promise",proto:!0,real:!0},{finally:function(e){var t=o(this,r("Promise")),n="function"==typeof e;return this.then(n?function(n){return i(t,e()).then(function(){return n})}:e,n?function(n){return i(t,e()).then(function(){throw n})}:e)}})},function(e,t,n){var r=n(30),o=n(46),i=n(31),s=n(19),a=n(2),l=function(e,t){var n=this;if(!(n instanceof l))return new l(e,t);o&&(n=o(new Error(t),r(n)));var i=[];return s(e,i.push,i),n.errors=i,void 0!==t&&a(n,"message",String(t)),n};l.prototype=i(Error.prototype,{constructor:{value:l,configurable:!0,writable:!0},name:{value:"AggregateError",configurable:!0,writable:!0}}),n(6)({global:!0},{AggregateError:l})},function(e,t,n){"use strict";var r=n(12),o=n(20),i=n(19);n(6)({target:"Promise",stat:!0},{allSettled:function(e){var t=this,n=r.f(t),s=n.resolve,a=n.reject,l=o(function(){var n=[],r=0,o=1;i(e,function(e){var i=r++,a=!1;n.push(void 0),o++,t.resolve(e).then(function(e){a||(a=!0,n[i]={status:"fulfilled",value:e},--o||s(n))},function(e){a||(a=!0,n[i]={status:"rejected",reason:e},--o||s(n))})}),--o||s(n)});return l.e&&a(l.v),n.promise}})},function(e,t,n){"use strict";var r=n(12),o=n(20);n(6)({target:"Promise",stat:!0},{try:function(e){var t=r.f(this),n=o(e);return(n.e?t.reject:t.resolve)(n.v),t.promise}})},function(e,t,n){"use strict";var r=n(33),o=n(12),i=n(20),s=n(19);n(6)({target:"Promise",stat:!0},{any:function(e){var t=this,n=o.f(t),a=n.resolve,l=n.reject,c=i(function(){var n=[],o=0,i=1,c=!1;s(e,function(e){var s=o++,u=!1;n.push(void 0),i++,t.resolve(e).then(function(e){u||c||(c=!0,a(e))},function(e){u||c||(u=!0,n[s]=e,--i||l(new(r("AggregateError"))(n,"No one promise resolved")))})}),--i||l(new(r("AggregateError"))(n,"No one promise resolved"))});return c.e&&l(c.v),n.promise}})},function(e,t,n){"use strict";n.r(t);n(52);function r(e){return(r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}var o={};try{!function(e,t){if("+"!==new e("q=%2B").get("q")||"+"!==new e({q:"+"}).get("q")||"+"!==new e([["q","+"]]).get("q")||"q=%0A"!==new e("q=\n").toString()||"q=+%26"!==new e({q:" &"}).toString())throw e;o.URLSearchParams=e}(URLSearchParams)}catch(e){!function(e,t,n){var r=e.create,i=e.defineProperty,s=/[!'\(\)~]|%20|%00/g,a=/\+/g,l={"!":"%21","'":"%27","(":"%28",")":"%29","~":"%7E","%20":"+","%00":"\0"},c={append:function(e,t){h(this._ungap,e,t)},delete:function(e){delete this._ungap[e]},get:function(e){return this.has(e)?this._ungap[e][0]:null},getAll:function(e){return this.has(e)?this._ungap[e].slice(0):[]},has:function(e){return e in this._ungap},set:function(e,n){this._ungap[e]=[t(n)]},forEach:function(e,n){var r=this;for(var o in r._ungap)r._ungap[o].forEach(i,o);function i(i){e.call(n,i,t(o),r)}},toJSON:function(){return{}},toString:function(){var e=[];for(var t in this._ungap)for(var n=v(t),r=0,o=this._ungap[t];r<o.length;r++)e.push(n+"="+v(o[r]));return e.join("&")}};for(var u in c)i(f.prototype,u,{configurable:!0,writable:!0,value:c[u]});function f(e){var t=r(null);switch(i(this,"_ungap",{value:t}),!0){case!e:break;case"string"==typeof e:"?"===e.charAt(0)&&(e=e.slice(1));for(var o=e.split("&"),s=0,a=o.length;s<a;s++){var l=(c=o[s]).indexOf("=");-1<l?h(t,p(c.slice(0,l)),p(c.slice(l+1))):c.length&&h(t,p(c),"")}break;case n(e):for(s=0,a=e.length;s<a;s++){var c;h(t,(c=e[s])[0],c[1])}break;case"forEach"in e:e.forEach(d,t);break;default:for(var u in e)h(t,u,e[u])}}function d(e,t){h(this,t,e)}function h(e,t,r){var o=n(r)?r.join(","):r;t in e?e[t].push(o):e[t]=[o]}function p(e){return decodeURIComponent(e.replace(a," "))}function v(e){return encodeURIComponent(e).replace(s,m)}function m(e){return l[e]}o.URLSearchParams=f}(Object,String,Array.isArray)}!function(e){var t=!1;try{t=!!Symbol.iterator}catch(e){}function n(e,n){var r=[];return e.forEach(n,r),t?r[Symbol.iterator]():{next:function(){var e=r.shift();return{done:void 0===e,value:e}}}}"forEach"in e||(e.forEach=function(e,t){var n=this,r=Object.create(null);this.toString().replace(/=[\s\S]*?(?:&|$)/g,"=").split("=").forEach(function(o){!o.length||o in r||(r[o]=n.getAll(o)).forEach(function(r){e.call(t,r,o,n)})})}),"keys"in e||(e.keys=function(){return n(this,function(e,t){this.push(t)})}),"values"in e||(e.values=function(){return n(this,function(e,t){this.push(e)})}),"entries"in e||(e.entries=function(){return n(this,function(e,t){this.push([t,e])})}),!t||Symbol.iterator in e||(e[Symbol.iterator]=e.entries),"sort"in e||(e.sort=function(){for(var e,t,n,r=this.entries(),o=r.next(),i=o.done,s=[],a=Object.create(null);!i;)t=(n=o.value)[0],s.push(t),t in a||(a[t]=[]),a[t].push(n[1]),i=(o=r.next()).done;for(s.sort(),e=0;e<s.length;e++)this.delete(s[e]);for(e=0;e<s.length;e++)t=s[e],this.append(t,a[t].shift())}),function(t){var n=t.defineProperty,o=t.getOwnPropertyDescriptor,i=function(t){var n=t.append;t.append=e.append,URLSearchParams.call(t,t._usp.search.slice(1)),t.append=n},s=function(e,t){if(!(e instanceof t))throw new TypeError("'searchParams' accessed on an object that does not implement interface "+t.name)},a=function(r){var a,l,c=r.prototype,u=o(c,"searchParams"),f=o(c,"href"),d=o(c,"search");!u&&d&&d.set&&(l=function(t){function r(n,r){e.append.call(this,n,r),n=this.toString(),t.set.call(this._usp,n?"?"+n:"")}function o(n){e.delete.call(this,n),n=this.toString(),t.set.call(this._usp,n?"?"+n:"")}function i(n,r){e.set.call(this,n,r),n=this.toString(),t.set.call(this._usp,n?"?"+n:"")}return function(e,t){return e.append=r,e.delete=o,e.set=i,n(e,"_usp",{configurable:!0,writable:!0,value:t})}}(d),a=function(e,t){return n(e,"_searchParams",{configurable:!0,writable:!0,value:l(t,e)}),t},t.defineProperties(c,{href:{get:function(){return f.get.call(this)},set:function(e){var t=this._searchParams;f.set.call(this,e),t&&i(t)}},search:{get:function(){return d.get.call(this)},set:function(e){var t=this._searchParams;d.set.call(this,e),t&&i(t)}},searchParams:{get:function(){return s(this,r),this._searchParams||a(this,new URLSearchParams(this.search.slice(1)))},set:function(e){s(this,r),a(this,e)}}}))};try{a(HTMLAnchorElement),/^function|object$/.test("undefined"==typeof URL?"undefined":r(URL))&&URL.prototype&&a(URL)}catch(e){}}(Object)}(o.URLSearchParams.prototype,Object);o.URLSearchParams,n(53);function i(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}var s=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.root=null,this.publicRoot=null,this.dirty=!1,this.observer=null,this.assignedNodes=null,this.assignedSlot=null,this._previouslyAssignedNodes=null,this._prevAssignedSlot=null,this.flattenedNodes=null,this.ownerShadyRoot=void 0,this.parentNode=void 0,this.firstChild=void 0,this.lastChild=void 0,this.previousSibling=void 0,this.nextSibling=void 0,this.childNodes=void 0,this.__outsideAccessors=!1,this.__insideAccessors=!1,this.__onCallbackListeners={}}var t,n,r;return t=e,(n=[{key:"toJSON",value:function(){return{}}}])&&i(t.prototype,n),r&&i(t,r),e}();function a(e){return e.__shady||(e.__shady=new s),e.__shady}function l(e){return e&&e.__shady}var c=window.ShadyDOM||{};c.hasNativeShadowDOM=Boolean(Element.prototype.attachShadow&&Node.prototype.getRootNode);var u=Object.getOwnPropertyDescriptor(Node.prototype,"firstChild");c.hasDescriptors=Boolean(u&&u.configurable&&u.get),c.inUse=c.force||!c.hasNativeShadowDOM,c.noPatch=c.noPatch||!1,c.preferPerformance=c.preferPerformance;var f=function(e){var t=l(e);return t&&void 0!==t.firstChild},d=function(e){return Boolean("ShadyRoot"===e._localName)},h=function(e){var t=l(e),n=t&&t.root;return n&&n._hasInsertionPoint()},p=Element.prototype,v=p.matches||p.matchesSelector||p.mozMatchesSelector||p.msMatchesSelector||p.oMatchesSelector||p.webkitMatchesSelector,m=function(e,t){return v.call(e,t)},y=document.createTextNode(""),g=0,_=[];new MutationObserver(function(){for(;_.length;)try{_.shift()()}catch(e){throw y.textContent=g++,e}}).observe(y,{characterData:!0});var S,b=function(e){_.push(e),y.textContent=g++},E=Boolean(document.contains),w=function(e,t){for(;t;){if(t==e)return!0;t=t[x+"parentNode"]}return!1},N=function(e){return e.getAttribute("id")||e.getAttribute("name")},C=function(e){return"length"!==e&&isNaN(e)},T=function(e){for(var t=e.length-1;t>=0;t--){var n=e[t],r=N(n);r&&C(r)&&(e[r]=n)}return e.item=function(t){return e[t]},e.namedItem=function(t){if(C(t)&&e[t])return e[t];var n=!0,r=!1,o=void 0;try{for(var i,s=e[Symbol.iterator]();!(n=(i=s.next()).done);n=!0){var a=i.value;if(N(a)==t)return a}}catch(e){r=!0,o=e}finally{try{n||null==s.return||s.return()}finally{if(r)throw o}}return null},e},k="__shady_native_",x="__shady_",O=function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"",r=arguments.length>3?arguments[3]:void 0;for(var o in t){var i=t[o];if(!(r&&r.indexOf(o)>=0)){i.configurable=!0;var s=n+o;if(i.value)e[s]=i.value;else try{Object.defineProperty(e,s,i)}catch(e){}}}},P=(window.customElements&&window.customElements.nativeHTMLElement||HTMLElement,function(e){var t={};return Object.getOwnPropertyNames(e).forEach(function(n){t[n]=Object.getOwnPropertyDescriptor(e,n)}),t}),A=[];function M(e){S||(S=!0,b(D)),A.push(e)}function D(){S=!1;for(var e=Boolean(A.length);A.length;)A.shift()();return e}function L(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}D.list=A;var R=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this._scheduled=!1,this.addedNodes=[],this.removedNodes=[],this.callbacks=new Set}var t,n,r;return t=e,(n=[{key:"schedule",value:function(){var e=this;this._scheduled||(this._scheduled=!0,b(function(){e.flush()}))}},{key:"flush",value:function(){if(this._scheduled){this._scheduled=!1;var e=this.takeRecords();e.length&&this.callbacks.forEach(function(t){t(e)})}}},{key:"takeRecords",value:function(){if(this.addedNodes.length||this.removedNodes.length){var e=[{addedNodes:this.addedNodes,removedNodes:this.removedNodes}];return this.addedNodes=[],this.removedNodes=[],e}return[]}}])&&L(t.prototype,n),r&&L(t,r),e}();var j=/[&\u00A0"]/g,I=/[&\u00A0<>]/g;function H(e){switch(e){case"&":return"&amp;";case"<":return"&lt;";case">":return"&gt;";case'"':return"&quot;";case" ":return"&nbsp;"}}function F(e){return e.replace(j,H)}function B(e){for(var t={},n=0;n<e.length;n++)t[e[n]]=!0;return t}var U=B(["area","base","br","col","command","embed","hr","img","input","keygen","link","meta","param","source","track","wbr"]),q=B(["style","script","xmp","iframe","noembed","noframes","plaintext","noscript"]);function W(e,t,n){switch(e.nodeType){case Node.ELEMENT_NODE:for(var r,o=e.localName,i="<"+o,s=e.attributes,a=0;r=s[a];a++)i+=" "+r.name+'="'+F(r.value)+'"';return i+=">",U[o]?i:i+V(e,n)+"</"+o+">";case Node.TEXT_NODE:var l=e.data;return t&&q[t.localName]?l:function(e){return e.replace(I,H)}(l);case Node.COMMENT_NODE:return"\x3c!--"+e.data+"--\x3e";default:throw window.console.error(e),new Error("not implemented")}}function V(e,t){"template"===e.localName&&(e=e.content);for(var n,r="",o=t?t(e):e.childNodes,i=0,s=o.length;i<s&&(n=o[i]);i++)r+=W(n,e,t);return r}var G=c.hasDescriptors,K=k,z={querySelector:function(e){return this[K+"querySelector"](e)},querySelectorAll:function(e){return this[K+"querySelectorAll"](e)}},Y={},X=function(e){Y[e]=function(t){return t[K+e]}},$=function(e,t){z[e]||(z[e]=t)},J=function(e,t){for(var n in O(e,t,K),t)X(n)},Q=function(e){for(var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:[],n=0;n<t.length;n++){var r=t[n],o=Object.getOwnPropertyDescriptor(e,r);o&&(Object.defineProperty(e,K+r,o),o.value?$(r,o.value):X(r))}},Z=document.createTreeWalker(document,NodeFilter.SHOW_ALL,null,!1),ee=document.createTreeWalker(document,NodeFilter.SHOW_ELEMENT,null,!1),te=document.implementation.createHTMLDocument("inert"),ne=function(e){for(var t;t=e[K+"firstChild"];)e[K+"removeChild"](t)},re=["firstElementChild","lastElementChild","children","childElementCount"],oe=["querySelector","querySelectorAll"],ie=P({get childNodes(){return this[x+"childNodes"]},get firstChild(){return this[x+"firstChild"]},get lastChild(){return this[x+"lastChild"]},get textContent(){return this[x+"textContent"]},set textContent(e){this[x+"textContent"]=e},get childElementCount(){return this[x+"childElementCount"]},get children(){return this[x+"children"]},get firstElementChild(){return this[x+"firstElementChild"]},get lastElementChild(){return this[x+"lastElementChild"]},get innerHTML(){return this[x+"innerHTML"]},set innerHTML(e){return this[x+"innerHTML"]=e},get shadowRoot(){return this[x+"shadowRoot"]}}),se=P({get parentElement(){return this[x+"parentElement"]},get parentNode(){return this[x+"parentNode"]},get nextSibling(){return this[x+"nextSibling"]},get previousSibling(){return this[x+"previousSibling"]},get nextElementSibling(){return this[x+"nextElementSibling"]},get previousElementSibling(){return this[x+"previousElementSibling"]},get className(){return this[x+"className"]},set className(e){return this[x+"className"]=e}});for(var ae in ie)ie[ae].enumerable=!1;for(var le in se)se[le].enumerable=!1;var ce=c.hasDescriptors||c.noPatch,ue=ce?function(){}:function(e){var t=a(e);t.__outsideAccessors||(t.__outsideAccessors=!0,O(e,se))},fe=ce?function(){}:function(e){var t=a(e);t.__insideAccessors||(t.__insideAccessors=!0,O(e,ie))};function de(e){return(de="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}var he,pe="__eventWrappers".concat(Date.now()),ve=(he=Object.getOwnPropertyDescriptor(Event.prototype,"composed"))?function(e){return he.get.call(e)}:null,me={blur:!0,focus:!0,focusin:!0,focusout:!0,click:!0,dblclick:!0,mousedown:!0,mouseenter:!0,mouseleave:!0,mousemove:!0,mouseout:!0,mouseover:!0,mouseup:!0,wheel:!0,beforeinput:!0,input:!0,keydown:!0,keyup:!0,compositionstart:!0,compositionupdate:!0,compositionend:!0,touchstart:!0,touchend:!0,touchmove:!0,touchcancel:!0,pointerover:!0,pointerenter:!0,pointerdown:!0,pointermove:!0,pointerup:!0,pointercancel:!0,pointerout:!0,pointerleave:!0,gotpointercapture:!0,lostpointercapture:!0,dragstart:!0,drag:!0,dragenter:!0,dragleave:!0,dragover:!0,drop:!0,dragend:!0,DOMActivate:!0,DOMFocusIn:!0,DOMFocusOut:!0,keypress:!0},ye={DOMAttrModified:!0,DOMAttributeNameChanged:!0,DOMCharacterDataModified:!0,DOMElementNameChanged:!0,DOMNodeInserted:!0,DOMNodeInsertedIntoDocument:!0,DOMNodeRemoved:!0,DOMNodeRemovedFromDocument:!0,DOMSubtreeModified:!0};function ge(e){return e instanceof Node?e[x+"getRootNode"]():e}function _e(e,t){for(var n=[],r=e,o=ge(e);r;)n.push(r),r=r[x+"assignedSlot"]?r[x+"assignedSlot"]:r.nodeType===Node.DOCUMENT_FRAGMENT_NODE&&r.host&&(t||r!==o)?r.host:r[x+"parentNode"];return n[n.length-1]===document&&n.push(window),n}function Se(e,t){if(!d)return e;for(var n,r,o,i,s=_e(e,!0),a=t,l=0;l<a.length;l++)if((o=ge(n=a[l]))!==r&&(i=s.indexOf(o),r=o),!d(o)||i>-1)return n}function be(e){var t=function(t,n){var r=new e(t,n);return r.__composed=n&&Boolean(n.composed),r};return t.__proto__=e,t.prototype=e.prototype,t}var Ee={focus:!0,blur:!0};function we(e){return e.__target!==e.target||e.__relatedTarget!==e.relatedTarget}function Ne(e,t,n){var r=t.__handlers&&t.__handlers[e.type]&&t.__handlers[e.type][n];if(r)for(var o,i=0;o=r[i];i++){if(we(e)&&e.target===e.relatedTarget)return;if(o.call(t,e),e.__immediatePropagationStopped)return}}function Ce(e){var t,n,r=e.composedPath();Object.defineProperty(e,"currentTarget",{get:function(){return t},configurable:!0});for(var o=r.length-1;o>=0;o--)if(Ne(e,t=r[o],"capture"),e.__propagationStopped)return;Object.defineProperty(e,"eventPhase",{get:function(){return Event.AT_TARGET}});for(var i=0;i<r.length;i++){var s=l(t=r[i]),a=s&&s.root;if((0===i||a&&a===n)&&(Ne(e,t,"bubble"),t!==window&&(n=t[x+"getRootNode"]()),e.__propagationStopped))return}}function Te(e,t,n,r,o,i){var s=e.node,a=e.type,l=e.capture,c=e.once,u=e.passive;return t===s&&n===a&&r===l&&o===c&&i===u}function ke(e,t,n,r,o,i){for(var s=0;s<e.length;s++)if(Te(e[s],t,n,r,o,i))return s;return-1}function xe(e,t,n){if(t){var r=de(t);if(("function"===r||"object"===r)&&("object"!==r||t.handleEvent&&"function"==typeof t.handleEvent)){if(ye[e])return this[k+"addEventListener"](e,t,n);var o,i,s;n&&"object"===de(n)?(o=Boolean(n.capture),i=Boolean(n.once),s=Boolean(n.passive)):(o=Boolean(n),i=!1,s=!1);var a=n&&n.__shadyTarget||this,l=t[pe];if(l){if(ke(l,a,e,o,i,s)>-1)return}else t[pe]=[];var c=function(o){var s;if(i&&this[x+"removeEventListener"](e,t,n),o.__target||De(o),a!==this&&(s=Object.getOwnPropertyDescriptor(o,"currentTarget"),Object.defineProperty(o,"currentTarget",{get:function(){return a},configurable:!0})),o.__previousCurrentTarget=o.currentTarget,(!d(a)||-1!=o.composedPath().indexOf(a))&&(o.composed||o.composedPath().indexOf(a)>-1)){if(we(o)&&o.target===o.relatedTarget)return void(o.eventPhase===Event.BUBBLING_PHASE&&o.stopImmediatePropagation());if(!(o.eventPhase===Event.CAPTURING_PHASE||o.bubbles||o.target===a||a instanceof Window))return;var l="function"===r?t.call(a,o):t.handleEvent&&t.handleEvent(o);return a!==this&&(s?(Object.defineProperty(o,"currentTarget",s),s=null):delete o.currentTarget),l}};t[pe].push({node:a,type:e,capture:o,once:i,passive:s,wrapperFn:c}),Ee[e]?(this.__handlers=this.__handlers||{},this.__handlers[e]=this.__handlers[e]||{capture:[],bubble:[]},this.__handlers[e][o?"capture":"bubble"].push(c)):this[k+"addEventListener"](e,c,n)}}}function Oe(e,t,n){if(t){if(ye[e])return this[k+"removeEventListener"](e,t,n);var r,o,i;n&&"object"===de(n)?(r=Boolean(n.capture),o=Boolean(n.once),i=Boolean(n.passive)):(r=Boolean(n),o=!1,i=!1);var s=n&&n.__shadyTarget||this,a=void 0,l=function(e){var t=null;try{t=e[pe]}catch(e){}return t}(t);if(l){var c=ke(l,s,e,r,o,i);c>-1&&(a=l.splice(c,1)[0].wrapperFn,l.length||(t[pe]=void 0))}if(this[k+"removeEventListener"](e,a||t,n),a&&Ee[e]&&this.__handlers&&this.__handlers[e]){var u=this.__handlers[e][r?"capture":"bubble"],f=u.indexOf(a);f>-1&&u.splice(f,1)}}}var Pe=P({get composed(){return void 0===this.__composed&&(ve?this.__composed="focusin"===this.type||"focusout"===this.type||ve(this):!1!==this.isTrusted&&(this.__composed=me[this.type])),this.__composed||!1},composedPath:function(){return this.__composedPath||(this.__composedPath=_e(this.__target,this.composed)),this.__composedPath},get target(){return Se(this.currentTarget||this.__previousCurrentTarget,this.composedPath())},get relatedTarget(){return this.__relatedTarget?(this.__relatedTargetComposedPath||(this.__relatedTargetComposedPath=_e(this.__relatedTarget,!0)),Se(this.currentTarget||this.__previousCurrentTarget,this.__relatedTargetComposedPath)):null},stopPropagation:function(){Event.prototype.stopPropagation.call(this),this.__propagationStopped=!0},stopImmediatePropagation:function(){Event.prototype.stopImmediatePropagation.call(this),this.__immediatePropagationStopped=!0,this.__propagationStopped=!0}}),Ae="__shady_patchedProto",Me="__shady_sourceProto";function De(e){if(e.__target=e.target,e.__relatedTarget=e.relatedTarget,c.hasDescriptors){var t=Object.getPrototypeOf(e);if(!Object.hasOwnProperty(t,Ae)){var n=Object.create(t);n[Me]=t,O(n,Pe),t[Ae]=n}e.__proto__=t[Ae]}else O(e,Pe)}var Le=be(Event),Re=be(CustomEvent),je=be(MouseEvent);var Ie=Object.getOwnPropertyNames(Document.prototype).filter(function(e){return"on"===e.substring(0,2)});function He(e,t,n){return{index:e,removed:t,addedCount:n}}var Fe=0,Be=1,Ue=2,qe=3;function We(e,t,n,r,o,i){var s,a=0,l=0,c=Math.min(n-t,i-o);if(0==t&&0==o&&(a=function(e,t,n){for(var r=0;r<n;r++)if(!Ve(e[r],t[r]))return r;return n}(e,r,c)),n==e.length&&i==r.length&&(l=function(e,t,n){var r=e.length,o=t.length,i=0;for(;i<n&&Ve(e[--r],t[--o]);)i++;return i}(e,r,c-a)),o+=a,i-=l,(n-=l)-(t+=a)==0&&i-o==0)return[];if(t==n){for(s=He(t,[],0);o<i;)s.removed.push(r[o++]);return[s]}if(o==i)return[He(t,[],n-t)];var u=function(e){for(var t=e.length-1,n=e[0].length-1,r=e[t][n],o=[];t>0||n>0;)if(0!=t)if(0!=n){var i=e[t-1][n-1],s=e[t-1][n],a=e[t][n-1],l=void 0;(l=s<a?s<i?s:i:a<i?a:i)==i?(i==r?o.push(Fe):(o.push(Be),r=i),t--,n--):l==s?(o.push(qe),t--,r=s):(o.push(Ue),n--,r=a)}else o.push(qe),t--;else o.push(Ue),n--;return o.reverse(),o}(function(e,t,n,r,o,i){for(var s=i-o+1,a=n-t+1,l=new Array(s),c=0;c<s;c++)l[c]=new Array(a),l[c][0]=c;for(var u=0;u<a;u++)l[0][u]=u;for(var f=1;f<s;f++)for(var d=1;d<a;d++)if(Ve(e[t+d-1],r[o+f-1]))l[f][d]=l[f-1][d-1];else{var h=l[f-1][d]+1,p=l[f][d-1]+1;l[f][d]=h<p?h:p}return l}(e,t,n,r,o,i));s=void 0;for(var f=[],d=t,h=o,p=0;p<u.length;p++)switch(u[p]){case Fe:s&&(f.push(s),s=void 0),d++,h++;break;case Be:s||(s=He(d,[],0)),s.addedCount++,d++,s.removed.push(r[h]),h++;break;case Ue:s||(s=He(d,[],0)),s.addedCount++,d++;break;case qe:s||(s=He(d,[],0)),s.removed.push(r[h]),h++}return s&&f.push(s),f}function Ve(e,t){return e===t}function Ge(e,t,n){ue(e),n=n||null;var r=a(e),o=a(t),i=n?a(n):null;r.previousSibling=n?i.previousSibling:t[x+"lastChild"];var s=l(r.previousSibling);s&&(s.nextSibling=e);var c=l(r.nextSibling=n);c&&(c.previousSibling=e),r.parentNode=t,n?n===o.firstChild&&(o.firstChild=e):(o.lastChild=e,o.firstChild||(o.firstChild=e)),o.childNodes=null}var Ke=function(e){var t=a(e);if(void 0===t.firstChild){t.childNodes=null;var n=t.firstChild=e[k+"firstChild"]||null;t.lastChild=e[k+"lastChild"]||null,fe(e);for(var r,o=n;o;o=o[k+"nextSibling"]){var i=a(o);i.parentNode=e,i.nextSibling=o[k+"nextSibling"]||null,i.previousSibling=r||null,r=o,ue(o)}}},ze=null;function Ye(){return ze||(ze=window.ShadyCSS&&window.ShadyCSS.ScopingShim),ze||null}function Xe(e,t){var n=Ye();n&&n.unscopeNode(e,t)}function $e(e,t,n){Ye()&&(n&&Xe(e,n),function(e,t){var n=Ye();n&&n.scopeNode(e,t)}(e,t))}function Je(e){if(e.nodeType!==Node.ELEMENT_NODE)return"";var t=Ye();return t?t.currentScopeForNode(e):""}function Qe(e,t){if(e){e.nodeType===Node.ELEMENT_NODE&&t(e);for(var n,r=e[x+"childNodes"],o=0;o<r.length;o++)(n=r[o]).nodeType===Node.ELEMENT_NODE&&Qe(n,t)}}var Ze=window.document,et=c.preferPerformance,tt=Object.getOwnPropertyDescriptor(Node.prototype,"isConnected"),nt=tt&&tt.get;function rt(e){for(var t;t=e[x+"firstChild"];)e[x+"removeChild"](t)}function ot(e){if(function(e){var t=l(e);return Boolean(t&&void 0!==t.ownerShadyRoot)}(e))for(var t,n=e[x+"childNodes"],r=0,o=n.length;r<o&&(t=n[r]);r++)ot(t);var i=l(e);i&&(i.ownerShadyRoot=void 0)}function it(e,t,n){var r=l(e),o=r&&r.observer;o&&(t&&o.addedNodes.push(t),n&&o.removedNodes.push(n),o.schedule())}var st=P({get parentNode(){var e=l(this),t=e&&e.parentNode;return void 0!==t?t:this[k+"parentNode"]},get firstChild(){var e=l(this),t=e&&e.firstChild;return void 0!==t?t:this[k+"firstChild"]},get lastChild(){var e=l(this),t=e&&e.lastChild;return void 0!==t?t:this[k+"lastChild"]},get nextSibling(){var e=l(this),t=e&&e.nextSibling;return void 0!==t?t:this[k+"nextSibling"]},get previousSibling(){var e=l(this),t=e&&e.previousSibling;return void 0!==t?t:this[k+"previousSibling"]},get childNodes(){var e;if(f(this)){var t=l(this);if(!t.childNodes){t.childNodes=[];for(var n=this[x+"firstChild"];n;n=n[x+"nextSibling"])t.childNodes.push(n)}e=t.childNodes}else e=this[k+"childNodes"];return e.item=function(t){return e[t]},e},get parentElement(){var e=l(this),t=e&&e.parentNode;return t&&t.nodeType!==Node.ELEMENT_NODE&&(t=null),void 0!==t?t:this[k+"parentElement"]},get isConnected(){if(nt&&nt.call(this))return!0;if(this.nodeType==Node.DOCUMENT_FRAGMENT_NODE)return!1;var e=this.ownerDocument;if(E){if(e[k+"contains"](this))return!0}else if(e.documentElement&&e.documentElement[k+"contains"](this))return!0;for(var t=this;t&&!(t instanceof Document);)t=t[x+"parentNode"]||(d(t)?t.host:void 0);return!!(t&&t instanceof Document)},get textContent(){if(f(this)){for(var e,t=[],n=0,r=this[x+"childNodes"];e=r[n];n++)e.nodeType!==Node.COMMENT_NODE&&t.push(e[x+"textContent"]);return t.join("")}return this[k+"textContent"]},set textContent(e){switch(null==e&&(e=""),this.nodeType){case Node.ELEMENT_NODE:case Node.DOCUMENT_FRAGMENT_NODE:if(!f(this)&&c.hasDescriptors){var t=this[x+"firstChild"];(t!=this[x+"lastChild"]||t&&t.nodeType!=Node.TEXT_NODE)&&rt(this),this[k+"textContent"]=e}else rt(this),(e.length>0||this.nodeType===Node.ELEMENT_NODE)&&this[x+"insertBefore"](document.createTextNode(e));break;default:this.nodeValue=e}},insertBefore:function(e,t){if(this.ownerDocument!==Ze&&e.ownerDocument!==Ze)return this[k+"insertBefore"](e,t),e;if(e===this)throw Error("Failed to execute 'appendChild' on 'Node': The new child element contains the parent.");if(t){var n=l(t),r=n&&n.parentNode;if(void 0!==r&&r!==this||void 0===r&&t[k+"parentNode"]!==this)throw Error("Failed to execute 'insertBefore' on 'Node': The node before which the new node is to be inserted is not a child of this node.")}if(t===e)return e;var o,i=[],s=Mt(this),c=s?s.host.localName:Je(this),u=e[x+"parentNode"];u&&(o=Je(e),u[x+"removeChild"](e,Boolean(s)||!Mt(e)));var p=!0,v=!(et&&void 0!==e.__noInsertionPoint||function e(t,n){var r=Ye();if(!r)return!0;if(t.nodeType===Node.DOCUMENT_FRAGMENT_NODE){for(var o=!0,i=t[x+"childNodes"],s=0;o&&s<i.length;s++)o=o&&e(i[s],n);return o}return t.nodeType!==Node.ELEMENT_NODE||r.currentScopeForNode(t)===n}(e,c)),m=s&&!e.__noInsertionPoint&&(!et||e.nodeType===Node.DOCUMENT_FRAGMENT_NODE);if((m||v)&&(v&&(o=o||Je(e)),Qe(e,function(e){m&&"slot"===e.localName&&i.push(e),v&&$e(e,c,o)})),("slot"===this.localName||i.length)&&(i.length&&s._addSlots(i),s&&s._asyncRender()),f(this)){!function(e,t,n){fe(t);var r=a(t);if(void 0!==r.firstChild&&(r.childNodes=null),e.nodeType===Node.DOCUMENT_FRAGMENT_NODE){for(var o=e[x+"childNodes"],i=0;i<o.length;i++)Ge(o[i],t,n);var s=a(e),l=void 0!==s.firstChild?null:void 0;s.firstChild=s.lastChild=l,s.childNodes=l}else Ge(e,t,n)}(e,this,t);var y=l(this);h(this)?(y.root._asyncRender(),p=!1):y.root&&(p=!1)}if(p){var g=d(this)?this.host:this;t?(t=function e(t){var n=t;if(t&&"slot"===t.localName){var r=l(t),o=r&&r.flattenedNodes;n=o&&o.length?o[0]:e(t[x+"nextSibling"])}return n}(t),g[k+"insertBefore"](e,t)):g[k+"appendChild"](e)}else e.ownerDocument!==this.ownerDocument&&this.ownerDocument.adoptNode(e);return it(this,e),e},appendChild:function(e){return this[x+"insertBefore"](e)},removeChild:function(e){var t,n=arguments.length>1&&void 0!==arguments[1]&&arguments[1];if(this.ownerDocument!==Ze)return this[k+"removeChild"](e);if(e[x+"parentNode"]!==this)throw Error("The node to be removed is not a child of this node: "+e);var r=Mt(e),o=r&&r._removeContainedSlots(e),i=l(this);if(f(this)&&(!function(e,t){var n=a(e),r=a(t);e===r.firstChild&&(r.firstChild=n.nextSibling),e===r.lastChild&&(r.lastChild=n.previousSibling);var o=n.previousSibling,i=n.nextSibling;o&&(a(o).nextSibling=i),i&&(a(i).previousSibling=o),n.parentNode=n.previousSibling=n.nextSibling=void 0,void 0!==r.childNodes&&(r.childNodes=null)}(e,this),h(this)&&(i.root._asyncRender(),t=!0)),Ye()&&!n&&r){var s=Je(e);Qe(e,function(e){Xe(e,s)})}if(ot(e),r){var c=this&&"slot"===this.localName;c&&(t=!0),(o||c)&&r._asyncRender()}if(!t){var u=d(this)?this.host:this;(!i.root&&"slot"!==e.localName||u===e[k+"parentNode"])&&u[k+"removeChild"](e)}return it(this,null,e),e},replaceChild:function(e,t){return this[x+"insertBefore"](e,t),this[x+"removeChild"](t),e},cloneNode:function(e){if("template"==this.localName)return this[k+"cloneNode"](e);var t=this[k+"cloneNode"](!1);if(e&&t.nodeType!==Node.ATTRIBUTE_NODE)for(var n,r=this[x+"childNodes"],o=0;o<r.length;o++)n=r[o][x+"cloneNode"](!0),t[x+"appendChild"](n);return t},getRootNode:function(e){if(this&&this.nodeType){var t=a(this),n=t.ownerShadyRoot;if(void 0===n)if(d(this))n=this,t.ownerShadyRoot=n;else{var r=this[x+"parentNode"];n=r?r[x+"getRootNode"](e):this,document.documentElement[k+"contains"](this)&&(t.ownerShadyRoot=n)}return n}},contains:function(e){return w(this,e)}});function at(e,t,n){var r=[];return lt(e[x+"childNodes"],t,n,r),r}function lt(e,t,n,r){for(var o,i=0,s=e.length;i<s&&(o=e[i]);i++)if(o.nodeType===Node.ELEMENT_NODE&&ct(o,t,n,r))return!0}function ct(e,t,n,r){var o=t(e);if(o&&r.push(e),n&&n(o))return o;lt(e[x+"childNodes"],t,n,r)}var ut=P({get firstElementChild(){var e=l(this);if(e&&void 0!==e.firstChild){for(var t=this[x+"firstChild"];t&&t.nodeType!==Node.ELEMENT_NODE;)t=t[x+"nextSibling"];return t}return this[k+"firstElementChild"]},get lastElementChild(){var e=l(this);if(e&&void 0!==e.lastChild){for(var t=this[x+"lastChild"];t&&t.nodeType!==Node.ELEMENT_NODE;)t=t[x+"previousSibling"];return t}return this[k+"lastElementChild"]},get children(){return f(this)?T(Array.prototype.filter.call(this[x+"childNodes"],function(e){return e.nodeType===Node.ELEMENT_NODE})):this[k+"children"]},get childElementCount(){var e=this[x+"children"];return e?e.length:0}}),ft=P({querySelector:function(e){return at(this,function(t){return m(t,e)},function(e){return Boolean(e)})[0]||null},querySelectorAll:function(e,t){if(t){var n=Array.prototype.slice.call(this[k+"querySelectorAll"](e)),r=this[x+"getRootNode"]();return n.filter(function(e){return e[x+"getRootNode"]()==r})}return at(this,function(t){return m(t,e)})}}),dt=c.preferPerformance?Object.assign({},ut):ut;Object.assign(ut,ft);var ht=P({getElementById:function(e){return""===e?null:at(this,function(t){return t.id==e},function(e){return Boolean(e)})[0]||null}});var pt=P({get activeElement(){var e=c.hasDescriptors?document[k+"activeElement"]:document.activeElement;if(!e||!e.nodeType)return null;var t=!!d(this);if(this!==document){if(!t)return null;if(this.host===e||!this.host[k+"contains"](e))return null}for(var n=Mt(e);n&&n!==this;)e=n.host,n=Mt(e);return this===document?n?null:e:n===this?e:null}}),vt=document.implementation.createHTMLDocument("inert"),mt=P({get innerHTML(){return f(this)?V("template"===this.localName?this.content:this,function(e){return e[x+"childNodes"]}):this[k+"innerHTML"]},set innerHTML(e){if("template"===this.localName)this[k+"innerHTML"]=e;else{rt(this);var t,n,r=this.localName||"div";for(t=this.namespaceURI&&this.namespaceURI!==vt.namespaceURI?vt.createElementNS(this.namespaceURI,r):vt.createElement(r),c.hasDescriptors?t[k+"innerHTML"]=e:t.innerHTML=e;n=t[x+"firstChild"];)this[x+"insertBefore"](n)}}});function yt(e){return(yt="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}var gt=P({addEventListener:function(e,t,n){"object"!==yt(n)&&(n={capture:Boolean(n)}),n.__shadyTarget=this,this.host[x+"addEventListener"](e,t,n)},removeEventListener:function(e,t,n){"object"!==yt(n)&&(n={capture:Boolean(n)}),n.__shadyTarget=this,this.host[x+"removeEventListener"](e,t,n)}}),_t=function(e,t){O(e,gt,t),O(e,pt,t),O(e,mt,t),O(e,ut,t),c.noPatch&&!t?(O(e,st,t),O(e,ht,t)):c.hasDescriptors||(O(e,se),O(e,ie))};function St(e){return function(e){if(Array.isArray(e)){for(var t=0,n=new Array(e.length);t<e.length;t++)n[t]=e[t];return n}}(e)||function(e){if(Symbol.iterator in Object(e)||"[object Arguments]"===Object.prototype.toString.call(e))return Array.from(e)}(e)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance")}()}function bt(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}var Et,wt={},Nt="ShadyRoot",Ct="closed",Tt=c.deferConnectionCallbacks&&"loading"===document.readyState;function kt(e){var t=[];do{t.unshift(e)}while(e=e[x+"parentNode"]);return t}var xt,Ot=function(){function e(t,n,r){if(function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),t!==wt)throw new TypeError("Illegal constructor");this._localName=Nt,this.host=n,this.mode=r&&r.mode,Ke(n);var o=a(n);o.root=this,o.publicRoot=this.mode!==Ct?this:null;var i=a(this);if(i.firstChild=i.lastChild=i.parentNode=i.nextSibling=i.previousSibling=null,i.childNodes=[],this._renderPending=!1,this._hasRendered=!1,this._slotList=null,this._slotMap=null,this._pendingSlots=null,c.preferPerformance)for(var s;s=n[k+"firstChild"];)n[k+"removeChild"](s);else this._asyncRender()}var t,n,r;return t=e,(n=[{key:"_asyncRender",value:function(){var e=this;this._renderPending||(this._renderPending=!0,M(function(){return e._render()}))}},{key:"_getPendingDistributionRoot",value:function(){for(var e,t=this;t;)t._renderPending&&(e=t),t=t._getDistributionParent();return e}},{key:"_getDistributionParent",value:function(){var e=this.host[x+"getRootNode"]();if(d(e)){var t=l(this.host);return t&&t.__childSlotCount>0?e:void 0}}},{key:"_render",value:function(){var e=this._renderPending&&this._getPendingDistributionRoot();e&&e._renderSelf()}},{key:"_flushInitial",value:function(){!this._hasRendered&&this._renderPending&&this._render()}},{key:"_renderSelf",value:function(){var e=Tt;if(Tt=!0,this._renderPending=!1,this._slotList&&(this._distribute(),this._compose()),!c.preferPerformance&&!this._hasRendered)for(var t=this.host[x+"childNodes"],n=0,r=t.length;n<r;n++){var o=t[n],i=l(o);o[k+"parentNode"]!==this.host||"slot"!==o.localName&&i.assignedSlot||this.host[k+"removeChild"](o)}this._hasRendered=!0,Tt=e,Et&&Et()}},{key:"_distribute",value:function(){this._validateSlots();for(var e,t=0;t<this._slotList.length;t++)e=this._slotList[t],this._clearSlotAssignedNodes(e);for(var n=this.host[x+"firstChild"];n;n=n[x+"nextSibling"])this._distributeNodeToSlot(n);for(var r=0;r<this._slotList.length;r++){var o=this._slotList[r],i=l(o);if(!i.assignedNodes.length)for(var s=o[x+"firstChild"];s;s=s[x+"nextSibling"])this._distributeNodeToSlot(s,o);var a=l(o[x+"parentNode"]),c=a&&a.root;c&&(c._hasInsertionPoint()||c._renderPending)&&c._renderSelf(),this._addAssignedToFlattenedNodes(i.flattenedNodes,i.assignedNodes);var u=i._previouslyAssignedNodes;if(u){for(var f=0;f<u.length;f++)l(u[f])._prevAssignedSlot=null;i._previouslyAssignedNodes=null,u.length>i.assignedNodes.length&&(i.dirty=!0)}i.dirty&&(i.dirty=!1,this._fireSlotChange(o))}}},{key:"_distributeNodeToSlot",value:function(e,t){var n=a(e),r=n._prevAssignedSlot;n._prevAssignedSlot=null;var o=t;if(!o){var i=e[x+"slot"]||"__catchall",s=this._slotMap[i];o=s&&s[0]}o?(a(o).assignedNodes.push(e),n.assignedSlot=o):n.assignedSlot=void 0;r!==n.assignedSlot&&n.assignedSlot&&(a(n.assignedSlot).dirty=!0)}},{key:"_clearSlotAssignedNodes",value:function(e){var t=l(e),n=t.assignedNodes;if(t.assignedNodes=[],t.flattenedNodes=[],t._previouslyAssignedNodes=n,n)for(var r=0;r<n.length;r++){var o=l(n[r]);o._prevAssignedSlot=o.assignedSlot,o.assignedSlot===e&&(o.assignedSlot=null)}}},{key:"_addAssignedToFlattenedNodes",value:function(e,t){for(var n,r=0;r<t.length&&(n=t[r]);r++)if("slot"==n.localName){var o=l(n).assignedNodes;o&&o.length&&this._addAssignedToFlattenedNodes(e,o)}else e.push(t[r])}},{key:"_fireSlotChange",value:function(e){e[k+"dispatchEvent"](new Event("slotchange"));var t=l(e);t.assignedSlot&&this._fireSlotChange(t.assignedSlot)}},{key:"_compose",value:function(){for(var e=this._slotList,t=[],n=0;n<e.length;n++){var r=e[n][x+"parentNode"],o=l(r);o&&o.root||!(t.indexOf(r)<0)||t.push(r)}for(var i=0;i<t.length;i++){var s=t[i],a=s===this?this.host:s;this._updateChildNodes(a,this._composeNode(s))}}},{key:"_composeNode",value:function(e){for(var t=[],n=e[x+"childNodes"],r=0;r<n.length;r++){var o=n[r];if(this._isInsertionPoint(o))for(var i=l(o).flattenedNodes,s=0;s<i.length;s++){var a=i[s];t.push(a)}else t.push(o)}return t}},{key:"_isInsertionPoint",value:function(e){return"slot"==e.localName}},{key:"_updateChildNodes",value:function(e,t){for(var n,r,o,i=Array.prototype.slice.call(e[k+"childNodes"]),s=(r=i,We(n=t,0,n.length,r,0,r.length)),a=0,l=0;a<s.length&&(o=s[a]);a++){for(var c,u=0;u<o.removed.length&&(c=o.removed[u]);u++)c[k+"parentNode"]===e&&e[k+"removeChild"](c),i.splice(o.index+l,1);l-=o.addedCount}for(var f,d,h=0;h<s.length&&(f=s[h]);h++){d=i[f.index];for(var p,v=f.index;v<f.index+f.addedCount;v++)p=t[v],e[k+"insertBefore"](p,d),i.splice(v,0,p)}}},{key:"_ensureSlotData",value:function(){this._pendingSlots=this._pendingSlots||[],this._slotList=this._slotList||[],this._slotMap=this._slotMap||{}}},{key:"_addSlots",value:function(e){var t;this._ensureSlotData(),(t=this._pendingSlots).push.apply(t,St(e))}},{key:"_validateSlots",value:function(){this._pendingSlots&&this._pendingSlots.length&&(this._mapSlots(this._pendingSlots),this._pendingSlots=[])}},{key:"_mapSlots",value:function(e){for(var t,n=0;n<e.length;n++){var r=e[n];Ke(r);var o=r[x+"parentNode"];Ke(o);var i=l(o);i.__childSlotCount=(i.__childSlotCount||0)+1;var s=this._nameForSlot(r);this._slotMap[s]?((t=t||{})[s]=!0,this._slotMap[s].push(r)):this._slotMap[s]=[r],this._slotList.push(r)}if(t)for(var a in t)this._slotMap[a]=this._sortSlots(this._slotMap[a])}},{key:"_nameForSlot",value:function(e){var t=e.name||e.getAttribute("name")||"__catchall";return e.__slotName=t,t}},{key:"_sortSlots",value:function(e){return e.sort(function(e,t){for(var n=kt(e),r=kt(t),o=0;o<n.length;o++){var i=n[o],s=r[o];if(i!==s){var a=Array.from(i[x+"parentNode"][x+"childNodes"]);return a.indexOf(i)-a.indexOf(s)}}})}},{key:"_removeContainedSlots",value:function(e){if(this._slotList){var t;this._validateSlots();var n=this._slotMap;for(var r in n)for(var o=n[r],i=0;i<o.length;i++){var s=o[i];if(w(e,s)){o.splice(i,1);var a=this._slotList.indexOf(s);if(a>=0){this._slotList.splice(a,1);var c=l(s[x+"parentNode"]);c&&c.__childSlotCount&&c.__childSlotCount--}i--,this._removeFlattenedNodes(s),t=!0}}return t}}},{key:"_updateSlotName",value:function(e){if(this._slotList){this._validateSlots();var t=e.__slotName,n=this._nameForSlot(e);if(n!==t){var r=this._slotMap[t],o=r.indexOf(e);o>=0&&r.splice(o,1);var i=this._slotMap[n]||(this._slotMap[n]=[]);i.push(e),i.length>1&&(this._slotMap[n]=this._sortSlots(i))}}}},{key:"_removeFlattenedNodes",value:function(e){var t=l(e),n=t.flattenedNodes;if(n)for(var r=0;r<n.length;r++){var o=n[r],i=o[k+"parentNode"];i&&i[k+"removeChild"](o)}t.flattenedNodes=[],t.assignedNodes=[]}},{key:"_hasInsertionPoint",value:function(){return this._validateSlots(),Boolean(this._slotList&&this._slotList.length)}}])&&bt(t.prototype,n),r&&bt(t,r),e}();(xt=Ot.prototype).__proto__=DocumentFragment.prototype,_t(xt,x),_t(xt),Object.defineProperties(xt,{nodeType:{value:Node.DOCUMENT_FRAGMENT_NODE,configurable:!0},nodeName:{value:"#document-fragment",configurable:!0},nodeValue:{value:null,configurable:!0}}),["localName","namespaceURI","prefix"].forEach(function(e){Object.defineProperty(xt,e,{value:void 0,configurable:!0})}),["ownerDocument","baseURI","isConnected"].forEach(function(e){Object.defineProperty(xt,e,{get:function(){return this.host[e]},configurable:!0})});if(window.customElements&&c.inUse&&!c.preferPerformance){var Pt=new Map;Et=function(){var e=[];Pt.forEach(function(t,n){e.push([n,t])}),Pt.clear();for(var t=0;t<e.length;t++){var n=e[t][0];e[t][1]?n.__shadydom_connectedCallback():n.__shadydom_disconnectedCallback()}},Tt&&document.addEventListener("readystatechange",function(){Tt=!1,Et()},{once:!0});var At=window.customElements.define;Object.defineProperty(window.CustomElementRegistry.prototype,"define",{value:function(e,t){var n=t.prototype.connectedCallback,r=t.prototype.disconnectedCallback;At.call(window.customElements,e,function(e,t,n){var r=0,o="__isConnected".concat(r++);return(t||n)&&(e.prototype.connectedCallback=e.prototype.__shadydom_connectedCallback=function(){Tt?Pt.set(this,!0):this[o]||(this[o]=!0,t&&t.call(this))},e.prototype.disconnectedCallback=e.prototype.__shadydom_disconnectedCallback=function(){Tt?this.isConnected||Pt.set(this,!1):this[o]&&(this[o]=!1,n&&n.call(this))}),e}(t,n,r)),t.prototype.connectedCallback=n,t.prototype.disconnectedCallback=r}})}var Mt=function(e){var t=e[x+"getRootNode"]();if(d(t))return t};function Dt(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}var Lt=function(){function e(t){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.node=t}var t,n,r;return t=e,(n=[{key:"addEventListener",value:function(e,t,n){return this.node[x+"addEventListener"](e,t,n)}},{key:"removeEventListener",value:function(e,t,n){return this.node[x+"removeEventListener"](e,t,n)}},{key:"appendChild",value:function(e){return this.node[x+"appendChild"](e)}},{key:"insertBefore",value:function(e,t){return this.node[x+"insertBefore"](e,t)}},{key:"removeChild",value:function(e){return this.node[x+"removeChild"](e)}},{key:"replaceChild",value:function(e,t){return this.node[x+"replaceChild"](e,t)}},{key:"cloneNode",value:function(e){return this.node[x+"cloneNode"](e)}},{key:"getRootNode",value:function(e){return this.node[x+"getRootNode"](e)}},{key:"contains",value:function(e){return this.node[x+"contains"](e)}},{key:"dispatchEvent",value:function(e){return this.node[x+"dispatchEvent"](e)}},{key:"setAttribute",value:function(e,t){this.node[x+"setAttribute"](e,t)}},{key:"getAttribute",value:function(e){return this.node[k+"getAttribute"](e)}},{key:"hasAttribute",value:function(e){return this.node[k+"hasAttribute"](e)}},{key:"removeAttribute",value:function(e){this.node[x+"removeAttribute"](e)}},{key:"attachShadow",value:function(e){return this.node[x+"attachShadow"](e)}},{key:"focus",value:function(){this.node[k+"focus"]()}},{key:"blur",value:function(){this.node[x+"blur"]()}},{key:"importNode",value:function(e,t){if(this.node.nodeType===Node.DOCUMENT_NODE)return this.node[x+"importNode"](e,t)}},{key:"getElementById",value:function(e){if(this.node.nodeType===Node.DOCUMENT_NODE)return this.node[x+"getElementById"](e)}},{key:"querySelector",value:function(e){return this.node[x+"querySelector"](e)}},{key:"querySelectorAll",value:function(e,t){return this.node[x+"querySelectorAll"](e,t)}},{key:"assignedNodes",value:function(e){if("slot"===this.node.localName)return this.node[x+"assignedNodes"](e)}},{key:"activeElement",get:function(){if(d(this.node)||this.node.nodeType===Node.DOCUMENT_NODE)return this.node[x+"activeElement"]}},{key:"_activeElement",get:function(){return this.activeElement}},{key:"host",get:function(){if(d(this.node))return this.node.host}},{key:"parentNode",get:function(){return this.node[x+"parentNode"]}},{key:"firstChild",get:function(){return this.node[x+"firstChild"]}},{key:"lastChild",get:function(){return this.node[x+"lastChild"]}},{key:"nextSibling",get:function(){return this.node[x+"nextSibling"]}},{key:"previousSibling",get:function(){return this.node[x+"previousSibling"]}},{key:"childNodes",get:function(){return this.node[x+"childNodes"]}},{key:"parentElement",get:function(){return this.node[x+"parentElement"]}},{key:"firstElementChild",get:function(){return this.node[x+"firstElementChild"]}},{key:"lastElementChild",get:function(){return this.node[x+"lastElementChild"]}},{key:"nextElementSibling",get:function(){return this.node[x+"nextElementSibling"]}},{key:"previousElementSibling",get:function(){return this.node[x+"previousElementSibling"]}},{key:"children",get:function(){return this.node[x+"children"]}},{key:"childElementCount",get:function(){return this.node[x+"childElementCount"]}},{key:"shadowRoot",get:function(){return this.node[x+"shadowRoot"]}},{key:"assignedSlot",get:function(){return this.node[x+"assignedSlot"]}},{key:"isConnected",get:function(){return this.node[x+"isConnected"]}},{key:"innerHTML",get:function(){return this.node[x+"innerHTML"]},set:function(e){this.node[x+"innerHTML"]=e}},{key:"textContent",get:function(){return this.node[x+"textContent"]},set:function(e){this.node[x+"textContent"]=e}},{key:"slot",get:function(){return this.node[x+"slot"]},set:function(e){this.node[x+"slot"]=e}}])&&Dt(t.prototype,n),r&&Dt(t,r),e}();Ie.forEach(function(e){Object.defineProperty(Lt.prototype,e,{get:function(){return this.node[x+e]},set:function(t){this.node[x+e]=t},configurable:!0})});var Rt=new WeakMap;var jt=P({dispatchEvent:function(e){return D(),this[k+"dispatchEvent"](e)},addEventListener:xe,removeEventListener:Oe}),It=P({get assignedSlot(){var e=this[x+"parentNode"],t=e&&e[x+"shadowRoot"];t&&t._render();var n=l(this);return n&&n.assignedSlot||null}}),Ht=window.document;function Ft(e,t){if("slot"===t){var n=e[x+"parentNode"];h(n)&&l(n).root._asyncRender()}else if("slot"===e.localName&&"name"===t){var r=Mt(e);r&&(r._updateSlotName(e),r._asyncRender())}}var Bt=P({get previousElementSibling(){var e=l(this);if(e&&void 0!==e.previousSibling){for(var t=this[x+"previousSibling"];t&&t.nodeType!==Node.ELEMENT_NODE;)t=t[x+"previousSibling"];return t}return this[k+"previousElementSibling"]},get nextElementSibling(){var e=l(this);if(e&&void 0!==e.nextSibling){for(var t=this[x+"nextSibling"];t&&t.nodeType!==Node.ELEMENT_NODE;)t=t[x+"nextSibling"];return t}return this[k+"nextElementSibling"]},get slot(){return this.getAttribute("slot")},set slot(e){this[x+"setAttribute"]("slot",e)},get shadowRoot(){var e=l(this);return e&&e.publicRoot||null},get className(){return this.getAttribute("class")||""},set className(e){this[x+"setAttribute"]("class",e)},setAttribute:function(e,t){this.ownerDocument!==Ht?this[k+"setAttribute"](e,t):function(e,t,n){var r=Ye();return!(!r||"class"!==t||(r.setElementClass(e,n),0))}(this,e,t)||(this[k+"setAttribute"](e,t),Ft(this,e))},removeAttribute:function(e){this[k+"removeAttribute"](e),Ft(this,e)},attachShadow:function(e){return function(e,t){if(!e)throw new Error("Must provide a host.");if(!t)throw new Error("Not enough arguments.");return new Ot(wt,e,t)}(this,e)}}),Ut=P({blur:function(){var e=l(this),t=e&&e.root,n=t&&t.activeElement;n?n[x+"blur"]():this[k+"blur"]()}});Ie.forEach(function(e){Ut[e]={set:function(t){var n=a(this),r=e.substring(2);n.__onCallbackListeners[e]&&this.removeEventListener(r,n.__onCallbackListeners[e]),this[x+"addEventListener"](r,t),n.__onCallbackListeners[e]=t},get:function(){var t=l(this);return t&&t.__onCallbackListeners[e]},configurable:!0}});var qt=P({assignedNodes:function(e){if("slot"===this.localName){var t=this[x+"getRootNode"]();t&&d(t)&&t._render();var n=l(this);return n&&(e&&e.flatten?n.flattenedNodes:n.assignedNodes)||[]}}}),Wt=window.document,Vt=P({importNode:function(e,t){if(e.ownerDocument!==Wt||"template"===e.localName)return this[k+"importNode"](e,t);var n=this[k+"importNode"](e,!1);if(t)for(var r,o=e[x+"childNodes"],i=0;i<o.length;i++)r=this[x+"importNode"](o[i],!0),n[x+"appendChild"](r);return n}}),Gt=P({addEventListener:xe.bind(window),removeEventListener:Oe.bind(window)}),Kt={};Object.getOwnPropertyDescriptor(HTMLElement.prototype,"parentElement")&&(Kt.parentElement=st.parentElement),Object.getOwnPropertyDescriptor(HTMLElement.prototype,"contains")&&(Kt.contains=st.contains),Object.getOwnPropertyDescriptor(HTMLElement.prototype,"children")&&(Kt.children=ut.children),Object.getOwnPropertyDescriptor(HTMLElement.prototype,"innerHTML")&&(Kt.innerHTML=mt.innerHTML),Object.getOwnPropertyDescriptor(HTMLElement.prototype,"className")&&(Kt.className=Bt.className);var zt=!c.hasDescriptors||"innerHTML"in Element.prototype,Yt={EventTarget:[jt],Node:[st,window.EventTarget?null:jt],Text:[It],Element:[Bt,ut,It,zt?mt:null,window.HTMLSlotElement?null:qt],HTMLElement:[Ut,Kt],HTMLSlotElement:[qt],DocumentFragment:[dt,ht],Document:[Vt,dt,ht,pt],Window:[Gt]},Xt=c.hasDescriptors?null:["innerHTML","textContent"],$t=function(e){var t=e?null:Xt,n=function(n){var r,o=(r=n,window[r]&&window[r].prototype);Yt[n].forEach(function(n){return o&&n&&O(o,n,e,t)})};for(var r in Yt)n(r)};if(c.inUse){var Jt={inUse:c.inUse,patch:function(e){return fe(e),ue(e),e},isShadyRoot:d,enqueue:M,flush:D,flushInitial:function(e){e._flushInitial()},settings:c,filterMutations:function(e,t){var n=t.getRootNode();return e.map(function(e){var t=n===e.target.getRootNode();if(t&&e.addedNodes){var r=Array.from(e.addedNodes).filter(function(e){return n===e.getRootNode()});if(r.length)return e=Object.create(e),Object.defineProperty(e,"addedNodes",{value:r,configurable:!0}),e}else if(t)return e}).filter(function(e){return e})},observeChildren:function(e,t){var n=a(e);n.observer||(n.observer=new R),n.observer.callbacks.add(t);var r=n.observer;return{_callback:t,_observer:r,_node:e,takeRecords:function(){return r.takeRecords()}}},unobserveChildren:function(e){var t=e&&e._observer;t&&(t.callbacks.delete(e._callback),t.callbacks.size||(a(e._node).observer=null))},deferConnectionCallbacks:c.deferConnectionCallbacks,preferPerformance:c.preferPerformance,handlesDynamicScoping:!0,wrap:c.noPatch?function(e){if(d(e)||e instanceof Lt)return e;var t=Rt.get(e);return t||(t=new Lt(e),Rt.set(e,t)),t}:function(e){return e},Wrapper:Lt,composedPath:function(e){return e.__composedPath||(e.__composedPath=_e(e.target,!0)),e.__composedPath},noPatch:c.noPatch,nativeMethods:z,nativeTree:Y};window.ShadyDOM=Jt,function(){var e=["dispatchEvent","addEventListener","removeEventListener"];window.EventTarget?Q(window.EventTarget.prototype,e):(Q(Node.prototype,e),Q(Window.prototype,e)),G?Q(Node.prototype,["parentNode","firstChild","lastChild","previousSibling","nextSibling","childNodes","parentElement","textContent"]):J(Node.prototype,{parentNode:{get:function(){return Z.currentNode=this,Z.parentNode()}},firstChild:{get:function(){return Z.currentNode=this,Z.firstChild()}},lastChild:{get:function(){return Z.currentNode=this,Z.lastChild()}},previousSibling:{get:function(){return Z.currentNode=this,Z.previousSibling()}},nextSibling:{get:function(){return Z.currentNode=this,Z.nextSibling()}},childNodes:{get:function(){var e=[];Z.currentNode=this;for(var t=Z.firstChild();t;)e.push(t),t=Z.nextSibling();return e}},parentElement:{get:function(){return ee.currentNode=this,ee.parentNode()}},textContent:{get:function(){switch(this.nodeType){case Node.ELEMENT_NODE:case Node.DOCUMENT_FRAGMENT_NODE:for(var e,t=document.createTreeWalker(this,NodeFilter.SHOW_TEXT,null,!1),n="";e=t.nextNode();)n+=e.nodeValue;return n;default:return this.nodeValue}},set:function(e){switch(null==e&&(e=""),this.nodeType){case Node.ELEMENT_NODE:case Node.DOCUMENT_FRAGMENT_NODE:ne(this),(e.length>0||this.nodeType===Node.ELEMENT_NODE)&&this[K+"insertBefore"](document.createTextNode(e),void 0);break;default:this.nodeValue=e}}}}),Q(Node.prototype,["appendChild","insertBefore","removeChild","replaceChild","cloneNode","contains"]);var t={firstElementChild:{get:function(){return ee.currentNode=this,ee.firstChild()}},lastElementChild:{get:function(){return ee.currentNode=this,ee.lastChild()}},children:{get:function(){var e=[];ee.currentNode=this;for(var t=ee.firstChild();t;)e.push(t),t=ee.nextSibling();return T(e)}},childElementCount:{get:function(){return this.children?this.children.length:0}}};G?(Q(Element.prototype,re),Q(Element.prototype,["previousElementSibling","nextElementSibling","innerHTML"]),Object.getOwnPropertyDescriptor(HTMLElement.prototype,"children")&&Q(HTMLElement.prototype,["children"]),Object.getOwnPropertyDescriptor(HTMLElement.prototype,"innerHTML")&&Q(HTMLElement.prototype,["innerHTML"])):(J(Element.prototype,t),J(Element.prototype,{previousElementSibling:{get:function(){return ee.currentNode=this,ee.previousSibling()}},nextElementSibling:{get:function(){return ee.currentNode=this,ee.nextSibling()}},innerHTML:{get:function(){return V(this,function(e){return e[K+"childNodes"]})},set:function(e){var t="template"===this.localName?this.content:this;ne(t);var n,r=this.localName||"div";(n=this.namespaceURI&&this.namespaceURI!==te.namespaceURI?te.createElementNS(this.namespaceURI,r):te.createElement(r)).innerHTML=e;for(var o,i="template"===this.localName?n.content:n;o=i[K+"firstChild"];)t[K+"insertBefore"](o,void 0)}}})),Q(Element.prototype,["setAttribute","getAttribute","hasAttribute","removeAttribute","focus","blur"]),Q(Element.prototype,oe),Q(HTMLElement.prototype,["focus","blur","contains"]),G&&Q(HTMLElement.prototype,["parentElement","children","innerHTML"]),window.HTMLTemplateElement&&Q(window.HTMLTemplateElement.prototype,["innerHTML"]),G?Q(DocumentFragment.prototype,re):J(DocumentFragment.prototype,t),Q(DocumentFragment.prototype,oe),G?(Q(Document.prototype,re),Q(Document.prototype,["activeElement"])):J(Document.prototype,t),Q(Document.prototype,["importNode","getElementById"]),Q(Document.prototype,oe)}(),function(){$t(x);var e=pt.activeElement;Object.defineProperty(document,"_activeElement",e),O(Window.prototype,Gt,x)}(),c.noPatch||($t(),function(){if(!ve&&Object.getOwnPropertyDescriptor(Event.prototype,"isTrusted")){var e=function(){var e=new MouseEvent("click",{bubbles:!0,cancelable:!0,composed:!0});this[x+"dispatchEvent"](e)};Element.prototype.click?Element.prototype.click=e:HTMLElement.prototype.click&&(HTMLElement.prototype.click=e)}}()),!function(){for(var e in Ee)window[k+"addEventListener"](e,function(e){e.__target||(De(e),Ce(e))},!0)}(),window.Event=Le,window.CustomEvent=Re,window.MouseEvent=je,window.ShadowRoot=Ot}var Qt=new Set(["annotation-xml","color-profile","font-face","font-face-src","font-face-uri","font-face-format","font-face-name","missing-glyph"]);function Zt(e){var t=Qt.has(e),n=/^[a-z][.0-9_a-z]*-[\-.0-9_a-z]*$/.test(e);return!t&&n}function en(e){var t=e.isConnected;if(void 0!==t)return t;for(var n=e;n&&!(n.__CE_isImportDocument||n instanceof Document);)n=n.parentNode||(window.ShadowRoot&&n instanceof ShadowRoot?n.host:void 0);return!(!n||!(n.__CE_isImportDocument||n instanceof Document))}function tn(e,t){for(var n=t;n&&n!==e&&!n.nextSibling;)n=n.parentNode;return n&&n!==e?n.nextSibling:null}function nn(e,t){return t.firstChild?t.firstChild:tn(e,t)}function rn(e,t){for(var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:new Set,r=e;r;){if(r.nodeType===Node.ELEMENT_NODE){var o=r;t(o);var i=o.localName;if("link"===i&&"import"===o.getAttribute("rel")){var s=o.import;if(s instanceof Node&&!n.has(s)){n.add(s);for(var a=s.firstChild;a;a=a.nextSibling)rn(a,t,n)}r=tn(e,o);continue}if("template"===i){r=tn(e,o);continue}var l=o.__CE_shadowRoot;if(l)for(var c=l.firstChild;c;c=c.nextSibling)rn(c,t,n)}r=nn(e,r)}}function on(e,t,n){e[t]=n}var sn={custom:1,failed:2};function an(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}var ln=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this._localNameToDefinition=new Map,this._constructorToDefinition=new Map,this._patches=[],this._hasPatches=!1}var t,n,r;return t=e,(n=[{key:"setDefinition",value:function(e,t){this._localNameToDefinition.set(e,t),this._constructorToDefinition.set(t.constructorFunction,t)}},{key:"localNameToDefinition",value:function(e){return this._localNameToDefinition.get(e)}},{key:"constructorToDefinition",value:function(e){return this._constructorToDefinition.get(e)}},{key:"addPatch",value:function(e){this._hasPatches=!0,this._patches.push(e)}},{key:"patchTree",value:function(e){var t=this;this._hasPatches&&rn(e,function(e){return t.patch(e)})}},{key:"patch",value:function(e){if(this._hasPatches&&!e.__CE_patched){e.__CE_patched=!0;for(var t=0;t<this._patches.length;t++)this._patches[t](e)}}},{key:"connectTree",value:function(e){var t=[];rn(e,function(e){return t.push(e)});for(var n=0;n<t.length;n++){var r=t[n];r.__CE_state===sn.custom?this.connectedCallback(r):this.upgradeElement(r)}}},{key:"disconnectTree",value:function(e){var t=[];rn(e,function(e){return t.push(e)});for(var n=0;n<t.length;n++){var r=t[n];r.__CE_state===sn.custom&&this.disconnectedCallback(r)}}},{key:"patchAndUpgradeTree",value:function(e){var t=this,n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},r=n.visitedImports||new Set,o=n.upgrade||function(e){return t.upgradeElement(e)},i=[];if(rn(e,function(e){if("link"===e.localName&&"import"===e.getAttribute("rel")){var n=e.import;n instanceof Node&&(n.__CE_isImportDocument=!0,n.__CE_hasRegistry=!0),n&&"complete"===n.readyState?n.__CE_documentLoadHandled=!0:e.addEventListener("load",function(){var n=e.import;if(!n.__CE_documentLoadHandled){n.__CE_documentLoadHandled=!0;var i=new Set(r);i.delete(n),t.patchAndUpgradeTree(n,{visitedImports:i,upgrade:o})}})}else i.push(e)},r),this._hasPatches)for(var s=0;s<i.length;s++)this.patch(i[s]);for(var a=0;a<i.length;a++)o(i[a])}},{key:"upgradeElement",value:function(e){if(void 0===e.__CE_state){var t=e.ownerDocument;if(t.defaultView||t.__CE_isImportDocument&&t.__CE_hasRegistry){var n=this.localNameToDefinition(e.localName);if(n){n.constructionStack.push(e);var r=n.constructorFunction;try{try{if(new r!==e)throw new Error("The custom element constructor did not produce the element being upgraded.")}finally{n.constructionStack.pop()}}catch(t){throw e.__CE_state=sn.failed,t}if(e.__CE_state=sn.custom,e.__CE_definition=n,n.attributeChangedCallback)for(var o=n.observedAttributes,i=0;i<o.length;i++){var s=o[i],a=e.getAttribute(s);null!==a&&this.attributeChangedCallback(e,s,null,a,null)}en(e)&&this.connectedCallback(e)}}}}},{key:"connectedCallback",value:function(e){var t=e.__CE_definition;t.connectedCallback&&t.connectedCallback.call(e)}},{key:"disconnectedCallback",value:function(e){var t=e.__CE_definition;t.disconnectedCallback&&t.disconnectedCallback.call(e)}},{key:"attributeChangedCallback",value:function(e,t,n,r,o){var i=e.__CE_definition;i.attributeChangedCallback&&i.observedAttributes.indexOf(t)>-1&&i.attributeChangedCallback.call(e,t,n,r,o)}}])&&an(t.prototype,n),r&&an(t,r),e}();function cn(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}var un=function(){function e(t,n){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this._internals=t,this._document=n,this._observer=void 0,this._internals.patchAndUpgradeTree(this._document),"loading"===this._document.readyState&&(this._observer=new MutationObserver(this._handleMutations.bind(this)),this._observer.observe(this._document,{childList:!0,subtree:!0}))}var t,n,r;return t=e,(n=[{key:"disconnect",value:function(){this._observer&&this._observer.disconnect()}},{key:"_handleMutations",value:function(e){var t=this._document.readyState;"interactive"!==t&&"complete"!==t||this.disconnect();for(var n=0;n<e.length;n++)for(var r=e[n].addedNodes,o=0;o<r.length;o++){var i=r[o];this._internals.patchAndUpgradeTree(i)}}}])&&cn(t.prototype,n),r&&cn(t,r),e}();function fn(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}var dn=function(){function e(){var t=this;!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this._value=void 0,this._resolve=void 0,this._promise=new Promise(function(e){t._resolve=e,t._value&&e(t._value)})}var t,n,r;return t=e,(n=[{key:"resolve",value:function(e){if(this._value)throw new Error("Already resolved.");this._value=e,this._resolve&&this._resolve(e)}},{key:"toPromise",value:function(){return this._promise}}])&&fn(t.prototype,n),r&&fn(t,r),e}();function hn(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}var pn=function(){function e(t){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this._elementDefinitionIsRunning=!1,this._internals=t,this._whenDefinedDeferred=new Map,this._flushCallback=function(e){return e()},this._flushPending=!1,this._pendingDefinitions=[],this._documentConstructionObserver=new un(t,document)}var t,n,r;return t=e,(n=[{key:"define",value:function(e,t){var n,r,o,i,s,a=this;if(!(t instanceof Function))throw new TypeError("Custom element constructors must be functions.");if(!Zt(e))throw new SyntaxError("The element name '".concat(e,"' is not valid."));if(this._internals.localNameToDefinition(e))throw new Error("A custom element with name '".concat(e,"' has already been defined."));if(this._elementDefinitionIsRunning)throw new Error("A custom element is already being defined.");this._elementDefinitionIsRunning=!0;try{var l=function(e){var t=c[e];if(void 0!==t&&!(t instanceof Function))throw new Error("The '".concat(e,"' callback must be a function."));return t},c=t.prototype;if(!(c instanceof Object))throw new TypeError("The custom element constructor's prototype is not an object.");n=l("connectedCallback"),r=l("disconnectedCallback"),o=l("adoptedCallback"),i=l("attributeChangedCallback"),s=t.observedAttributes||[]}catch(e){return}finally{this._elementDefinitionIsRunning=!1}var u={localName:e,constructorFunction:t,connectedCallback:n,disconnectedCallback:r,adoptedCallback:o,attributeChangedCallback:i,observedAttributes:s,constructionStack:[]};this._internals.setDefinition(e,u),this._pendingDefinitions.push(u),this._flushPending||(this._flushPending=!0,this._flushCallback(function(){return a._flush()}))}},{key:"upgrade",value:function(e){this._internals.patchAndUpgradeTree(e)}},{key:"_flush",value:function(){var e=this;if(!1!==this._flushPending){this._flushPending=!1;for(var t=this._pendingDefinitions,n=[],r=new Map,o=0;o<t.length;o++)r.set(t[o].localName,[]);this._internals.patchAndUpgradeTree(document,{upgrade:function(t){if(void 0===t.__CE_state){var o=t.localName,i=r.get(o);i?i.push(t):e._internals.localNameToDefinition(o)&&n.push(t)}}});for(var i=0;i<n.length;i++)this._internals.upgradeElement(n[i]);for(;t.length>0;){for(var s=t.shift(),a=s.localName,l=r.get(s.localName),c=0;c<l.length;c++)this._internals.upgradeElement(l[c]);var u=this._whenDefinedDeferred.get(a);u&&u.resolve(void 0)}}}},{key:"get",value:function(e){var t=this._internals.localNameToDefinition(e);if(t)return t.constructorFunction}},{key:"whenDefined",value:function(e){if(!Zt(e))return Promise.reject(new SyntaxError("'".concat(e,"' is not a valid custom element name.")));var t=this._whenDefinedDeferred.get(e);if(t)return t.toPromise();var n=new dn;return this._whenDefinedDeferred.set(e,n),this._internals.localNameToDefinition(e)&&!this._pendingDefinitions.some(function(t){return t.localName===e})&&n.resolve(void 0),n.toPromise()}},{key:"polyfillWrapFlushCallback",value:function(e){this._documentConstructionObserver.disconnect();var t=this._flushCallback;this._flushCallback=function(n){return e(function(){return t(n)})}}}])&&hn(t.prototype,n),r&&hn(t,r),e}();window.CustomElementRegistry=pn,pn.prototype.define=pn.prototype.define,pn.prototype.upgrade=pn.prototype.upgrade,pn.prototype.get=pn.prototype.get,pn.prototype.whenDefined=pn.prototype.whenDefined,pn.prototype.polyfillWrapFlushCallback=pn.prototype.polyfillWrapFlushCallback;var vn={Document_createElement:window.Document.prototype.createElement,Document_createElementNS:window.Document.prototype.createElementNS,Document_importNode:window.Document.prototype.importNode,Document_prepend:window.Document.prototype.prepend,Document_append:window.Document.prototype.append,DocumentFragment_prepend:window.DocumentFragment.prototype.prepend,DocumentFragment_append:window.DocumentFragment.prototype.append,Node_cloneNode:window.Node.prototype.cloneNode,Node_appendChild:window.Node.prototype.appendChild,Node_insertBefore:window.Node.prototype.insertBefore,Node_removeChild:window.Node.prototype.removeChild,Node_replaceChild:window.Node.prototype.replaceChild,Node_textContent:Object.getOwnPropertyDescriptor(window.Node.prototype,"textContent"),Element_attachShadow:window.Element.prototype.attachShadow,Element_innerHTML:Object.getOwnPropertyDescriptor(window.Element.prototype,"innerHTML"),Element_getAttribute:window.Element.prototype.getAttribute,Element_setAttribute:window.Element.prototype.setAttribute,Element_removeAttribute:window.Element.prototype.removeAttribute,Element_getAttributeNS:window.Element.prototype.getAttributeNS,Element_setAttributeNS:window.Element.prototype.setAttributeNS,Element_removeAttributeNS:window.Element.prototype.removeAttributeNS,Element_insertAdjacentElement:window.Element.prototype.insertAdjacentElement,Element_insertAdjacentHTML:window.Element.prototype.insertAdjacentHTML,Element_prepend:window.Element.prototype.prepend,Element_append:window.Element.prototype.append,Element_before:window.Element.prototype.before,Element_after:window.Element.prototype.after,Element_replaceWith:window.Element.prototype.replaceWith,Element_remove:window.Element.prototype.remove,HTMLElement:window.HTMLElement,HTMLElement_innerHTML:Object.getOwnPropertyDescriptor(window.HTMLElement.prototype,"innerHTML"),HTMLElement_insertAdjacentElement:window.HTMLElement.prototype.insertAdjacentElement,HTMLElement_insertAdjacentHTML:window.HTMLElement.prototype.insertAdjacentHTML};var mn,yn=new function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e)},gn=function(e,t,n){function r(t){return function(){for(var n=[],r=[],o=arguments.length,i=new Array(o),s=0;s<o;s++)i[s]=arguments[s];for(var a=0;a<i.length;a++){var l=i[a];if(l instanceof Element&&en(l)&&r.push(l),l instanceof DocumentFragment)for(var c=l.firstChild;c;c=c.nextSibling)n.push(c);else n.push(l)}t.apply(this,i);for(var u=0;u<r.length;u++)e.disconnectTree(r[u]);if(en(this))for(var f=0;f<n.length;f++){var d=n[f];d instanceof Element&&e.connectTree(d)}}}void 0!==n.prepend&&on(t,"prepend",r(n.prepend)),void 0!==n.append&&on(t,"append",r(n.append))},_n=window.customElements;if(!_n||_n.forcePolyfill||"function"!=typeof _n.define||"function"!=typeof _n.get){var Sn=new ln;mn=Sn,window.HTMLElement=function(){function e(){var e=this.constructor,t=mn.constructorToDefinition(e);if(!t)throw new Error("The custom element being constructed was not registered with `customElements`.");var n=t.constructionStack;if(0===n.length){var r=vn.Document_createElement.call(document,t.localName);return Object.setPrototypeOf(r,e.prototype),r.__CE_state=sn.custom,r.__CE_definition=t,mn.patch(r),r}var o=n.length-1,i=n[o];if(i===yn)throw new Error("The HTMLElement constructor was either called reentrantly for this constructor or called multiple times.");var s=i;return n[o]=yn,Object.setPrototypeOf(s,e.prototype),mn.patch(s),s}return e.prototype=vn.HTMLElement.prototype,Object.defineProperty(e.prototype,"constructor",{writable:!0,configurable:!0,enumerable:!1,value:e}),e}(),function(e){on(Document.prototype,"createElement",function(t){if(this.__CE_hasRegistry){var n=e.localNameToDefinition(t);if(n)return new n.constructorFunction}var r=vn.Document_createElement.call(this,t);return e.patch(r),r}),on(Document.prototype,"importNode",function(t,n){var r=vn.Document_importNode.call(this,t,!!n);return this.__CE_hasRegistry?e.patchAndUpgradeTree(r):e.patchTree(r),r});on(Document.prototype,"createElementNS",function(t,n){if(this.__CE_hasRegistry&&(null===t||"http://www.w3.org/1999/xhtml"===t)){var r=e.localNameToDefinition(n);if(r)return new r.constructorFunction}var o=vn.Document_createElementNS.call(this,t,n);return e.patch(o),o}),gn(e,Document.prototype,{prepend:vn.Document_prepend,append:vn.Document_append})}(Sn),function(e){gn(e,DocumentFragment.prototype,{prepend:vn.DocumentFragment_prepend,append:vn.DocumentFragment_append})}(Sn),function(e){function t(t,n){Object.defineProperty(t,"textContent",{enumerable:n.enumerable,configurable:!0,get:n.get,set:function(t){if(this.nodeType!==Node.TEXT_NODE){var r=void 0;if(this.firstChild){var o=this.childNodes,i=o.length;if(i>0&&en(this)){r=new Array(i);for(var s=0;s<i;s++)r[s]=o[s]}}if(n.set.call(this,t),r)for(var a=0;a<r.length;a++)e.disconnectTree(r[a])}else n.set.call(this,t)}})}on(Node.prototype,"insertBefore",function(t,n){if(t instanceof DocumentFragment){var r=Array.prototype.slice.apply(t.childNodes),o=vn.Node_insertBefore.call(this,t,n);if(en(this))for(var i=0;i<r.length;i++)e.connectTree(r[i]);return o}var s=en(t),a=vn.Node_insertBefore.call(this,t,n);return s&&e.disconnectTree(t),en(this)&&e.connectTree(t),a}),on(Node.prototype,"appendChild",function(t){if(t instanceof DocumentFragment){var n=Array.prototype.slice.apply(t.childNodes),r=vn.Node_appendChild.call(this,t);if(en(this))for(var o=0;o<n.length;o++)e.connectTree(n[o]);return r}var i=en(t),s=vn.Node_appendChild.call(this,t);return i&&e.disconnectTree(t),en(this)&&e.connectTree(t),s}),on(Node.prototype,"cloneNode",function(t){var n=vn.Node_cloneNode.call(this,!!t);return this.ownerDocument.__CE_hasRegistry?e.patchAndUpgradeTree(n):e.patchTree(n),n}),on(Node.prototype,"removeChild",function(t){var n=en(t),r=vn.Node_removeChild.call(this,t);return n&&e.disconnectTree(t),r}),on(Node.prototype,"replaceChild",function(t,n){if(t instanceof DocumentFragment){var r=Array.prototype.slice.apply(t.childNodes),o=vn.Node_replaceChild.call(this,t,n);if(en(this)){e.disconnectTree(n);for(var i=0;i<r.length;i++)e.connectTree(r[i])}return o}var s=en(t),a=vn.Node_replaceChild.call(this,t,n),l=en(this);return l&&e.disconnectTree(n),s&&e.disconnectTree(t),l&&e.connectTree(t),a}),vn.Node_textContent&&vn.Node_textContent.get?t(Node.prototype,vn.Node_textContent):e.addPatch(function(e){t(e,{enumerable:!0,configurable:!0,get:function(){for(var e=[],t=0;t<this.childNodes.length;t++)e.push(this.childNodes[t].textContent);return e.join("")},set:function(e){for(;this.firstChild;)vn.Node_removeChild.call(this,this.firstChild);vn.Node_appendChild.call(this,document.createTextNode(e))}})})}(Sn),function(e){function t(t,n){Object.defineProperty(t,"innerHTML",{enumerable:n.enumerable,configurable:!0,get:n.get,set:function(t){var r=this,o=en(this),i=void 0;if(o&&(i=[],rn(this,function(e){e!==r&&i.push(e)})),n.set.call(this,t),i)for(var s=0;s<i.length;s++){var a=i[s];a.__CE_state===sn.custom&&e.disconnectedCallback(a)}return this.ownerDocument.__CE_hasRegistry?e.patchAndUpgradeTree(this):e.patchTree(this),t}})}function n(t,n){on(t,"insertAdjacentElement",function(t,r){var o=en(r),i=n.call(this,t,r);return o&&e.disconnectTree(r),en(i)&&e.connectTree(r),i})}function r(t,n){function r(t,n){for(var r=[],o=t;o!==n;o=o.nextSibling)r.push(o);for(var i=0;i<r.length;i++)e.patchAndUpgradeTree(r[i])}on(t,"insertAdjacentHTML",function(e,t){if("beforebegin"===(e=e.toLowerCase())){var o=this.previousSibling;n.call(this,e,t),r(o||this.parentNode.firstChild,this)}else if("afterbegin"===e){var i=this.firstChild;n.call(this,e,t),r(this.firstChild,i)}else if("beforeend"===e){var s=this.lastChild;n.call(this,e,t),r(s||this.firstChild,null)}else{if("afterend"!==e)throw new SyntaxError("The value provided (".concat(String(e),") is ")+"not one of 'beforebegin', 'afterbegin', 'beforeend', or 'afterend'.");var a=this.nextSibling;n.call(this,e,t),r(this.nextSibling,a)}})}vn.Element_attachShadow&&on(Element.prototype,"attachShadow",function(e){var t=vn.Element_attachShadow.call(this,e);return this.__CE_shadowRoot=t,t}),vn.Element_innerHTML&&vn.Element_innerHTML.get?t(Element.prototype,vn.Element_innerHTML):vn.HTMLElement_innerHTML&&vn.HTMLElement_innerHTML.get?t(HTMLElement.prototype,vn.HTMLElement_innerHTML):e.addPatch(function(e){t(e,{enumerable:!0,configurable:!0,get:function(){return vn.Node_cloneNode.call(this,!0).innerHTML},set:function(e){var t="template"===this.localName,n=t?this.content:this,r=vn.Document_createElementNS.call(document,this.namespaceURI,this.localName);for(r.innerHTML=e;n.childNodes.length>0;)vn.Node_removeChild.call(n,n.childNodes[0]);for(var o=t?r.content:r;o.childNodes.length>0;)vn.Node_appendChild.call(n,o.childNodes[0])}})}),on(Element.prototype,"setAttribute",function(t,n){if(this.__CE_state!==sn.custom)return vn.Element_setAttribute.call(this,t,n);var r=vn.Element_getAttribute.call(this,t);vn.Element_setAttribute.call(this,t,n),n=vn.Element_getAttribute.call(this,t),e.attributeChangedCallback(this,t,r,n,null)}),on(Element.prototype,"setAttributeNS",function(t,n,r){if(this.__CE_state!==sn.custom)return vn.Element_setAttributeNS.call(this,t,n,r);var o=vn.Element_getAttributeNS.call(this,t,n);vn.Element_setAttributeNS.call(this,t,n,r),r=vn.Element_getAttributeNS.call(this,t,n),e.attributeChangedCallback(this,n,o,r,t)}),on(Element.prototype,"removeAttribute",function(t){if(this.__CE_state!==sn.custom)return vn.Element_removeAttribute.call(this,t);var n=vn.Element_getAttribute.call(this,t);vn.Element_removeAttribute.call(this,t),null!==n&&e.attributeChangedCallback(this,t,n,null,null)}),on(Element.prototype,"removeAttributeNS",function(t,n){if(this.__CE_state!==sn.custom)return vn.Element_removeAttributeNS.call(this,t,n);var r=vn.Element_getAttributeNS.call(this,t,n);vn.Element_removeAttributeNS.call(this,t,n);var o=vn.Element_getAttributeNS.call(this,t,n);r!==o&&e.attributeChangedCallback(this,n,r,o,t)}),vn.HTMLElement_insertAdjacentElement?n(HTMLElement.prototype,vn.HTMLElement_insertAdjacentElement):vn.Element_insertAdjacentElement?n(Element.prototype,vn.Element_insertAdjacentElement):console.warn("Custom Elements: `Element#insertAdjacentElement` was not patched."),vn.HTMLElement_insertAdjacentHTML?r(HTMLElement.prototype,vn.HTMLElement_insertAdjacentHTML):vn.Element_insertAdjacentHTML?r(Element.prototype,vn.Element_insertAdjacentHTML):console.warn("Custom Elements: `Element#insertAdjacentHTML` was not patched."),gn(e,Element.prototype,{prepend:vn.Element_prepend,append:vn.Element_append}),function(e,t,n){function r(t){return function(){for(var n=[],r=[],o=arguments.length,i=new Array(o),s=0;s<o;s++)i[s]=arguments[s];for(var a=0;a<i.length;a++){var l=i[a];if(l instanceof Element&&en(l)&&r.push(l),l instanceof DocumentFragment)for(var c=l.firstChild;c;c=c.nextSibling)n.push(c);else n.push(l)}t.apply(this,i);for(var u=0;u<r.length;u++)e.disconnectTree(r[u]);if(en(this))for(var f=0;f<n.length;f++){var d=n[f];d instanceof Element&&e.connectTree(d)}}}void 0!==n.before&&on(t,"before",r(n.before)),void 0!==n.before&&on(t,"after",r(n.after)),void 0!==n.replaceWith&&on(t,"replaceWith",function(){for(var t=[],r=[],o=arguments.length,i=new Array(o),s=0;s<o;s++)i[s]=arguments[s];for(var a=0;a<i.length;a++){var l=i[a];if(l instanceof Element&&en(l)&&r.push(l),l instanceof DocumentFragment)for(var c=l.firstChild;c;c=c.nextSibling)t.push(c);else t.push(l)}var u=en(this);n.replaceWith.apply(this,i);for(var f=0;f<r.length;f++)e.disconnectTree(r[f]);if(u){e.disconnectTree(this);for(var d=0;d<t.length;d++){var h=t[d];h instanceof Element&&e.connectTree(h)}}}),void 0!==n.remove&&on(t,"remove",function(){var t=en(this);n.remove.call(this),t&&e.disconnectTree(this)})}(e,Element.prototype,{before:vn.Element_before,after:vn.Element_after,replaceWith:vn.Element_replaceWith,remove:vn.Element_remove})}(Sn),document.__CE_hasRegistry=!0;var bn=new pn(Sn);Object.defineProperty(window,"customElements",{configurable:!0,enumerable:!0,value:bn})}var En=function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.start=0,this.end=0,this.previous=null,this.parent=null,this.rules=null,this.parsedCssText="",this.cssText="",this.atRule=!1,this.type=0,this.keyframesName="",this.selector="",this.parsedSelector=""};function wn(e){return function e(t,n){var r=n.substring(t.start,t.end-1);t.parsedCssText=t.cssText=r.trim();if(t.parent){var o=t.previous?t.previous.end:t.parent.start;r=(r=(r=function(e){return e.replace(/\\([0-9a-f]{1,6})\s/gi,function(){for(var e=arguments[1],t=6-e.length;t--;)e="0"+e;return"\\"+e})}(r=n.substring(o,t.start-1))).replace(An.multipleSpaces," ")).substring(r.lastIndexOf(";")+1);var i=t.parsedSelector=t.selector=r.trim();t.atRule=0===i.indexOf(Ln),t.atRule?0===i.indexOf(Dn)?t.type=xn.MEDIA_RULE:i.match(An.keyframesRule)&&(t.type=xn.KEYFRAMES_RULE,t.keyframesName=t.selector.split(An.multipleSpaces).pop()):0===i.indexOf(Mn)?t.type=xn.MIXIN_RULE:t.type=xn.STYLE_RULE}var s=t.rules;if(s)for(var a,l=0,c=s.length;l<c&&(a=s[l]);l++)e(a,n);return t}(function(e){var t=new En;t.start=0,t.end=e.length;for(var n=t,r=0,o=e.length;r<o;r++)if(e[r]===On){n.rules||(n.rules=[]);var i=n,s=i.rules[i.rules.length-1]||null;(n=new En).start=r+1,n.parent=i,n.previous=s,i.rules.push(n)}else e[r]===Pn&&(n.end=r+1,n=n.parent||t);return t}(e=e.replace(An.comments,"").replace(An.port,"")),e)}function Nn(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"",r="";if(e.cssText||e.rules){var o=e.rules;if(o&&!function(e){var t=e[0];return Boolean(t)&&Boolean(t.selector)&&0===t.selector.indexOf(Mn)}(o))for(var i,s=0,a=o.length;s<a&&(i=o[s]);s++)r=Nn(i,t,r);else(r=(r=t?e.cssText:function(e){return function(e){return e.replace(An.mixinApply,"").replace(An.varApply,"")}(e=Cn(e))}(e.cssText)).trim())&&(r="  "+r+"\n")}return r&&(e.selector&&(n+=e.selector+" "+On+"\n"),n+=r,e.selector&&(n+=Pn+"\n\n")),n}function Cn(e){return e.replace(An.customProp,"").replace(An.mixinProp,"")}var Tn,kn,xn={STYLE_RULE:1,KEYFRAMES_RULE:7,MEDIA_RULE:4,MIXIN_RULE:1e3},On="{",Pn="}",An={comments:/\/\*[^*]*\*+([^\/*][^*]*\*+)*\//gim,port:/@import[^;]*;/gim,customProp:/(?:^[^;\-\s}]+)?--[^;{}]*?:[^{};]*?(?:[;\n]|$)/gim,mixinProp:/(?:^[^;\-\s}]+)?--[^;{}]*?:[^{};]*?{[^}]*?}(?:[;\n]|$)?/gim,mixinApply:/@apply\s*\(?[^);]*\)?\s*(?:[;\n]|$)?/gim,varApply:/[^;:]*?:[^;]*?var\([^;]*\)(?:[;\n]|$)?/gim,keyframesRule:/^@[^\s]*keyframes/,multipleSpaces:/\s+/g},Mn="--",Dn="@media",Ln="@",Rn=!(window.ShadyDOM&&window.ShadyDOM.inUse);function jn(e){Tn=(!e||!e.shimcssproperties)&&(Rn||Boolean(!navigator.userAgent.match(/AppleWebKit\/601|Edge\/15/)&&window.CSS&&CSS.supports&&CSS.supports("box-shadow","0 0 0 var(--foo)")))}window.ShadyCSS&&void 0!==window.ShadyCSS.cssBuild&&(kn=window.ShadyCSS.cssBuild);var In=Boolean(window.ShadyCSS&&window.ShadyCSS.disableRuntime);window.ShadyCSS&&void 0!==window.ShadyCSS.nativeCss?Tn=window.ShadyCSS.nativeCss:window.ShadyCSS?(jn(window.ShadyCSS),window.ShadyCSS=void 0):jn(window.WebComponents&&window.WebComponents.flags);var Hn=Tn,Fn=/(?:^|[;\s{]\s*)(--[\w-]*?)\s*:\s*(?:((?:'(?:\\'|.)*?'|"(?:\\"|.)*?"|\([^)]*?\)|[^};{])+)|\{([^}]*)\}(?:(?=[;\s}])|$))/gi,Bn=/(?:^|\W+)@apply\s*\(?([^);\n]*)\)?/gi,Un=/(--[\w-]+)\s*([:,;)]|$)/gi,qn=/(animation\s*:)|(animation-name\s*:)/,Wn=/@media\s(.*)/,Vn=/\{[^}]*\}/g,Gn=new Set,Kn="shady-unscoped";function zn(e){var t=e.textContent;if(!Gn.has(t)){Gn.add(t);var n=e.cloneNode(!0);document.head.appendChild(n)}}function Yn(e){return e.hasAttribute(Kn)}function Xn(e,t){return e?("string"==typeof e&&(e=wn(e)),t&&Qn(e,t),Nn(e,Hn)):""}function $n(e){return!e.__cssRules&&e.textContent&&(e.__cssRules=wn(e.textContent)),e.__cssRules||null}function Jn(e){return Boolean(e.parent)&&e.parent.type===xn.KEYFRAMES_RULE}function Qn(e,t,n,r){if(e){var o=!1,i=e.type;if(r&&i===xn.MEDIA_RULE){var s=e.selector.match(Wn);s&&(window.matchMedia(s[1]).matches||(o=!0))}i===xn.STYLE_RULE?t(e):n&&i===xn.KEYFRAMES_RULE?n(e):i===xn.MIXIN_RULE&&(o=!0);var a=e.rules;if(a&&!o)for(var l,c=0,u=a.length;c<u&&(l=a[c]);c++)Qn(l,t,n,r)}}function Zn(e,t,n,r){var o=function(e,t){var n=document.createElement("style");t&&n.setAttribute("scope",t);return n.textContent=e,n}(e,t);return tr(o,n,r),o}var er=null;function tr(e,t,n){t=t||document.head;var r=n&&n.nextSibling||t.firstChild;(t.insertBefore(e,r),er)?e.compareDocumentPosition(er)===Node.DOCUMENT_POSITION_PRECEDING&&(er=e):er=e}function nr(e,t){for(var n=0,r=t,o=e.length;r<o;r++)if("("===e[r])n++;else if(")"===e[r]&&0==--n)return r;return-1}function rr(e,t){Rn?e.setAttribute("class",t):window.ShadyDOM.nativeMethods.setAttribute.call(e,"class",t)}var or=window.ShadyDOM&&window.ShadyDOM.wrap||function(e){return e};function ir(e){var t=e.localName,n="",r="";return t?t.indexOf("-")>-1?n=t:(r=t,n=e.getAttribute&&e.getAttribute("is")||""):(n=e.is,r=e.extends),{is:n,typeExtension:r}}function sr(e){for(var t=[],n="",r=0;r>=0&&r<e.length;r++)if("("===e[r]){var o=nr(e,r);n+=e.slice(r,o+1),r=o}else","===e[r]?(t.push(n),n=""):n+=e[r];return n&&t.push(n),t}var ar="css-build";function lr(e){if(void 0!==kn)return kn;if(void 0===e.__cssBuild){var t=e.getAttribute(ar);if(t)e.__cssBuild=t;else{var n=function(e){var t="template"===e.localName?e.content.firstChild:e.firstChild;if(t instanceof Comment){var n=t.textContent.trim().split(":");if(n[0]===ar)return n[1]}return""}(e);""!==n&&function(e){var t="template"===e.localName?e.content.firstChild:e.firstChild;t.parentNode.removeChild(t)}(e),e.__cssBuild=n}}return e.__cssBuild||""}function cr(e){return""!==lr(e)}function ur(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"";return!(""===e||!Hn)&&(Rn?"shadow"===e:"shady"===e)}function fr(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}var dr=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e)}var t,n,r;return t=e,(n=[{key:"dom",value:function(e,t,n){var r=this;this._transformDom(e,function(e){r.element(e,t||"",n)})}},{key:"domAddScope",value:function(e,t){var n=this;this._transformDom(e,function(e){n.element(e,t||"")})}},{key:"_transformDom",value:function(e,t){var n;if(e.nodeType===Node.ELEMENT_NODE&&t(e),"template"===e.localName){var r=e;n=(r.content||r._content||r).childNodes}else n=e.children||e.childNodes;if(n)for(var o=0;o<n.length;o++)this._transformDom(n[o],t)}},{key:"element",value:function(e,t,n){if(t)if(e.classList)n?(e.classList.remove("style-scope"),e.classList.remove(t)):(e.classList.add("style-scope"),e.classList.add(t));else if(e.getAttribute){var r=e.getAttribute(kr);if(n){if(r)rr(e,r.replace("style-scope","").replace(t,""))}else rr(e,(r?r+" ":"")+"style-scope "+t)}}},{key:"domReplaceScope",value:function(e,t,n){var r=this;this._transformDom(e,function(e){r.element(e,t,!0),r.element(e,n)})}},{key:"domRemoveScope",value:function(e,t){var n=this;this._transformDom(e,function(e){n.element(e,t||"",!0)})}},{key:"elementStyles",value:function(e,t,n){var r=arguments.length>3&&void 0!==arguments[3]?arguments[3]:"",o=arguments.length>4&&void 0!==arguments[4]?arguments[4]:"";if(""===o)if(Rn||"shady"===r)o=Xn(t,n);else{var i=ir(e),s=i.is,a=i.typeExtension;o=this.css(t,s,a,n)+"\n\n"}return o.trim()}},{key:"css",value:function(e,t,n,r){var o=this._calcHostScope(t,n);t=this._calcElementScope(t);var i=this;return Xn(e,function(e){e.isScoped||(i.rule(e,t,o),e.isScoped=!0),r&&r(e,t,o)})}},{key:"_calcElementScope",value:function(e){return e?Cr+e:""}},{key:"_calcHostScope",value:function(e,t){return t?"[is=".concat(e,"]"):e}},{key:"rule",value:function(e,t,n){this._transformRule(e,this._transformComplexSelector,t,n)}},{key:"_transformRule",value:function(e,t,n,r){e.selector=e.transformedSelector=this._transformRuleCss(e,t,n,r)}},{key:"_transformRuleCss",value:function(e,t,n,r){var o=sr(e.selector);if(!Jn(e))for(var i,s=0,a=o.length;s<a&&(i=o[s]);s++)o[s]=t.call(this,i,n,r);return o.filter(function(e){return Boolean(e)}).join(vr)}},{key:"_twiddleNthPlus",value:function(e){return e.replace(hr,function(e,t,n){return n.indexOf("+")>-1?n=n.replace(/\+/g,"___"):n.indexOf("___")>-1&&(n=n.replace(/___/g,"+")),":".concat(t,"(").concat(n,")")})}},{key:"_preserveMatchesPseudo",value:function(e){for(var t,n=[];t=e.match(Or);){var r=t.index,o=nr(e,r);if(-1===o)throw new Error("".concat(t.input," selector missing ')'"));var i=e.slice(r,o+1);e=e.replace(i,Pr),n.push(i)}return{selector:e,matches:n}}},{key:"_replaceMatchesPseudo",value:function(e,t){var n=e.split(Pr);return t.reduce(function(e,t,r){return e+t+n[r+1]},n[0])}},{key:"_transformComplexSelector",value:function(e,t,n){var r=this,o=!1;e=e.trim();var i=hr.test(e);i&&(e=e.replace(hr,function(e,t,n){return":".concat(t,"(").concat(n.replace(/\s/g,""),")")}),e=this._twiddleNthPlus(e));var s,a=Or.test(e);if(a){var l=this._preserveMatchesPseudo(e);e=l.selector,s=l.matches}return e=(e=e.replace(br,"".concat(gr," $1"))).replace(mr,function(e,i,s){if(!o){var a=r._transformCompoundSelector(s,i,t,n);o=o||a.stop,i=a.combinator,s=a.value}return i+s}),a&&(e=this._replaceMatchesPseudo(e,s)),i&&(e=this._twiddleNthPlus(e)),e}},{key:"_transformCompoundSelector",value:function(e,t,n,r){var o=e.indexOf(Sr);e.indexOf(gr)>=0?e=this._transformHostSelector(e,r):0!==o&&(e=n?this._transformSimpleSelector(e,n):e);var i,s=!1;return o>=0&&(t="",s=!0),s&&(i=!0,s&&(e=e.replace(wr,function(e,t){return" > ".concat(t)}))),{value:e=e.replace(Nr,function(e,t,n){return'[dir="'.concat(n,'"] ').concat(t,", ").concat(t,'[dir="').concat(n,'"]')}),combinator:t,stop:i}}},{key:"_transformSimpleSelector",value:function(e,t){for(var n=e.split(/(\[.+?\])/),r=[],o=0;o<n.length;o++)if(o%2==1)r.push(n[o]);else{var i=n[o];if(""!==i||o!==n.length-1){var s=i.split(Tr);s[0]+=t,r.push(s.join(Tr))}}return r.join("")}},{key:"_transformHostSelector",value:function(e,t){var n=e.match(Er),r=n&&n[2].trim()||"";return r?r[0].match(yr)?e.replace(Er,function(e,n,r){return t+r}):r.split(yr)[0]===t?r:xr:e.replace(gr,t)}},{key:"documentRule",value:function(e){e.selector=e.parsedSelector,this.normalizeRootSelector(e),this._transformRule(e,this._transformDocumentSelector)}},{key:"normalizeRootSelector",value:function(e){e.selector===_r&&(e.selector="html")}},{key:"_transformDocumentSelector",value:function(e){return e.match(gr)?"":e.match(Sr)?this._transformComplexSelector(e,pr):this._transformSimpleSelector(e.trim(),pr)}},{key:"SCOPE_NAME",get:function(){return"style-scope"}}])&&fr(t.prototype,n),r&&fr(t,r),e}(),hr=/:(nth[-\w]+)\(([^)]+)\)/,pr=":not(.".concat("style-scope",")"),vr=",",mr=/(^|[\s>+~]+)((?:\[.+?\]|[^\s>+~=[])+)/g,yr=/[[.:#*]/,gr=":host",_r=":root",Sr="::slotted",br=new RegExp("^(".concat(Sr,")")),Er=/(:host)(?:\(((?:\([^)(]*\)|[^)(]*)+?)\))/,wr=/(?:::slotted)(?:\(((?:\([^)(]*\)|[^)(]*)+?)\))/,Nr=/(.*):dir\((?:(ltr|rtl))\)/,Cr=".",Tr=":",kr="class",xr="should_not_match",Or=/:(?:matches|any|-(?:webkit|moz)-any)/,Pr="",Ar=new dr;function Mr(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function Dr(e,t,n){return t&&Mr(e.prototype,t),n&&Mr(e,n),e}var Lr=function(){function e(t,n,r,o,i,s){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.styleRules=t||null,this.placeholder=n||null,this.ownStylePropertyNames=r||[],this.overrideStyleProperties=null,this.elementName=o||"",this.cssBuild=s||"",this.typeExtension=i||"",this.styleProperties=null,this.scopeSelector=null,this.customStyle=null}return Dr(e,null,[{key:"get",value:function(e){return e?e.__styleInfo:null}},{key:"set",value:function(e,t){return e.__styleInfo=t,t}}]),Dr(e,[{key:"_getStyleRules",value:function(){return this.styleRules}}]),e}();function Rr(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}Lr.prototype._getStyleRules=Lr.prototype._getStyleRules;var jr=function(e){var t=this.matches||this.matchesSelector||this.mozMatchesSelector||this.msMatchesSelector||this.oMatchesSelector||this.webkitMatchesSelector;return t&&t.call(this,e)},Ir=navigator.userAgent.match("Trident");var Hr=new(function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e)}var t,n,r;return t=e,(n=[{key:"decorateStyles",value:function(e){var t=this,n={},r=[],o=0;Qn(e,function(e){t.decorateRule(e),e.index=o++,t.collectPropertiesInCssText(e.propertyInfo.cssText,n)},function(e){r.push(e)}),e._keyframes=r;var i=[];for(var s in n)i.push(s);return i}},{key:"decorateRule",value:function(e){if(e.propertyInfo)return e.propertyInfo;var t={},n={};return this.collectProperties(e,n)&&(t.properties=n,e.rules=null),t.cssText=this.collectCssText(e),e.propertyInfo=t,t}},{key:"collectProperties",value:function(e,t){var n=e.propertyInfo;if(!n){for(var r,o,i,s=Fn,a=e.parsedCssText;r=s.exec(a);)"inherit"===(o=(r[2]||r[3]).trim())&&"unset"===o||(t[r[1].trim()]=o),i=!0;return i}if(n.properties)return Object.assign(t,n.properties),!0}},{key:"collectCssText",value:function(e){return this.collectConsumingCssText(e.parsedCssText)}},{key:"collectConsumingCssText",value:function(e){return e.replace(Vn,"").replace(Fn,"")}},{key:"collectPropertiesInCssText",value:function(e,t){for(var n;n=Un.exec(e);){var r=n[1];":"!==n[2]&&(t[r]=!0)}}},{key:"reify",value:function(e){for(var t,n=Object.getOwnPropertyNames(e),r=0;r<n.length;r++)e[t=n[r]]=this.valueForProperty(e[t],e)}},{key:"valueForProperty",value:function(e,t){if(e)if(e.indexOf(";")>=0)e=this.valueForProperties(e,t);else{var n=this;e=function e(t,n){var r=t.indexOf("var(");if(-1===r)return n(t,"","","");var o=nr(t,r+3),i=t.substring(r+4,o),s=t.substring(0,r),a=e(t.substring(o+1),n),l=i.indexOf(",");return-1===l?n(s,i.trim(),"",a):n(s,i.substring(0,l).trim(),i.substring(l+1).trim(),a)}(e,function(e,r,o,i){if(!r)return e+i;var s=n.valueForProperty(t[r],t);return s&&"initial"!==s?"apply-shim-inherit"===s&&(s="inherit"):s=n.valueForProperty(t[o]||o,t)||o,e+(s||"")+i})}return e&&e.trim()||""}},{key:"valueForProperties",value:function(e,t){for(var n,r,o=e.split(";"),i=0;i<o.length;i++)if(n=o[i]){if(Bn.lastIndex=0,r=Bn.exec(n))n=this.valueForProperty(t[r[1]],t);else{var s=n.indexOf(":");if(-1!==s){var a=n.substring(s);a=a.trim(),a=this.valueForProperty(a,t)||a,n=n.substring(0,s)+a}}o[i]=n&&n.lastIndexOf(";")===n.length-1?n.slice(0,-1):n||""}return o.join(";")}},{key:"applyProperties",value:function(e,t){var n="";e.propertyInfo||this.decorateRule(e),e.propertyInfo.cssText&&(n=this.valueForProperties(e.propertyInfo.cssText,t)),e.cssText=n}},{key:"applyKeyframeTransforms",value:function(e,t){var n=e.cssText,r=e.cssText;if(null==e.hasAnimations&&(e.hasAnimations=qn.test(n)),e.hasAnimations)if(null==e.keyframeNamesToTransform)for(var o in e.keyframeNamesToTransform=[],t)n!==(r=(0,t[o])(n))&&(n=r,e.keyframeNamesToTransform.push(o));else{for(var i=0;i<e.keyframeNamesToTransform.length;++i)n=(0,t[e.keyframeNamesToTransform[i]])(n);r=n}e.cssText=r}},{key:"propertyDataFromStyles",value:function(e,t){var n=this,r={},o=[];return Qn(e,function(e){e.propertyInfo||n.decorateRule(e);var i=e.transformedSelector||e.parsedSelector;t&&e.propertyInfo.properties&&i&&jr.call(t,i)&&(n.collectProperties(e,r),function(e,t){var n=parseInt(e/32,10),r=1<<e%32;t[n]=(t[n]||0)|r}(e.index,o))},null,!0),{properties:r,key:o}}},{key:"whenHostOrRootRule",value:function(e,t,n,r){if(t.propertyInfo||this.decorateRule(t),t.propertyInfo.properties){var o=ir(e),i=o.is,s=o.typeExtension,a=i?Ar._calcHostScope(i,s):"html",l=t.parsedSelector,c=":host > *"===l||"html"===l,u=0===l.indexOf(":host")&&!c;if("shady"===n&&(u=!(c=l===a+" > *."+a||-1!==l.indexOf("html"))&&0===l.indexOf(a)),c||u){var f=a;u&&(t.transformedSelector||(t.transformedSelector=Ar._transformRuleCss(t,Ar._transformComplexSelector,Ar._calcElementScope(i),a)),f=t.transformedSelector||a),r({selector:f,isHost:u,isRoot:c})}}}},{key:"hostAndRootPropertiesForScope",value:function(e,t,n){var r=this,o={},i={};return Qn(t,function(t){r.whenHostOrRootRule(e,t,n,function(n){var s=e._element||e;jr.call(s,n.selector)&&(n.isHost?r.collectProperties(t,o):r.collectProperties(t,i))})},null,!0),{rootProps:i,hostProps:o}}},{key:"transformStyles",value:function(e,t,n){var r=this,o=ir(e),i=o.is,s=o.typeExtension,a=Ar._calcHostScope(i,s),l=e.extends?"\\"+a.slice(0,-1)+"\\]":a,c=new RegExp("(?:^|[^.#[:])"+l+"($|[.:[\\s>+~])"),u=Lr.get(e),f=u.styleRules,d=u.cssBuild,h=this._elementKeyframeTransforms(e,f,n);return Ar.elementStyles(e,f,function(e){r.applyProperties(e,t),Rn||Jn(e)||!e.cssText||(r.applyKeyframeTransforms(e,h),r._scopeSelector(e,c,a,n))},d)}},{key:"_elementKeyframeTransforms",value:function(e,t,n){var r=t._keyframes,o={};if(!Rn&&r)for(var i=0,s=r[i];i<r.length;s=r[++i])this._scopeKeyframes(s,n),o[s.keyframesName]=this._keyframesRuleTransformer(s);return o}},{key:"_keyframesRuleTransformer",value:function(e){return function(t){return t.replace(e.keyframesNameRx,e.transformedKeyframesName)}}},{key:"_scopeKeyframes",value:function(e,t){e.keyframesNameRx=new RegExp("\\b".concat(e.keyframesName,"(?!\\B|-)"),"g"),e.transformedKeyframesName=e.keyframesName+"-"+t,e.transformedSelector=e.transformedSelector||e.selector,e.selector=e.transformedSelector.replace(e.keyframesName,e.transformedKeyframesName)}},{key:"_scopeSelector",value:function(e,t,n,r){e.transformedSelector=e.transformedSelector||e.selector;for(var o,i="."+r,s=sr(e.transformedSelector),a=0,l=s.length;a<l&&(o=s[a]);a++)s[a]=o.match(t)?o.replace(n,i):i+" "+o;e.selector=s.join(",")}},{key:"applyElementScopeSelector",value:function(e,t,n){var r=e.getAttribute("class")||"",o=r;n&&(o=r.replace(new RegExp("\\s*x-scope\\s*"+n+"\\s*","g")," ")),r!==(o+=(o?" ":"")+"x-scope "+t)&&rr(e,o)}},{key:"applyElementStyle",value:function(e,t,n,r){var o=r?r.textContent||"":this.transformStyles(e,t,n),i=Lr.get(e),s=i.customStyle;return s&&!Rn&&s!==r&&(s._useCount--,s._useCount<=0&&s.parentNode&&s.parentNode.removeChild(s)),Rn?i.customStyle?(i.customStyle.textContent=o,r=i.customStyle):o&&(r=Zn(o,n,e.shadowRoot,i.placeholder)):r?r.parentNode||(Ir&&o.indexOf("@media")>-1&&(r.textContent=o),tr(r,null,i.placeholder)):o&&(r=Zn(o,n,null,i.placeholder)),r&&(r._useCount=r._useCount||0,i.customStyle!=r&&r._useCount++,i.customStyle=r),r}},{key:"applyCustomStyle",value:function(e,t){var n=$n(e),r=this;e.textContent=Xn(n,function(e){var n=e.cssText=e.parsedCssText;e.propertyInfo&&e.propertyInfo.cssText&&(n=Cn(n),e.cssText=r.valueForProperties(n,t))})}},{key:"XSCOPE_NAME",get:function(){return"x-scope"}}])&&Rr(t.prototype,n),r&&Rr(t,r),e}()),Fr={};function Br(e){return Fr[e]||null}function Ur(e){var t,n,r,o;Fr[e]||(Fr[e]=(t=e,n=document.createComment(" Shady DOM styles for "+t+" "),r=er?er.nextSibling:null,(o=document.head).insertBefore(n,r||o.firstChild),er=n,n))}var qr=window.customElements;if(qr&&!Rn&&!In){var Wr=qr.define;qr.define=function(e,t,n){Ur(e),Wr.call(qr,e,t,n)}}function Vr(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}var Gr=function(){function e(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:100;!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.cache={},this.typeMax=t}var t,n,r;return t=e,(n=[{key:"_validate",value:function(e,t,n){for(var r=0;r<n.length;r++){var o=n[r];if(e.properties[o]!==t[o])return!1}return!0}},{key:"store",value:function(e,t,n,r){var o=this.cache[e]||[];o.push({properties:t,styleElement:n,scopeSelector:r}),o.length>this.typeMax&&o.shift(),this.cache[e]=o}},{key:"fetch",value:function(e,t,n){var r=this.cache[e];if(r)for(var o=r.length-1;o>=0;o--){var i=r[o];if(this._validate(i,t,n))return i}}}])&&Vr(t.prototype,n),r&&Vr(t,r),e}(),Kr=function(){};var zr=new RegExp("".concat(Ar.SCOPE_NAME,"\\s*([^\\s]*)"));function Yr(e){var t=function(e){return e.classList&&e.classList.value?e.classList.value:e.getAttribute("class")||""}(e).match(zr);return t?t[1]:""}function Xr(e){var t=or(e).getRootNode();if(t===e||t===e.ownerDocument)return"";var n=t.host;return n?ir(n).is:""}function $r(e){for(var t=window.ShadyDOM.nativeMethods.querySelectorAll.call(e,":not(.".concat(Ar.SCOPE_NAME,")")),n=0;n<t.length;n++){var r=t[n],o=Xr(r);o&&Ar.element(r,o)}}function Jr(e){for(var t=0;t<e.length;t++){var n=e[t];if(n.target!==document.documentElement&&n.target!==document.head)for(var r=0;r<n.addedNodes.length;r++){var o=n.addedNodes[r];if(o.nodeType===Node.ELEMENT_NODE){var i=(o=o).getRootNode(),s=Yr(o);if(s&&i===o.ownerDocument&&("style"!==(l=o).localName&&"template"!==l.localName||!cr(l)))Ar.domRemoveScope(o,s);else if(i instanceof ShadowRoot){var a=Xr(o);a!==s&&Ar.domReplaceScope(o,s,a),$r(o)}}}}var l}if(!(Rn||window.ShadyDOM&&window.ShadyDOM.handlesDynamicScoping)){var Qr=new MutationObserver(Jr),Zr=function(e){Qr.observe(e,{childList:!0,subtree:!0})};if(window.customElements&&!window.customElements.polyfillWrapFlushCallback)Zr(document);else{var eo=function(){Zr(document.body)};window.HTMLImports?window.HTMLImports.whenReady(eo):requestAnimationFrame(function(){if("loading"===document.readyState){document.addEventListener("readystatechange",function e(){eo(),document.removeEventListener("readystatechange",e)})}else eo()})}Kr=function(){Jr(Qr.takeRecords())}}var to={},no="_applyShimCurrentVersion",ro="_applyShimNextVersion",oo="_applyShimValidatingVersion",io=Promise.resolve();function so(e){var t=to[e];t&&function(e){e[no]=e[no]||0,e[oo]=e[oo]||0,e[ro]=(e[ro]||0)+1}(t)}function ao(e){return e[no]===e[ro]}function lo(e){return!ao(e)&&e[oo]===e[ro]}function co(e){e[oo]=e[ro],e._validating||(e._validating=!0,io.then(function(){e[no]=e[ro],e._validating=!1}))}var uo,fo=null,ho=window.HTMLImports&&window.HTMLImports.whenReady||null;function po(e){requestAnimationFrame(function(){ho?ho(e):(fo||(fo=new Promise(function(e){uo=e}),"complete"===document.readyState?uo():document.addEventListener("readystatechange",function(){"complete"===document.readyState&&uo()})),fo.then(function(){e&&e()}))})}function vo(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}var mo="__shadyCSSCachedStyle",yo=null,go=null,_o=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.customStyles=[],this.enqueued=!1,po(function(){window.ShadyCSS.flushCustomStyles&&window.ShadyCSS.flushCustomStyles()})}var t,n,r;return t=e,(n=[{key:"enqueueDocumentValidation",value:function(){!this.enqueued&&go&&(this.enqueued=!0,po(go))}},{key:"addCustomStyle",value:function(e){e.__seenByShadyCSS||(e.__seenByShadyCSS=!0,this.customStyles.push(e),this.enqueueDocumentValidation())}},{key:"getStyleForCustomStyle",value:function(e){return e[mo]?e[mo]:e.getStyle?e.getStyle():e}},{key:"processStyles",value:function(){for(var e=this.customStyles,t=0;t<e.length;t++){var n=e[t];if(!n[mo]){var r=this.getStyleForCustomStyle(n);if(r){var o=r.__appliedElement||r;yo&&yo(o),n[mo]=o}}}return e}}])&&vo(t.prototype,n),r&&vo(t,r),e}();function So(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}_o.prototype.addCustomStyle=_o.prototype.addCustomStyle,_o.prototype.getStyleForCustomStyle=_o.prototype.getStyleForCustomStyle,_o.prototype.processStyles=_o.prototype.processStyles,Object.defineProperties(_o.prototype,{transformCallback:{get:function(){return yo},set:function(e){yo=e}},validateCallback:{get:function(){return go},set:function(e){var t=!1;go||(t=!0),go=e,t&&this.enqueueDocumentValidation()}}});var bo={},Eo=new Gr,wo=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this._scopeCounter={},this._documentOwner=document.documentElement;var t=new En;t.rules=[],this._documentOwnerStyleInfo=Lr.set(this._documentOwner,new Lr(t)),this._elementsHaveApplied=!1,this._applyShim=null,this._customStyleInterface=null}var t,n,r;return t=e,(n=[{key:"flush",value:function(){Kr()}},{key:"_generateScopeSelector",value:function(e){var t=this._scopeCounter[e]=(this._scopeCounter[e]||0)+1;return"".concat(e,"-").concat(t)}},{key:"getStyleAst",value:function(e){return $n(e)}},{key:"styleAstToString",value:function(e){return Xn(e)}},{key:"_gatherStyles",value:function(e){return function(e){for(var t=[],n=e.querySelectorAll("style"),r=0;r<n.length;r++){var o=n[r];Yn(o)?Rn||(zn(o),o.parentNode.removeChild(o)):(t.push(o.textContent),o.parentNode.removeChild(o))}return t.join("").trim()}(e.content)}},{key:"prepareTemplate",value:function(e,t,n){this.prepareTemplateDom(e,t),this.prepareTemplateStyles(e,t,n)}},{key:"prepareTemplateStyles",value:function(e,t,n){if(!e._prepared&&!In){Rn||Ur(t),e._prepared=!0,e.name=t,e.extends=n,to[t]=e;var r=lr(e),o=ur(r),i={is:t,extends:n},s=this._gatherStyles(e)+(bo[t]||"");if(this._ensure(),!o){var a=!r&&function(e){var t=Bn.test(e)||Fn.test(e);return Bn.lastIndex=0,Fn.lastIndex=0,t}(s),l=wn(s);a&&Hn&&this._applyShim&&this._applyShim.transformRules(l,t),e._styleAst=l}var c=[];if(Hn||(c=Hr.decorateStyles(e._styleAst)),!c.length||Hn){var u=Rn?e.content:null,f=Br(t),d=this._generateStaticStyle(i,e._styleAst,u,f,r,o?s:"");e._style=d}e._ownPropertyNames=c}}},{key:"prepareAdoptedCssText",value:function(e,t){bo[t]=e.join(" ")}},{key:"prepareTemplateDom",value:function(e,t){if(!In){var n=lr(e);Rn||"shady"===n||e._domPrepared||(e._domPrepared=!0,Ar.domAddScope(e.content,t))}}},{key:"_generateStaticStyle",value:function(e,t,n,r,o,i){return(i=Ar.elementStyles(e,t,null,o,i)).length?Zn(i,e.is,n,r):null}},{key:"_prepareHost",value:function(e){var t=ir(e),n=t.is,r=t.typeExtension,o=Br(n),i=to[n];if(i){var s=i._styleAst,a=i._ownPropertyNames,l=lr(i),c=new Lr(s,o,a,n,r,l);return Lr.set(e,c),c}}},{key:"_ensureApplyShim",value:function(){this._applyShim||window.ShadyCSS&&window.ShadyCSS.ApplyShim&&(this._applyShim=window.ShadyCSS.ApplyShim,this._applyShim.invalidCallback=so)}},{key:"_ensureCustomStyleInterface",value:function(){var e=this;this._customStyleInterface||window.ShadyCSS&&window.ShadyCSS.CustomStyleInterface&&(this._customStyleInterface=window.ShadyCSS.CustomStyleInterface,this._customStyleInterface.transformCallback=function(t){e.transformCustomStyleForDocument(t)},this._customStyleInterface.validateCallback=function(){requestAnimationFrame(function(){(e._customStyleInterface.enqueued||e._elementsHaveApplied)&&e.flushCustomStyles()})})}},{key:"_ensure",value:function(){this._ensureApplyShim(),this._ensureCustomStyleInterface()}},{key:"flushCustomStyles",value:function(){if(!In&&(this._ensure(),this._customStyleInterface)){var e=this._customStyleInterface.processStyles();this._customStyleInterface.enqueued&&(ur(this._documentOwnerStyleInfo.cssBuild)||(Hn?this._documentOwnerStyleInfo.cssBuild||this._revalidateCustomStyleApplyShim(e):(this._updateProperties(this._documentOwner,this._documentOwnerStyleInfo),this._applyCustomStyles(e),this._elementsHaveApplied&&this.styleDocument()),this._customStyleInterface.enqueued=!1))}}},{key:"styleElement",value:function(e,t){if(In){if(t){Lr.get(e)||Lr.set(e,new Lr(null));var n=Lr.get(e);this._mixOverrideStyleProps(n,t),this.styleElementNativeVariables(e,n)}}else{var r=Lr.get(e)||this._prepareHost(e);r&&(this._isRootOwner(e)||(this._elementsHaveApplied=!0),t&&this._mixOverrideStyleProps(r,t),Hn?this.styleElementNativeVariables(e,r):this.styleElementShimVariables(e,r))}}},{key:"_mixOverrideStyleProps",value:function(e,t){e.overrideStyleProperties=e.overrideStyleProperties||{},Object.assign(e.overrideStyleProperties,t)}},{key:"styleElementShimVariables",value:function(e,t){this.flush(),this._updateProperties(e,t),t.ownStylePropertyNames&&t.ownStylePropertyNames.length&&this._applyStyleProperties(e,t)}},{key:"styleElementNativeVariables",value:function(e,t){var n=ir(e).is;t.overrideStyleProperties&&function(e,t){for(var n in t)null===n?e.style.removeProperty(n):e.style.setProperty(n,t[n])}(e,t.overrideStyleProperties);var r=to[n];if((r||this._isRootOwner(e))&&(!r||!cr(r))&&r&&r._style&&!ao(r)){if(lo(r)||(this._ensure(),this._applyShim&&this._applyShim.transformRules(r._styleAst,n),r._style.textContent=Ar.elementStyles(e,t.styleRules),co(r)),Rn){var o=e.shadowRoot;if(o){var i=o.querySelector("style");i&&(i.textContent=Ar.elementStyles(e,t.styleRules))}}t.styleRules=r._styleAst}}},{key:"_styleOwnerForNode",value:function(e){var t=or(e).getRootNode().host;return t?Lr.get(t)||this._prepareHost(t)?t:this._styleOwnerForNode(t):this._documentOwner}},{key:"_isRootOwner",value:function(e){return e===this._documentOwner}},{key:"_applyStyleProperties",value:function(e,t){var n=ir(e).is,r=Eo.fetch(n,t.styleProperties,t.ownStylePropertyNames),o=r&&r.scopeSelector,i=r?r.styleElement:null,s=t.scopeSelector;t.scopeSelector=o||this._generateScopeSelector(n);var a=Hr.applyElementStyle(e,t.styleProperties,t.scopeSelector,i);return Rn||Hr.applyElementScopeSelector(e,t.scopeSelector,s),r||Eo.store(n,t.styleProperties,a,t.scopeSelector),a}},{key:"_updateProperties",value:function(e,t){var n=this._styleOwnerForNode(e),r=Lr.get(n),o=r.styleProperties;n===this._documentOwner||o||(this._updateProperties(n,r),o=r.styleProperties);var i=Object.create(o||null),s=Hr.hostAndRootPropertiesForScope(e,t.styleRules,t.cssBuild),a=Hr.propertyDataFromStyles(r.styleRules,e).properties;Object.assign(i,s.hostProps,a,s.rootProps),this._mixinOverrideStyles(i,t.overrideStyleProperties),Hr.reify(i),t.styleProperties=i}},{key:"_mixinOverrideStyles",value:function(e,t){for(var n in t){var r=t[n];(r||0===r)&&(e[n]=r)}}},{key:"styleDocument",value:function(e){this.styleSubtree(this._documentOwner,e)}},{key:"styleSubtree",value:function(e,t){var n=or(e),r=n.shadowRoot;(r||this._isRootOwner(e))&&this.styleElement(e,t);var o=r&&(r.children||r.childNodes);if(o)for(var i=0;i<o.length;i++){var s=o[i];this.styleSubtree(s)}else{var a=n.children||n.childNodes;if(a)for(var l=0;l<a.length;l++){var c=a[l];this.styleSubtree(c)}}}},{key:"_revalidateCustomStyleApplyShim",value:function(e){for(var t=0;t<e.length;t++){var n=e[t],r=this._customStyleInterface.getStyleForCustomStyle(n);r&&this._revalidateApplyShim(r)}}},{key:"_applyCustomStyles",value:function(e){for(var t=0;t<e.length;t++){var n=e[t],r=this._customStyleInterface.getStyleForCustomStyle(n);r&&Hr.applyCustomStyle(r,this._documentOwnerStyleInfo.styleProperties)}}},{key:"transformCustomStyleForDocument",value:function(e){var t=this,n=lr(e);if(n!==this._documentOwnerStyleInfo.cssBuild&&(this._documentOwnerStyleInfo.cssBuild=n),!ur(n)){var r=$n(e);Qn(r,function(e){Rn?Ar.normalizeRootSelector(e):Ar.documentRule(e),Hn&&""===n&&(t._ensure(),t._applyShim&&t._applyShim.transformRule(e))}),Hn?e.textContent=Xn(r):this._documentOwnerStyleInfo.styleRules.rules.push(r)}}},{key:"_revalidateApplyShim",value:function(e){if(Hn&&this._applyShim){var t=$n(e);this._ensure(),this._applyShim.transformRules(t),e.textContent=Xn(t)}}},{key:"getComputedStyleValue",value:function(e,t){var n;Hn||(n=(Lr.get(e)||Lr.get(this._styleOwnerForNode(e))).styleProperties[t]);return(n=n||window.getComputedStyle(e).getPropertyValue(t))?n.trim():""}},{key:"setElementClass",value:function(e,t){var n=or(e).getRootNode(),r=t?t.split(/\s/):[],o=n.host&&n.host.localName;if(!o){var i=e.getAttribute("class");if(i)for(var s=i.split(/\s/),a=0;a<s.length;a++)if(s[a]===Ar.SCOPE_NAME){o=s[a+1];break}}if(o&&r.push(Ar.SCOPE_NAME,o),!Hn){var l=Lr.get(e);l&&l.scopeSelector&&r.push(Hr.XSCOPE_NAME,l.scopeSelector)}rr(e,r.join(" "))}},{key:"_styleInfoForNode",value:function(e){return Lr.get(e)}},{key:"scopeNode",value:function(e,t){Ar.element(e,t)}},{key:"unscopeNode",value:function(e,t){Ar.element(e,t,!0)}},{key:"scopeForNode",value:function(e){return Xr(e)}},{key:"currentScopeForNode",value:function(e){return Yr(e)}}])&&So(t.prototype,n),r&&So(t,r),e}();wo.prototype.flush=wo.prototype.flush,wo.prototype.prepareTemplate=wo.prototype.prepareTemplate,wo.prototype.styleElement=wo.prototype.styleElement,wo.prototype.styleDocument=wo.prototype.styleDocument,wo.prototype.styleSubtree=wo.prototype.styleSubtree,wo.prototype.getComputedStyleValue=wo.prototype.getComputedStyleValue,wo.prototype.setElementClass=wo.prototype.setElementClass,wo.prototype._styleInfoForNode=wo.prototype._styleInfoForNode,wo.prototype.transformCustomStyleForDocument=wo.prototype.transformCustomStyleForDocument,wo.prototype.getStyleAst=wo.prototype.getStyleAst,wo.prototype.styleAstToString=wo.prototype.styleAstToString,wo.prototype.flushCustomStyles=wo.prototype.flushCustomStyles,wo.prototype.scopeNode=wo.prototype.scopeNode,wo.prototype.unscopeNode=wo.prototype.unscopeNode,wo.prototype.scopeForNode=wo.prototype.scopeForNode,wo.prototype.currentScopeForNode=wo.prototype.currentScopeForNode,wo.prototype.prepareAdoptedCssText=wo.prototype.prepareAdoptedCssText,Object.defineProperties(wo.prototype,{nativeShadow:{get:function(){return Rn}},nativeCss:{get:function(){return Hn}}});var No,Co,To=new wo;window.ShadyCSS&&(No=window.ShadyCSS.ApplyShim,Co=window.ShadyCSS.CustomStyleInterface),window.ShadyCSS={ScopingShim:To,prepareTemplate:function(e,t,n){To.flushCustomStyles(),To.prepareTemplate(e,t,n)},prepareTemplateDom:function(e,t){To.prepareTemplateDom(e,t)},prepareTemplateStyles:function(e,t,n){To.flushCustomStyles(),To.prepareTemplateStyles(e,t,n)},styleSubtree:function(e,t){To.flushCustomStyles(),To.styleSubtree(e,t)},styleElement:function(e){To.flushCustomStyles(),To.styleElement(e)},styleDocument:function(e){To.flushCustomStyles(),To.styleDocument(e)},flushCustomStyles:function(){To.flushCustomStyles()},getComputedStyleValue:function(e,t){return To.getComputedStyleValue(e,t)},nativeCss:Hn,nativeShadow:Rn,cssBuild:kn,disableRuntime:In},No&&(window.ShadyCSS.ApplyShim=No),Co&&(window.ShadyCSS.CustomStyleInterface=Co);document.dispatchEvent(new CustomEvent("WebComponentsReady",{bubbles:!0}))}]);
+(function () {
+  'use strict';
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  (function() {
+
+    // defaultPrevented is broken in IE.
+    // https://connect.microsoft.com/IE/feedback/details/790389/event-defaultprevented-returns-false-after-preventdefault-was-called
+    var workingDefaultPrevented = (function() {
+      var e = document.createEvent('Event');
+      e.initEvent('foo', true, true);
+      e.preventDefault();
+      return e.defaultPrevented;
+    })();
+
+    if (!workingDefaultPrevented) {
+      var origPreventDefault = Event.prototype.preventDefault;
+      Event.prototype.preventDefault = function() {
+        if (!this.cancelable) {
+          return;
+        }
+
+        origPreventDefault.call(this);
+
+        Object.defineProperty(this, 'defaultPrevented', {
+          get: function() {
+            return true;
+          },
+          configurable: true
+        });
+      };
+    }
+
+    var isIE = /Trident/.test(navigator.userAgent);
+
+    // Event constructor shim
+    if (!window.Event || isIE && (typeof window.Event !== 'function')) {
+      var origEvent = window.Event;
+      /**
+       * @param {!string} inType
+       * @param {?(EventInit)=} params
+       */
+      window.Event = function(inType, params) {
+        params = params || {};
+        var e = document.createEvent('Event');
+        e.initEvent(inType, Boolean(params.bubbles), Boolean(params.cancelable));
+        return e;
+      };
+      if (origEvent) {
+        for (var i in origEvent) {
+          window.Event[i] = origEvent[i];
+        }
+        window.Event.prototype = origEvent.prototype;
+      }
+    }
+
+    // CustomEvent constructor shim
+    if (!window.CustomEvent || isIE && (typeof window.CustomEvent !== 'function')) {
+      /**
+       * @template T
+       * @param {!string} inType
+       * @param {?(CustomEventInit<T>)=} params
+       */
+      window.CustomEvent = function(inType, params) {
+        params = params || {};
+        var e = /** @type {!CustomEvent} */ (document.createEvent('CustomEvent'));
+        e.initCustomEvent(inType, Boolean(params.bubbles), Boolean(params.cancelable), params.detail);
+        return e;
+      };
+      window.CustomEvent.prototype = window.Event.prototype;
+    }
+
+    if (!window.MouseEvent || isIE && (typeof window.MouseEvent !== 'function')) {
+      var origMouseEvent = window.MouseEvent;
+      /**
+       *
+       * @param {!string} inType
+       * @param {?(MouseEventInit)=} params
+       */
+      window.MouseEvent = function(inType, params) {
+        params = params || {};
+        var e = document.createEvent('MouseEvent');
+        e.initMouseEvent(inType,
+          Boolean(params.bubbles), Boolean(params.cancelable),
+          params.view || window, params.detail,
+          params.screenX, params.screenY, params.clientX, params.clientY,
+          params.ctrlKey, params.altKey, params.shiftKey, params.metaKey,
+          params.button, params.relatedTarget);
+        return e;
+      };
+      if (origMouseEvent) {
+        for (var i in origMouseEvent) {
+          window.MouseEvent[i] = origMouseEvent[i];
+        }
+      }
+      window.MouseEvent.prototype = origMouseEvent.prototype;
+    }
+
+    // ES6 stuff
+    if (!Array.from) {
+      Array.from = function (object) {
+        return [].slice.call(/** @type {IArrayLike} */(object));
+      };
+    }
+
+    if (!Object.assign) {
+      var assign = function(target, source) {
+        var n$ = Object.getOwnPropertyNames(source);
+        for (var i=0, p; i < n$.length; i++) {
+          p = n$[i];
+          target[p] = source[p];
+        }
+      };
+
+      Object.assign = function(target, sources) {
+        var args = [].slice.call(arguments, 1);
+        for (var i=0, s; i < args.length; i++) {
+          s = args[i];
+          if (s) {
+            assign(target, s);
+          }
+        }
+        return target;
+      };
+    }
+
+  })();
+
+  /*! (c) Andrea Giammarchi - ISC */
+  var self$1 = undefined || /* istanbul ignore next */ {};
+  try {
+    (function (URLSearchParams, plus) {
+      if (
+        new URLSearchParams('q=%2B').get('q') !== plus ||
+        new URLSearchParams({q: plus}).get('q') !== plus ||
+        new URLSearchParams([['q', plus]]).get('q') !== plus ||
+        new URLSearchParams('q=\n').toString() !== 'q=%0A' ||
+        new URLSearchParams({q: ' &'}).toString() !== 'q=+%26'
+      )
+        throw URLSearchParams;
+      self$1.URLSearchParams = URLSearchParams;
+    }(URLSearchParams, '+'));
+  } catch(URLSearchParams) {
+    (function (Object, String, isArray) {    var create = Object.create;
+      var defineProperty = Object.defineProperty;
+      var find = /[!'\(\)~]|%20|%00/g;
+      var plus = /\+/g;
+      var replace = {
+        '!': '%21',
+        "'": '%27',
+        '(': '%28',
+        ')': '%29',
+        '~': '%7E',
+        '%20': '+',
+        '%00': '\x00'
+      };
+      var proto = {
+        append: function (key, value) {
+          appendTo(this._ungap, key, value);
+        },
+        delete: function (key) {
+          delete this._ungap[key];
+        },
+        get: function (key) {
+          return this.has(key) ? this._ungap[key][0] : null;
+        },
+        getAll: function (key) {
+          return this.has(key) ? this._ungap[key].slice(0) : [];
+        },
+        has: function (key) {
+          return key in this._ungap;
+        },
+        set: function (key, value) {
+          this._ungap[key] = [String(value)];
+        },
+        forEach: function (callback, thisArg) {
+          var self = this;
+          for (var key in self._ungap)
+            self._ungap[key].forEach(invoke, key);
+          function invoke(value) {
+            callback.call(thisArg, value, String(key), self);
+          }
+        },
+        toJSON: function () {
+          return {};
+        },
+        toString: function () {
+          var query = [];
+          for (var key in this._ungap) {
+            var encoded = encode(key);
+            for (var
+              i = 0,
+              value = this._ungap[key];
+              i < value.length; i++
+            ) {
+              query.push(encoded + '=' + encode(value[i]));
+            }
+          }
+          return query.join('&');
+        }
+      };
+      for (var key in proto)
+        defineProperty(URLSearchParams.prototype, key, {
+          configurable: true,
+          writable: true,
+          value: proto[key]
+        });
+      self$1.URLSearchParams = URLSearchParams;
+      function URLSearchParams(query) {
+        var dict = create(null);
+        defineProperty(this, '_ungap', {value: dict});
+        switch (true) {
+          case !query:
+            break;
+          case typeof query === 'string':
+            if (query.charAt(0) === '?') {
+              query = query.slice(1);
+            }
+            for (var
+              pairs = query.split('&'),
+              i = 0,
+              length = pairs.length; i < length; i++
+            ) {
+              var value = pairs[i];
+              var index = value.indexOf('=');
+              if (-1 < index) {
+                appendTo(
+                  dict,
+                  decode(value.slice(0, index)),
+                  decode(value.slice(index + 1))
+                );
+              } else if (value.length){
+                appendTo(
+                  dict,
+                  decode(value),
+                  ''
+                );
+              }
+            }
+            break;
+          case isArray(query):
+            for (var
+              i = 0,
+              length = query.length; i < length; i++
+            ) {
+              var value = query[i];
+              appendTo(dict, value[0], value[1]);
+            }
+            break;
+          case 'forEach' in query:
+            query.forEach(addEach, dict);
+            break;
+          default:
+            for (var key in query)
+              appendTo(dict, key, query[key]);
+        }
+      }
+
+      function addEach(value, key) {
+        appendTo(this, key, value);
+      }
+      
+      function appendTo(dict, key, value) {
+        var res = isArray(value) ? value.join(',') : value;
+        if (key in dict)
+          dict[key].push(res);
+        else
+          dict[key] = [res];
+      }
+      
+      function decode(str) {
+        return decodeURIComponent(str.replace(plus, ' '));
+      }
+      
+      function encode(str) {
+        return encodeURIComponent(str).replace(find, replacer);
+      }
+
+      function replacer(match) {
+        return replace[match];
+      }
+
+    }(Object, String, Array.isArray));
+  }
+
+  (function (URLSearchParamsProto) {
+
+    var iterable = false;
+    try { iterable = !!Symbol.iterator; } catch (o_O) {}
+
+    /* istanbul ignore else */
+    if (!('forEach' in URLSearchParamsProto)) {
+      URLSearchParamsProto.forEach = function forEach(callback, thisArg) {
+        var self = this;
+        var names = Object.create(null);
+        this.toString()
+            .replace(/=[\s\S]*?(?:&|$)/g, '=')
+            .split('=')
+            .forEach(function (name) {
+              if (!name.length || name in names)
+                return;
+              (names[name] = self.getAll(name)).forEach(function(value) {
+                callback.call(thisArg, value, name, self);
+              });
+            });
+      };
+    }
+
+    /* istanbul ignore else */
+    if (!('keys' in URLSearchParamsProto)) {
+      URLSearchParamsProto.keys = function keys() {
+        return iterator(this, function(value, key) { this.push(key); });
+      };
+    }
+
+     /* istanbul ignore else */
+    if (!('values' in URLSearchParamsProto)) {
+      URLSearchParamsProto.values = function values() {
+        return iterator(this, function(value, key) { this.push(value); });
+      };
+    }
+
+    /* istanbul ignore else */
+    if (!('entries' in URLSearchParamsProto)) {
+      URLSearchParamsProto.entries = function entries() {
+        return iterator(this, function(value, key) { this.push([key, value]); });
+      };
+    }
+
+    /* istanbul ignore else */
+    if (iterable && !(Symbol.iterator in URLSearchParamsProto)) {
+      URLSearchParamsProto[Symbol.iterator] = URLSearchParamsProto.entries;
+    }
+
+    /* istanbul ignore else */
+    if (!('sort' in URLSearchParamsProto)) {
+      URLSearchParamsProto.sort = function sort() {
+        var
+          entries = this.entries(),
+          entry = entries.next(),
+          done = entry.done,
+          keys = [],
+          values = Object.create(null),
+          i, key, value
+        ;
+        while (!done) {
+          value = entry.value;
+          key = value[0];
+          keys.push(key);
+          if (!(key in values)) {
+            values[key] = [];
+          }
+          values[key].push(value[1]);
+          entry = entries.next();
+          done = entry.done;
+        }
+        // not the champion in efficiency
+        // but these two bits just do the job
+        keys.sort();
+        for (i = 0; i < keys.length; i++) {
+          this.delete(keys[i]);
+        }
+        for (i = 0; i < keys.length; i++) {
+          key = keys[i];
+          this.append(key, values[key].shift());
+        }
+      };
+    }
+
+    function iterator(self, callback) {
+      var items = [];
+      self.forEach(callback, items);
+      return iterable ?
+        items[Symbol.iterator]() :
+        {
+          next: function() {
+            var value = items.shift();
+            return {done: value === undefined, value: value};
+          }
+        };
+    }
+
+    /* istanbul ignore next */
+    (function (Object) {
+      var
+        dP = Object.defineProperty,
+        gOPD = Object.getOwnPropertyDescriptor,
+        createSearchParamsPollute = function (search) {
+          function append(name, value) {
+            URLSearchParamsProto.append.call(this, name, value);
+            name = this.toString();
+            search.set.call(this._usp, name ? ('?' + name) : '');
+          }
+          function del(name) {
+            URLSearchParamsProto.delete.call(this, name);
+            name = this.toString();
+            search.set.call(this._usp, name ? ('?' + name) : '');
+          }
+          function set(name, value) {
+            URLSearchParamsProto.set.call(this, name, value);
+            name = this.toString();
+            search.set.call(this._usp, name ? ('?' + name) : '');
+          }
+          return function (sp, value) {
+            sp.append = append;
+            sp.delete = del;
+            sp.set = set;
+            return dP(sp, '_usp', {
+              configurable: true,
+              writable: true,
+              value: value
+            });
+          };
+        },
+        createSearchParamsCreate = function (polluteSearchParams) {
+          return function (obj, sp) {
+            dP(
+              obj, '_searchParams', {
+                configurable: true,
+                writable: true,
+                value: polluteSearchParams(sp, obj)
+              }
+            );
+            return sp;
+          };
+        },
+        updateSearchParams = function (sp) {
+          var append = sp.append;
+          sp.append = URLSearchParamsProto.append;
+          URLSearchParams.call(sp, sp._usp.search.slice(1));
+          sp.append = append;
+        },
+        verifySearchParams = function (obj, Class) {
+          if (!(obj instanceof Class)) throw new TypeError(
+            "'searchParams' accessed on an object that " +
+            "does not implement interface " + Class.name
+          );
+        },
+        upgradeClass = function (Class) {
+          var
+            ClassProto = Class.prototype,
+            searchParams = gOPD(ClassProto, 'searchParams'),
+            href = gOPD(ClassProto, 'href'),
+            search = gOPD(ClassProto, 'search'),
+            createSearchParams
+          ;
+          if (!searchParams && search && search.set) {
+            createSearchParams = createSearchParamsCreate(
+              createSearchParamsPollute(search)
+            );
+            Object.defineProperties(
+              ClassProto,
+              {
+                href: {
+                  get: function () {
+                    return href.get.call(this);
+                  },
+                  set: function (value) {
+                    var sp = this._searchParams;
+                    href.set.call(this, value);
+                    if (sp) updateSearchParams(sp);
+                  }
+                },
+                search: {
+                  get: function () {
+                    return search.get.call(this);
+                  },
+                  set: function (value) {
+                    var sp = this._searchParams;
+                    search.set.call(this, value);
+                    if (sp) updateSearchParams(sp);
+                  }
+                },
+                searchParams: {
+                  get: function () {
+                    verifySearchParams(this, Class);
+                    return this._searchParams || createSearchParams(
+                      this,
+                      new URLSearchParams(this.search.slice(1))
+                    );
+                  },
+                  set: function (sp) {
+                    verifySearchParams(this, Class);
+                    createSearchParams(this, sp);
+                  }
+                }
+              }
+            );
+          }
+        }
+      ;
+      try {
+        upgradeClass(HTMLAnchorElement);
+        if (/^function|object$/.test(typeof URL) && URL.prototype)
+          upgradeClass(URL);
+      } catch (meh) {}
+    }(Object));
+
+  }(self$1.URLSearchParams.prototype));
+  self$1.URLSearchParams;
+
+  var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
+
+  function createCommonjsModule(fn, module) {
+  	return module = { exports: {} }, fn(module, module.exports), module.exports;
+  }
+
+  var O = 'object';
+  var check = function (it) {
+    return it && it.Math == Math && it;
+  };
+
+  // https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
+  var global_1 =
+    // eslint-disable-next-line no-undef
+    check(typeof globalThis == O && globalThis) ||
+    check(typeof window == O && window) ||
+    check(typeof self == O && self) ||
+    check(typeof commonjsGlobal == O && commonjsGlobal) ||
+    // eslint-disable-next-line no-new-func
+    Function('return this')();
+
+  var fails = function (exec) {
+    try {
+      return !!exec();
+    } catch (error) {
+      return true;
+    }
+  };
+
+  // Thank's IE8 for his funny defineProperty
+  var descriptors = !fails(function () {
+    return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
+  });
+
+  var isObject = function (it) {
+    return typeof it === 'object' ? it !== null : typeof it === 'function';
+  };
+
+  var document$1 = global_1.document;
+  // typeof document.createElement is 'object' in old IE
+  var EXISTS = isObject(document$1) && isObject(document$1.createElement);
+
+  var documentCreateElement = function (it) {
+    return EXISTS ? document$1.createElement(it) : {};
+  };
+
+  // Thank's IE8 for his funny defineProperty
+  var ie8DomDefine = !descriptors && !fails(function () {
+    return Object.defineProperty(documentCreateElement('div'), 'a', {
+      get: function () { return 7; }
+    }).a != 7;
+  });
+
+  var anObject = function (it) {
+    if (!isObject(it)) {
+      throw TypeError(String(it) + ' is not an object');
+    } return it;
+  };
+
+  // `ToPrimitive` abstract operation
+  // https://tc39.github.io/ecma262/#sec-toprimitive
+  // instead of the ES6 spec version, we didn't implement @@toPrimitive case
+  // and the second argument - flag - preferred type is a string
+  var toPrimitive = function (input, PREFERRED_STRING) {
+    if (!isObject(input)) return input;
+    var fn, val;
+    if (PREFERRED_STRING && typeof (fn = input.toString) == 'function' && !isObject(val = fn.call(input))) return val;
+    if (typeof (fn = input.valueOf) == 'function' && !isObject(val = fn.call(input))) return val;
+    if (!PREFERRED_STRING && typeof (fn = input.toString) == 'function' && !isObject(val = fn.call(input))) return val;
+    throw TypeError("Can't convert object to primitive value");
+  };
+
+  var nativeDefineProperty = Object.defineProperty;
+
+  // `Object.defineProperty` method
+  // https://tc39.github.io/ecma262/#sec-object.defineproperty
+  var f = descriptors ? nativeDefineProperty : function defineProperty(O, P, Attributes) {
+    anObject(O);
+    P = toPrimitive(P, true);
+    anObject(Attributes);
+    if (ie8DomDefine) try {
+      return nativeDefineProperty(O, P, Attributes);
+    } catch (error) { /* empty */ }
+    if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported');
+    if ('value' in Attributes) O[P] = Attributes.value;
+    return O;
+  };
+
+  var objectDefineProperty = {
+  	f: f
+  };
+
+  var createPropertyDescriptor = function (bitmap, value) {
+    return {
+      enumerable: !(bitmap & 1),
+      configurable: !(bitmap & 2),
+      writable: !(bitmap & 4),
+      value: value
+    };
+  };
+
+  var hide = descriptors ? function (object, key, value) {
+    return objectDefineProperty.f(object, key, createPropertyDescriptor(1, value));
+  } : function (object, key, value) {
+    object[key] = value;
+    return object;
+  };
+
+  var setGlobal = function (key, value) {
+    try {
+      hide(global_1, key, value);
+    } catch (error) {
+      global_1[key] = value;
+    } return value;
+  };
+
+  var isPure = false;
+
+  var shared = createCommonjsModule(function (module) {
+  var SHARED = '__core-js_shared__';
+  var store = global_1[SHARED] || setGlobal(SHARED, {});
+
+  (module.exports = function (key, value) {
+    return store[key] || (store[key] = value !== undefined ? value : {});
+  })('versions', []).push({
+    version: '3.1.3',
+    mode:  'global',
+    copyright: '© 2019 Denis Pushkarev (zloirock.ru)'
+  });
+  });
+
+  var hasOwnProperty = {}.hasOwnProperty;
+
+  var has = function (it, key) {
+    return hasOwnProperty.call(it, key);
+  };
+
+  var functionToString = shared('native-function-to-string', Function.toString);
+
+  var WeakMap$1 = global_1.WeakMap;
+
+  var nativeWeakMap = typeof WeakMap$1 === 'function' && /native code/.test(functionToString.call(WeakMap$1));
+
+  var id = 0;
+  var postfix = Math.random();
+
+  var uid = function (key) {
+    return 'Symbol(' + String(key === undefined ? '' : key) + ')_' + (++id + postfix).toString(36);
+  };
+
+  var keys = shared('keys');
+
+  var sharedKey = function (key) {
+    return keys[key] || (keys[key] = uid(key));
+  };
+
+  var hiddenKeys = {};
+
+  var WeakMap$2 = global_1.WeakMap;
+  var set, get, has$1;
+
+  var enforce = function (it) {
+    return has$1(it) ? get(it) : set(it, {});
+  };
+
+  var getterFor = function (TYPE) {
+    return function (it) {
+      var state;
+      if (!isObject(it) || (state = get(it)).type !== TYPE) {
+        throw TypeError('Incompatible receiver, ' + TYPE + ' required');
+      } return state;
+    };
+  };
+
+  if (nativeWeakMap) {
+    var store = new WeakMap$2();
+    var wmget = store.get;
+    var wmhas = store.has;
+    var wmset = store.set;
+    set = function (it, metadata) {
+      wmset.call(store, it, metadata);
+      return metadata;
+    };
+    get = function (it) {
+      return wmget.call(store, it) || {};
+    };
+    has$1 = function (it) {
+      return wmhas.call(store, it);
+    };
+  } else {
+    var STATE = sharedKey('state');
+    hiddenKeys[STATE] = true;
+    set = function (it, metadata) {
+      hide(it, STATE, metadata);
+      return metadata;
+    };
+    get = function (it) {
+      return has(it, STATE) ? it[STATE] : {};
+    };
+    has$1 = function (it) {
+      return has(it, STATE);
+    };
+  }
+
+  var internalState = {
+    set: set,
+    get: get,
+    has: has$1,
+    enforce: enforce,
+    getterFor: getterFor
+  };
+
+  var redefine = createCommonjsModule(function (module) {
+  var getInternalState = internalState.get;
+  var enforceInternalState = internalState.enforce;
+  var TEMPLATE = String(functionToString).split('toString');
+
+  shared('inspectSource', function (it) {
+    return functionToString.call(it);
+  });
+
+  (module.exports = function (O, key, value, options) {
+    var unsafe = options ? !!options.unsafe : false;
+    var simple = options ? !!options.enumerable : false;
+    var noTargetGet = options ? !!options.noTargetGet : false;
+    if (typeof value == 'function') {
+      if (typeof key == 'string' && !has(value, 'name')) hide(value, 'name', key);
+      enforceInternalState(value).source = TEMPLATE.join(typeof key == 'string' ? key : '');
+    }
+    if (O === global_1) {
+      if (simple) O[key] = value;
+      else setGlobal(key, value);
+      return;
+    } else if (!unsafe) {
+      delete O[key];
+    } else if (!noTargetGet && O[key]) {
+      simple = true;
+    }
+    if (simple) O[key] = value;
+    else hide(O, key, value);
+  // add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative
+  })(Function.prototype, 'toString', function toString() {
+    return typeof this == 'function' && getInternalState(this).source || functionToString.call(this);
+  });
+  });
+
+  var toString = {}.toString;
+
+  var classofRaw = function (it) {
+    return toString.call(it).slice(8, -1);
+  };
+
+  var nativeSymbol = !!Object.getOwnPropertySymbols && !fails(function () {
+    // Chrome 38 Symbol has incorrect toString conversion
+    // eslint-disable-next-line no-undef
+    return !String(Symbol());
+  });
+
+  var Symbol$1 = global_1.Symbol;
+  var store$1 = shared('wks');
+
+  var wellKnownSymbol = function (name) {
+    return store$1[name] || (store$1[name] = nativeSymbol && Symbol$1[name]
+      || (nativeSymbol ? Symbol$1 : uid)('Symbol.' + name));
+  };
+
+  var TO_STRING_TAG = wellKnownSymbol('toStringTag');
+  // ES3 wrong here
+  var CORRECT_ARGUMENTS = classofRaw(function () { return arguments; }()) == 'Arguments';
+
+  // fallback for IE11 Script Access Denied error
+  var tryGet = function (it, key) {
+    try {
+      return it[key];
+    } catch (error) { /* empty */ }
+  };
+
+  // getting tag from ES6+ `Object.prototype.toString`
+  var classof = function (it) {
+    var O, tag, result;
+    return it === undefined ? 'Undefined' : it === null ? 'Null'
+      // @@toStringTag case
+      : typeof (tag = tryGet(O = Object(it), TO_STRING_TAG)) == 'string' ? tag
+      // builtinTag case
+      : CORRECT_ARGUMENTS ? classofRaw(O)
+      // ES3 arguments fallback
+      : (result = classofRaw(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : result;
+  };
+
+  var TO_STRING_TAG$1 = wellKnownSymbol('toStringTag');
+  var test = {};
+
+  test[TO_STRING_TAG$1] = 'z';
+
+  // `Object.prototype.toString` method implementation
+  // https://tc39.github.io/ecma262/#sec-object.prototype.tostring
+  var objectToString = String(test) !== '[object z]' ? function toString() {
+    return '[object ' + classof(this) + ']';
+  } : test.toString;
+
+  var ObjectPrototype = Object.prototype;
+
+  // `Object.prototype.toString` method
+  // https://tc39.github.io/ecma262/#sec-object.prototype.tostring
+  if (objectToString !== ObjectPrototype.toString) {
+    redefine(ObjectPrototype, 'toString', objectToString, { unsafe: true });
+  }
+
+  var ceil = Math.ceil;
+  var floor = Math.floor;
+
+  // `ToInteger` abstract operation
+  // https://tc39.github.io/ecma262/#sec-tointeger
+  var toInteger = function (argument) {
+    return isNaN(argument = +argument) ? 0 : (argument > 0 ? floor : ceil)(argument);
+  };
+
+  // `RequireObjectCoercible` abstract operation
+  // https://tc39.github.io/ecma262/#sec-requireobjectcoercible
+  var requireObjectCoercible = function (it) {
+    if (it == undefined) throw TypeError("Can't call method on " + it);
+    return it;
+  };
+
+  // `String.prototype.{ codePointAt, at }` methods implementation
+  var createMethod = function (CONVERT_TO_STRING) {
+    return function ($this, pos) {
+      var S = String(requireObjectCoercible($this));
+      var position = toInteger(pos);
+      var size = S.length;
+      var first, second;
+      if (position < 0 || position >= size) return CONVERT_TO_STRING ? '' : undefined;
+      first = S.charCodeAt(position);
+      return first < 0xD800 || first > 0xDBFF || position + 1 === size
+        || (second = S.charCodeAt(position + 1)) < 0xDC00 || second > 0xDFFF
+          ? CONVERT_TO_STRING ? S.charAt(position) : first
+          : CONVERT_TO_STRING ? S.slice(position, position + 2) : (first - 0xD800 << 10) + (second - 0xDC00) + 0x10000;
+    };
+  };
+
+  var stringMultibyte = {
+    // `String.prototype.codePointAt` method
+    // https://tc39.github.io/ecma262/#sec-string.prototype.codepointat
+    codeAt: createMethod(false),
+    // `String.prototype.at` method
+    // https://github.com/mathiasbynens/String.prototype.at
+    charAt: createMethod(true)
+  };
+
+  var nativePropertyIsEnumerable = {}.propertyIsEnumerable;
+  var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+
+  // Nashorn ~ JDK8 bug
+  var NASHORN_BUG = getOwnPropertyDescriptor && !nativePropertyIsEnumerable.call({ 1: 2 }, 1);
+
+  // `Object.prototype.propertyIsEnumerable` method implementation
+  // https://tc39.github.io/ecma262/#sec-object.prototype.propertyisenumerable
+  var f$1 = NASHORN_BUG ? function propertyIsEnumerable(V) {
+    var descriptor = getOwnPropertyDescriptor(this, V);
+    return !!descriptor && descriptor.enumerable;
+  } : nativePropertyIsEnumerable;
+
+  var objectPropertyIsEnumerable = {
+  	f: f$1
+  };
+
+  var split = ''.split;
+
+  // fallback for non-array-like ES3 and non-enumerable old V8 strings
+  var indexedObject = fails(function () {
+    // throws an error in rhino, see https://github.com/mozilla/rhino/issues/346
+    // eslint-disable-next-line no-prototype-builtins
+    return !Object('z').propertyIsEnumerable(0);
+  }) ? function (it) {
+    return classofRaw(it) == 'String' ? split.call(it, '') : Object(it);
+  } : Object;
+
+  // toObject with fallback for non-array-like ES3 strings
+
+
+
+  var toIndexedObject = function (it) {
+    return indexedObject(requireObjectCoercible(it));
+  };
+
+  var nativeGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+
+  // `Object.getOwnPropertyDescriptor` method
+  // https://tc39.github.io/ecma262/#sec-object.getownpropertydescriptor
+  var f$2 = descriptors ? nativeGetOwnPropertyDescriptor : function getOwnPropertyDescriptor(O, P) {
+    O = toIndexedObject(O);
+    P = toPrimitive(P, true);
+    if (ie8DomDefine) try {
+      return nativeGetOwnPropertyDescriptor(O, P);
+    } catch (error) { /* empty */ }
+    if (has(O, P)) return createPropertyDescriptor(!objectPropertyIsEnumerable.f.call(O, P), O[P]);
+  };
+
+  var objectGetOwnPropertyDescriptor = {
+  	f: f$2
+  };
+
+  var path = global_1;
+
+  var aFunction = function (variable) {
+    return typeof variable == 'function' ? variable : undefined;
+  };
+
+  var getBuiltIn = function (namespace, method) {
+    return arguments.length < 2 ? aFunction(path[namespace]) || aFunction(global_1[namespace])
+      : path[namespace] && path[namespace][method] || global_1[namespace] && global_1[namespace][method];
+  };
+
+  var min = Math.min;
+
+  // `ToLength` abstract operation
+  // https://tc39.github.io/ecma262/#sec-tolength
+  var toLength = function (argument) {
+    return argument > 0 ? min(toInteger(argument), 0x1FFFFFFFFFFFFF) : 0; // 2 ** 53 - 1 == 9007199254740991
+  };
+
+  var max = Math.max;
+  var min$1 = Math.min;
+
+  // Helper for a popular repeating case of the spec:
+  // Let integer be ? ToInteger(index).
+  // If integer < 0, let result be max((length + integer), 0); else let result be min(length, length).
+  var toAbsoluteIndex = function (index, length) {
+    var integer = toInteger(index);
+    return integer < 0 ? max(integer + length, 0) : min$1(integer, length);
+  };
+
+  // `Array.prototype.{ indexOf, includes }` methods implementation
+  var createMethod$1 = function (IS_INCLUDES) {
+    return function ($this, el, fromIndex) {
+      var O = toIndexedObject($this);
+      var length = toLength(O.length);
+      var index = toAbsoluteIndex(fromIndex, length);
+      var value;
+      // Array#includes uses SameValueZero equality algorithm
+      // eslint-disable-next-line no-self-compare
+      if (IS_INCLUDES && el != el) while (length > index) {
+        value = O[index++];
+        // eslint-disable-next-line no-self-compare
+        if (value != value) return true;
+      // Array#indexOf ignores holes, Array#includes - not
+      } else for (;length > index; index++) {
+        if ((IS_INCLUDES || index in O) && O[index] === el) return IS_INCLUDES || index || 0;
+      } return !IS_INCLUDES && -1;
+    };
+  };
+
+  var arrayIncludes = {
+    // `Array.prototype.includes` method
+    // https://tc39.github.io/ecma262/#sec-array.prototype.includes
+    includes: createMethod$1(true),
+    // `Array.prototype.indexOf` method
+    // https://tc39.github.io/ecma262/#sec-array.prototype.indexof
+    indexOf: createMethod$1(false)
+  };
+
+  var indexOf = arrayIncludes.indexOf;
+
+
+  var objectKeysInternal = function (object, names) {
+    var O = toIndexedObject(object);
+    var i = 0;
+    var result = [];
+    var key;
+    for (key in O) !has(hiddenKeys, key) && has(O, key) && result.push(key);
+    // Don't enum bug & hidden keys
+    while (names.length > i) if (has(O, key = names[i++])) {
+      ~indexOf(result, key) || result.push(key);
+    }
+    return result;
+  };
+
+  // IE8- don't enum bug keys
+  var enumBugKeys = [
+    'constructor',
+    'hasOwnProperty',
+    'isPrototypeOf',
+    'propertyIsEnumerable',
+    'toLocaleString',
+    'toString',
+    'valueOf'
+  ];
+
+  var hiddenKeys$1 = enumBugKeys.concat('length', 'prototype');
+
+  // `Object.getOwnPropertyNames` method
+  // https://tc39.github.io/ecma262/#sec-object.getownpropertynames
+  var f$3 = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
+    return objectKeysInternal(O, hiddenKeys$1);
+  };
+
+  var objectGetOwnPropertyNames = {
+  	f: f$3
+  };
+
+  var f$4 = Object.getOwnPropertySymbols;
+
+  var objectGetOwnPropertySymbols = {
+  	f: f$4
+  };
+
+  // all object keys, includes non-enumerable and symbols
+  var ownKeys = getBuiltIn('Reflect', 'ownKeys') || function ownKeys(it) {
+    var keys = objectGetOwnPropertyNames.f(anObject(it));
+    var getOwnPropertySymbols = objectGetOwnPropertySymbols.f;
+    return getOwnPropertySymbols ? keys.concat(getOwnPropertySymbols(it)) : keys;
+  };
+
+  var copyConstructorProperties = function (target, source) {
+    var keys = ownKeys(source);
+    var defineProperty = objectDefineProperty.f;
+    var getOwnPropertyDescriptor = objectGetOwnPropertyDescriptor.f;
+    for (var i = 0; i < keys.length; i++) {
+      var key = keys[i];
+      if (!has(target, key)) defineProperty(target, key, getOwnPropertyDescriptor(source, key));
+    }
+  };
+
+  var replacement = /#|\.prototype\./;
+
+  var isForced = function (feature, detection) {
+    var value = data[normalize(feature)];
+    return value == POLYFILL ? true
+      : value == NATIVE ? false
+      : typeof detection == 'function' ? fails(detection)
+      : !!detection;
+  };
+
+  var normalize = isForced.normalize = function (string) {
+    return String(string).replace(replacement, '.').toLowerCase();
+  };
+
+  var data = isForced.data = {};
+  var NATIVE = isForced.NATIVE = 'N';
+  var POLYFILL = isForced.POLYFILL = 'P';
+
+  var isForced_1 = isForced;
+
+  var getOwnPropertyDescriptor$1 = objectGetOwnPropertyDescriptor.f;
+
+
+
+
+
+
+  /*
+    options.target      - name of the target object
+    options.global      - target is the global object
+    options.stat        - export as static methods of target
+    options.proto       - export as prototype methods of target
+    options.real        - real prototype method for the `pure` version
+    options.forced      - export even if the native feature is available
+    options.bind        - bind methods to the target, required for the `pure` version
+    options.wrap        - wrap constructors to preventing global pollution, required for the `pure` version
+    options.unsafe      - use the simple assignment of property instead of delete + defineProperty
+    options.sham        - add a flag to not completely full polyfills
+    options.enumerable  - export as enumerable property
+    options.noTargetGet - prevent calling a getter on target
+  */
+  var _export = function (options, source) {
+    var TARGET = options.target;
+    var GLOBAL = options.global;
+    var STATIC = options.stat;
+    var FORCED, target, key, targetProperty, sourceProperty, descriptor;
+    if (GLOBAL) {
+      target = global_1;
+    } else if (STATIC) {
+      target = global_1[TARGET] || setGlobal(TARGET, {});
+    } else {
+      target = (global_1[TARGET] || {}).prototype;
+    }
+    if (target) for (key in source) {
+      sourceProperty = source[key];
+      if (options.noTargetGet) {
+        descriptor = getOwnPropertyDescriptor$1(target, key);
+        targetProperty = descriptor && descriptor.value;
+      } else targetProperty = target[key];
+      FORCED = isForced_1(GLOBAL ? key : TARGET + (STATIC ? '.' : '#') + key, options.forced);
+      // contained in target
+      if (!FORCED && targetProperty !== undefined) {
+        if (typeof sourceProperty === typeof targetProperty) continue;
+        copyConstructorProperties(sourceProperty, targetProperty);
+      }
+      // add a flag to not completely full polyfills
+      if (options.sham || (targetProperty && targetProperty.sham)) {
+        hide(sourceProperty, 'sham', true);
+      }
+      // extend global
+      redefine(target, key, sourceProperty, options);
+    }
+  };
+
+  // `ToObject` abstract operation
+  // https://tc39.github.io/ecma262/#sec-toobject
+  var toObject = function (argument) {
+    return Object(requireObjectCoercible(argument));
+  };
+
+  var correctPrototypeGetter = !fails(function () {
+    function F() { /* empty */ }
+    F.prototype.constructor = null;
+    return Object.getPrototypeOf(new F()) !== F.prototype;
+  });
+
+  var IE_PROTO = sharedKey('IE_PROTO');
+  var ObjectPrototype$1 = Object.prototype;
+
+  // `Object.getPrototypeOf` method
+  // https://tc39.github.io/ecma262/#sec-object.getprototypeof
+  var objectGetPrototypeOf = correctPrototypeGetter ? Object.getPrototypeOf : function (O) {
+    O = toObject(O);
+    if (has(O, IE_PROTO)) return O[IE_PROTO];
+    if (typeof O.constructor == 'function' && O instanceof O.constructor) {
+      return O.constructor.prototype;
+    } return O instanceof Object ? ObjectPrototype$1 : null;
+  };
+
+  var ITERATOR = wellKnownSymbol('iterator');
+  var BUGGY_SAFARI_ITERATORS = false;
+
+  var returnThis = function () { return this; };
+
+  // `%IteratorPrototype%` object
+  // https://tc39.github.io/ecma262/#sec-%iteratorprototype%-object
+  var IteratorPrototype, PrototypeOfArrayIteratorPrototype, arrayIterator;
+
+  if ([].keys) {
+    arrayIterator = [].keys();
+    // Safari 8 has buggy iterators w/o `next`
+    if (!('next' in arrayIterator)) BUGGY_SAFARI_ITERATORS = true;
+    else {
+      PrototypeOfArrayIteratorPrototype = objectGetPrototypeOf(objectGetPrototypeOf(arrayIterator));
+      if (PrototypeOfArrayIteratorPrototype !== Object.prototype) IteratorPrototype = PrototypeOfArrayIteratorPrototype;
+    }
+  }
+
+  if (IteratorPrototype == undefined) IteratorPrototype = {};
+
+  // 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
+  if ( !has(IteratorPrototype, ITERATOR)) hide(IteratorPrototype, ITERATOR, returnThis);
+
+  var iteratorsCore = {
+    IteratorPrototype: IteratorPrototype,
+    BUGGY_SAFARI_ITERATORS: BUGGY_SAFARI_ITERATORS
+  };
+
+  // `Object.keys` method
+  // https://tc39.github.io/ecma262/#sec-object.keys
+  var objectKeys = Object.keys || function keys(O) {
+    return objectKeysInternal(O, enumBugKeys);
+  };
+
+  // `Object.defineProperties` method
+  // https://tc39.github.io/ecma262/#sec-object.defineproperties
+  var objectDefineProperties = descriptors ? Object.defineProperties : function defineProperties(O, Properties) {
+    anObject(O);
+    var keys = objectKeys(Properties);
+    var length = keys.length;
+    var index = 0;
+    var key;
+    while (length > index) objectDefineProperty.f(O, key = keys[index++], Properties[key]);
+    return O;
+  };
+
+  var html = getBuiltIn('document', 'documentElement');
+
+  var IE_PROTO$1 = sharedKey('IE_PROTO');
+
+  var PROTOTYPE = 'prototype';
+  var Empty = function () { /* empty */ };
+
+  // Create object with fake `null` prototype: use iframe Object with cleared prototype
+  var createDict = function () {
+    // Thrash, waste and sodomy: IE GC bug
+    var iframe = documentCreateElement('iframe');
+    var length = enumBugKeys.length;
+    var lt = '<';
+    var script = 'script';
+    var gt = '>';
+    var js = 'java' + script + ':';
+    var iframeDocument;
+    iframe.style.display = 'none';
+    html.appendChild(iframe);
+    iframe.src = String(js);
+    iframeDocument = iframe.contentWindow.document;
+    iframeDocument.open();
+    iframeDocument.write(lt + script + gt + 'document.F=Object' + lt + '/' + script + gt);
+    iframeDocument.close();
+    createDict = iframeDocument.F;
+    while (length--) delete createDict[PROTOTYPE][enumBugKeys[length]];
+    return createDict();
+  };
+
+  // `Object.create` method
+  // https://tc39.github.io/ecma262/#sec-object.create
+  var objectCreate = Object.create || function create(O, Properties) {
+    var result;
+    if (O !== null) {
+      Empty[PROTOTYPE] = anObject(O);
+      result = new Empty();
+      Empty[PROTOTYPE] = null;
+      // add "__proto__" for Object.getPrototypeOf polyfill
+      result[IE_PROTO$1] = O;
+    } else result = createDict();
+    return Properties === undefined ? result : objectDefineProperties(result, Properties);
+  };
+
+  hiddenKeys[IE_PROTO$1] = true;
+
+  var defineProperty = objectDefineProperty.f;
+
+
+
+  var TO_STRING_TAG$2 = wellKnownSymbol('toStringTag');
+
+  var setToStringTag = function (it, TAG, STATIC) {
+    if (it && !has(it = STATIC ? it : it.prototype, TO_STRING_TAG$2)) {
+      defineProperty(it, TO_STRING_TAG$2, { configurable: true, value: TAG });
+    }
+  };
+
+  var iterators = {};
+
+  var IteratorPrototype$1 = iteratorsCore.IteratorPrototype;
+
+
+
+
+
+  var returnThis$1 = function () { return this; };
+
+  var createIteratorConstructor = function (IteratorConstructor, NAME, next) {
+    var TO_STRING_TAG = NAME + ' Iterator';
+    IteratorConstructor.prototype = objectCreate(IteratorPrototype$1, { next: createPropertyDescriptor(1, next) });
+    setToStringTag(IteratorConstructor, TO_STRING_TAG, false);
+    iterators[TO_STRING_TAG] = returnThis$1;
+    return IteratorConstructor;
+  };
+
+  var aPossiblePrototype = function (it) {
+    if (!isObject(it) && it !== null) {
+      throw TypeError("Can't set " + String(it) + ' as a prototype');
+    } return it;
+  };
+
+  // `Object.setPrototypeOf` method
+  // https://tc39.github.io/ecma262/#sec-object.setprototypeof
+  // Works with __proto__ only. Old v8 can't work with null proto objects.
+  /* eslint-disable no-proto */
+  var objectSetPrototypeOf = Object.setPrototypeOf || ('__proto__' in {} ? function () {
+    var CORRECT_SETTER = false;
+    var test = {};
+    var setter;
+    try {
+      setter = Object.getOwnPropertyDescriptor(Object.prototype, '__proto__').set;
+      setter.call(test, []);
+      CORRECT_SETTER = test instanceof Array;
+    } catch (error) { /* empty */ }
+    return function setPrototypeOf(O, proto) {
+      anObject(O);
+      aPossiblePrototype(proto);
+      if (CORRECT_SETTER) setter.call(O, proto);
+      else O.__proto__ = proto;
+      return O;
+    };
+  }() : undefined);
+
+  var IteratorPrototype$2 = iteratorsCore.IteratorPrototype;
+  var BUGGY_SAFARI_ITERATORS$1 = iteratorsCore.BUGGY_SAFARI_ITERATORS;
+  var ITERATOR$1 = wellKnownSymbol('iterator');
+  var KEYS = 'keys';
+  var VALUES = 'values';
+  var ENTRIES = 'entries';
+
+  var returnThis$2 = function () { return this; };
+
+  var defineIterator = function (Iterable, NAME, IteratorConstructor, next, DEFAULT, IS_SET, FORCED) {
+    createIteratorConstructor(IteratorConstructor, NAME, next);
+
+    var getIterationMethod = function (KIND) {
+      if (KIND === DEFAULT && defaultIterator) return defaultIterator;
+      if (!BUGGY_SAFARI_ITERATORS$1 && KIND in IterablePrototype) return IterablePrototype[KIND];
+      switch (KIND) {
+        case KEYS: return function keys() { return new IteratorConstructor(this, KIND); };
+        case VALUES: return function values() { return new IteratorConstructor(this, KIND); };
+        case ENTRIES: return function entries() { return new IteratorConstructor(this, KIND); };
+      } return function () { return new IteratorConstructor(this); };
+    };
+
+    var TO_STRING_TAG = NAME + ' Iterator';
+    var INCORRECT_VALUES_NAME = false;
+    var IterablePrototype = Iterable.prototype;
+    var nativeIterator = IterablePrototype[ITERATOR$1]
+      || IterablePrototype['@@iterator']
+      || DEFAULT && IterablePrototype[DEFAULT];
+    var defaultIterator = !BUGGY_SAFARI_ITERATORS$1 && nativeIterator || getIterationMethod(DEFAULT);
+    var anyNativeIterator = NAME == 'Array' ? IterablePrototype.entries || nativeIterator : nativeIterator;
+    var CurrentIteratorPrototype, methods, KEY;
+
+    // fix native
+    if (anyNativeIterator) {
+      CurrentIteratorPrototype = objectGetPrototypeOf(anyNativeIterator.call(new Iterable()));
+      if (IteratorPrototype$2 !== Object.prototype && CurrentIteratorPrototype.next) {
+        if ( objectGetPrototypeOf(CurrentIteratorPrototype) !== IteratorPrototype$2) {
+          if (objectSetPrototypeOf) {
+            objectSetPrototypeOf(CurrentIteratorPrototype, IteratorPrototype$2);
+          } else if (typeof CurrentIteratorPrototype[ITERATOR$1] != 'function') {
+            hide(CurrentIteratorPrototype, ITERATOR$1, returnThis$2);
+          }
+        }
+        // Set @@toStringTag to native iterators
+        setToStringTag(CurrentIteratorPrototype, TO_STRING_TAG, true);
+      }
+    }
+
+    // fix Array#{values, @@iterator}.name in V8 / FF
+    if (DEFAULT == VALUES && nativeIterator && nativeIterator.name !== VALUES) {
+      INCORRECT_VALUES_NAME = true;
+      defaultIterator = function values() { return nativeIterator.call(this); };
+    }
+
+    // define iterator
+    if ( IterablePrototype[ITERATOR$1] !== defaultIterator) {
+      hide(IterablePrototype, ITERATOR$1, defaultIterator);
+    }
+    iterators[NAME] = defaultIterator;
+
+    // export additional methods
+    if (DEFAULT) {
+      methods = {
+        values: getIterationMethod(VALUES),
+        keys: IS_SET ? defaultIterator : getIterationMethod(KEYS),
+        entries: getIterationMethod(ENTRIES)
+      };
+      if (FORCED) for (KEY in methods) {
+        if (BUGGY_SAFARI_ITERATORS$1 || INCORRECT_VALUES_NAME || !(KEY in IterablePrototype)) {
+          redefine(IterablePrototype, KEY, methods[KEY]);
+        }
+      } else _export({ target: NAME, proto: true, forced: BUGGY_SAFARI_ITERATORS$1 || INCORRECT_VALUES_NAME }, methods);
+    }
+
+    return methods;
+  };
+
+  var charAt = stringMultibyte.charAt;
+
+
+
+  var STRING_ITERATOR = 'String Iterator';
+  var setInternalState = internalState.set;
+  var getInternalState = internalState.getterFor(STRING_ITERATOR);
+
+  // `String.prototype[@@iterator]` method
+  // https://tc39.github.io/ecma262/#sec-string.prototype-@@iterator
+  defineIterator(String, 'String', function (iterated) {
+    setInternalState(this, {
+      type: STRING_ITERATOR,
+      string: String(iterated),
+      index: 0
+    });
+  // `%StringIteratorPrototype%.next` method
+  // https://tc39.github.io/ecma262/#sec-%stringiteratorprototype%.next
+  }, function next() {
+    var state = getInternalState(this);
+    var string = state.string;
+    var index = state.index;
+    var point;
+    if (index >= string.length) return { value: undefined, done: true };
+    point = charAt(string, index);
+    state.index += point.length;
+    return { value: point, done: false };
+  });
+
+  // iterable DOM collections
+  // flag - `iterable` interface - 'entries', 'keys', 'values', 'forEach' methods
+  var domIterables = {
+    CSSRuleList: 0,
+    CSSStyleDeclaration: 0,
+    CSSValueList: 0,
+    ClientRectList: 0,
+    DOMRectList: 0,
+    DOMStringList: 0,
+    DOMTokenList: 1,
+    DataTransferItemList: 0,
+    FileList: 0,
+    HTMLAllCollection: 0,
+    HTMLCollection: 0,
+    HTMLFormElement: 0,
+    HTMLSelectElement: 0,
+    MediaList: 0,
+    MimeTypeArray: 0,
+    NamedNodeMap: 0,
+    NodeList: 1,
+    PaintRequestList: 0,
+    Plugin: 0,
+    PluginArray: 0,
+    SVGLengthList: 0,
+    SVGNumberList: 0,
+    SVGPathSegList: 0,
+    SVGPointList: 0,
+    SVGStringList: 0,
+    SVGTransformList: 0,
+    SourceBufferList: 0,
+    StyleSheetList: 0,
+    TextTrackCueList: 0,
+    TextTrackList: 0,
+    TouchList: 0
+  };
+
+  var UNSCOPABLES = wellKnownSymbol('unscopables');
+  var ArrayPrototype = Array.prototype;
+
+  // Array.prototype[@@unscopables]
+  // https://tc39.github.io/ecma262/#sec-array.prototype-@@unscopables
+  if (ArrayPrototype[UNSCOPABLES] == undefined) {
+    hide(ArrayPrototype, UNSCOPABLES, objectCreate(null));
+  }
+
+  // add a key to Array.prototype[@@unscopables]
+  var addToUnscopables = function (key) {
+    ArrayPrototype[UNSCOPABLES][key] = true;
+  };
+
+  var ARRAY_ITERATOR = 'Array Iterator';
+  var setInternalState$1 = internalState.set;
+  var getInternalState$1 = internalState.getterFor(ARRAY_ITERATOR);
+
+  // `Array.prototype.entries` method
+  // https://tc39.github.io/ecma262/#sec-array.prototype.entries
+  // `Array.prototype.keys` method
+  // https://tc39.github.io/ecma262/#sec-array.prototype.keys
+  // `Array.prototype.values` method
+  // https://tc39.github.io/ecma262/#sec-array.prototype.values
+  // `Array.prototype[@@iterator]` method
+  // https://tc39.github.io/ecma262/#sec-array.prototype-@@iterator
+  // `CreateArrayIterator` internal method
+  // https://tc39.github.io/ecma262/#sec-createarrayiterator
+  var es_array_iterator = defineIterator(Array, 'Array', function (iterated, kind) {
+    setInternalState$1(this, {
+      type: ARRAY_ITERATOR,
+      target: toIndexedObject(iterated), // target
+      index: 0,                          // next index
+      kind: kind                         // kind
+    });
+  // `%ArrayIteratorPrototype%.next` method
+  // https://tc39.github.io/ecma262/#sec-%arrayiteratorprototype%.next
+  }, function () {
+    var state = getInternalState$1(this);
+    var target = state.target;
+    var kind = state.kind;
+    var index = state.index++;
+    if (!target || index >= target.length) {
+      state.target = undefined;
+      return { value: undefined, done: true };
+    }
+    if (kind == 'keys') return { value: index, done: false };
+    if (kind == 'values') return { value: target[index], done: false };
+    return { value: [index, target[index]], done: false };
+  }, 'values');
+
+  // argumentsList[@@iterator] is %ArrayProto_values%
+  // https://tc39.github.io/ecma262/#sec-createunmappedargumentsobject
+  // https://tc39.github.io/ecma262/#sec-createmappedargumentsobject
+  iterators.Arguments = iterators.Array;
+
+  // https://tc39.github.io/ecma262/#sec-array.prototype-@@unscopables
+  addToUnscopables('keys');
+  addToUnscopables('values');
+  addToUnscopables('entries');
+
+  var ITERATOR$2 = wellKnownSymbol('iterator');
+  var TO_STRING_TAG$3 = wellKnownSymbol('toStringTag');
+  var ArrayValues = es_array_iterator.values;
+
+  for (var COLLECTION_NAME in domIterables) {
+    var Collection = global_1[COLLECTION_NAME];
+    var CollectionPrototype = Collection && Collection.prototype;
+    if (CollectionPrototype) {
+      // some Chrome versions have non-configurable methods on DOMTokenList
+      if (CollectionPrototype[ITERATOR$2] !== ArrayValues) try {
+        hide(CollectionPrototype, ITERATOR$2, ArrayValues);
+      } catch (error) {
+        CollectionPrototype[ITERATOR$2] = ArrayValues;
+      }
+      if (!CollectionPrototype[TO_STRING_TAG$3]) hide(CollectionPrototype, TO_STRING_TAG$3, COLLECTION_NAME);
+      if (domIterables[COLLECTION_NAME]) for (var METHOD_NAME in es_array_iterator) {
+        // some Chrome versions have non-configurable methods on DOMTokenList
+        if (CollectionPrototype[METHOD_NAME] !== es_array_iterator[METHOD_NAME]) try {
+          hide(CollectionPrototype, METHOD_NAME, es_array_iterator[METHOD_NAME]);
+        } catch (error) {
+          CollectionPrototype[METHOD_NAME] = es_array_iterator[METHOD_NAME];
+        }
+      }
+    }
+  }
+
+  var redefineAll = function (target, src, options) {
+    for (var key in src) redefine(target, key, src[key], options);
+    return target;
+  };
+
+  var SPECIES = wellKnownSymbol('species');
+
+  var setSpecies = function (CONSTRUCTOR_NAME) {
+    var Constructor = getBuiltIn(CONSTRUCTOR_NAME);
+    var defineProperty = objectDefineProperty.f;
+
+    if (descriptors && Constructor && !Constructor[SPECIES]) {
+      defineProperty(Constructor, SPECIES, {
+        configurable: true,
+        get: function () { return this; }
+      });
+    }
+  };
+
+  var aFunction$1 = function (it) {
+    if (typeof it != 'function') {
+      throw TypeError(String(it) + ' is not a function');
+    } return it;
+  };
+
+  var anInstance = function (it, Constructor, name) {
+    if (!(it instanceof Constructor)) {
+      throw TypeError('Incorrect ' + (name ? name + ' ' : '') + 'invocation');
+    } return it;
+  };
+
+  var ITERATOR$3 = wellKnownSymbol('iterator');
+  var ArrayPrototype$1 = Array.prototype;
+
+  // check on default Array iterator
+  var isArrayIteratorMethod = function (it) {
+    return it !== undefined && (iterators.Array === it || ArrayPrototype$1[ITERATOR$3] === it);
+  };
+
+  // optional / simple context binding
+  var bindContext = function (fn, that, length) {
+    aFunction$1(fn);
+    if (that === undefined) return fn;
+    switch (length) {
+      case 0: return function () {
+        return fn.call(that);
+      };
+      case 1: return function (a) {
+        return fn.call(that, a);
+      };
+      case 2: return function (a, b) {
+        return fn.call(that, a, b);
+      };
+      case 3: return function (a, b, c) {
+        return fn.call(that, a, b, c);
+      };
+    }
+    return function (/* ...args */) {
+      return fn.apply(that, arguments);
+    };
+  };
+
+  var ITERATOR$4 = wellKnownSymbol('iterator');
+
+  var getIteratorMethod = function (it) {
+    if (it != undefined) return it[ITERATOR$4]
+      || it['@@iterator']
+      || iterators[classof(it)];
+  };
+
+  // call something on iterator step with safe closing on error
+  var callWithSafeIterationClosing = function (iterator, fn, value, ENTRIES) {
+    try {
+      return ENTRIES ? fn(anObject(value)[0], value[1]) : fn(value);
+    // 7.4.6 IteratorClose(iterator, completion)
+    } catch (error) {
+      var returnMethod = iterator['return'];
+      if (returnMethod !== undefined) anObject(returnMethod.call(iterator));
+      throw error;
+    }
+  };
+
+  var iterate_1 = createCommonjsModule(function (module) {
+  var Result = function (stopped, result) {
+    this.stopped = stopped;
+    this.result = result;
+  };
+
+  var iterate = module.exports = function (iterable, fn, that, AS_ENTRIES, IS_ITERATOR) {
+    var boundFunction = bindContext(fn, that, AS_ENTRIES ? 2 : 1);
+    var iterator, iterFn, index, length, result, step;
+
+    if (IS_ITERATOR) {
+      iterator = iterable;
+    } else {
+      iterFn = getIteratorMethod(iterable);
+      if (typeof iterFn != 'function') throw TypeError('Target is not iterable');
+      // optimisation for array iterators
+      if (isArrayIteratorMethod(iterFn)) {
+        for (index = 0, length = toLength(iterable.length); length > index; index++) {
+          result = AS_ENTRIES
+            ? boundFunction(anObject(step = iterable[index])[0], step[1])
+            : boundFunction(iterable[index]);
+          if (result && result instanceof Result) return result;
+        } return new Result(false);
+      }
+      iterator = iterFn.call(iterable);
+    }
+
+    while (!(step = iterator.next()).done) {
+      result = callWithSafeIterationClosing(iterator, boundFunction, step.value, AS_ENTRIES);
+      if (result && result instanceof Result) return result;
+    } return new Result(false);
+  };
+
+  iterate.stop = function (result) {
+    return new Result(true, result);
+  };
+  });
+
+  var ITERATOR$5 = wellKnownSymbol('iterator');
+  var SAFE_CLOSING = false;
+
+  try {
+    var called = 0;
+    var iteratorWithReturn = {
+      next: function () {
+        return { done: !!called++ };
+      },
+      'return': function () {
+        SAFE_CLOSING = true;
+      }
+    };
+    iteratorWithReturn[ITERATOR$5] = function () {
+      return this;
+    };
+    // eslint-disable-next-line no-throw-literal
+    Array.from(iteratorWithReturn, function () { throw 2; });
+  } catch (error) { /* empty */ }
+
+  var checkCorrectnessOfIteration = function (exec, SKIP_CLOSING) {
+    if (!SKIP_CLOSING && !SAFE_CLOSING) return false;
+    var ITERATION_SUPPORT = false;
+    try {
+      var object = {};
+      object[ITERATOR$5] = function () {
+        return {
+          next: function () {
+            return { done: ITERATION_SUPPORT = true };
+          }
+        };
+      };
+      exec(object);
+    } catch (error) { /* empty */ }
+    return ITERATION_SUPPORT;
+  };
+
+  var SPECIES$1 = wellKnownSymbol('species');
+
+  // `SpeciesConstructor` abstract operation
+  // https://tc39.github.io/ecma262/#sec-speciesconstructor
+  var speciesConstructor = function (O, defaultConstructor) {
+    var C = anObject(O).constructor;
+    var S;
+    return C === undefined || (S = anObject(C)[SPECIES$1]) == undefined ? defaultConstructor : aFunction$1(S);
+  };
+
+  var location = global_1.location;
+  var set$1 = global_1.setImmediate;
+  var clear = global_1.clearImmediate;
+  var process = global_1.process;
+  var MessageChannel = global_1.MessageChannel;
+  var Dispatch = global_1.Dispatch;
+  var counter = 0;
+  var queue = {};
+  var ONREADYSTATECHANGE = 'onreadystatechange';
+  var defer, channel, port;
+
+  var run = function (id) {
+    // eslint-disable-next-line no-prototype-builtins
+    if (queue.hasOwnProperty(id)) {
+      var fn = queue[id];
+      delete queue[id];
+      fn();
+    }
+  };
+
+  var runner = function (id) {
+    return function () {
+      run(id);
+    };
+  };
+
+  var listener = function (event) {
+    run(event.data);
+  };
+
+  var post = function (id) {
+    // old engines have not location.origin
+    global_1.postMessage(id + '', location.protocol + '//' + location.host);
+  };
+
+  // Node.js 0.9+ & IE10+ has setImmediate, otherwise:
+  if (!set$1 || !clear) {
+    set$1 = function setImmediate(fn) {
+      var args = [];
+      var i = 1;
+      while (arguments.length > i) args.push(arguments[i++]);
+      queue[++counter] = function () {
+        // eslint-disable-next-line no-new-func
+        (typeof fn == 'function' ? fn : Function(fn)).apply(undefined, args);
+      };
+      defer(counter);
+      return counter;
+    };
+    clear = function clearImmediate(id) {
+      delete queue[id];
+    };
+    // Node.js 0.8-
+    if (classofRaw(process) == 'process') {
+      defer = function (id) {
+        process.nextTick(runner(id));
+      };
+    // Sphere (JS game engine) Dispatch API
+    } else if (Dispatch && Dispatch.now) {
+      defer = function (id) {
+        Dispatch.now(runner(id));
+      };
+    // Browsers with MessageChannel, includes WebWorkers
+    } else if (MessageChannel) {
+      channel = new MessageChannel();
+      port = channel.port2;
+      channel.port1.onmessage = listener;
+      defer = bindContext(port.postMessage, port, 1);
+    // Browsers with postMessage, skip WebWorkers
+    // IE8 has postMessage, but it's sync & typeof its postMessage is 'object'
+    } else if (global_1.addEventListener && typeof postMessage == 'function' && !global_1.importScripts && !fails(post)) {
+      defer = post;
+      global_1.addEventListener('message', listener, false);
+    // IE8-
+    } else if (ONREADYSTATECHANGE in documentCreateElement('script')) {
+      defer = function (id) {
+        html.appendChild(documentCreateElement('script'))[ONREADYSTATECHANGE] = function () {
+          html.removeChild(this);
+          run(id);
+        };
+      };
+    // Rest old browsers
+    } else {
+      defer = function (id) {
+        setTimeout(runner(id), 0);
+      };
+    }
+  }
+
+  var task = {
+    set: set$1,
+    clear: clear
+  };
+
+  var userAgent = getBuiltIn('navigator', 'userAgent') || '';
+
+  var getOwnPropertyDescriptor$2 = objectGetOwnPropertyDescriptor.f;
+
+  var macrotask = task.set;
+
+
+  var MutationObserver$1 = global_1.MutationObserver || global_1.WebKitMutationObserver;
+  var process$1 = global_1.process;
+  var Promise$1 = global_1.Promise;
+  var IS_NODE = classofRaw(process$1) == 'process';
+  // Node.js 11 shows ExperimentalWarning on getting `queueMicrotask`
+  var queueMicrotaskDescriptor = getOwnPropertyDescriptor$2(global_1, 'queueMicrotask');
+  var queueMicrotask = queueMicrotaskDescriptor && queueMicrotaskDescriptor.value;
+
+  var flush, head, last, notify, toggle, node, promise;
+
+  // modern engines have queueMicrotask method
+  if (!queueMicrotask) {
+    flush = function () {
+      var parent, fn;
+      if (IS_NODE && (parent = process$1.domain)) parent.exit();
+      while (head) {
+        fn = head.fn;
+        head = head.next;
+        try {
+          fn();
+        } catch (error) {
+          if (head) notify();
+          else last = undefined;
+          throw error;
+        }
+      } last = undefined;
+      if (parent) parent.enter();
+    };
+
+    // Node.js
+    if (IS_NODE) {
+      notify = function () {
+        process$1.nextTick(flush);
+      };
+    // browsers with MutationObserver, except iOS - https://github.com/zloirock/core-js/issues/339
+    } else if (MutationObserver$1 && !/(iphone|ipod|ipad).*applewebkit/i.test(userAgent)) {
+      toggle = true;
+      node = document.createTextNode('');
+      new MutationObserver$1(flush).observe(node, { characterData: true }); // eslint-disable-line no-new
+      notify = function () {
+        node.data = toggle = !toggle;
+      };
+    // environments with maybe non-completely correct, but existent Promise
+    } else if (Promise$1 && Promise$1.resolve) {
+      // Promise.resolve without an argument throws an error in LG WebOS 2
+      promise = Promise$1.resolve(undefined);
+      notify = function () {
+        promise.then(flush);
+      };
+    // for other environments - macrotask based on:
+    // - setImmediate
+    // - MessageChannel
+    // - window.postMessag
+    // - onreadystatechange
+    // - setTimeout
+    } else {
+      notify = function () {
+        // strange IE + webpack dev server bug - use .call(global)
+        macrotask.call(global_1, flush);
+      };
+    }
+  }
+
+  var microtask = queueMicrotask || function (fn) {
+    var task = { fn: fn, next: undefined };
+    if (last) last.next = task;
+    if (!head) {
+      head = task;
+      notify();
+    } last = task;
+  };
+
+  var PromiseCapability = function (C) {
+    var resolve, reject;
+    this.promise = new C(function ($$resolve, $$reject) {
+      if (resolve !== undefined || reject !== undefined) throw TypeError('Bad Promise constructor');
+      resolve = $$resolve;
+      reject = $$reject;
+    });
+    this.resolve = aFunction$1(resolve);
+    this.reject = aFunction$1(reject);
+  };
+
+  // 25.4.1.5 NewPromiseCapability(C)
+  var f$5 = function (C) {
+    return new PromiseCapability(C);
+  };
+
+  var newPromiseCapability = {
+  	f: f$5
+  };
+
+  var promiseResolve = function (C, x) {
+    anObject(C);
+    if (isObject(x) && x.constructor === C) return x;
+    var promiseCapability = newPromiseCapability.f(C);
+    var resolve = promiseCapability.resolve;
+    resolve(x);
+    return promiseCapability.promise;
+  };
+
+  var hostReportErrors = function (a, b) {
+    var console = global_1.console;
+    if (console && console.error) {
+      arguments.length === 1 ? console.error(a) : console.error(a, b);
+    }
+  };
+
+  var perform = function (exec) {
+    try {
+      return { error: false, value: exec() };
+    } catch (error) {
+      return { error: true, value: error };
+    }
+  };
+
+  var task$1 = task.set;
+
+
+
+
+
+
+
+
+
+
+  var SPECIES$2 = wellKnownSymbol('species');
+  var PROMISE = 'Promise';
+  var getInternalState$2 = internalState.get;
+  var setInternalState$2 = internalState.set;
+  var getInternalPromiseState = internalState.getterFor(PROMISE);
+  var PromiseConstructor = global_1[PROMISE];
+  var TypeError$1 = global_1.TypeError;
+  var document$2 = global_1.document;
+  var process$2 = global_1.process;
+  var $fetch = global_1.fetch;
+  var versions = process$2 && process$2.versions;
+  var v8 = versions && versions.v8 || '';
+  var newPromiseCapability$1 = newPromiseCapability.f;
+  var newGenericPromiseCapability = newPromiseCapability$1;
+  var IS_NODE$1 = classofRaw(process$2) == 'process';
+  var DISPATCH_EVENT = !!(document$2 && document$2.createEvent && global_1.dispatchEvent);
+  var UNHANDLED_REJECTION = 'unhandledrejection';
+  var REJECTION_HANDLED = 'rejectionhandled';
+  var PENDING = 0;
+  var FULFILLED = 1;
+  var REJECTED = 2;
+  var HANDLED = 1;
+  var UNHANDLED = 2;
+  var Internal, OwnPromiseCapability, PromiseWrapper;
+
+  var FORCED = isForced_1(PROMISE, function () {
+    // correct subclassing with @@species support
+    var promise = PromiseConstructor.resolve(1);
+    var empty = function () { /* empty */ };
+    var FakePromise = (promise.constructor = {})[SPECIES$2] = function (exec) {
+      exec(empty, empty);
+    };
+    // unhandled rejections tracking support, NodeJS Promise without it fails @@species test
+    return !((IS_NODE$1 || typeof PromiseRejectionEvent == 'function')
+      && (!isPure || promise['finally'])
+      && promise.then(empty) instanceof FakePromise
+      // v8 6.6 (Node 10 and Chrome 66) have a bug with resolving custom thenables
+      // https://bugs.chromium.org/p/chromium/issues/detail?id=830565
+      // we can't detect it synchronously, so just check versions
+      && v8.indexOf('6.6') !== 0
+      && userAgent.indexOf('Chrome/66') === -1);
+  });
+
+  var INCORRECT_ITERATION = FORCED || !checkCorrectnessOfIteration(function (iterable) {
+    PromiseConstructor.all(iterable)['catch'](function () { /* empty */ });
+  });
+
+  // helpers
+  var isThenable = function (it) {
+    var then;
+    return isObject(it) && typeof (then = it.then) == 'function' ? then : false;
+  };
+
+  var notify$1 = function (promise, state, isReject) {
+    if (state.notified) return;
+    state.notified = true;
+    var chain = state.reactions;
+    microtask(function () {
+      var value = state.value;
+      var ok = state.state == FULFILLED;
+      var index = 0;
+      // variable length - can't use forEach
+      while (chain.length > index) {
+        var reaction = chain[index++];
+        var handler = ok ? reaction.ok : reaction.fail;
+        var resolve = reaction.resolve;
+        var reject = reaction.reject;
+        var domain = reaction.domain;
+        var result, then, exited;
+        try {
+          if (handler) {
+            if (!ok) {
+              if (state.rejection === UNHANDLED) onHandleUnhandled(promise, state);
+              state.rejection = HANDLED;
+            }
+            if (handler === true) result = value;
+            else {
+              if (domain) domain.enter();
+              result = handler(value); // can throw
+              if (domain) {
+                domain.exit();
+                exited = true;
+              }
+            }
+            if (result === reaction.promise) {
+              reject(TypeError$1('Promise-chain cycle'));
+            } else if (then = isThenable(result)) {
+              then.call(result, resolve, reject);
+            } else resolve(result);
+          } else reject(value);
+        } catch (error) {
+          if (domain && !exited) domain.exit();
+          reject(error);
+        }
+      }
+      state.reactions = [];
+      state.notified = false;
+      if (isReject && !state.rejection) onUnhandled(promise, state);
+    });
+  };
+
+  var dispatchEvent = function (name, promise, reason) {
+    var event, handler;
+    if (DISPATCH_EVENT) {
+      event = document$2.createEvent('Event');
+      event.promise = promise;
+      event.reason = reason;
+      event.initEvent(name, false, true);
+      global_1.dispatchEvent(event);
+    } else event = { promise: promise, reason: reason };
+    if (handler = global_1['on' + name]) handler(event);
+    else if (name === UNHANDLED_REJECTION) hostReportErrors('Unhandled promise rejection', reason);
+  };
+
+  var onUnhandled = function (promise, state) {
+    task$1.call(global_1, function () {
+      var value = state.value;
+      var IS_UNHANDLED = isUnhandled(state);
+      var result;
+      if (IS_UNHANDLED) {
+        result = perform(function () {
+          if (IS_NODE$1) {
+            process$2.emit('unhandledRejection', value, promise);
+          } else dispatchEvent(UNHANDLED_REJECTION, promise, value);
+        });
+        // Browsers should not trigger `rejectionHandled` event if it was handled here, NodeJS - should
+        state.rejection = IS_NODE$1 || isUnhandled(state) ? UNHANDLED : HANDLED;
+        if (result.error) throw result.value;
+      }
+    });
+  };
+
+  var isUnhandled = function (state) {
+    return state.rejection !== HANDLED && !state.parent;
+  };
+
+  var onHandleUnhandled = function (promise, state) {
+    task$1.call(global_1, function () {
+      if (IS_NODE$1) {
+        process$2.emit('rejectionHandled', promise);
+      } else dispatchEvent(REJECTION_HANDLED, promise, state.value);
+    });
+  };
+
+  var bind = function (fn, promise, state, unwrap) {
+    return function (value) {
+      fn(promise, state, value, unwrap);
+    };
+  };
+
+  var internalReject = function (promise, state, value, unwrap) {
+    if (state.done) return;
+    state.done = true;
+    if (unwrap) state = unwrap;
+    state.value = value;
+    state.state = REJECTED;
+    notify$1(promise, state, true);
+  };
+
+  var internalResolve = function (promise, state, value, unwrap) {
+    if (state.done) return;
+    state.done = true;
+    if (unwrap) state = unwrap;
+    try {
+      if (promise === value) throw TypeError$1("Promise can't be resolved itself");
+      var then = isThenable(value);
+      if (then) {
+        microtask(function () {
+          var wrapper = { done: false };
+          try {
+            then.call(value,
+              bind(internalResolve, promise, wrapper, state),
+              bind(internalReject, promise, wrapper, state)
+            );
+          } catch (error) {
+            internalReject(promise, wrapper, error, state);
+          }
+        });
+      } else {
+        state.value = value;
+        state.state = FULFILLED;
+        notify$1(promise, state, false);
+      }
+    } catch (error) {
+      internalReject(promise, { done: false }, error, state);
+    }
+  };
+
+  // constructor polyfill
+  if (FORCED) {
+    // 25.4.3.1 Promise(executor)
+    PromiseConstructor = function Promise(executor) {
+      anInstance(this, PromiseConstructor, PROMISE);
+      aFunction$1(executor);
+      Internal.call(this);
+      var state = getInternalState$2(this);
+      try {
+        executor(bind(internalResolve, this, state), bind(internalReject, this, state));
+      } catch (error) {
+        internalReject(this, state, error);
+      }
+    };
+    // eslint-disable-next-line no-unused-vars
+    Internal = function Promise(executor) {
+      setInternalState$2(this, {
+        type: PROMISE,
+        done: false,
+        notified: false,
+        parent: false,
+        reactions: [],
+        rejection: false,
+        state: PENDING,
+        value: undefined
+      });
+    };
+    Internal.prototype = redefineAll(PromiseConstructor.prototype, {
+      // `Promise.prototype.then` method
+      // https://tc39.github.io/ecma262/#sec-promise.prototype.then
+      then: function then(onFulfilled, onRejected) {
+        var state = getInternalPromiseState(this);
+        var reaction = newPromiseCapability$1(speciesConstructor(this, PromiseConstructor));
+        reaction.ok = typeof onFulfilled == 'function' ? onFulfilled : true;
+        reaction.fail = typeof onRejected == 'function' && onRejected;
+        reaction.domain = IS_NODE$1 ? process$2.domain : undefined;
+        state.parent = true;
+        state.reactions.push(reaction);
+        if (state.state != PENDING) notify$1(this, state, false);
+        return reaction.promise;
+      },
+      // `Promise.prototype.catch` method
+      // https://tc39.github.io/ecma262/#sec-promise.prototype.catch
+      'catch': function (onRejected) {
+        return this.then(undefined, onRejected);
+      }
+    });
+    OwnPromiseCapability = function () {
+      var promise = new Internal();
+      var state = getInternalState$2(promise);
+      this.promise = promise;
+      this.resolve = bind(internalResolve, promise, state);
+      this.reject = bind(internalReject, promise, state);
+    };
+    newPromiseCapability.f = newPromiseCapability$1 = function (C) {
+      return C === PromiseConstructor || C === PromiseWrapper
+        ? new OwnPromiseCapability(C)
+        : newGenericPromiseCapability(C);
+    };
+
+    // wrap fetch result
+    if ( typeof $fetch == 'function') _export({ global: true, enumerable: true, forced: true }, {
+      // eslint-disable-next-line no-unused-vars
+      fetch: function fetch(input) {
+        return promiseResolve(PromiseConstructor, $fetch.apply(global_1, arguments));
+      }
+    });
+  }
+
+  _export({ global: true, wrap: true, forced: FORCED }, {
+    Promise: PromiseConstructor
+  });
+
+  setToStringTag(PromiseConstructor, PROMISE, false);
+  setSpecies(PROMISE);
+
+  PromiseWrapper = path[PROMISE];
+
+  // statics
+  _export({ target: PROMISE, stat: true, forced: FORCED }, {
+    // `Promise.reject` method
+    // https://tc39.github.io/ecma262/#sec-promise.reject
+    reject: function reject(r) {
+      var capability = newPromiseCapability$1(this);
+      capability.reject.call(undefined, r);
+      return capability.promise;
+    }
+  });
+
+  _export({ target: PROMISE, stat: true, forced:  FORCED }, {
+    // `Promise.resolve` method
+    // https://tc39.github.io/ecma262/#sec-promise.resolve
+    resolve: function resolve(x) {
+      return promiseResolve( this, x);
+    }
+  });
+
+  _export({ target: PROMISE, stat: true, forced: INCORRECT_ITERATION }, {
+    // `Promise.all` method
+    // https://tc39.github.io/ecma262/#sec-promise.all
+    all: function all(iterable) {
+      var C = this;
+      var capability = newPromiseCapability$1(C);
+      var resolve = capability.resolve;
+      var reject = capability.reject;
+      var result = perform(function () {
+        var $promiseResolve = aFunction$1(C.resolve);
+        var values = [];
+        var counter = 0;
+        var remaining = 1;
+        iterate_1(iterable, function (promise) {
+          var index = counter++;
+          var alreadyCalled = false;
+          values.push(undefined);
+          remaining++;
+          $promiseResolve.call(C, promise).then(function (value) {
+            if (alreadyCalled) return;
+            alreadyCalled = true;
+            values[index] = value;
+            --remaining || resolve(values);
+          }, reject);
+        });
+        --remaining || resolve(values);
+      });
+      if (result.error) reject(result.value);
+      return capability.promise;
+    },
+    // `Promise.race` method
+    // https://tc39.github.io/ecma262/#sec-promise.race
+    race: function race(iterable) {
+      var C = this;
+      var capability = newPromiseCapability$1(C);
+      var reject = capability.reject;
+      var result = perform(function () {
+        var $promiseResolve = aFunction$1(C.resolve);
+        iterate_1(iterable, function (promise) {
+          $promiseResolve.call(C, promise).then(capability.resolve, reject);
+        });
+      });
+      if (result.error) reject(result.value);
+      return capability.promise;
+    }
+  });
+
+  // `Promise.prototype.finally` method
+  // https://tc39.github.io/ecma262/#sec-promise.prototype.finally
+  _export({ target: 'Promise', proto: true, real: true }, {
+    'finally': function (onFinally) {
+      var C = speciesConstructor(this, getBuiltIn('Promise'));
+      var isFunction = typeof onFinally == 'function';
+      return this.then(
+        isFunction ? function (x) {
+          return promiseResolve(C, onFinally()).then(function () { return x; });
+        } : onFinally,
+        isFunction ? function (e) {
+          return promiseResolve(C, onFinally()).then(function () { throw e; });
+        } : onFinally
+      );
+    }
+  });
+
+  var promise$1 = path.Promise;
+
+  var $AggregateError = function AggregateError(errors, message) {
+    var that = this;
+    if (!(that instanceof $AggregateError)) return new $AggregateError(errors, message);
+    if (objectSetPrototypeOf) {
+      that = objectSetPrototypeOf(new Error(message), objectGetPrototypeOf(that));
+    }
+    var errorsArray = [];
+    iterate_1(errors, errorsArray.push, errorsArray);
+    that.errors = errorsArray;
+    if (message !== undefined) hide(that, 'message', String(message));
+    return that;
+  };
+
+  $AggregateError.prototype = objectCreate(Error.prototype, {
+    constructor: createPropertyDescriptor(5, $AggregateError),
+    name: createPropertyDescriptor(5, 'AggregateError')
+  });
+
+  _export({ global: true }, {
+    AggregateError: $AggregateError
+  });
+
+  // `Promise.allSettled` method
+  // https://github.com/tc39/proposal-promise-allSettled
+  _export({ target: 'Promise', stat: true }, {
+    allSettled: function allSettled(iterable) {
+      var C = this;
+      var capability = newPromiseCapability.f(C);
+      var resolve = capability.resolve;
+      var reject = capability.reject;
+      var result = perform(function () {
+        var promiseResolve = aFunction$1(C.resolve);
+        var values = [];
+        var counter = 0;
+        var remaining = 1;
+        iterate_1(iterable, function (promise) {
+          var index = counter++;
+          var alreadyCalled = false;
+          values.push(undefined);
+          remaining++;
+          promiseResolve.call(C, promise).then(function (value) {
+            if (alreadyCalled) return;
+            alreadyCalled = true;
+            values[index] = { status: 'fulfilled', value: value };
+            --remaining || resolve(values);
+          }, function (e) {
+            if (alreadyCalled) return;
+            alreadyCalled = true;
+            values[index] = { status: 'rejected', reason: e };
+            --remaining || resolve(values);
+          });
+        });
+        --remaining || resolve(values);
+      });
+      if (result.error) reject(result.value);
+      return capability.promise;
+    }
+  });
+
+  // `Promise.try` method
+  // https://github.com/tc39/proposal-promise-try
+  _export({ target: 'Promise', stat: true }, {
+    'try': function (callbackfn) {
+      var promiseCapability = newPromiseCapability.f(this);
+      var result = perform(callbackfn);
+      (result.error ? promiseCapability.reject : promiseCapability.resolve)(result.value);
+      return promiseCapability.promise;
+    }
+  });
+
+  var PROMISE_ANY_ERROR = 'No one promise resolved';
+
+  // `Promise.any` method
+  // https://github.com/tc39/proposal-promise-any
+  _export({ target: 'Promise', stat: true }, {
+    any: function any(iterable) {
+      var C = this;
+      var capability = newPromiseCapability.f(C);
+      var resolve = capability.resolve;
+      var reject = capability.reject;
+      var result = perform(function () {
+        var promiseResolve = aFunction$1(C.resolve);
+        var errors = [];
+        var counter = 0;
+        var remaining = 1;
+        var alreadyResolved = false;
+        iterate_1(iterable, function (promise) {
+          var index = counter++;
+          var alreadyRejected = false;
+          errors.push(undefined);
+          remaining++;
+          promiseResolve.call(C, promise).then(function (value) {
+            if (alreadyRejected || alreadyResolved) return;
+            alreadyResolved = true;
+            resolve(value);
+          }, function (e) {
+            if (alreadyRejected || alreadyResolved) return;
+            alreadyRejected = true;
+            errors[index] = e;
+            --remaining || reject(new (getBuiltIn('AggregateError'))(errors, PROMISE_ANY_ERROR));
+          });
+        });
+        --remaining || reject(new (getBuiltIn('AggregateError'))(errors, PROMISE_ANY_ERROR));
+      });
+      if (result.error) reject(result.value);
+      return capability.promise;
+    }
+  });
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+
+  class ShadyData {
+
+    /** @override */
+    toJSON() {
+      return {};
+    }
+  }
+
+  function ensureShadyDataForNode(node) {
+    if (!node.__shady) {
+      node.__shady = new ShadyData();
+    }
+    return node.__shady;
+  }
+
+  function shadyDataForNode(node) {
+    return node && node.__shady;
+  }
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /** @type {!Object} */
+  const settings = window['ShadyDOM'] || {};
+
+  settings.hasNativeShadowDOM = Boolean(Element.prototype.attachShadow && Node.prototype.getRootNode);
+
+  const desc = Object.getOwnPropertyDescriptor(Node.prototype, 'firstChild');
+
+  settings.hasDescriptors = Boolean(desc && desc.configurable && desc.get);
+  settings.inUse = settings['force'] || !settings.hasNativeShadowDOM;
+  settings.noPatch = settings['noPatch'] || false;
+  settings.preferPerformance = settings['preferPerformance'];
+
+  const IS_IE = navigator.userAgent.match('Trident');
+  settings.IS_IE = IS_IE;
+
+  const canUpgrade = () => !settings.IS_IE;
+
+  const isTrackingLogicalChildNodes = (node) => {
+    const nodeData = shadyDataForNode(node);
+    return (nodeData && nodeData.firstChild !== undefined);
+  };
+
+  const isShadyRoot = (obj) => {
+    return Boolean(obj._localName === 'ShadyRoot');
+  };
+
+  const hasShadowRootWithSlot = (node) => {
+    const nodeData = shadyDataForNode(node);
+    let root = nodeData && nodeData.root;
+    return (root && root._hasInsertionPoint());
+  };
+
+  let p = Element.prototype;
+  let matches = p.matches || p.matchesSelector ||
+    p.mozMatchesSelector || p.msMatchesSelector ||
+    p.oMatchesSelector || p.webkitMatchesSelector;
+
+  const matchesSelector = (element, selector) => {
+    return matches.call(element, selector);
+  };
+
+  // NOTE, prefer MutationObserver over Promise for microtask timing
+  // for consistency x-platform.
+  let twiddle = document.createTextNode('');
+  let content = 0;
+  let queue$1 = [];
+  new MutationObserver(() => {
+    while (queue$1.length) {
+      // catch errors in user code...
+      try {
+        queue$1.shift()();
+      } catch(e) {
+        // enqueue another record and throw
+        twiddle.textContent = content++;
+        throw(e);
+      }
+    }
+  }).observe(twiddle, {characterData: true});
+
+  // use MutationObserver to get microtask async timing.
+  const microtask$1 = (callback) => {
+    queue$1.push(callback);
+    twiddle.textContent = content++;
+  };
+
+  const hasDocumentContains = Boolean(document.contains);
+
+  const contains = (container, node) => {
+    while (node) {
+      if (node == container) {
+        return true;
+      }
+      node = node[SHADY_PREFIX + 'parentNode'];
+    }
+    return false;
+  };
+
+  const getNodeHTMLCollectionName = (node) =>
+      node.getAttribute('id') || node.getAttribute('name');
+
+  const isValidHTMLCollectionName = (name) => name !== 'length' && isNaN(name);
+
+  const createPolyfilledHTMLCollection = (nodes) => {
+    // Note: loop in reverse so that the first named item matches the named property
+    for (let l = nodes.length - 1; l >= 0; l--) {
+      const node = nodes[l];
+      const name = getNodeHTMLCollectionName(node);
+
+      if (name && isValidHTMLCollectionName(name)) {
+        nodes[name] = node;
+      }
+    }
+    nodes.item = function(index) {
+      return nodes[index];
+    };
+    nodes.namedItem = function(name) {
+      if (isValidHTMLCollectionName(name) && nodes[name]) {
+        return nodes[name];
+      }
+
+      for (const node of nodes) {
+        const nodeName = getNodeHTMLCollectionName(node);
+
+        if (nodeName == name) {
+          return node;
+        }
+      }
+
+      return null;
+    };
+    return nodes;
+  };
+
+  const NATIVE_PREFIX = '__shady_native_';
+  const SHADY_PREFIX = '__shady_';
+
+  const nativeChildNodesArray = (parent) => {
+    const result = [];
+    for (let n=parent[NATIVE_PREFIX + 'firstChild']; n; n = n[NATIVE_PREFIX + 'nextSibling']) {
+      result.push(n);
+    }
+    return result;
+  };
+
+  const childNodesArray = (parent) => {
+    const result = [];
+    for (let n=parent[SHADY_PREFIX + 'firstChild']; n; n = n[SHADY_PREFIX + 'nextSibling']) {
+      result.push(n);
+    }
+    return result;
+  };
+
+  /**
+   * Patch a group of accessors on an object only if it exists or if the `force`
+   * argument is true.
+   * @param {!Object} proto
+   * @param {!Object} descriptors
+   * @param {string=} prefix
+   * @param {Array=} disallowedPatches
+   */
+  const patchProperties = (proto, descriptors, prefix = '', disallowedPatches) => {
+    for (let p in descriptors) {
+      const newDescriptor = descriptors[p];
+      if (disallowedPatches && disallowedPatches.indexOf(p) >= 0) {
+        continue;
+      }
+      newDescriptor.configurable = true;
+      const name = prefix + p;
+      // NOTE: we prefer writing directly because some browsers
+      // have descriptors that are writable but not configurable (e.g.
+      // `appendChild` on older browsers)
+      if (newDescriptor.value) {
+        proto[name] = newDescriptor.value;
+      } else {
+        // NOTE: this can throw if 'force' is used so catch the error.
+        try {
+          Object.defineProperty(proto, name, newDescriptor);
+        } catch(e) {
+          // this error is harmless so we just trap it.
+        }
+      }
+    }
+  };
+
+  /** @type {!function(new:HTMLElement)} */
+  const NativeHTMLElement =
+      (window['customElements'] && window['customElements']['nativeHTMLElement']) ||
+      HTMLElement;
+
+  // note, this is not a perfect polyfill since it doesn't include symbols
+  /** @return {!Object<!ObjectPropertyDescriptor>} */
+  const getOwnPropertyDescriptors = (obj) => {
+    const descriptors = {};
+    Object.getOwnPropertyNames(obj).forEach((name) => {
+      descriptors[name] = Object.getOwnPropertyDescriptor(obj, name);
+    });
+    return descriptors;
+  };
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  // render enqueuer/flusher
+  let flushList = [];
+  let scheduled;
+  function enqueue(callback) {
+    if (!scheduled) {
+      scheduled = true;
+      microtask$1(flush$1);
+    }
+    flushList.push(callback);
+  }
+
+  function flush$1() {
+    scheduled = false;
+    let didFlush = Boolean(flushList.length);
+    while (flushList.length) {
+      flushList.shift()();
+    }
+    return didFlush;
+  }
+
+  flush$1['list'] = flushList;
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  class AsyncObserver {
+
+    constructor() {
+      this._scheduled = false;
+      this.addedNodes = [];
+      this.removedNodes = [];
+      this.callbacks = new Set();
+    }
+
+    schedule() {
+      if (!this._scheduled) {
+        this._scheduled = true;
+        microtask$1(() => {
+          this.flush();
+        });
+      }
+    }
+
+    flush() {
+      if (this._scheduled) {
+        this._scheduled = false;
+        let mutations = this.takeRecords();
+        if (mutations.length) {
+          this.callbacks.forEach(function(cb) {
+            cb(mutations);
+          });
+        }
+      }
+    }
+
+    takeRecords() {
+      if (this.addedNodes.length || this.removedNodes.length) {
+        let mutations = [{
+          addedNodes: this.addedNodes,
+          removedNodes: this.removedNodes
+        }];
+        this.addedNodes = [];
+        this.removedNodes = [];
+        return mutations;
+      }
+      return [];
+    }
+
+  }
+
+  // TODO(sorvell): consider instead polyfilling MutationObserver
+  // directly so that users do not have to fork their code.
+  // Supporting the entire api may be challenging: e.g. filtering out
+  // removed nodes in the wrong scope and seeing non-distributing
+  // subtree child mutations.
+  let observeChildren = function(node, callback) {
+    const sd = ensureShadyDataForNode(node);
+    if (!sd.observer) {
+      sd.observer = new AsyncObserver();
+    }
+    sd.observer.callbacks.add(callback);
+    let observer = sd.observer;
+    return {
+      _callback: callback,
+      _observer: observer,
+      _node: node,
+      takeRecords() {
+        return observer.takeRecords()
+      }
+    };
+  };
+
+  let unobserveChildren = function(handle) {
+    let observer = handle && handle._observer;
+    if (observer) {
+      observer.callbacks.delete(handle._callback);
+      if (!observer.callbacks.size) {
+        ensureShadyDataForNode(handle._node).observer = null;
+      }
+    }
+  };
+
+  function filterMutations(mutations, target) {
+    /** @const {Node} */
+    const targetRootNode = target.getRootNode();
+    return mutations.map(function(mutation) {
+      /** @const {boolean} */
+      const mutationInScope = (targetRootNode === mutation.target.getRootNode());
+      if (mutationInScope && mutation.addedNodes) {
+        let nodes = Array.from(mutation.addedNodes).filter(function(n) {
+          return (targetRootNode === n.getRootNode());
+        });
+        if (nodes.length) {
+          mutation = Object.create(mutation);
+          Object.defineProperty(mutation, 'addedNodes', {
+            value: nodes,
+            configurable: true
+          });
+          return mutation;
+        }
+      } else if (mutationInScope) {
+        return mutation;
+      }
+    }).filter(function(m) { return m});
+  }
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  // Cribbed from ShadowDOM polyfill
+  // https://github.com/webcomponents/webcomponentsjs/blob/master/src/ShadowDOM/wrappers/HTMLElement.js#L28
+  /////////////////////////////////////////////////////////////////////////////
+  // innerHTML and outerHTML
+
+  // http://www.whatwg.org/specs/web-apps/current-work/multipage/the-end.html#escapingString
+  let escapeAttrRegExp = /[&\u00A0"]/g;
+  let escapeDataRegExp = /[&\u00A0<>]/g;
+
+  function escapeReplace(c) {
+    switch (c) {
+      case '&':
+        return '&amp;';
+      case '<':
+        return '&lt;';
+      case '>':
+        return '&gt;';
+      case '"':
+        return '&quot;';
+      case '\u00A0':
+        return '&nbsp;';
+    }
+  }
+
+  function escapeAttr(s) {
+    return s.replace(escapeAttrRegExp, escapeReplace);
+  }
+
+  function escapeData(s) {
+    return s.replace(escapeDataRegExp, escapeReplace);
+  }
+
+  function makeSet(arr) {
+    let set = {};
+    for (let i = 0; i < arr.length; i++) {
+      set[arr[i]] = true;
+    }
+    return set;
+  }
+
+  // http://www.whatwg.org/specs/web-apps/current-work/#void-elements
+  let voidElements = makeSet([
+    'area',
+    'base',
+    'br',
+    'col',
+    'command',
+    'embed',
+    'hr',
+    'img',
+    'input',
+    'keygen',
+    'link',
+    'meta',
+    'param',
+    'source',
+    'track',
+    'wbr'
+  ]);
+
+  let plaintextParents = makeSet([
+    'style',
+    'script',
+    'xmp',
+    'iframe',
+    'noembed',
+    'noframes',
+    'plaintext',
+    'noscript'
+  ]);
+
+  /**
+   * @param {Node} node
+   * @param {Node} parentNode
+   * @param {Function=} callback
+   */
+  function getOuterHTML(node, parentNode, callback) {
+    switch (node.nodeType) {
+      case Node.ELEMENT_NODE: {
+        let tagName = node.localName;
+        let s = '<' + tagName;
+        let attrs = node.attributes;
+        for (let i = 0, attr; (attr = attrs[i]); i++) {
+          s += ' ' + attr.name + '="' + escapeAttr(attr.value) + '"';
+        }
+        s += '>';
+        if (voidElements[tagName]) {
+          return s;
+        }
+        return s + getInnerHTML(node, callback) + '</' + tagName + '>';
+      }
+      case Node.TEXT_NODE: {
+        let data = /** @type {Text} */ (node).data;
+        if (parentNode && plaintextParents[parentNode.localName]) {
+          return data;
+        }
+        return escapeData(data);
+      }
+      case Node.COMMENT_NODE: {
+        return '<!--' + /** @type {Comment} */ (node).data + '-->';
+      }
+      default: {
+        window.console.error(node);
+        throw new Error('not implemented');
+      }
+    }
+  }
+
+  /**
+   * @param {Node} node
+   * @param {Function=} callback
+   */
+  function getInnerHTML(node, callback) {
+    if (node.localName === 'template') {
+      node =  /** @type {HTMLTemplateElement} */ (node).content;
+    }
+    let s = '';
+    let c$ = callback ? callback(node) : node.childNodes;
+    for (let i=0, l=c$.length, child; (i<l) && (child=c$[i]); i++) {
+      s += getOuterHTML(child, node, callback);
+    }
+    return s;
+  }
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  const hasDescriptors = settings.hasDescriptors;
+  const NATIVE_PREFIX$1 = NATIVE_PREFIX;
+
+  // Object on which raw native methods are stored.
+  // e.g. `nativeMethods.querySelector.call(node, selector)`
+  // same as `node.querySelector(selector)`
+  const nativeMethods = {
+    /** @this {Element} */
+    querySelector(selector) {
+      return this[NATIVE_PREFIX$1 + 'querySelector'](selector);
+    },
+    /** @this {Element} */
+    querySelectorAll(selector) {
+      return this[NATIVE_PREFIX$1 + 'querySelectorAll'](selector);
+    }
+  };
+  // Object on which raw native accessors are available via `accessorName(node)`.
+  // e.g. `nativeTree.firstChild(node)`
+  // same as `node.firstChild`
+  const nativeTree = {};
+
+  const installNativeAccessor = (name) => {
+    nativeTree[name] = (node) => node[NATIVE_PREFIX$1 + name];
+  };
+
+  const installNativeMethod = (name, fn) => {
+    if (!nativeMethods[name]) {
+      nativeMethods[name] = fn;
+    }
+  };
+
+
+  const defineNativeAccessors = (proto, descriptors) => {
+    patchProperties(proto, descriptors, NATIVE_PREFIX$1);
+    // make native accessors available to users
+    for (let prop in descriptors) {
+      installNativeAccessor(prop);
+    }
+  };
+
+  const copyProperties = (proto, list = []) => {
+    for (let i = 0; i < list.length; i++) {
+      const name = list[i];
+      const descriptor = Object.getOwnPropertyDescriptor(proto, name);
+      if (descriptor) {
+        Object.defineProperty(proto, NATIVE_PREFIX$1 + name, descriptor);
+        // make native methods/accessors available to users
+        if (descriptor.value) {
+          installNativeMethod(name, descriptor.value);
+        } else {
+          installNativeAccessor(name);
+        }
+      }
+    }
+  };
+
+  /** @type {!TreeWalker} */
+  const nodeWalker = document.createTreeWalker(document, NodeFilter.SHOW_ALL,
+    null, false);
+
+  /** @type {!TreeWalker} */
+  const elementWalker = document.createTreeWalker(document, NodeFilter.SHOW_ELEMENT,
+    null, false);
+
+  /** @type {!Document} */
+  const inertDoc = document.implementation.createHTMLDocument('inert');
+
+  const clearNode = node => {
+    let firstChild;
+    while ((firstChild = node[NATIVE_PREFIX$1 + 'firstChild'])) {
+      node[NATIVE_PREFIX$1 + 'removeChild'](firstChild);
+    }
+  };
+
+  const ParentNodeAccessors = [
+    'firstElementChild',
+    'lastElementChild',
+    'children',
+    'childElementCount',
+  ];
+
+  const ParentNodeMethods = [
+    'querySelector',
+    'querySelectorAll'
+    // 'append', 'prepend'
+  ];
+
+  const addNativePrefixedProperties = () => {
+
+    // EventTarget
+    const eventProps = [
+      'dispatchEvent',
+      'addEventListener',
+      'removeEventListener'
+    ];
+    if (window.EventTarget) {
+      copyProperties(window.EventTarget.prototype, eventProps);
+    } else {
+      copyProperties(Node.prototype, eventProps);
+      copyProperties(Window.prototype, eventProps);
+    }
+
+
+    // Node
+    if (hasDescriptors) {
+      copyProperties(Node.prototype, [
+        'parentNode',
+        'firstChild',
+        'lastChild',
+        'previousSibling',
+        'nextSibling',
+        'childNodes',
+        'parentElement',
+        'textContent',
+      ]);
+    } else {
+      defineNativeAccessors(Node.prototype, {
+        parentNode: {
+          /** @this {Node} */
+          get() {
+            nodeWalker.currentNode = this;
+            return nodeWalker.parentNode();
+          }
+        },
+        firstChild: {
+          /** @this {Node} */
+          get() {
+            nodeWalker.currentNode = this;
+            return nodeWalker.firstChild();
+          }
+        },
+        lastChild: {
+          /** @this {Node} */
+          get() {
+            nodeWalker.currentNode = this;
+            return nodeWalker.lastChild();
+          }
+
+        },
+        previousSibling: {
+          /** @this {Node} */
+          get() {
+            nodeWalker.currentNode = this;
+            return nodeWalker.previousSibling();
+          }
+        },
+        nextSibling: {
+          /** @this {Node} */
+          get() {
+            nodeWalker.currentNode = this;
+            return nodeWalker.nextSibling();
+          }
+        },
+        // TODO(sorvell): make this a NodeList or whatever
+        childNodes: {
+          /** @this {Node} */
+          get() {
+            const nodes = [];
+            nodeWalker.currentNode = this;
+            let n = nodeWalker.firstChild();
+            while (n) {
+              nodes.push(n);
+              n = nodeWalker.nextSibling();
+            }
+            return nodes;
+          }
+        },
+        parentElement: {
+          /** @this {Node} */
+          get() {
+            elementWalker.currentNode = this;
+            return elementWalker.parentNode();
+          }
+        },
+        textContent: {
+          /** @this {Node} */
+          get() {
+            /* eslint-disable no-case-declarations */
+            switch (this.nodeType) {
+              case Node.ELEMENT_NODE:
+              case Node.DOCUMENT_FRAGMENT_NODE:
+                // TODO(sorvell): This cannot be a single TreeWalker that's reused
+                // at least for Safari 9, but it's unclear why.
+                const textWalker = document.createTreeWalker(this, NodeFilter.SHOW_TEXT,
+                  null, false);
+                let content = '', n;
+                while ( (n = textWalker.nextNode()) ) {
+                  // TODO(sorvell): can't use textContent since we patch it on Node.prototype!
+                  // However, should probably patch it only on element.
+                  content += n.nodeValue;
+                }
+                return content;
+              default:
+                return this.nodeValue;
+            }
+          },
+          // Needed on browsers that do not proper accessors (e.g. old versions of Chrome)
+          /** @this {Node} */
+          set(value) {
+            if (typeof value === 'undefined' || value === null) {
+              value = '';
+            }
+            switch (this.nodeType) {
+              case Node.ELEMENT_NODE:
+              case Node.DOCUMENT_FRAGMENT_NODE:
+                clearNode(this);
+                // Document fragments must have no childnodes if setting a blank string
+                if (value.length > 0 || this.nodeType === Node.ELEMENT_NODE) {
+                  // Note: old Chrome versions require 2nd argument here
+                  this[NATIVE_PREFIX$1 + 'insertBefore'](document.createTextNode(value), undefined);
+                }
+                break;
+              default:
+                // TODO(sorvell): can't do this if patch nodeValue.
+                this.nodeValue = value;
+                break;
+            }
+          }
+        }
+      });
+    }
+
+    copyProperties(Node.prototype, [
+      'appendChild',
+      'insertBefore',
+      'removeChild',
+      'replaceChild',
+      'cloneNode',
+      'contains'
+    ]);
+
+    // NOTE, on some browsers IE 11 / Edge 15 some properties are incorrectly on HTMLElement
+    copyProperties(HTMLElement.prototype, [
+      'parentElement',
+      'contains'
+    ]);
+
+    const ParentNodeWalkerDescriptors = {
+      firstElementChild: {
+        /** @this {ParentNode} */
+        get() {
+          elementWalker.currentNode = this;
+          return elementWalker.firstChild();
+        }
+      },
+      lastElementChild: {
+        /** @this {ParentNode} */
+        get() {
+          elementWalker.currentNode = this;
+          return elementWalker.lastChild();
+        }
+      },
+      children: {
+        /** @this {ParentNode} */
+        get() {
+          let nodes = [];
+          elementWalker.currentNode = this;
+          let n = elementWalker.firstChild();
+          while (n) {
+            nodes.push(n);
+            n = elementWalker.nextSibling();
+          }
+          return createPolyfilledHTMLCollection(nodes);
+        }
+      },
+      childElementCount: {
+        /** @this {ParentNode} */
+        get() {
+          if (this.children) {
+            return this.children.length;
+          }
+          return 0;
+        }
+      }
+    };
+
+    // Element
+    if (hasDescriptors) {
+      copyProperties(Element.prototype, ParentNodeAccessors);
+
+      copyProperties(Element.prototype, [
+        'previousElementSibling',
+        'nextElementSibling',
+        'innerHTML',
+        'className'
+      ]);
+
+      // NOTE, on some browsers IE 11 / Edge 15 some properties are incorrectly on HTMLElement
+      copyProperties(HTMLElement.prototype, [
+        'children',
+        'innerHTML',
+        'className'
+      ]);
+    } else {
+      defineNativeAccessors(Element.prototype, ParentNodeWalkerDescriptors);
+      defineNativeAccessors(Element.prototype, {
+        previousElementSibling: {
+          /** @this {Element} */
+          get() {
+            elementWalker.currentNode = this;
+            return elementWalker.previousSibling();
+          }
+        },
+        nextElementSibling: {
+          /** @this {Element} */
+          get() {
+            elementWalker.currentNode = this;
+            return elementWalker.nextSibling();
+          }
+        },
+        innerHTML: {
+          /** @this {Element} */
+          get() {
+            return getInnerHTML(this, nativeChildNodesArray);
+          },
+          // Needed on browsers that do not proper accessors (e.g. old versions of Chrome)
+          /** @this {Element} */
+          set(value) {
+            const content = this.localName === 'template' ?
+            /** @type {HTMLTemplateElement} */(this).content : this;
+            clearNode(content);
+            const containerName = this.localName || 'div';
+            let htmlContainer;
+            if (!this.namespaceURI || this.namespaceURI === inertDoc.namespaceURI) {
+              htmlContainer = inertDoc.createElement(containerName);
+            } else {
+              htmlContainer = inertDoc.createElementNS(this.namespaceURI, containerName);
+            }
+            htmlContainer.innerHTML = value;
+            const newContent = this.localName === 'template' ?
+              /** @type {HTMLTemplateElement} */(htmlContainer).content : htmlContainer;
+            let firstChild;
+            while ((firstChild = newContent[NATIVE_PREFIX$1 + 'firstChild'])) {
+              // Note: old Chrome versions require 2nd argument here
+              content[NATIVE_PREFIX$1 + 'insertBefore'](firstChild, undefined);
+            }
+          }
+        },
+        className: {
+          /** @this {Element} */
+          get() {
+            return this.getAttribute('class') || '';
+          },
+          /** @this {Element} */
+          set(value) {
+            this.setAttribute('class', value);
+          }
+        }
+      });
+    }
+
+    copyProperties(Element.prototype, [
+      'setAttribute',
+      'getAttribute',
+      'hasAttribute',
+      'removeAttribute',
+      // on older Safari, these are on Element.
+      'focus',
+      'blur',
+    ]);
+    copyProperties(Element.prototype, ParentNodeMethods);
+
+    // HTMLElement
+    copyProperties(HTMLElement.prototype, [
+      'focus',
+      'blur'
+    ]);
+
+    // HTMLTemplateElement
+    if (window.HTMLTemplateElement) {
+      copyProperties(window.HTMLTemplateElement.prototype, ['innerHTML']);
+    }
+
+    // DocumentFragment
+    if (hasDescriptors) {
+      // NOTE, IE 11 does not have on DocumentFragment
+      // firstElementChild
+      // lastElementChild
+      copyProperties(DocumentFragment.prototype, ParentNodeAccessors);
+    } else {
+      defineNativeAccessors(DocumentFragment.prototype, ParentNodeWalkerDescriptors);
+    }
+
+    copyProperties(DocumentFragment.prototype, ParentNodeMethods);
+
+    // Document
+    if (hasDescriptors) {
+      copyProperties(Document.prototype, ParentNodeAccessors);
+      copyProperties(Document.prototype, [
+        'activeElement'
+      ]);
+    } else {
+      defineNativeAccessors(Document.prototype, ParentNodeWalkerDescriptors);
+    }
+
+    copyProperties(Document.prototype, [
+      'importNode',
+      'getElementById'
+    ]);
+    copyProperties(Document.prototype, ParentNodeMethods);
+
+  };
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  const InsideDescriptors = getOwnPropertyDescriptors({
+
+    /** @this {Node} */
+    get childNodes() {
+      return this[SHADY_PREFIX + 'childNodes'];
+    },
+
+    /** @this {Node} */
+    get firstChild() {
+      return this[SHADY_PREFIX + 'firstChild'];
+    },
+
+    /** @this {Node} */
+    get lastChild() {
+      return this[SHADY_PREFIX + 'lastChild'];
+    },
+
+    /** @this {Node} */
+    get childElementCount() {
+      return this[SHADY_PREFIX + 'childElementCount'];
+    },
+
+    /** @this {Node} */
+    get children() {
+      return this[SHADY_PREFIX + 'children'];
+    },
+
+    /** @this {Node} */
+    get firstElementChild() {
+      return this[SHADY_PREFIX + 'firstElementChild'];
+    },
+
+    /** @this {Node} */
+    get lastElementChild() {
+      return this[SHADY_PREFIX + 'lastElementChild'];
+    },
+
+    /** @this {Node} */
+    get shadowRoot() {
+      return this[SHADY_PREFIX + 'shadowRoot'];
+    },
+
+  });
+
+  const TextContentInnerHTMLDescriptors = getOwnPropertyDescriptors({
+    /** @this {Node} */
+    get textContent() {
+      return this[SHADY_PREFIX + 'textContent'];
+    },
+
+    /** @this {Node} */
+    set textContent(value) {
+      this[SHADY_PREFIX + 'textContent'] = value;
+    },
+
+    /** @this {Node} */
+    get innerHTML() {
+      return this[SHADY_PREFIX + 'innerHTML'];
+    },
+
+    /** @this {Node} */
+    set innerHTML(value) {
+      return this[SHADY_PREFIX + 'innerHTML'] = value;
+    },
+  });
+
+  const OutsideDescriptors = getOwnPropertyDescriptors({
+
+    /** @this {Node} */
+    get parentElement() {
+      return this[SHADY_PREFIX + 'parentElement'];
+    },
+
+    /** @this {Node} */
+    get parentNode() {
+      return this[SHADY_PREFIX + 'parentNode'];
+    },
+
+    /** @this {Node} */
+    get nextSibling() {
+      return this[SHADY_PREFIX + 'nextSibling'];
+    },
+
+    /** @this {Node} */
+    get previousSibling() {
+      return this[SHADY_PREFIX + 'previousSibling'];
+    },
+
+    /** @this {Node} */
+    get nextElementSibling() {
+      return this[SHADY_PREFIX + 'nextElementSibling'];
+    },
+
+    /** @this {Node} */
+    get previousElementSibling() {
+      return this[SHADY_PREFIX + 'previousElementSibling'];
+    },
+
+    /** @this {Node} */
+    get className() {
+      return this[SHADY_PREFIX + 'className'];
+    },
+
+    /** @this {Node} */
+    set className(value) {
+      return this[SHADY_PREFIX + 'className'] = value;
+    }
+
+  });
+
+  for (let prop in InsideDescriptors) {
+    InsideDescriptors[prop].enumerable = false;
+  }
+
+  for (let prop in TextContentInnerHTMLDescriptors) {
+    TextContentInnerHTMLDescriptors[prop].enumerable = false;
+  }
+
+  for (let prop in OutsideDescriptors) {
+    OutsideDescriptors[prop].enumerable = false;
+  }
+
+  const noInstancePatching = settings.hasDescriptors || settings.noPatch;
+
+  // ensure an element has patched "outside" accessors; no-op when not needed
+  let patchOutsideElementAccessors = noInstancePatching ?
+    function() {} : function(element) {
+      const sd = ensureShadyDataForNode(element);
+      if (!sd.__outsideAccessors) {
+        sd.__outsideAccessors = true;
+        patchProperties(element, OutsideDescriptors);
+      }
+    };
+
+  // ensure an element has patched "inside" accessors; no-op when not needed
+  let patchInsideElementAccessors = noInstancePatching ?
+    function() {} : function(element) {
+      const sd = ensureShadyDataForNode(element);
+      if (!sd.__insideAccessors) {
+        sd.__insideAccessors = true;
+        patchProperties(element, InsideDescriptors);
+        // NOTE: There are compatibility issues with patches for `textContent`
+        // and `innerHTML` between CE and SD. Since SD patches are applied
+        // via `ShadyDOM.patch` and CE patches are applied as the tree is walked,
+        // SD patches overwrite CE patches.
+        // * When SD is in patching mode, SD calls through to native
+        // methods not patched by CE (since SD is at the bottom) and CE does not
+        // upgrade, connect, or disconnect elements. Therefore do *not patch*
+        // these accessors in this case.
+        // * When SD is in `noPatch` mode, the SD patches call through to
+        // "native" methods that are patched by CE (since CE is at the bottom).
+        // Therefore continue to patch in this case.
+        // If customElements is not loaded, then these accessors should be
+        // patched so they work correctly.
+        if (!window['customElements'] || settings.noPatch) {
+          patchProperties(element, TextContentInnerHTMLDescriptors);
+        }
+      }
+    };
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /*
+  Make this name unique so it is unlikely to conflict with properties on objects passed to `addEventListener`
+  https://github.com/webcomponents/shadydom/issues/173
+  */
+  const /** string */ eventWrappersName = `__eventWrappers${Date.now()}`;
+
+  /** @type {?function(!Event): boolean} */
+  const composedGetter = (() => {
+    const composedProp = Object.getOwnPropertyDescriptor(Event.prototype, 'composed');
+    return composedProp ? (ev) => composedProp.get.call(ev) : null;
+  })();
+
+  const supportsEventOptions = (() => {
+    let supported = false;
+    let eventOptions = {
+      get capture() {
+        supported = true;
+      }
+    };
+    const listener = () => {};
+    // NOTE: These will be unpatched at this point.
+    window.addEventListener('test', listener, eventOptions);
+    window.removeEventListener('test', listener, eventOptions);
+    return supported;
+  })();
+
+  const parseEventOptions = (optionsOrCapture) => {
+    let capture, once, passive, shadyTarget;
+    if (optionsOrCapture && typeof optionsOrCapture === 'object') {
+      capture = Boolean(optionsOrCapture.capture);
+      once = Boolean(optionsOrCapture.once);
+      passive = Boolean(optionsOrCapture.passive);
+      shadyTarget = optionsOrCapture.__shadyTarget;
+    } else {
+      capture = Boolean(optionsOrCapture);
+      once = false;
+      passive = false;
+    }
+    return {
+      shadyTarget,
+      capture,
+      once,
+      passive,
+      nativeEventOptions: supportsEventOptions ? optionsOrCapture : capture
+    }
+  };
+
+  // https://github.com/w3c/webcomponents/issues/513#issuecomment-224183937
+  const alwaysComposed = {
+    'blur': true,
+    'focus': true,
+    'focusin': true,
+    'focusout': true,
+    'click': true,
+    'dblclick': true,
+    'mousedown': true,
+    'mouseenter': true,
+    'mouseleave': true,
+    'mousemove': true,
+    'mouseout': true,
+    'mouseover': true,
+    'mouseup': true,
+    'wheel': true,
+    'beforeinput': true,
+    'input': true,
+    'keydown': true,
+    'keyup': true,
+    'compositionstart': true,
+    'compositionupdate': true,
+    'compositionend': true,
+    'touchstart': true,
+    'touchend': true,
+    'touchmove': true,
+    'touchcancel': true,
+    'pointerover': true,
+    'pointerenter': true,
+    'pointerdown': true,
+    'pointermove': true,
+    'pointerup': true,
+    'pointercancel': true,
+    'pointerout': true,
+    'pointerleave': true,
+    'gotpointercapture': true,
+    'lostpointercapture': true,
+    'dragstart': true,
+    'drag': true,
+    'dragenter': true,
+    'dragleave': true,
+    'dragover': true,
+    'drop': true,
+    'dragend': true,
+    'DOMActivate': true,
+    'DOMFocusIn': true,
+    'DOMFocusOut': true,
+    'keypress': true
+  };
+
+  const unpatchedEvents = {
+    'DOMAttrModified': true,
+    'DOMAttributeNameChanged': true,
+    'DOMCharacterDataModified': true,
+    'DOMElementNameChanged': true,
+    'DOMNodeInserted': true,
+    'DOMNodeInsertedIntoDocument': true,
+    'DOMNodeRemoved': true,
+    'DOMNodeRemovedFromDocument': true,
+    'DOMSubtreeModified': true
+  };
+
+  /**
+   * Some EventTarget subclasses are not Node subclasses, and you cannot call
+   * `getRootNode()` on them.
+   *
+   * @param {!(Node|EventTarget)} eventTarget
+   * @return {!(Node|EventTarget)}
+   */
+  function getRootNodeWithFallback(eventTarget) {
+    if (eventTarget instanceof Node) {
+      return eventTarget[SHADY_PREFIX + 'getRootNode']();
+    } else {
+      return eventTarget;
+    }
+  }
+
+  function pathComposer(startNode, composed) {
+    let composedPath = [];
+    let current = startNode;
+    let startRoot = getRootNodeWithFallback(startNode);
+    while (current) {
+      composedPath.push(current);
+      if (current[SHADY_PREFIX + 'assignedSlot']) {
+        current = current[SHADY_PREFIX + 'assignedSlot'];
+      } else if (current.nodeType === Node.DOCUMENT_FRAGMENT_NODE && current.host && (composed || current !== startRoot)) {
+        current = current.host;
+      } else {
+        current = current[SHADY_PREFIX + 'parentNode'];
+      }
+    }
+    // event composedPath includes window when startNode's ownerRoot is document
+    if (composedPath[composedPath.length - 1] === document) {
+      composedPath.push(window);
+    }
+    return composedPath;
+  }
+
+  const composedPath = (event) => {
+    if (!event.__composedPath) {
+      event.__composedPath = pathComposer(event.target, true);
+    }
+    return event.__composedPath;
+  };
+
+  function retarget(refNode, path) {
+    if (!isShadyRoot) {
+      return refNode;
+    }
+    // If ANCESTOR's root is not a shadow root or ANCESTOR's root is BASE's
+    // shadow-including inclusive ancestor, return ANCESTOR.
+    let refNodePath = pathComposer(refNode, true);
+    let p$ = path;
+    for (let i=0, ancestor, lastRoot, root, rootIdx; i < p$.length; i++) {
+      ancestor = p$[i];
+      root = getRootNodeWithFallback(ancestor);
+      if (root !== lastRoot) {
+        rootIdx = refNodePath.indexOf(root);
+        lastRoot = root;
+      }
+      if (!isShadyRoot(root) || rootIdx > -1) {
+        return ancestor;
+      }
+    }
+  }
+
+  let EventPatches = {
+
+    /**
+     * @this {Event}
+     */
+    get composed() {
+      if (this.__composed === undefined) {
+        // if there's an original `composed` getter on the Event prototype, use that
+        if (composedGetter) {
+          // TODO(web-padawan): see https://github.com/webcomponents/shadydom/issues/275
+          this.__composed = this.type === 'focusin' || this.type === 'focusout' || composedGetter(this);
+        // If the event is trusted, or `isTrusted` is not supported, check the list of always composed events
+        } else if (this.isTrusted !== false) {
+          this.__composed = alwaysComposed[this.type];
+        }
+      }
+      return /** @type {!Event} */(this).__composed || false;
+    },
+
+    /**
+     * @this {Event}
+     */
+    composedPath() {
+      if (!this.__composedPath) {
+        this.__composedPath = pathComposer(this['__target'], this.composed);
+      }
+      return /** @type {!Event} */(this).__composedPath;
+    },
+
+    /**
+     * @this {Event}
+     */
+    get target() {
+      return retarget(this.currentTarget || this['__previousCurrentTarget'], this.composedPath());
+    },
+
+    // http://w3c.github.io/webcomponents/spec/shadow/#event-relatedtarget-retargeting
+    /**
+     * @this {Event}
+     */
+    get relatedTarget() {
+      if (!this.__relatedTarget) {
+        return null;
+      }
+      if (!this.__relatedTargetComposedPath) {
+        this.__relatedTargetComposedPath = pathComposer(this.__relatedTarget, true);
+      }
+      // find the deepest node in relatedTarget composed path that is in the same root with the currentTarget
+      return retarget(this.currentTarget || this['__previousCurrentTarget'], /** @type {!Event} */(this).__relatedTargetComposedPath);
+    },
+    /**
+     * @this {Event}
+     */
+    stopPropagation() {
+      Event.prototype.stopPropagation.call(this);
+      this.__propagationStopped = true;
+    },
+    /**
+     * @this {Event}
+     */
+    stopImmediatePropagation() {
+      Event.prototype.stopImmediatePropagation.call(this);
+      this.__immediatePropagationStopped = true;
+      this.__propagationStopped = true;
+    }
+
+  };
+
+  function mixinComposedFlag(Base) {
+    // NOTE: avoiding use of `class` here so that transpiled output does not
+    // try to do `Base.call` with a dom construtor.
+    let klazz = function(type, options) {
+      let event = new Base(type, options);
+      event.__composed = options && Boolean(options['composed']);
+      return event;
+    };
+    // put constructor properties on subclass
+    klazz.__proto__ = Base;
+    klazz.prototype = Base.prototype;
+    return klazz;
+  }
+
+  let nonBubblingEventsToRetarget = {
+    'focus': true,
+    'blur': true
+  };
+
+
+  /**
+   * Check if the event has been retargeted by comparing original `target`, and calculated `target`
+   * @param {Event} event
+   * @return {boolean} True if the original target and calculated target are the same
+   */
+  function hasRetargeted(event) {
+    return event['__target'] !== event.target || event.__relatedTarget !== event.relatedTarget;
+  }
+
+  /**
+   *
+   * @param {Event} event
+   * @param {Node} node
+   * @param {string} phase
+   */
+  function fireHandlers(event, node, phase) {
+    let hs = node.__handlers && node.__handlers[event.type] &&
+      node.__handlers[event.type][phase];
+    if (hs) {
+      for (let i = 0, fn; (fn = hs[i]); i++) {
+        if (hasRetargeted(event) && event.target === event.relatedTarget) {
+          return;
+        }
+        fn.call(node, event);
+        if (event.__immediatePropagationStopped) {
+          return;
+        }
+      }
+    }
+  }
+
+  function retargetNonBubblingEvent(e) {
+    let path = e.composedPath();
+    let node;
+    // override `currentTarget` to let patched `target` calculate correctly
+    Object.defineProperty(e, 'currentTarget', {
+      get: function() {
+        return node;
+      },
+      configurable: true
+    });
+    for (let i = path.length - 1; i >= 0; i--) {
+      node = path[i];
+      // capture phase fires all capture handlers
+      fireHandlers(e, node, 'capture');
+      if (e.__propagationStopped) {
+        return;
+      }
+    }
+
+    // set the event phase to `AT_TARGET` as in spec
+    Object.defineProperty(e, 'eventPhase', {get() { return Event.AT_TARGET }});
+
+    // the event only needs to be fired when owner roots change when iterating the event path
+    // keep track of the last seen owner root
+    let lastFiredRoot;
+    for (let i = 0; i < path.length; i++) {
+      node = path[i];
+      const nodeData = shadyDataForNode(node);
+      const root = nodeData && nodeData.root;
+      if (i === 0 || (root && root === lastFiredRoot)) {
+        fireHandlers(e, node, 'bubble');
+        // don't bother with window, it doesn't have `getRootNode` and will be last in the path anyway
+        if (node !== window) {
+          lastFiredRoot = node[SHADY_PREFIX + 'getRootNode']();
+        }
+        if (e.__propagationStopped) {
+          return;
+        }
+      }
+    }
+  }
+
+  function listenerSettingsEqual(savedListener, node, type, capture, once, passive) {
+    let {
+      node: savedNode,
+      type: savedType,
+      capture: savedCapture,
+      once: savedOnce,
+      passive: savedPassive
+    } = savedListener;
+    return node === savedNode &&
+      type === savedType &&
+      capture === savedCapture &&
+      once === savedOnce &&
+      passive === savedPassive;
+  }
+
+  function findListener(wrappers, node, type, capture, once, passive) {
+    for (let i = 0; i < wrappers.length; i++) {
+      if (listenerSettingsEqual(wrappers[i], node, type, capture, once, passive)) {
+        return i;
+      }
+    }
+    return -1;
+  }
+
+  /**
+   * Firefox can throw on accessing eventWrappers inside of `removeEventListener` during a selenium run
+   * Try/Catch accessing eventWrappers to work around
+   * https://bugzilla.mozilla.org/show_bug.cgi?id=1353074
+   */
+  function getEventWrappers(eventLike) {
+    let wrappers = null;
+    try {
+      wrappers = eventLike[eventWrappersName];
+    } catch (e) {} // eslint-disable-line no-empty
+    return wrappers;
+  }
+
+  function targetNeedsPathCheck(node) {
+    return isShadyRoot(node) || node.localName === 'slot';
+  }
+
+  /**
+   * @this {EventTarget}
+   */
+  function addEventListener(type, fnOrObj, optionsOrCapture) {
+    const {capture, once, passive, shadyTarget, nativeEventOptions} =
+      parseEventOptions(optionsOrCapture);
+    if (!fnOrObj) {
+      return;
+    }
+
+    const handlerType = typeof fnOrObj;
+
+    // bail if `fnOrObj` is not a function, not an object
+    if (handlerType !== 'function' && handlerType !== 'object') {
+      return;
+    }
+
+    // bail if `fnOrObj` is an object without a `handleEvent` method
+    if (handlerType === 'object' && (!fnOrObj.handleEvent || typeof fnOrObj.handleEvent !== 'function')) {
+      return;
+    }
+
+    if (unpatchedEvents[type]) {
+      return this[NATIVE_PREFIX + 'addEventListener'](type, fnOrObj, nativeEventOptions);
+    }
+
+    // hack to let ShadyRoots have event listeners
+    // event listener will be on host, but `currentTarget`
+    // will be set to shadyroot for event listener
+    let target = shadyTarget || this;
+
+    let wrappers = fnOrObj[eventWrappersName];
+    if (wrappers) {
+      // The callback `fn` might be used for multiple nodes/events. Since we generate
+      // a wrapper function, we need to keep track of it when we remove the listener.
+      // It's more efficient to store the node/type/options information as Array in
+      // `fn` itself rather than the node (we assume that the same callback is used
+      // for few nodes at most, whereas a node will likely have many event listeners).
+      // NOTE(valdrin) invoking external functions is costly, inline has better perf.
+      // Stop if the wrapper function has already been created.
+      if (findListener(wrappers, target, type, capture, once, passive) > -1) {
+        return;
+      }
+    } else {
+      fnOrObj[eventWrappersName] = [];
+    }
+
+    /**
+     * @this {HTMLElement}
+     * @param {Event} e
+     */
+    const wrapperFn = function(e) {
+      // Support `once` option.
+      if (once) {
+        this[SHADY_PREFIX + 'removeEventListener'](type, fnOrObj, optionsOrCapture);
+      }
+      if (!e['__target']) {
+        patchEvent(e);
+      }
+      let lastCurrentTargetDesc;
+      if (target !== this) {
+        // replace `currentTarget` to make `target` and `relatedTarget` correct for inside the shadowroot
+        lastCurrentTargetDesc = Object.getOwnPropertyDescriptor(e, 'currentTarget');
+        Object.defineProperty(e, 'currentTarget', {get() { return target }, configurable: true});
+      }
+      e['__previousCurrentTarget'] = e['currentTarget'];
+      // Always check if a shadowRoot or slot is in the current event path.
+      // If it is not, the event was generated on either the host of the shadowRoot
+      // or a children of the host.
+      if (targetNeedsPathCheck(target) && e.composedPath().indexOf(target) == -1) {
+        return;
+      }
+      // There are two critera that should stop events from firing on this node
+      // 1. the event is not composed and the current node is not in the same root as the target
+      // 2. when bubbling, if after retargeting, relatedTarget and target point to the same node
+      if (e.composed || e.composedPath().indexOf(target) > -1) {
+        if (hasRetargeted(e) && e.target === e.relatedTarget) {
+          if (e.eventPhase === Event.BUBBLING_PHASE) {
+            e.stopImmediatePropagation();
+          }
+          return;
+        }
+        // prevent non-bubbling events from triggering bubbling handlers on shadowroot, but only if not in capture phase
+        if (e.eventPhase !== Event.CAPTURING_PHASE && !e.bubbles && e.target !== target && !(target instanceof Window)) {
+          return;
+        }
+        let ret = handlerType === 'function' ?
+          fnOrObj.call(target, e) :
+          (fnOrObj.handleEvent && fnOrObj.handleEvent(e));
+        if (target !== this) {
+          // replace the "correct" `currentTarget`
+          if (lastCurrentTargetDesc) {
+            Object.defineProperty(e, 'currentTarget', lastCurrentTargetDesc);
+            lastCurrentTargetDesc = null;
+          } else {
+            delete e['currentTarget'];
+          }
+        }
+        return ret;
+      }
+    };
+
+    // Store the wrapper information.
+    fnOrObj[eventWrappersName].push({
+      // note: use target here which is either a shadowRoot
+      // (when the host element is proxy'ing the event) or this element
+      node: target,
+      type: type,
+      capture: capture,
+      once: once,
+      passive: passive,
+      wrapperFn: wrapperFn
+    });
+
+    if (nonBubblingEventsToRetarget[type]) {
+      this.__handlers = this.__handlers || {};
+      this.__handlers[type] = this.__handlers[type] ||
+        {'capture': [], 'bubble': []};
+      this.__handlers[type][capture ? 'capture' : 'bubble'].push(wrapperFn);
+    } else {
+      this[NATIVE_PREFIX + 'addEventListener'](type, wrapperFn, nativeEventOptions);
+    }
+  }
+
+  /**
+   * @this {EventTarget}
+   */
+  function removeEventListener(type, fnOrObj, optionsOrCapture) {
+    if (!fnOrObj) {
+      return;
+    }
+    const {capture, once, passive, shadyTarget, nativeEventOptions} =
+      parseEventOptions(optionsOrCapture);
+    if (unpatchedEvents[type]) {
+      return this[NATIVE_PREFIX + 'removeEventListener'](type, fnOrObj, nativeEventOptions);
+    }
+    let target = shadyTarget || this;
+    // Search the wrapped function.
+    let wrapperFn = undefined;
+    let wrappers = getEventWrappers(fnOrObj);
+    if (wrappers) {
+      let idx = findListener(wrappers, target, type, capture, once, passive);
+      if (idx > -1) {
+        wrapperFn = wrappers.splice(idx, 1)[0].wrapperFn;
+        // Cleanup.
+        if (!wrappers.length) {
+          fnOrObj[eventWrappersName] = undefined;
+        }
+      }
+    }
+    this[NATIVE_PREFIX + 'removeEventListener'](type, wrapperFn || fnOrObj,
+      nativeEventOptions);
+    if (wrapperFn && nonBubblingEventsToRetarget[type] &&
+        this.__handlers && this.__handlers[type]) {
+      const arr = this.__handlers[type][capture ? 'capture' : 'bubble'];
+      const idx = arr.indexOf(wrapperFn);
+      if (idx > -1) {
+        arr.splice(idx, 1);
+      }
+    }
+  }
+
+  function activateFocusEventOverrides() {
+    for (let ev in nonBubblingEventsToRetarget) {
+      window[NATIVE_PREFIX + 'addEventListener'](ev, function(e) {
+        if (!e['__target']) {
+          patchEvent(e);
+          retargetNonBubblingEvent(e);
+        }
+      }, true);
+    }
+  }
+
+  const EventPatchesDescriptors = getOwnPropertyDescriptors(EventPatches);
+
+  const SHADY_PROTO = '__shady_patchedProto';
+  const SHADY_SOURCE_PROTO = '__shady_sourceProto';
+
+  function patchEvent(event) {
+    event['__target'] = event.target;
+    event.__relatedTarget = event.relatedTarget;
+    // attempt to patch prototype (via cache)
+    if (settings.hasDescriptors) {
+      const proto = Object.getPrototypeOf(event);
+      if (!Object.hasOwnProperty(proto, SHADY_PROTO)) {
+        const patchedProto = Object.create(proto);
+        patchedProto[SHADY_SOURCE_PROTO] = proto;
+        patchProperties(patchedProto, EventPatchesDescriptors);
+        proto[SHADY_PROTO] = patchedProto;
+      }
+      event.__proto__ = proto[SHADY_PROTO];
+    // and fallback to patching instance
+    } else {
+      patchProperties(event, EventPatchesDescriptors);
+    }
+  }
+
+  let PatchedEvent = mixinComposedFlag(Event);
+  let PatchedCustomEvent = mixinComposedFlag(CustomEvent);
+  let PatchedMouseEvent = mixinComposedFlag(MouseEvent);
+
+
+  function patchEvents() {
+    activateFocusEventOverrides();
+    window.Event = PatchedEvent;
+    window.CustomEvent = PatchedCustomEvent;
+    window.MouseEvent = PatchedMouseEvent;
+  }
+
+  function patchClick() {
+    // Fix up `Element.prototype.click()` if `isTrusted` is supported, but `composed` isn't
+    if (!composedGetter && Object.getOwnPropertyDescriptor(Event.prototype, 'isTrusted')) {
+      /** @this {Element} */
+      const composedClickFn = function() {
+        const ev = new MouseEvent('click', {
+          bubbles: true,
+          cancelable: true,
+          composed: true
+        });
+        this[SHADY_PREFIX + 'dispatchEvent'](ev);
+      };
+      if (Element.prototype.click) {
+        Element.prototype.click = composedClickFn;
+      } else if (HTMLElement.prototype.click) {
+        HTMLElement.prototype.click = composedClickFn;
+      }
+    }
+  }
+
+  const eventPropertyNames = Object.getOwnPropertyNames(Document.prototype)
+      .filter(name => name.substring(0,2) === 'on');
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  function newSplice(index, removed, addedCount) {
+    return {
+      index: index,
+      removed: removed,
+      addedCount: addedCount
+    };
+  }
+
+  const EDIT_LEAVE = 0;
+  const EDIT_UPDATE = 1;
+  const EDIT_ADD = 2;
+  const EDIT_DELETE = 3;
+
+  // Note: This function is *based* on the computation of the Levenshtein
+  // "edit" distance. The one change is that "updates" are treated as two
+  // edits - not one. With Array splices, an update is really a delete
+  // followed by an add. By retaining this, we optimize for "keeping" the
+  // maximum array items in the original array. For example:
+  //
+  //   'xxxx123' -> '123yyyy'
+  //
+  // With 1-edit updates, the shortest path would be just to update all seven
+  // characters. With 2-edit updates, we delete 4, leave 3, and add 4. This
+  // leaves the substring '123' intact.
+  function calcEditDistances(current, currentStart, currentEnd,
+                              old, oldStart, oldEnd) {
+    // "Deletion" columns
+    let rowCount = oldEnd - oldStart + 1;
+    let columnCount = currentEnd - currentStart + 1;
+    let distances = new Array(rowCount);
+
+    // "Addition" rows. Initialize null column.
+    for (let i = 0; i < rowCount; i++) {
+      distances[i] = new Array(columnCount);
+      distances[i][0] = i;
+    }
+
+    // Initialize null row
+    for (let j = 0; j < columnCount; j++)
+      distances[0][j] = j;
+
+    for (let i = 1; i < rowCount; i++) {
+      for (let j = 1; j < columnCount; j++) {
+        if (equals(current[currentStart + j - 1], old[oldStart + i - 1]))
+          distances[i][j] = distances[i - 1][j - 1];
+        else {
+          let north = distances[i - 1][j] + 1;
+          let west = distances[i][j - 1] + 1;
+          distances[i][j] = north < west ? north : west;
+        }
+      }
+    }
+
+    return distances;
+  }
+
+  // This starts at the final weight, and walks "backward" by finding
+  // the minimum previous weight recursively until the origin of the weight
+  // matrix.
+  function spliceOperationsFromEditDistances(distances) {
+    let i = distances.length - 1;
+    let j = distances[0].length - 1;
+    let current = distances[i][j];
+    let edits = [];
+    while (i > 0 || j > 0) {
+      if (i == 0) {
+        edits.push(EDIT_ADD);
+        j--;
+        continue;
+      }
+      if (j == 0) {
+        edits.push(EDIT_DELETE);
+        i--;
+        continue;
+      }
+      let northWest = distances[i - 1][j - 1];
+      let west = distances[i - 1][j];
+      let north = distances[i][j - 1];
+
+      let min;
+      if (west < north)
+        min = west < northWest ? west : northWest;
+      else
+        min = north < northWest ? north : northWest;
+
+      if (min == northWest) {
+        if (northWest == current) {
+          edits.push(EDIT_LEAVE);
+        } else {
+          edits.push(EDIT_UPDATE);
+          current = northWest;
+        }
+        i--;
+        j--;
+      } else if (min == west) {
+        edits.push(EDIT_DELETE);
+        i--;
+        current = west;
+      } else {
+        edits.push(EDIT_ADD);
+        j--;
+        current = north;
+      }
+    }
+
+    edits.reverse();
+    return edits;
+  }
+
+  /**
+   * Splice Projection functions:
+   *
+   * A splice map is a representation of how a previous array of items
+   * was transformed into a new array of items. Conceptually it is a list of
+   * tuples of
+   *
+   *   <index, removed, addedCount>
+   *
+   * which are kept in ascending index order of. The tuple represents that at
+   * the |index|, |removed| sequence of items were removed, and counting forward
+   * from |index|, |addedCount| items were added.
+   */
+
+  /**
+   * Lacking individual splice mutation information, the minimal set of
+   * splices can be synthesized given the previous state and final state of an
+   * array. The basic approach is to calculate the edit distance matrix and
+   * choose the shortest path through it.
+   *
+   * Complexity: O(l * p)
+   *   l: The length of the current array
+   *   p: The length of the old array
+   */
+  function calcSplices(current, currentStart, currentEnd,
+                        old, oldStart, oldEnd) {
+    let prefixCount = 0;
+    let suffixCount = 0;
+    let splice;
+
+    let minLength = Math.min(currentEnd - currentStart, oldEnd - oldStart);
+    if (currentStart == 0 && oldStart == 0)
+      prefixCount = sharedPrefix(current, old, minLength);
+
+    if (currentEnd == current.length && oldEnd == old.length)
+      suffixCount = sharedSuffix(current, old, minLength - prefixCount);
+
+    currentStart += prefixCount;
+    oldStart += prefixCount;
+    currentEnd -= suffixCount;
+    oldEnd -= suffixCount;
+
+    if (currentEnd - currentStart == 0 && oldEnd - oldStart == 0)
+      return [];
+
+    if (currentStart == currentEnd) {
+      splice = newSplice(currentStart, [], 0);
+      while (oldStart < oldEnd)
+        splice.removed.push(old[oldStart++]);
+
+      return [ splice ];
+    } else if (oldStart == oldEnd)
+      return [ newSplice(currentStart, [], currentEnd - currentStart) ];
+
+    let ops = spliceOperationsFromEditDistances(
+        calcEditDistances(current, currentStart, currentEnd,
+                               old, oldStart, oldEnd));
+
+    splice = undefined;
+    let splices = [];
+    let index = currentStart;
+    let oldIndex = oldStart;
+    for (let i = 0; i < ops.length; i++) {
+      switch(ops[i]) {
+        case EDIT_LEAVE:
+          if (splice) {
+            splices.push(splice);
+            splice = undefined;
+          }
+
+          index++;
+          oldIndex++;
+          break;
+        case EDIT_UPDATE:
+          if (!splice)
+            splice = newSplice(index, [], 0);
+
+          splice.addedCount++;
+          index++;
+
+          splice.removed.push(old[oldIndex]);
+          oldIndex++;
+          break;
+        case EDIT_ADD:
+          if (!splice)
+            splice = newSplice(index, [], 0);
+
+          splice.addedCount++;
+          index++;
+          break;
+        case EDIT_DELETE:
+          if (!splice)
+            splice = newSplice(index, [], 0);
+
+          splice.removed.push(old[oldIndex]);
+          oldIndex++;
+          break;
+      }
+    }
+
+    if (splice) {
+      splices.push(splice);
+    }
+    return splices;
+  }
+
+  function sharedPrefix(current, old, searchLength) {
+    for (let i = 0; i < searchLength; i++)
+      if (!equals(current[i], old[i]))
+        return i;
+    return searchLength;
+  }
+
+  function sharedSuffix(current, old, searchLength) {
+    let index1 = current.length;
+    let index2 = old.length;
+    let count = 0;
+    while (count < searchLength && equals(current[--index1], old[--index2]))
+      count++;
+
+    return count;
+  }
+
+  function equals(currentValue, previousValue) {
+    return currentValue === previousValue;
+  }
+
+  function calculateSplices(current, previous) {
+    return calcSplices(current, 0, current.length, previous, 0,
+                            previous.length);
+  }
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  function linkNode(node, container, containerData, ref_node) {
+    patchOutsideElementAccessors(node);
+    ref_node = ref_node || null;
+    const nodeData = ensureShadyDataForNode(node);
+    const ref_nodeData = ref_node ? ensureShadyDataForNode(ref_node) : null;
+    // update ref_node.previousSibling <-> node
+    nodeData.previousSibling = ref_node ? ref_nodeData.previousSibling :
+      container[SHADY_PREFIX + 'lastChild'];
+    let psd = shadyDataForNode(nodeData.previousSibling);
+    if (psd) {
+      psd.nextSibling = node;
+    }
+    // update node <-> ref_node
+    let nsd = shadyDataForNode(nodeData.nextSibling = ref_node);
+    if (nsd) {
+      nsd.previousSibling = node;
+    }
+    // update node <-> container
+    nodeData.parentNode = container;
+    if (ref_node) {
+      if (ref_node === containerData.firstChild) {
+        containerData.firstChild = node;
+      }
+    } else {
+      containerData.lastChild = node;
+      if (!containerData.firstChild) {
+        containerData.firstChild = node;
+      }
+    }
+    // remove caching of childNodes
+    containerData.childNodes = null;
+  }
+
+  const recordInsertBefore = (node, container, ref_node) => {
+    patchInsideElementAccessors(container);
+    const containerData = ensureShadyDataForNode(container);
+    if (containerData.firstChild !== undefined) {
+      containerData.childNodes = null;
+    }
+    // handle document fragments
+    if (node.nodeType === Node.DOCUMENT_FRAGMENT_NODE) {
+      // Note, documentFragments should not have logical DOM so there's
+      // no need update that. It is possible to append a ShadowRoot, but we're
+      // choosing not to support that.
+      const first = node[NATIVE_PREFIX + 'firstChild'];
+      for (let n = first; n; (n = n[NATIVE_PREFIX + 'nextSibling'])) {
+        linkNode(n, container, containerData, ref_node);
+      }
+    } else {
+      linkNode(node, container, containerData, ref_node);
+    }
+  };
+
+  const recordRemoveChild = (node, container) => {
+    const nodeData = ensureShadyDataForNode(node);
+    const containerData = ensureShadyDataForNode(container);
+    if (node === containerData.firstChild) {
+      containerData.firstChild = nodeData.nextSibling;
+    }
+    if (node === containerData.lastChild) {
+      containerData.lastChild = nodeData.previousSibling;
+    }
+    let p = nodeData.previousSibling;
+    let n = nodeData.nextSibling;
+    if (p) {
+      ensureShadyDataForNode(p).nextSibling = n;
+    }
+    if (n) {
+      ensureShadyDataForNode(n).previousSibling = p;
+    }
+    // When an element is removed, logical data is no longer tracked.
+    // Explicitly set `undefined` here to indicate this. This is disginguished
+    // from `null` which is set if info is null.
+    nodeData.parentNode = nodeData.previousSibling =
+    nodeData.nextSibling = undefined;
+    if (containerData.childNodes !== undefined) {
+      // remove caching of childNodes
+      containerData.childNodes = null;
+    }
+  };
+
+  /**
+   * @param  {!Node|DocumentFragment} node
+   * @param  {!Node|DocumentFragment=} adoptedParent
+   */
+  const recordChildNodes = (node, adoptedParent) => {
+    const nodeData = ensureShadyDataForNode(node);
+    if (!adoptedParent && nodeData.firstChild !== undefined) {
+      return;
+    }
+    // remove caching of childNodes
+    nodeData.childNodes = null;
+    const first = nodeData.firstChild = node[NATIVE_PREFIX + 'firstChild'];
+    nodeData.lastChild = node[NATIVE_PREFIX + 'lastChild'];
+    patchInsideElementAccessors(node);
+    for (let n = first, previous; n; (n = n[NATIVE_PREFIX + 'nextSibling'])) {
+      const sd = ensureShadyDataForNode(n);
+      sd.parentNode = adoptedParent || node;
+      sd.nextSibling = n[NATIVE_PREFIX + 'nextSibling'];
+      sd.previousSibling = previous || null;
+      previous = n;
+      patchOutsideElementAccessors(n);
+    }
+  };
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  let scopingShim = null;
+
+  function getScopingShim() {
+    if (!scopingShim) {
+      scopingShim = window['ShadyCSS'] && window['ShadyCSS']['ScopingShim'];
+    }
+    return scopingShim || null;
+  }
+
+  /**
+   * @param {!Node} node
+   * @param {string} attr
+   * @param {string} value
+   */
+  function scopeClassAttribute(node, attr, value) {
+    const scopingShim = getScopingShim();
+    if (scopingShim && attr === 'class') {
+      scopingShim['setElementClass'](node, value);
+      return true;
+    }
+    return false;
+  }
+
+  /**
+   * @param {!Node} node
+   * @param {string} newScopeName
+   */
+  function addShadyScoping(node, newScopeName) {
+    const scopingShim = getScopingShim();
+    if (!scopingShim) {
+      return;
+    }
+    scopingShim['scopeNode'](node, newScopeName);
+  }
+
+  /**
+   * @param {!Node} node
+   * @param {string} currentScopeName
+   */
+  function removeShadyScoping(node, currentScopeName) {
+    const scopingShim = getScopingShim();
+    if (!scopingShim) {
+      return;
+    }
+    scopingShim['unscopeNode'](node, currentScopeName);
+  }
+
+  /**
+   * @param {!Node} node
+   * @param {string} newScopeName
+   * @param {string} oldScopeName
+   */
+  function replaceShadyScoping(node, newScopeName, oldScopeName) {
+    const scopingShim = getScopingShim();
+    if (!scopingShim) {
+      return;
+    }
+    if (oldScopeName) {
+      removeShadyScoping(node, oldScopeName);
+    }
+    addShadyScoping(node, newScopeName);
+  }
+
+  /**
+   * @param {!Node} node
+   * @param {string} newScopeName
+   * @return {boolean}
+   */
+  function currentScopeIsCorrect(node, newScopeName) {
+    const scopingShim = getScopingShim();
+    if (!scopingShim) {
+      return true;
+    }
+    if (node.nodeType === Node.DOCUMENT_FRAGMENT_NODE) {
+      // NOTE: as an optimization, only check that all the top-level children
+      // have the correct scope.
+      let correctScope = true;
+      for (let n=node[SHADY_PREFIX + 'firstChild']; n; n = n[SHADY_PREFIX + 'nextSibling']) {
+        correctScope = correctScope &&
+          currentScopeIsCorrect(n, newScopeName);
+      }
+      return correctScope;
+    }
+    if (node.nodeType !== Node.ELEMENT_NODE) {
+      return true;
+    }
+    const currentScope = scopingShim['currentScopeForNode'](node);
+    return currentScope === newScopeName;
+  }
+
+  /**
+   * @param {!Node} node
+   * @return {string}
+   */
+  function currentScopeForNode(node) {
+    if (node.nodeType !== Node.ELEMENT_NODE) {
+      return '';
+    }
+    const scopingShim = getScopingShim();
+    if (!scopingShim) {
+      return '';
+    }
+    return scopingShim['currentScopeForNode'](node);
+  }
+
+  /**
+   * Walk over a node's tree and apply visitorFn to each element node
+   *
+   * @param {Node} node
+   * @param {function(!Node):void} visitorFn
+   */
+  function treeVisitor(node, visitorFn) {
+    if (!node) {
+      return;
+    }
+    // this check is necessary if `node` is a Document Fragment
+    if (node.nodeType === Node.ELEMENT_NODE) {
+      visitorFn(node);
+    }
+    for (let n = node[SHADY_PREFIX + 'firstChild']; n; (n = n[SHADY_PREFIX + 'nextSibling'])) {
+      if (n.nodeType === Node.ELEMENT_NODE) {
+        treeVisitor(n, visitorFn);
+      }
+    }
+  }
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  const doc = window.document;
+
+  const preferPerformance = settings.preferPerformance;
+
+  const nativeIsConnectedAccessors =
+  /** @type {ObjectPropertyDescriptor} */(
+    Object.getOwnPropertyDescriptor(Node.prototype, 'isConnected')
+  );
+
+  const nativeIsConnected = nativeIsConnectedAccessors && nativeIsConnectedAccessors.get;
+
+  function clearNode$1(node) {
+    let firstChild;
+    while ((firstChild = node[SHADY_PREFIX + 'firstChild'])) {
+      node[SHADY_PREFIX + 'removeChild'](firstChild);
+    }
+  }
+
+  function removeOwnerShadyRoot(node) {
+    // optimization: only reset the tree if node is actually in a root
+    if (hasCachedOwnerRoot(node)) {
+      for (let n=node[SHADY_PREFIX + 'firstChild']; n; n = n[SHADY_PREFIX + 'nextSibling']) {
+        removeOwnerShadyRoot(n);
+      }
+    }
+    const nodeData = shadyDataForNode(node);
+    if (nodeData) {
+      nodeData.ownerShadyRoot = undefined;
+    }
+  }
+
+  function hasCachedOwnerRoot(node) {
+    const nodeData = shadyDataForNode(node);
+    return Boolean(nodeData && nodeData.ownerShadyRoot !== undefined);
+  }
+
+  /**
+   * Finds the first flattened node that is composed in the node's parent.
+   * If the given node is a slot, then the first flattened node is returned
+   * if it exists, otherwise advance to the node's nextSibling.
+   * @param {Node} node within which to find first composed node
+   * @returns {Node} first composed node
+   */
+  function firstComposedNode(node) {
+    let composed = node;
+    if (node && node.localName === 'slot') {
+      const nodeData = shadyDataForNode(node);
+      const flattened = nodeData && nodeData.flattenedNodes;
+      composed = flattened && flattened.length ? flattened[0] :
+        firstComposedNode(node[SHADY_PREFIX + 'nextSibling']);
+    }
+    return composed;
+  }
+
+  /**
+   * @param {Node} node
+   * @param {Node=} addedNode
+   * @param {Node=} removedNode
+   */
+  function scheduleObserver(node, addedNode, removedNode) {
+    const nodeData = shadyDataForNode(node);
+    const observer = nodeData && nodeData.observer;
+    if (observer) {
+      if (addedNode) {
+        observer.addedNodes.push(addedNode);
+      }
+      if (removedNode) {
+        observer.removedNodes.push(removedNode);
+      }
+      observer.schedule();
+    }
+  }
+
+  const NodePatches = getOwnPropertyDescriptors({
+
+    /** @this {Node} */
+    get parentNode() {
+      const nodeData = shadyDataForNode(this);
+      const l = nodeData && nodeData.parentNode;
+      return l !== undefined ? l : this[NATIVE_PREFIX + 'parentNode'];
+    },
+
+    /** @this {Node} */
+    get firstChild() {
+      const nodeData = shadyDataForNode(this);
+      const l = nodeData && nodeData.firstChild;
+      return l !== undefined ? l : this[NATIVE_PREFIX + 'firstChild'];
+    },
+
+    /** @this {Node} */
+    get lastChild() {
+      const nodeData = shadyDataForNode(this);
+      const l = nodeData && nodeData.lastChild;
+      return l !== undefined ? l : this[NATIVE_PREFIX + 'lastChild'];
+    },
+
+    /** @this {Node} */
+    get nextSibling() {
+      const nodeData = shadyDataForNode(this);
+      const l = nodeData && nodeData.nextSibling;
+      return l !== undefined ? l : this[NATIVE_PREFIX + 'nextSibling'];
+    },
+
+    /** @this {Node} */
+    get previousSibling() {
+      const nodeData = shadyDataForNode(this);
+      const l = nodeData && nodeData.previousSibling;
+      return l !== undefined ? l : this[NATIVE_PREFIX + 'previousSibling'];
+    },
+
+    /** @this {Node} */
+    get childNodes() {
+      let childNodes;
+      if (isTrackingLogicalChildNodes(this)) {
+        const nodeData = shadyDataForNode(this);
+        if (!nodeData.childNodes) {
+          nodeData.childNodes = [];
+          for (let n=this[SHADY_PREFIX + 'firstChild']; n; n=n[SHADY_PREFIX + 'nextSibling']) {
+            nodeData.childNodes.push(n);
+          }
+        }
+        childNodes = nodeData.childNodes;
+      } else {
+        childNodes = this[NATIVE_PREFIX + 'childNodes'];
+      }
+      childNodes.item = function(index) {
+        return childNodes[index];
+      };
+      return childNodes;
+    },
+
+    /** @this {Node} */
+    get parentElement() {
+      const nodeData = shadyDataForNode(this);
+      let l = nodeData && nodeData.parentNode;
+      if (l && l.nodeType !== Node.ELEMENT_NODE) {
+        l = null;
+      }
+      return l !== undefined ? l : this[NATIVE_PREFIX + 'parentElement'];
+    },
+
+    /** @this {Node} */
+    get isConnected() {
+      if (nativeIsConnected && nativeIsConnected.call(this)) {
+        return true;
+      }
+      if (this.nodeType == Node.DOCUMENT_FRAGMENT_NODE) {
+        return false;
+      }
+      // Fast path for distributed nodes.
+      const ownerDocument = this.ownerDocument;
+      if (hasDocumentContains) {
+        if (ownerDocument[NATIVE_PREFIX + 'contains'](this)) {
+          return true;
+        }
+      } else if (ownerDocument.documentElement &&
+        ownerDocument.documentElement[NATIVE_PREFIX + 'contains'](this)) {
+        return true;
+      }
+      // Slow path for non-distributed nodes.
+      let node = this;
+      while (node && !(node instanceof Document)) {
+        node = node[SHADY_PREFIX + 'parentNode'] || (isShadyRoot(node) ? /** @type {ShadowRoot} */(node).host : undefined);
+      }
+      return !!(node && node instanceof Document);
+    },
+
+    /** @this {Node} */
+    get textContent() {
+      if (isTrackingLogicalChildNodes(this)) {
+        let tc = [];
+        for (let n=this[SHADY_PREFIX + 'firstChild']; n; n = n[SHADY_PREFIX + 'nextSibling']) {
+          if (n.nodeType !== Node.COMMENT_NODE) {
+            tc.push(n[SHADY_PREFIX + 'textContent']);
+          }
+        }
+        return tc.join('');
+      } else {
+        return this[NATIVE_PREFIX + 'textContent'];
+      }
+    },
+
+    /**
+     * @this {Node}
+     * @param {string} value
+     */
+    set textContent(value) {
+      if (typeof value === 'undefined' || value === null) {
+        value = '';
+      }
+      switch (this.nodeType) {
+        case Node.ELEMENT_NODE:
+        case Node.DOCUMENT_FRAGMENT_NODE:
+          if (!isTrackingLogicalChildNodes(this) && settings.hasDescriptors) {
+            // may be removing a nested slot but fast path if we know we are not.
+            const firstChild = this[SHADY_PREFIX + 'firstChild'];
+            if (firstChild != this[SHADY_PREFIX + 'lastChild'] ||
+              (firstChild && firstChild.nodeType != Node.TEXT_NODE)) {
+              clearNode$1(this);
+            }
+            this[NATIVE_PREFIX + 'textContent'] = value;
+          } else {
+            clearNode$1(this);
+            // Document fragments must have no childNodes if setting a blank string
+            if (value.length > 0 || this.nodeType === Node.ELEMENT_NODE) {
+              this[SHADY_PREFIX + 'insertBefore'](document.createTextNode(value));
+            }
+          }
+          break;
+        default:
+          // Note, be wary of patching `nodeValue`.
+          this.nodeValue = value;
+          break;
+      }
+    },
+
+    // Patched `insertBefore`. Note that all mutations that add nodes are routed
+    // here. When a <slot> is added or a node is added to a host with a shadowRoot
+    // with a slot, a standard dom `insert` call is aborted and `_asyncRender`
+    // is called on the relevant shadowRoot. In all other cases, a standard dom
+    // `insert` can be made, but the location and ref_node may need to be changed.
+    /**
+     * @this {Node}
+     * @param {Node} node
+     * @param {Node=} ref_node
+     */
+    insertBefore(node, ref_node) {
+      // optimization: assume native insertBefore is ok if the nodes are not in the document.
+      if (this.ownerDocument !== doc && node.ownerDocument !== doc) {
+        this[NATIVE_PREFIX + 'insertBefore'](node, ref_node);
+        return node;
+      }
+      if (node === this) {
+        throw Error(`Failed to execute 'appendChild' on 'Node': The new child element contains the parent.`);
+      }
+      if (ref_node) {
+        const refData = shadyDataForNode(ref_node);
+        const p = refData && refData.parentNode;
+        if ((p !== undefined && p !== this) ||
+          (p === undefined && ref_node[NATIVE_PREFIX + 'parentNode'] !== this)) {
+          throw Error(`Failed to execute 'insertBefore' on 'Node': The node ` +
+          `before which the new node is to be inserted is not a child of this node.`);
+        }
+      }
+      if (ref_node === node) {
+        return node;
+      }
+      /** @type {!Array<!HTMLSlotElement>} */
+      const slotsAdded = [];
+      const ownerRoot = ownerShadyRootForNode(this);
+      /** @type {string} */
+      const newScopeName = ownerRoot ? ownerRoot.host.localName : currentScopeForNode(this);
+      /** @type {string} */
+      let oldScopeName;
+      // remove from existing location
+      const parentNode = node[SHADY_PREFIX + 'parentNode'];
+      if (parentNode) {
+        oldScopeName = currentScopeForNode(node);
+        const skipUnscoping =
+          // Don't remove scoping if we're inserting into another shadowRoot;
+          // this would be unnecessary since it will be re-scoped below
+          Boolean(ownerRoot) ||
+          // Don't remove scoping if we're being moved between non-shadowRoot
+          // locations (the likely case is when moving pre-scoped nodes in a template)
+          !ownerShadyRootForNode(node) ||
+          // Under preferPerformance, don't remove scoping when moving back into
+          // a document fragment that was previously scoped; the assumption is
+          // that the user should only move correctly-scoped DOM back into it
+          (preferPerformance && this['__noInsertionPoint'] !== undefined);
+        parentNode[SHADY_PREFIX + 'removeChild'](node, skipUnscoping);
+      }
+      // add to new parent
+      let allowNativeInsert = true;
+      const needsScoping = (!preferPerformance ||
+          // Under preferPerformance, only re-scope if we're not coming from a
+          // pre-scoped doc fragment or back into a pre-scoped doc fragment
+          (node['__noInsertionPoint'] === undefined &&
+           this['__noInsertionPoint'] === undefined)) &&
+          !currentScopeIsCorrect(node, newScopeName);
+      const needsSlotFinding = ownerRoot && !node['__noInsertionPoint'] &&
+          (!preferPerformance || node.nodeType === Node.DOCUMENT_FRAGMENT_NODE);
+      if (needsSlotFinding || needsScoping) {
+        // NOTE: avoid node.removeChild as this *can* trigger another patched
+        // method (e.g. custom elements) and we want only the shady method to run.
+        // The following table describes what style scoping actions should happen as a result of this insertion.
+        // document -> shadowRoot: replace
+        // shadowRoot -> shadowRoot: replace
+        // shadowRoot -> shadowRoot of same type: do nothing
+        // shadowRoot -> document: allow unscoping
+        // document -> document: do nothing
+        // The "same type of shadowRoot" and "document to document cases rely on `currentScopeIsCorrect` returning true
+        if (needsScoping) {
+          // in a document or disconnected tree, replace scoping if necessary
+          oldScopeName = oldScopeName || currentScopeForNode(node);
+        }
+        treeVisitor(node, (node) => {
+          if (needsSlotFinding && node.localName === 'slot') {
+            slotsAdded.push(/** @type {!HTMLSlotElement} */(node));
+          }
+          if (needsScoping) {
+            replaceShadyScoping(node, newScopeName, oldScopeName);
+          }
+        });
+      }
+      // if a slot is added, must render containing root.
+      if (slotsAdded.length) {
+        ownerRoot._addSlots(slotsAdded);
+        ownerRoot._asyncRender();
+      }
+      if (isTrackingLogicalChildNodes(this)) {
+        recordInsertBefore(node, this, ref_node);
+        // when inserting into a host with a shadowRoot with slot, use
+        // `shadowRoot._asyncRender()` via `attach-shadow` module
+        const parentData = shadyDataForNode(this);
+        if (hasShadowRootWithSlot(this)) {
+          parentData.root._asyncRender();
+          allowNativeInsert = false;
+        // when inserting into a host with shadowRoot with NO slot, do nothing
+        // as the node should not be added to composed dome anywhere.
+        } else if (parentData.root) {
+          allowNativeInsert = false;
+        }
+      }
+      if (allowNativeInsert) {
+        // if adding to a shadyRoot, add to host instead
+        let container = isShadyRoot(this) ?
+          /** @type {ShadowRoot} */(this).host : this;
+        // if ref_node, get the ref_node that's actually in composed dom.
+        if (ref_node) {
+          ref_node = firstComposedNode(ref_node);
+          container[NATIVE_PREFIX + 'insertBefore'](node, ref_node);
+        } else {
+          container[NATIVE_PREFIX + 'appendChild'](node);
+        }
+      // Since ownerDocument is not patched, it can be incorrect after this call
+      // if the node is physically appended via distribution. This can result
+      // in the custom elements polyfill not upgrading the node if it's in an inert doc.
+      // We correct this by calling `adoptNode`.
+      } else if (node.ownerDocument !== this.ownerDocument) {
+        this.ownerDocument.adoptNode(node);
+      }
+      scheduleObserver(this, node);
+      return node;
+    },
+
+    /**
+     * @this {Node}
+     * @param {Node} node
+     */
+    appendChild(node) {
+      // if this is a shadowRoot and the shadowRoot is passed as `node`
+      // then an optimized append has already been performed, so do nothing.
+      if (!(this == node && isShadyRoot(node))) {
+        return this[SHADY_PREFIX + 'insertBefore'](node);
+      }
+    },
+
+    /**
+     * Patched `removeChild`. Note that all dom "removals" are routed here.
+     * Removes the given `node` from the element's `children`.
+     * This method also performs dom composition.
+     * @this {Node}
+     * @param {Node} node
+     * @param {boolean=} skipUnscoping
+     */
+    removeChild(node, skipUnscoping = false) {
+      if (this.ownerDocument !== doc) {
+        return this[NATIVE_PREFIX + 'removeChild'](node);
+      }
+      if (node[SHADY_PREFIX + 'parentNode'] !== this) {
+        throw Error('The node to be removed is not a child of this node: ' +
+          node);
+      }
+      let preventNativeRemove;
+      let ownerRoot = ownerShadyRootForNode(node);
+      const removingInsertionPoint = ownerRoot && ownerRoot._removeContainedSlots(node);
+      const parentData = shadyDataForNode(this);
+      if (isTrackingLogicalChildNodes(this)) {
+        recordRemoveChild(node, this);
+        if (hasShadowRootWithSlot(this)) {
+          parentData.root._asyncRender();
+          preventNativeRemove = true;
+        }
+      }
+      // unscope a node leaving a ShadowRoot if ShadyCSS is present, and this node
+      // is not going to be rescoped in `insertBefore`
+      if (getScopingShim() && !skipUnscoping && ownerRoot
+        && node.nodeType !== Node.TEXT_NODE) {
+        const oldScopeName = currentScopeForNode(node);
+        treeVisitor(node, (node) => {
+          removeShadyScoping(node, oldScopeName);
+        });
+      }
+      removeOwnerShadyRoot(node);
+      // if removing slot, must render containing root
+      if (ownerRoot) {
+        let changeSlotContent = this && this.localName === 'slot';
+        if (changeSlotContent) {
+          preventNativeRemove = true;
+        }
+        if (removingInsertionPoint || changeSlotContent) {
+          ownerRoot._asyncRender();
+        }
+      }
+      if (!preventNativeRemove) {
+        // if removing from a shadyRoot, remove from host instead
+        let container = isShadyRoot(this) ?
+          /** @type {ShadowRoot} */(this).host :
+          this;
+        // not guaranteed to physically be in container; e.g.
+        // (1) if parent has a shadyRoot, element may or may not at distributed
+        // location (could be undistributed)
+        // (2) if parent is a slot, element may not ben in composed dom
+        if (!(parentData.root || node.localName === 'slot') ||
+          (container === node[NATIVE_PREFIX + 'parentNode'])) {
+          container[NATIVE_PREFIX + 'removeChild'](node);
+        }
+      }
+      scheduleObserver(this, null, node);
+      return node;
+    },
+
+    /**
+     * @this {Node}
+     * @param {Node} node
+     * @param {Node=} ref_node
+     */
+    replaceChild(node, ref_node) {
+      this[SHADY_PREFIX + 'insertBefore'](node, ref_node);
+      this[SHADY_PREFIX + 'removeChild'](ref_node);
+      return node;
+    },
+
+    /**
+     * @this {Node}
+     * @param {boolean=} deep
+     */
+    cloneNode(deep) {
+      if (this.localName == 'template') {
+        return this[NATIVE_PREFIX + 'cloneNode'](deep);
+      } else {
+        const n = this[NATIVE_PREFIX + 'cloneNode'](false);
+        // Attribute nodes historically had childNodes, but they have later
+        // been removed from the spec.
+        // Make sure we do not do a deep clone on them for old browsers (IE11)
+        if (deep && n.nodeType !== Node.ATTRIBUTE_NODE) {
+          for (let c=this[SHADY_PREFIX + 'firstChild'], nc; c; c = c[SHADY_PREFIX + 'nextSibling']) {
+            nc = c[SHADY_PREFIX + 'cloneNode'](true);
+            n[SHADY_PREFIX + 'appendChild'](nc);
+          }
+        }
+        return n;
+      }
+    },
+
+    /**
+     * @this {Node}
+     * @param {Object=} options
+     */
+    // TODO(sorvell): implement `options` e.g. `{ composed: boolean }`
+    getRootNode(options) { // eslint-disable-line no-unused-vars
+      if (!this || !this.nodeType) {
+        return;
+      }
+      const nodeData = ensureShadyDataForNode(this);
+      let root = nodeData.ownerShadyRoot;
+      if (root === undefined) {
+        if (isShadyRoot(this)) {
+          root = this;
+          nodeData.ownerShadyRoot = root;
+        } else {
+          let parent = this[SHADY_PREFIX + 'parentNode'];
+          root = parent ? parent[SHADY_PREFIX + 'getRootNode'](options) : this;
+          // memo-ize result for performance but only memo-ize
+          // result if node is in the document. This avoids a problem where a root
+          // can be cached while an element is inside a fragment.
+          // If this happens and we cache the result, the value can become stale
+          // because for perf we avoid processing the subtree of added fragments.
+          if (document.documentElement[NATIVE_PREFIX + 'contains'](this)) {
+            nodeData.ownerShadyRoot = root;
+          }
+        }
+
+      }
+      return root;
+    },
+
+    /** @this {Node} */
+    contains(node) {
+      return contains(this, node);
+    }
+
+  });
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /**
+   * @param {Node} node
+   * @param {Function} matcher
+   * @param {Function=} halter
+   */
+  function query(node, matcher, halter) {
+    let list = [];
+    queryChildNodes(node, matcher,
+      halter, list);
+    return list;
+  }
+
+  function queryChildNodes(parent, matcher, halter, list) {
+    for (let n = parent[SHADY_PREFIX + 'firstChild']; n; n = n[SHADY_PREFIX + 'nextSibling']) {
+      if (n.nodeType === Node.ELEMENT_NODE &&
+          queryElement(n, matcher, halter, list)) {
+        return true;
+      }
+    }
+  }
+
+  function queryElement(node, matcher, halter, list) {
+    let result = matcher(node);
+    if (result) {
+      list.push(node);
+    }
+    if (halter && halter(result)) {
+      return result;
+    }
+    queryChildNodes(node, matcher,
+      halter, list);
+  }
+
+  // Needed on Element, DocumentFragment, Document
+  const ParentNodePatches = getOwnPropertyDescriptors({
+
+    /** @this {Element} */
+    get firstElementChild() {
+      const nodeData = shadyDataForNode(this);
+      if (nodeData && nodeData.firstChild !== undefined) {
+        let n = this[SHADY_PREFIX + 'firstChild'];
+        while (n && n.nodeType !== Node.ELEMENT_NODE) {
+          n = n[SHADY_PREFIX + 'nextSibling'];
+        }
+        return n;
+      } else {
+        return this[NATIVE_PREFIX + 'firstElementChild'];
+      }
+    },
+
+    /** @this {Element} */
+    get lastElementChild() {
+      const nodeData = shadyDataForNode(this);
+      if (nodeData && nodeData.lastChild !== undefined) {
+        let n = this[SHADY_PREFIX + 'lastChild'];
+        while (n && n.nodeType !== Node.ELEMENT_NODE) {
+          n = n[SHADY_PREFIX + 'previousSibling'];
+        }
+        return n;
+      } else {
+        return this[NATIVE_PREFIX + 'lastElementChild'];
+      }
+    },
+
+    /** @this {Element} */
+    get children() {
+      if (!isTrackingLogicalChildNodes(this)) {
+        return this[NATIVE_PREFIX + 'children'];
+      }
+      return createPolyfilledHTMLCollection(Array.prototype.filter.call(
+          childNodesArray(this), (n) => {
+        return (n.nodeType === Node.ELEMENT_NODE);
+      }));
+    },
+
+    /** @this {Element} */
+    get childElementCount() {
+      let children = this[SHADY_PREFIX + 'children'];
+      if(children) {
+        return children.length;
+      }
+      return 0;
+    }
+
+  });
+
+  const QueryPatches = getOwnPropertyDescriptors({
+    // TODO(sorvell): consider doing native QSA and filtering results.
+    /**
+     * @this {Element}
+     * @param  {string} selector
+     */
+    querySelector(selector) {
+      // match selector and halt on first result.
+      let result = query(this, function(n) {
+        return matchesSelector(n, selector);
+      }, function(n) {
+        return Boolean(n);
+      })[0];
+      return result || null;
+    },
+
+    /**
+     * @this {Element}
+     * @param  {string} selector
+     * @param  {boolean} useNative
+     */
+    // TODO(sorvell): `useNative` option relies on native querySelectorAll and
+    // misses distributed nodes, see
+    // https://github.com/webcomponents/shadydom/pull/210#issuecomment-361435503
+    querySelectorAll(selector, useNative) {
+      if (useNative) {
+        const o = Array.prototype.slice.call(this[NATIVE_PREFIX + 'querySelectorAll'](selector));
+        const root = this[SHADY_PREFIX + 'getRootNode']();
+        return o.filter(e => e[SHADY_PREFIX + 'getRootNode']() == root);
+      }
+      return query(this, function(n) {
+        return matchesSelector(n, selector);
+      });
+    }
+
+  });
+
+  // In preferPerformance mode, create a custom `ParentNodeDocumentOrFragment`
+  // that optionally does not mixin querySelector/All; this is a performance
+  // optimization. In noPatch, we need to keep the query patches here in order to
+  // ensure the query API is available on the wrapper
+  const ParentNodeDocumentOrFragmentPatches =
+    (settings.preferPerformance && !settings.noPatch) ?
+    Object.assign({}, ParentNodePatches) : ParentNodePatches;
+
+  Object.assign(ParentNodePatches, QueryPatches);
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  const DocumentOrFragmentPatches = getOwnPropertyDescriptors({
+
+    /**
+     * @this {Element}
+     * @param {string} id
+     */
+    getElementById(id) {
+      if (id === '') {
+        return null;
+      }
+      let result = query(this, function(n) {
+        return n.id == id;
+      }, function(n) {
+        return Boolean(n);
+      })[0];
+      return result || null;
+    }
+
+  });
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  function getDocumentActiveElement() {
+    if (settings.hasDescriptors) {
+      return document[NATIVE_PREFIX + 'activeElement'];
+    } else {
+      return document.activeElement;
+    }
+  }
+
+  const DocumentOrShadowRootPatches = getOwnPropertyDescriptors({
+
+    /** @this {Document|ShadowRoot} */
+    get activeElement() {
+      let active = getDocumentActiveElement();
+      // In IE11, activeElement might be an empty object if the document is
+      // contained in an iframe.
+      // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/10998788/
+      if (!active || !active.nodeType) {
+        return null;
+      }
+      let isShadyRoot$1 = !!(isShadyRoot(this));
+      if (this !== document) {
+        // If this node isn't a document or shady root, then it doesn't have
+        // an active element.
+        if (!isShadyRoot$1) {
+          return null;
+        }
+        // If this shady root's host is the active element or the active
+        // element is not a descendant of the host (in the composed tree),
+        // then it doesn't have an active element.
+        if (this.host === active ||
+            !this.host[NATIVE_PREFIX + 'contains'](active)) {
+          return null;
+        }
+      }
+      // This node is either the document or a shady root of which the active
+      // element is a (composed) descendant of its host; iterate upwards to
+      // find the active element's most shallow host within it.
+      let activeRoot = ownerShadyRootForNode(active);
+      while (activeRoot && activeRoot !== this) {
+        active = activeRoot.host;
+        activeRoot = ownerShadyRootForNode(active);
+      }
+      if (this === document) {
+        // This node is the document, so activeRoot should be null.
+        return activeRoot ? null : active;
+      } else {
+        // This node is a non-document shady root, and it should be
+        // activeRoot.
+        return activeRoot === this ? active : null;
+      }
+    }
+  });
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /** @type {!Document} */
+  const inertDoc$1 = document.implementation.createHTMLDocument('inert');
+
+  const ElementOrShadowRootPatches = getOwnPropertyDescriptors({
+
+    /** @this {Element} */
+    get innerHTML() {
+      if (isTrackingLogicalChildNodes(this)) {
+        const content = this.localName === 'template' ?
+        /** @type {HTMLTemplateElement} */(this).content : this;
+        return getInnerHTML(content, childNodesArray);
+      } else {
+        return this[NATIVE_PREFIX + 'innerHTML'];
+      }
+    },
+
+    /**
+     * @this {Element}
+     * @param {string} value
+     */
+    set innerHTML(value) {
+      if (this.localName === 'template') {
+        this[NATIVE_PREFIX + 'innerHTML'] = value;
+      } else {
+        clearNode$1(this);
+        const containerName = this.localName || 'div';
+        let htmlContainer;
+        if (!this.namespaceURI || this.namespaceURI === inertDoc$1.namespaceURI) {
+          htmlContainer = inertDoc$1.createElement(containerName);
+        } else {
+          htmlContainer = inertDoc$1.createElementNS(this.namespaceURI, containerName);
+        }
+        if (settings.hasDescriptors) {
+          htmlContainer[NATIVE_PREFIX + 'innerHTML'] = value;
+        } else {
+          htmlContainer.innerHTML = value;
+        }
+        let firstChild;
+        while ((firstChild = htmlContainer[SHADY_PREFIX + 'firstChild'])) {
+          this[SHADY_PREFIX + 'insertBefore'](firstChild);
+        }
+      }
+    }
+
+  });
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  const ShadowRootPatches = getOwnPropertyDescriptors({
+
+    /**
+     * @this {ShadowRoot}
+     * @param {string} type
+     * @param {Function} fn
+     * @param {Object|boolean=} optionsOrCapture
+     */
+    addEventListener(type, fn, optionsOrCapture) {
+      if (typeof optionsOrCapture !== 'object') {
+        optionsOrCapture = {
+          capture: Boolean(optionsOrCapture)
+        };
+      }
+      // Note, `__shadyTarget` may already be set if an event was added on a <slot> child
+      optionsOrCapture.__shadyTarget = optionsOrCapture.__shadyTarget || this;
+      this.host[SHADY_PREFIX + 'addEventListener'](type, fn, optionsOrCapture);
+    },
+
+    /**
+     * @this {ShadowRoot}
+     * @param {string} type
+     * @param {Function} fn
+     * @param {Object|boolean=} optionsOrCapture
+     */
+    removeEventListener(type, fn, optionsOrCapture) {
+      if (typeof optionsOrCapture !== 'object') {
+        optionsOrCapture = {
+          capture: Boolean(optionsOrCapture)
+        };
+      }
+      // Note, `__shadyTarget` may already be set if an event was added on a <slot> child
+      optionsOrCapture.__shadyTarget = optionsOrCapture.__shadyTarget || this;
+      this.host[SHADY_PREFIX + 'removeEventListener'](type, fn, optionsOrCapture);
+    }
+
+  });
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /**
+   * @param {!Object} proto
+   * @param {string=} prefix
+   */
+  const patchShadyAccessors = (proto, prefix) => {
+    patchProperties(proto, ShadowRootPatches, prefix);
+    patchProperties(proto, DocumentOrShadowRootPatches, prefix);
+    patchProperties(proto, ElementOrShadowRootPatches, prefix);
+    // We ensure ParentNode accessors since these do not exist in Edge/IE on DocumentFragments.
+    patchProperties(proto, ParentNodePatches, prefix);
+    // Ensure `shadowRoot` has basic descriptors when we cannot rely
+    // on them coming from DocumentFragment.
+    //
+    // Case 1, noPatching: Because we want noPatch ShadyRoots to have native property
+    // names so that they do not have to be wrapped...
+    // When we do *not* patch Node/DocumentFragment.prototype
+    // we must manually install those properties on ShadyRoot's prototype.
+    // Note, it's important to only install these in this mode so as not to stomp
+    // over CustomElements polyfill's patches on Node/DocumentFragment methods.
+    if (settings.noPatch && !prefix) {
+      patchProperties(proto, NodePatches, prefix);
+      patchProperties(proto, DocumentOrFragmentPatches, prefix);
+    // Case 2, bad descriptors: Ensure accessors are on ShadowRoot.
+    // These descriptors are normally used for instance patching but because
+    // ShadyRoot can always be patched, just do it to the prototype.
+    } else if (!settings.hasDescriptors) {
+      patchProperties(proto, OutsideDescriptors);
+      patchProperties(proto, InsideDescriptors);
+      patchProperties(proto, TextContentInnerHTMLDescriptors);
+    }
+  };
+
+  const patchShadyRoot = (proto) => {
+    proto.__proto__ = DocumentFragment.prototype;
+
+    // patch both prefixed and not, even when noPatch == true.
+    patchShadyAccessors(proto, SHADY_PREFIX);
+    patchShadyAccessors(proto);
+
+    // Ensure native properties are all safely wrapped since ShadowRoot is not an
+    // actual DocumentFragment instance.
+    Object.defineProperties(proto, {
+      nodeType: {
+        value: Node.DOCUMENT_FRAGMENT_NODE,
+        configurable: true
+      },
+      nodeName: {
+        value: '#document-fragment',
+        configurable: true
+      },
+      nodeValue: {
+        value: null,
+        configurable: true
+      }
+    });
+
+    // make undefined
+    [
+      'localName',
+      'namespaceURI',
+      'prefix'
+    ].forEach((prop) => {
+      Object.defineProperty(proto, prop, {
+        value: undefined,
+        configurable: true
+      });
+    });
+
+    // defer properties to host
+    [
+      'ownerDocument',
+      'baseURI',
+      'isConnected'
+    ].forEach((prop) => {
+      Object.defineProperty(proto, prop, {
+        /** @this {ShadowRoot} */
+        get() {
+          return this.host[prop];
+        },
+        configurable: true
+      });
+    });
+  };
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  // Do not export this object. It must be passed as the first argument to the
+  // ShadyRoot constructor in `attachShadow` to prevent the constructor from
+  // throwing. This prevents the user from being able to manually construct a
+  // ShadyRoot (i.e. `new ShadowRoot()`).
+  const ShadyRootConstructionToken = {};
+
+  const CATCHALL_NAME = '__catchall';
+  const SHADYROOT_NAME = 'ShadyRoot';
+
+  const MODE_CLOSED = 'closed';
+
+  let isRendering = settings['deferConnectionCallbacks'] && document.readyState === 'loading';
+  let rootRendered;
+
+  function ancestorList(node) {
+    let ancestors = [];
+    do {
+      ancestors.unshift(node);
+    } while ((node = node[SHADY_PREFIX + 'parentNode']));
+    return ancestors;
+  }
+
+  /**
+   * @extends {ShadowRoot}
+   */
+  class ShadyRoot {
+
+    constructor(token, host, options) {
+      if (token !== ShadyRootConstructionToken) {
+        throw new TypeError('Illegal constructor');
+      }
+      /** @type {boolean} */
+      this._renderPending;
+      /** @type {boolean} */
+      this._hasRendered;
+      /** @type {?Array<HTMLSlotElement>} */
+      this._slotList = null;
+      /** @type {?Object<string, Array<HTMLSlotElement>>} */
+      this._slotMap;
+      /** @type {?Array<HTMLSlotElement>} */
+      this._pendingSlots;
+      this._init(host, options);
+    }
+
+    _init(host, options) {
+      // NOTE: set a fake local name so this element can be
+      // distinguished from a DocumentFragment when patching.
+      // FF doesn't allow this to be `localName`
+      /** @type {string} */
+      this._localName = SHADYROOT_NAME;
+      // root <=> host
+      this.host = host;
+      /** @type {!string|undefined} */
+      this.mode = options && options.mode;
+      recordChildNodes(this.host);
+      const hostData = ensureShadyDataForNode(this.host);
+      /** @type {!ShadyRoot} */
+      hostData.root = this;
+      hostData.publicRoot = this.mode !== MODE_CLOSED ? this : null;
+      // setup root
+      const rootData = ensureShadyDataForNode(this);
+      rootData.firstChild = rootData.lastChild =
+          rootData.parentNode = rootData.nextSibling =
+          rootData.previousSibling = null;
+      // NOTE: optimization flag, only require an asynchronous render
+      // to record parsed children if flag is not set.
+      if (settings['preferPerformance']) {
+        let n;
+        while ((n = this.host[NATIVE_PREFIX + 'firstChild'])) {
+          this.host[NATIVE_PREFIX + 'removeChild'](n);
+        }
+      } else {
+        this._asyncRender();
+      }
+    }
+
+    _asyncRender() {
+      if (!this._renderPending) {
+        this._renderPending = true;
+        enqueue(() => this._render());
+      }
+    }
+
+    // returns the oldest renderPending ancestor root.
+    _getPendingDistributionRoot() {
+      let renderRoot;
+      let root = this;
+      while (root) {
+        if (root._renderPending) {
+          renderRoot = root;
+        }
+        root = root._getDistributionParent();
+      }
+      return renderRoot;
+    }
+
+    // Returns the shadyRoot `this.host` if `this.host`
+    // has children that require distribution.
+    _getDistributionParent() {
+      let root = this.host[SHADY_PREFIX + 'getRootNode']();
+      if (!isShadyRoot(root)) {
+        return;
+      }
+      const nodeData = shadyDataForNode(this.host);
+      if (nodeData && nodeData.__childSlotCount > 0) {
+        return root;
+      }
+    }
+
+    // Renders the top most render pending shadowRoot in the distribution tree.
+    // This is safe because when a distribution parent renders, all children render.
+    _render() {
+      // If this root is not pending, it needs no rendering work. Any pending
+      // parent that needs to render wll cause this root to render.
+      const root = this._renderPending && this._getPendingDistributionRoot();
+      if (root) {
+        root._renderSelf();
+      }
+    }
+
+    _flushInitial() {
+      if (!this._hasRendered && this._renderPending) {
+        this._render();
+      }
+    }
+
+    /** @override */
+    _renderSelf() {
+      // track rendering state.
+      const wasRendering = isRendering;
+      isRendering = true;
+      this._renderPending = false;
+      if (this._slotList) {
+        this._distribute();
+        this._compose();
+      }
+      // NOTE: optimization flag, only process parsed children
+      // if optimization flag is not set.
+      // on initial render remove any undistributed children.
+      if (!settings['preferPerformance'] && !this._hasRendered) {
+        for (let n=this.host[SHADY_PREFIX + 'firstChild']; n; n = n[SHADY_PREFIX + 'nextSibling']) {
+          const data = shadyDataForNode(n);
+          if (n[NATIVE_PREFIX + 'parentNode'] === this.host &&
+              (n.localName === 'slot' || !data.assignedSlot)) {
+            this.host[NATIVE_PREFIX + 'removeChild'](n);
+          }
+        }
+      }
+      this._hasRendered = true;
+      isRendering = wasRendering;
+      if (rootRendered) {
+        rootRendered();
+      }
+    }
+
+    _distribute() {
+      this._validateSlots();
+      // capture # of previously assigned nodes to help determine if dirty.
+      for (let i=0, slot; i < this._slotList.length; i++) {
+        slot = this._slotList[i];
+        this._clearSlotAssignedNodes(slot);
+      }
+      // distribute host children.
+      for (let n=this.host[SHADY_PREFIX + 'firstChild']; n; n=n[SHADY_PREFIX + 'nextSibling']) {
+        this._distributeNodeToSlot(n);
+      }
+      // fallback content, slotchange, and dirty roots
+      for (let i=0; i < this._slotList.length; i++) {
+        const slot = this._slotList[i];
+        const slotData = shadyDataForNode(slot);
+        // distribute fallback content
+        if (!slotData.assignedNodes.length) {
+          for (let n=slot[SHADY_PREFIX + 'firstChild']; n; n=n[SHADY_PREFIX + 'nextSibling']) {
+            this._distributeNodeToSlot(n, slot);
+          }
+        }
+        const slotParentData = shadyDataForNode(slot[SHADY_PREFIX + 'parentNode']);
+        const slotParentRoot = slotParentData && slotParentData.root;
+        if (slotParentRoot && (slotParentRoot._hasInsertionPoint() || slotParentRoot._renderPending)) {
+          slotParentRoot._renderSelf();
+        }
+        this._addAssignedToFlattenedNodes(slotData.flattenedNodes,
+          slotData.assignedNodes);
+        let prevAssignedNodes = slotData._previouslyAssignedNodes;
+        if (prevAssignedNodes) {
+          for (let i=0; i < prevAssignedNodes.length; i++) {
+            shadyDataForNode(prevAssignedNodes[i])._prevAssignedSlot = null;
+          }
+          slotData._previouslyAssignedNodes = null;
+          // dirty if previously less assigned nodes than previously assigned.
+          if (prevAssignedNodes.length > slotData.assignedNodes.length) {
+            slotData.dirty = true;
+          }
+        }
+        /* Note: A slot is marked dirty whenever a node is newly assigned to it
+        or a node is assigned to a different slot (done in `_distributeNodeToSlot`)
+        or if the number of nodes assigned to the slot has decreased (done above);
+        */
+        if (slotData.dirty) {
+          slotData.dirty = false;
+          this._fireSlotChange(slot);
+        }
+      }
+    }
+
+    /**
+     * Distributes given `node` to the appropriate slot based on its `slot`
+     * attribute. If `forcedSlot` is given, then the node is distributed to the
+     * `forcedSlot`.
+     * Note: slot to which the node is assigned will be marked dirty for firing
+     * `slotchange`.
+     * @param {Node} node
+     * @param {Node=} forcedSlot
+     *
+     */
+    _distributeNodeToSlot(node, forcedSlot) {
+      const nodeData = ensureShadyDataForNode(node);
+      let oldSlot = nodeData._prevAssignedSlot;
+      nodeData._prevAssignedSlot = null;
+      let slot = forcedSlot;
+      if (!slot) {
+        let name = node[SHADY_PREFIX + 'slot'] || CATCHALL_NAME;
+        const list = this._slotMap[name];
+        slot = list && list[0];
+      }
+      if (slot) {
+        const slotData = ensureShadyDataForNode(slot);
+        slotData.assignedNodes.push(node);
+        nodeData.assignedSlot = slot;
+      } else {
+        nodeData.assignedSlot = undefined;
+      }
+      if (oldSlot !== nodeData.assignedSlot) {
+        if (nodeData.assignedSlot) {
+          ensureShadyDataForNode(nodeData.assignedSlot).dirty = true;
+        }
+      }
+    }
+
+    /**
+     * Clears the assignedNodes tracking data for a given `slot`. Note, the current
+     * assigned node data is tracked (via _previouslyAssignedNodes and
+     * _prevAssignedSlot) to see if `slotchange` should fire. This data may be out
+     *  of date at this time because the assigned nodes may have already been
+     * distributed to another root. This is ok since this data is only used to
+     * track changes.
+     * @param {HTMLSlotElement} slot
+     */
+    _clearSlotAssignedNodes(slot) {
+      const slotData = shadyDataForNode(slot);
+      let n$ = slotData.assignedNodes;
+      slotData.assignedNodes = [];
+      slotData.flattenedNodes = [];
+      slotData._previouslyAssignedNodes = n$;
+      if (n$) {
+        for (let i=0; i < n$.length; i++) {
+          let n = shadyDataForNode(n$[i]);
+          n._prevAssignedSlot = n.assignedSlot;
+          // only clear if it was previously set to this slot;
+          // this helps ensure that if the node has otherwise been distributed
+          // ignore it.
+          if (n.assignedSlot === slot) {
+            n.assignedSlot = null;
+          }
+        }
+      }
+    }
+
+    _addAssignedToFlattenedNodes(flattened, assigned) {
+      for (let i=0, n; (i<assigned.length) && (n=assigned[i]); i++) {
+        if (n.localName == 'slot') {
+          const nestedAssigned = shadyDataForNode(n).assignedNodes;
+          if (nestedAssigned && nestedAssigned.length) {
+            this._addAssignedToFlattenedNodes(flattened, nestedAssigned);
+          }
+        } else {
+          flattened.push(assigned[i]);
+        }
+      }
+    }
+
+    _fireSlotChange(slot) {
+      // NOTE: cannot bubble correctly here so not setting bubbles: true
+      // Safari tech preview does not bubble but chrome does
+      // Spec says it bubbles (https://dom.spec.whatwg.org/#mutation-observers)
+      slot[NATIVE_PREFIX + 'dispatchEvent'](new Event('slotchange'));
+      const slotData = shadyDataForNode(slot);
+      if (slotData.assignedSlot) {
+        this._fireSlotChange(slotData.assignedSlot);
+      }
+    }
+
+    // Reify dom such that it is at its correct rendering position
+    // based on logical distribution.
+    // NOTE: here we only compose parents of <slot> elements and not the
+    // shadowRoot into the host. The latter is performend via a fast path
+    // in the `logical-mutation`.insertBefore.
+    _compose() {
+      const slots = this._slotList;
+      let composeList = [];
+      for (let i=0; i < slots.length; i++) {
+        const parent = slots[i][SHADY_PREFIX + 'parentNode'];
+        /* compose node only if:
+          (1) parent does not have a shadowRoot since shadowRoot has already
+          composed into the host
+          (2) we're not already composing it
+          [consider (n^2) but rare better than Set]
+        */
+        const parentData = shadyDataForNode(parent);
+        if (!(parentData && parentData.root) &&
+          composeList.indexOf(parent) < 0) {
+          composeList.push(parent);
+        }
+      }
+      for (let i=0; i < composeList.length; i++) {
+        const node = composeList[i];
+        const targetNode = node === this ? this.host : node;
+        this._updateChildNodes(targetNode, this._composeNode(node));
+      }
+    }
+
+    // Returns the list of nodes which should be rendered inside `node`.
+    _composeNode(node) {
+      let children = [];
+      for (let n=node[SHADY_PREFIX + 'firstChild']; n; n = n[SHADY_PREFIX + 'nextSibling']) {
+        // Note: if we see a slot here, the nodes are guaranteed to need to be
+        // composed here. This is because if there is redistribution, it has
+        // already been handled by this point.
+        if (this._isInsertionPoint(n)) {
+          let flattenedNodes = shadyDataForNode(n).flattenedNodes;
+          for (let j = 0; j < flattenedNodes.length; j++) {
+            let distributedNode = flattenedNodes[j];
+              children.push(distributedNode);
+          }
+        } else {
+          children.push(n);
+        }
+      }
+      return children;
+    }
+
+    _isInsertionPoint(node) {
+        return node.localName == 'slot';
+      }
+
+    // Ensures that the rendered node list inside `container` is `children`.
+    _updateChildNodes(container, children) {
+      let composed = nativeChildNodesArray(container);
+      let splices = calculateSplices(children, composed);
+      // process removals
+      for (let i=0, d=0, s; (i<splices.length) && (s=splices[i]); i++) {
+        for (let j=0, n; (j < s.removed.length) && (n=s.removed[j]); j++) {
+          // check if the node is still where we expect it is before trying
+          // to remove it; this can happen if we move a node and
+          // then schedule its previous host for distribution resulting in
+          // the node being removed here.
+          if (n[NATIVE_PREFIX + 'parentNode'] === container) {
+            container[NATIVE_PREFIX + 'removeChild'](n);
+          }
+          // TODO(sorvell): avoid the need for splicing here.
+          composed.splice(s.index + d, 1);
+        }
+        d -= s.addedCount;
+      }
+      // process adds
+      for (let i=0, s, next; (i<splices.length) && (s=splices[i]); i++) { //eslint-disable-line no-redeclare
+        next = composed[s.index];
+        for (let j=s.index, n; j < s.index + s.addedCount; j++) {
+          n = children[j];
+          container[NATIVE_PREFIX + 'insertBefore'](n, next);
+          composed.splice(j, 0, n);
+        }
+      }
+    }
+
+    _ensureSlotData() {
+      this._pendingSlots = this._pendingSlots || [];
+      this._slotList = this._slotList || [];
+      this._slotMap = this._slotMap || {};
+    }
+
+    _addSlots(slots) {
+      this._ensureSlotData();
+      this._pendingSlots.push(...slots);
+    }
+
+    _validateSlots() {
+      if (this._pendingSlots && this._pendingSlots.length) {
+        this._mapSlots(this._pendingSlots);
+        this._pendingSlots = [];
+      }
+    }
+
+    /**
+     * Adds the given slots. Slots are maintained in an dom-ordered list.
+     * In addition a map of name to slot is updated.
+     */
+    _mapSlots(slots) {
+      let slotNamesToSort;
+      for (let i=0; i < slots.length; i++) {
+        const slot = slots[i];
+        // ensure insertionPoints's and their parents have logical dom info.
+        // save logical tree info
+        // a. for shadyRoot
+        // b. for insertion points (fallback)
+        // c. for parents of insertion points
+        recordChildNodes(slot);
+        const slotParent = slot[SHADY_PREFIX + 'parentNode'];
+        recordChildNodes(slotParent);
+        const slotParentData = shadyDataForNode(slotParent);
+        slotParentData.__childSlotCount = (slotParentData.__childSlotCount || 0) + 1;
+        let name = this._nameForSlot(slot);
+        if (this._slotMap[name]) {
+          slotNamesToSort = slotNamesToSort || {};
+          slotNamesToSort[name] = true;
+          this._slotMap[name].push(slot);
+        } else {
+          this._slotMap[name] = [slot];
+        }
+        this._slotList.push(slot);
+      }
+      if (slotNamesToSort) {
+        for (let n in slotNamesToSort) {
+          this._slotMap[n] = this._sortSlots(this._slotMap[n]);
+        }
+      }
+    }
+
+    _nameForSlot(slot) {
+      const name = slot['name'] || slot.getAttribute('name') || CATCHALL_NAME;
+      slot.__slotName = name;
+      return name;
+    }
+
+    /**
+     * Slots are kept in an ordered list. Slots with the same name
+     * are sorted here by tree order.
+     */
+    _sortSlots(slots) {
+      // NOTE: Cannot use `compareDocumentPosition` because it's not polyfilled,
+      // but the code here could be used to polyfill the preceeding/following info
+      // in `compareDocumentPosition`.
+      return slots.sort((a, b) => {
+        let listA = ancestorList(a);
+        let listB = ancestorList(b);
+        for (var i=0; i < listA.length; i++) {
+          let nA = listA[i];
+          let nB = listB[i];
+          if (nA !== nB) {
+            let c$ = childNodesArray(nA[SHADY_PREFIX + 'parentNode']);
+            return c$.indexOf(nA) - c$.indexOf(nB);
+          }
+        }
+      });
+    }
+
+    /**
+     * Removes from tracked slot data any slots contained within `container` and
+     * then updates the tracked data (_slotList and _slotMap).
+     * Any removed slots also have their `assignedNodes` removed from comopsed dom.
+     */
+    _removeContainedSlots(container) {
+      if (!this._slotList) {
+        return;
+      }
+      this._validateSlots();
+      let didRemove;
+      const map = this._slotMap;
+      for (let n in map) {
+        const slots = map[n];
+        for (let i=0; i < slots.length; i++) {
+          const slot = slots[i];
+          if (contains(container, slot)) {
+            slots.splice(i, 1);
+            const x = this._slotList.indexOf(slot);
+            if (x >= 0) {
+              this._slotList.splice(x, 1);
+              const slotParentData = shadyDataForNode(slot[SHADY_PREFIX + 'parentNode']);
+              if (slotParentData && slotParentData.__childSlotCount) {
+                slotParentData.__childSlotCount--;
+              }
+            }
+            i--;
+            this._removeFlattenedNodes(slot);
+            didRemove = true;
+          }
+        }
+      }
+      return didRemove;
+    }
+
+    _updateSlotName(slot) {
+      if (!this._slotList) {
+        return;
+      }
+      // make sure slotMap is initialized with this slot
+      this._validateSlots();
+      const oldName = slot.__slotName;
+      const name = this._nameForSlot(slot);
+      if (name === oldName) {
+        return;
+      }
+      // remove from existing tracking
+      let slots = this._slotMap[oldName];
+      const i = slots.indexOf(slot);
+      if (i >= 0) {
+        slots.splice(i, 1);
+      }
+      // add to new location and sort if nedessary
+      let list = this._slotMap[name] || (this._slotMap[name] = []);
+      list.push(slot);
+      if (list.length > 1) {
+        this._slotMap[name] = this._sortSlots(list);
+      }
+    }
+
+    _removeFlattenedNodes(slot) {
+      const data = shadyDataForNode(slot);
+      let n$ = data.flattenedNodes;
+      if (n$) {
+        for (let i=0; i<n$.length; i++) {
+          let node = n$[i];
+          let parent = node[NATIVE_PREFIX + 'parentNode'];
+          if (parent) {
+            parent[NATIVE_PREFIX + 'removeChild'](node);
+          }
+        }
+      }
+      data.flattenedNodes = [];
+      data.assignedNodes = [];
+    }
+
+    _hasInsertionPoint() {
+      this._validateSlots();
+      return Boolean(this._slotList && this._slotList.length);
+    }
+  }
+
+  patchShadyRoot(ShadyRoot.prototype);
+
+  /**
+    Implements a pared down version of ShadowDOM's scoping, which is easy to
+    polyfill across browsers.
+  */
+  const attachShadow = (host, options) => {
+    if (!host) {
+      throw new Error('Must provide a host.');
+    }
+    if (!options) {
+      throw new Error('Not enough arguments.');
+    }
+    let root;
+    // Optimization for booting up a shadowRoot from a fragment rather than
+    // creating one.
+    if (options['shadyUpgradeFragment'] && canUpgrade()) {
+      root = options['shadyUpgradeFragment'];
+      root.__proto__ = ShadowRoot.prototype;
+      root._init(host, options);
+      recordChildNodes(root, root);
+      // Note: qsa is native when used with noPatch.
+      /** @type {?NodeList<Element>} */
+      const slotsAdded = root['__noInsertionPoint'] ? null : root.querySelectorAll('slot');
+      // Reset scoping information so normal scoing rules apply after this.
+      root['__noInsertionPoint'] = undefined;
+      // if a slot is added, must render containing root.
+      if (slotsAdded && slotsAdded.length) {
+        root._addSlots(slotsAdded);
+        root._asyncRender();
+      }
+      /** @type {ShadowRoot} */(root).host[NATIVE_PREFIX + 'appendChild'](root);
+    } else {
+      root = new ShadyRoot(ShadyRootConstructionToken, host, options);
+    }
+    return root;
+  };
+
+  // Mitigate connect/disconnect spam by wrapping custom element classes.
+  if (window['customElements'] && settings.inUse && !settings['preferPerformance']) {
+
+    // process connect/disconnect after roots have rendered to avoid
+    // issues with reaction stack.
+    let connectMap = new Map();
+    rootRendered = function() {
+      // allow elements to connect
+      // save map state (without needing polyfills on IE11)
+      const r = [];
+      connectMap.forEach((v, k) => {
+        r.push([k, v]);
+      });
+      connectMap.clear();
+      for (let i=0; i < r.length; i++) {
+        const e = r[i][0], value = r[i][1];
+        if (value) {
+          e['__shadydom_connectedCallback']();
+        } else {
+          e['__shadydom_disconnectedCallback']();
+        }
+      }
+    };
+
+    // Document is in loading state and flag is set (deferConnectionCallbacks)
+    // so process connection stack when `readystatechange` fires.
+    if (isRendering) {
+      document.addEventListener('readystatechange', () => {
+        isRendering = false;
+        rootRendered();
+      }, {once: true});
+    }
+
+    /*
+     * (1) elements can only be connected/disconnected if they are in the expected
+     * state.
+     * (2) never run connect/disconnect during rendering to avoid reaction stack issues.
+     */
+    const ManageConnect = (base, connected, disconnected) => {
+      let counter = 0;
+      const connectFlag = `__isConnected${counter++}`;
+      if (connected || disconnected) {
+
+        /** @this {!HTMLElement} */
+        base.prototype.connectedCallback = base.prototype['__shadydom_connectedCallback'] = function() {
+          // if rendering defer connected
+          // otherwise connect only if we haven't already
+          if (isRendering) {
+            connectMap.set(this, true);
+          } else if (!this[connectFlag]) {
+            this[connectFlag] = true;
+            if (connected) {
+              connected.call(this);
+            }
+          }
+        };
+
+        /** @this {!HTMLElement} */
+        base.prototype.disconnectedCallback = base.prototype['__shadydom_disconnectedCallback'] = function() {
+          // if rendering, cancel a pending connection and queue disconnect,
+          // otherwise disconnect only if a connection has been allowed
+          if (isRendering) {
+            // This is necessary only because calling removeChild
+            // on a node that requires distribution leaves it in the DOM tree
+            // until distribution.
+            // NOTE: remember this is checking the patched isConnected to determine
+            // if the node is in the logical tree.
+            if (!this.isConnected) {
+              connectMap.set(this, false);
+            }
+          } else if (this[connectFlag]) {
+            this[connectFlag] = false;
+            if (disconnected) {
+              disconnected.call(this);
+            }
+          }
+        };
+      }
+
+      return base;
+    };
+
+    const originalDefine = window['customElements']['define'];
+    const define = function(name, constructor) {
+      const connected = constructor.prototype.connectedCallback;
+      const disconnected = constructor.prototype.disconnectedCallback;
+      originalDefine.call(window['customElements'], name,
+          ManageConnect(constructor, connected, disconnected));
+      // unpatch connected/disconnected on class; custom elements tears this off
+      // so the patch is maintained, but if the user calls these methods for
+      // e.g. testing, they will be as expected.
+      constructor.prototype.connectedCallback = connected;
+      constructor.prototype.disconnectedCallback = disconnected;
+    };
+    // Note, it would be better to only patch the CustomElementRegistry.prototype,
+    // but ShadyCSS patches define directly.
+    window.customElements.define = define;
+    // Still patch the registry directly since Safari 10 loses the patch
+    // unless this is done.
+    Object.defineProperty(window['CustomElementRegistry'].prototype, 'define', {
+      value: define,
+      configurable: true
+    });
+  }
+
+  /** @return {!ShadyRoot|undefined} */
+  const ownerShadyRootForNode = (node) => {
+    let root = node[SHADY_PREFIX + 'getRootNode']();
+    if (isShadyRoot(root)) {
+      return root;
+    }
+  };
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /** @implements {IWrapper} */
+  class Wrapper {
+
+    /** @param {!Node} node */
+    constructor(node) {
+      this.node = node;
+    }
+
+    // node
+    addEventListener(name, fn, options) {
+      return this.node[SHADY_PREFIX + 'addEventListener'](name, fn, options);
+    }
+
+    removeEventListener(name, fn, options) {
+      return this.node[SHADY_PREFIX + 'removeEventListener'](name, fn, options);
+    }
+
+    appendChild(node) {
+      return this.node[SHADY_PREFIX + 'appendChild'](node);
+    }
+
+    insertBefore(node, ref_node) {
+      return this.node[SHADY_PREFIX + 'insertBefore'](node, ref_node);
+    }
+
+    removeChild(node) {
+      return this.node[SHADY_PREFIX + 'removeChild'](node);
+    }
+
+    replaceChild(node, ref_node) {
+      return this.node[SHADY_PREFIX + 'replaceChild'](node, ref_node);
+    }
+
+    cloneNode(deep) {
+      return this.node[SHADY_PREFIX + 'cloneNode'](deep);
+    }
+
+    getRootNode(options) {
+      return this.node[SHADY_PREFIX + 'getRootNode'](options);
+    }
+
+    contains(node) {
+      return this.node[SHADY_PREFIX + 'contains'](node);
+    }
+
+    dispatchEvent(event) {
+      return this.node[SHADY_PREFIX + 'dispatchEvent'](event);
+    }
+
+    // element
+    setAttribute(name, value) {
+      this.node[SHADY_PREFIX + 'setAttribute'](name, value);
+    }
+
+    // NOTE: not needed, just here for balance
+    getAttribute(name) {
+      return this.node[NATIVE_PREFIX + 'getAttribute'](name);
+    }
+
+    // NOTE: not needed, just here for balance
+    hasAttribute(name) {
+      return this.node[NATIVE_PREFIX + 'hasAttribute'](name);
+    }
+
+    removeAttribute(name) {
+      this.node[SHADY_PREFIX + 'removeAttribute'](name);
+    }
+
+    attachShadow(options) {
+      return this.node[SHADY_PREFIX + 'attachShadow'](options);
+    }
+
+    /** @return {!Node|undefined} */
+    get activeElement() {
+      if (isShadyRoot(this.node) || this.node.nodeType === Node.DOCUMENT_NODE) {
+        const e = this.node[SHADY_PREFIX + 'activeElement'];
+        return e;
+      }
+    }
+
+    /**
+     * Installed for compatibility with browsers (older Chrome/Safari) that do
+     * not have a configurable `activeElement` accessor. Enables noPatch and
+     * patch mode both to consistently use ShadyDOM.wrap(document)._activeElement.
+     * @override
+     * @return {!Node|undefined}
+     */
+    get _activeElement() {
+      return this.activeElement;
+    }
+
+    // NOTE: not needed, just here for balance
+    /** @override */
+    focus() {
+      this.node[NATIVE_PREFIX + 'focus']();
+    }
+
+    blur() {
+      this.node[SHADY_PREFIX + 'blur']();
+    }
+
+    // document
+    importNode(node, deep) {
+      if (this.node.nodeType === Node.DOCUMENT_NODE) {
+        return this.node[SHADY_PREFIX + 'importNode'](node, deep);
+      }
+    }
+
+    getElementById(id) {
+      if (this.node.nodeType === Node.DOCUMENT_NODE) {
+        return this.node[SHADY_PREFIX + 'getElementById'](id);
+      }
+    }
+
+    // query
+    querySelector(selector) {
+      return this.node[SHADY_PREFIX + 'querySelector'](selector);
+    }
+
+    querySelectorAll(selector, useNative) {
+      return this.node[SHADY_PREFIX + 'querySelectorAll'](selector, useNative);
+    }
+
+    // slot
+    assignedNodes(options) {
+      if (this.node.localName === 'slot') {
+        return this.node[SHADY_PREFIX + 'assignedNodes'](options);
+      }
+    }
+
+    get host() {
+      if (isShadyRoot(this.node)) {
+        return /** @type {!ShadowRoot} */(this.node).host;
+      }
+    }
+
+    get parentNode() {
+      return this.node[SHADY_PREFIX + 'parentNode'];
+    }
+
+    get firstChild() {
+      return this.node[SHADY_PREFIX + 'firstChild'];
+    }
+
+    get lastChild() {
+      return this.node[SHADY_PREFIX + 'lastChild'];
+    }
+
+    get nextSibling() {
+      return this.node[SHADY_PREFIX + 'nextSibling'];
+    }
+
+    get previousSibling() {
+      return this.node[SHADY_PREFIX + 'previousSibling'];
+    }
+
+    get childNodes() {
+      return this.node[SHADY_PREFIX + 'childNodes'];
+    }
+
+    get parentElement() {
+      return this.node[SHADY_PREFIX + 'parentElement'];
+    }
+
+    get firstElementChild() {
+      return this.node[SHADY_PREFIX + 'firstElementChild'];
+    }
+
+    get lastElementChild() {
+      return this.node[SHADY_PREFIX + 'lastElementChild'];
+    }
+
+    get nextElementSibling() {
+      return this.node[SHADY_PREFIX + 'nextElementSibling'];
+    }
+
+    get previousElementSibling() {
+      return this.node[SHADY_PREFIX + 'previousElementSibling'];
+    }
+
+    get children() {
+      return this.node[SHADY_PREFIX + 'children'];
+    }
+
+    get childElementCount() {
+      return this.node[SHADY_PREFIX + 'childElementCount'];
+    }
+
+    get shadowRoot() {
+      return this.node[SHADY_PREFIX + 'shadowRoot'];
+    }
+
+    get assignedSlot() {
+      return this.node[SHADY_PREFIX + 'assignedSlot'];
+    }
+
+    get isConnected() {
+      return this.node[SHADY_PREFIX + 'isConnected'];
+    }
+
+    get innerHTML() {
+      return this.node[SHADY_PREFIX + 'innerHTML'];
+    }
+
+    set innerHTML(value) {
+      this.node[SHADY_PREFIX + 'innerHTML'] = value;
+    }
+
+    get textContent() {
+      return this.node[SHADY_PREFIX + 'textContent'];
+    }
+
+    set textContent(value) {
+      this.node[SHADY_PREFIX + 'textContent'] = value;
+    }
+
+    get slot() {
+      return this.node[SHADY_PREFIX + 'slot'];
+    }
+
+    set slot(value) {
+      this.node[SHADY_PREFIX + 'slot'] = value;
+    }
+
+    get className() {
+      return this.node[SHADY_PREFIX + 'className'];
+    }
+
+    set className(value) {
+      return this.node[SHADY_PREFIX + 'className'] = value;
+    }
+
+  }
+
+  eventPropertyNames.forEach(name => {
+    Object.defineProperty(Wrapper.prototype, name, {
+      /** @this {Wrapper} */
+      get() {
+        return this.node[SHADY_PREFIX + name];
+      },
+      /** @this {Wrapper} */
+      set(value) {
+        this.node[SHADY_PREFIX + name] = value;
+      },
+      configurable: true
+    });
+
+  });
+
+  const wrapperMap = new WeakMap();
+
+  function wrap(obj) {
+    if (isShadyRoot(obj) || obj instanceof Wrapper) {
+      return obj;
+    }
+    let wrapper = wrapperMap.get(obj);
+    if (!wrapper) {
+      wrapper = new Wrapper(obj);
+      wrapperMap.set(obj, wrapper);
+    }
+    return wrapper;
+  }
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  const EventTargetPatches = getOwnPropertyDescriptors({
+
+    /** @this {Node} */
+    dispatchEvent(event) {
+      flush$1();
+      return this[NATIVE_PREFIX + 'dispatchEvent'](event);
+    },
+
+    addEventListener,
+
+    removeEventListener
+
+  });
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  const SlotablePatches = getOwnPropertyDescriptors({
+
+    /** @this {Node} */
+    get assignedSlot() {
+      // Force any parent's shadowRoot to flush so that distribution occurs
+      // and this node has an assignedSlot.
+      const parent = this[SHADY_PREFIX + 'parentNode'];
+      const ownerRoot = parent && parent[SHADY_PREFIX + 'shadowRoot'];
+      if (ownerRoot) {
+        ownerRoot._render();
+      }
+      const nodeData = shadyDataForNode(this);
+      return nodeData && nodeData.assignedSlot || null;
+    }
+
+  });
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  const doc$1 = window.document;
+
+  /**
+   * Should be called whenever an attribute changes. If the `slot` attribute
+   * changes, provokes rendering if necessary. If a `<slot>` element's `name`
+   * attribute changes, updates the root's slot map and renders.
+   * @param {Node} node
+   * @param {string} name
+   */
+  function distributeAttributeChange(node, name) {
+    if (name === 'slot') {
+      const parent = node[SHADY_PREFIX + 'parentNode'];
+      if (hasShadowRootWithSlot(parent)) {
+        shadyDataForNode(parent).root._asyncRender();
+      }
+    } else if (node.localName === 'slot' && name === 'name') {
+      let root = ownerShadyRootForNode(node);
+      if (root) {
+        root._updateSlotName(node);
+        root._asyncRender();
+      }
+    }
+  }
+
+  const ElementPatches = getOwnPropertyDescriptors({
+
+    /** @this {Element} */
+    get previousElementSibling() {
+      const nodeData = shadyDataForNode(this);
+      if (nodeData && nodeData.previousSibling !== undefined) {
+        let n = this[SHADY_PREFIX + 'previousSibling'];
+        while (n && n.nodeType !== Node.ELEMENT_NODE) {
+          n = n[SHADY_PREFIX + 'previousSibling'];
+        }
+        return n;
+      } else {
+        return this[NATIVE_PREFIX + 'previousElementSibling'];
+      }
+    },
+
+    /** @this {Element} */
+    get nextElementSibling() {
+      const nodeData = shadyDataForNode(this);
+      if (nodeData && nodeData.nextSibling !== undefined) {
+        let n = this[SHADY_PREFIX + 'nextSibling'];
+        while (n && n.nodeType !== Node.ELEMENT_NODE) {
+          n = n[SHADY_PREFIX + 'nextSibling'];
+        }
+        return n;
+      } else {
+        return this[NATIVE_PREFIX + 'nextElementSibling'];
+      }
+    },
+
+    /** @this {Element} */
+    get slot() {
+      return this.getAttribute('slot');
+    },
+
+    /** @this {Element} */
+    set slot(value) {
+      this[SHADY_PREFIX + 'setAttribute']('slot', value);
+    },
+
+    // Note: Can be patched on element prototype on all browsers.
+    // Must be patched on instance on browsers that support native Shadow DOM
+    // but do not have builtin accessors (old Chrome).
+    /** @this {Element} */
+    get shadowRoot() {
+      const nodeData = shadyDataForNode(this);
+      return nodeData && nodeData.publicRoot || null;
+    },
+
+    /** @this {Element} */
+    get className() {
+      return this.getAttribute('class') || '';
+    },
+
+    /**
+     * @this {Element}
+     * @param {string} value
+     */
+    set className(value) {
+      this[SHADY_PREFIX + 'setAttribute']('class', value);
+    },
+
+    /**
+     * @this {Element}
+     * @param {string} attr
+     * @param {string} value
+     */
+    setAttribute(attr, value) {
+      if (this.ownerDocument !== doc$1) {
+        this[NATIVE_PREFIX + 'setAttribute'](attr, value);
+      } else if (!scopeClassAttribute(this, attr, value)) {
+        this[NATIVE_PREFIX + 'setAttribute'](attr, value);
+        distributeAttributeChange(this, attr);
+      }
+    },
+
+    /**
+     * @this {Element}
+     * @param {string} attr
+     */
+    removeAttribute(attr) {
+      this[NATIVE_PREFIX + 'removeAttribute'](attr);
+      distributeAttributeChange(this, attr);
+    },
+
+    /**
+     * @this {Element}
+     * @param {!{mode: string}} options
+     */
+    attachShadow(options) {
+      return attachShadow(this, options);
+    }
+
+  });
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  const HTMLElementPatches = getOwnPropertyDescriptors({
+
+    /** @this {HTMLElement} */
+    blur() {
+      const nodeData = shadyDataForNode(this);
+      let root = nodeData && nodeData.root;
+      let shadowActive = root && root.activeElement;
+      if (shadowActive) {
+        shadowActive[SHADY_PREFIX + 'blur']();
+      } else {
+        this[NATIVE_PREFIX + 'blur']();
+      }
+    }
+
+  });
+
+  eventPropertyNames.forEach(property => {
+    HTMLElementPatches[property] = {
+      /** @this {HTMLElement} */
+      set: function(fn) {
+        const shadyData = ensureShadyDataForNode(this);
+        const eventName = property.substring(2);
+        if (!shadyData.__onCallbackListeners) {
+          shadyData.__onCallbackListeners = {};
+        }
+        shadyData.__onCallbackListeners[property] && this.removeEventListener(eventName, shadyData.__onCallbackListeners[property]);
+        this[SHADY_PREFIX + 'addEventListener'](eventName, fn);
+        shadyData.__onCallbackListeners[property] = fn;
+      },
+      /** @this {HTMLElement} */
+      get() {
+        const shadyData = shadyDataForNode(this);
+        return shadyData && shadyData.__onCallbackListeners && shadyData.__onCallbackListeners[property];
+      },
+      configurable: true
+    };
+  });
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  const SlotPatches = getOwnPropertyDescriptors({
+
+    /**
+     * @this {HTMLSlotElement}
+     * @param {Object=} options
+     */
+    assignedNodes(options) {
+      if (this.localName === 'slot') {
+        // Force any containing shadowRoot to flush so that distribution occurs
+        // and this node has assignedNodes.
+        const root = this[SHADY_PREFIX + 'getRootNode']();
+        if (root && isShadyRoot(root)) {
+          root._render();
+        }
+        const nodeData = shadyDataForNode(this);
+        return nodeData ?
+          ((options && options.flatten ? nodeData.flattenedNodes :
+            nodeData.assignedNodes) || []) :
+          [];
+      }
+    },
+
+    /**
+     * @this {HTMLSlotElement}
+     * @param {string} type
+     * @param {Function} fn
+     * @param {Object|boolean=} optionsOrCapture
+     */
+    addEventListener(type, fn, optionsOrCapture) {
+      // NOTE, check if this is a `slot` because these patches are installed on
+      // Element where browsers don't have `<slot>`
+      if (this.localName !== 'slot' || type === 'slotchange') {
+        addEventListener.call(this, type, fn, optionsOrCapture);
+      } else {
+        if (typeof optionsOrCapture !== 'object') {
+          optionsOrCapture = {
+            capture: Boolean(optionsOrCapture)
+          };
+        }
+        const parent = this[SHADY_PREFIX + 'parentNode'];
+        if (!parent) {
+          throw new Error('ShadyDOM cannot attach event to slot unless it has a `parentNode`');
+        }
+        optionsOrCapture.__shadyTarget = this;
+        parent[SHADY_PREFIX + 'addEventListener'](type, fn, optionsOrCapture);
+      }
+    },
+
+    /**
+     * @this {HTMLSlotElement}
+     * @param {string} type
+     * @param {Function} fn
+     * @param {Object|boolean=} optionsOrCapture
+     */
+    removeEventListener(type, fn, optionsOrCapture) {
+      // NOTE, check if this is a `slot` because these patches are installed on
+      // Element where browsers don't have `<slot>`
+      if (this.localName !== 'slot' || type === 'slotchange') {
+        removeEventListener.call(this, type, fn, optionsOrCapture);
+      } else {
+        if (typeof optionsOrCapture !== 'object') {
+          optionsOrCapture = {
+            capture: Boolean(optionsOrCapture)
+          };
+        }
+        const parent = this[SHADY_PREFIX + 'parentNode'];
+        if (!parent) {
+          throw new Error('ShadyDOM cannot attach event to slot unless it has a `parentNode`');
+        }
+        optionsOrCapture.__shadyTarget = this;
+        parent[SHADY_PREFIX + 'removeEventListener'](type, fn, optionsOrCapture);
+      }
+    }
+
+  });
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  const doc$2 = window.document;
+
+  const DocumentPatches = getOwnPropertyDescriptors({
+
+    // note: Though not technically correct, we fast path `importNode`
+    // when called on a node not owned by the main document.
+    // This allows, for example, elements that cannot
+    // contain custom elements and are therefore not likely to contain shadowRoots
+    // to cloned natively. This is a fairly significant performance win.
+    /**
+     * @this {Document}
+     * @param {Node} node
+     * @param {boolean} deep
+     */
+    importNode(node, deep) {
+      // A template element normally has no children with shadowRoots, so make
+      // sure we always make a deep copy to correctly construct the template.content
+      if (node.ownerDocument !== doc$2 || node.localName === 'template') {
+        return this[NATIVE_PREFIX + 'importNode'](node, deep);
+      }
+      let n = this[NATIVE_PREFIX + 'importNode'](node, false);
+      if (deep) {
+        for (let c=node[SHADY_PREFIX + 'firstChild'], nc; c; c = c[SHADY_PREFIX + 'nextSibling']) {
+          nc = this[SHADY_PREFIX + 'importNode'](c, true);
+          n[SHADY_PREFIX + 'appendChild'](nc);
+        }
+      }
+      return n;
+    }
+
+  });
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  const WindowPatches = getOwnPropertyDescriptors({
+
+    // NOTE: ensure these methods are bound to `window` so that `this` is correct
+    // when called directly from global context without a receiver; e.g.
+    // `addEventListener(...)`.
+    addEventListener: addEventListener.bind(window),
+
+    removeEventListener: removeEventListener.bind(window)
+
+  });
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  // Some browsers (IE/Edge) have non-standard HTMLElement accessors.
+  const NonStandardHTMLElement = {};
+
+  if (Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'parentElement')) {
+    NonStandardHTMLElement.parentElement = NodePatches.parentElement;
+  }
+
+  if (Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'contains')) {
+    NonStandardHTMLElement.contains = NodePatches.contains;
+  }
+
+  if (Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'children')) {
+    NonStandardHTMLElement.children = ParentNodePatches.children;
+  }
+
+  if (Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'innerHTML')) {
+    NonStandardHTMLElement.innerHTML = ElementOrShadowRootPatches.innerHTML;
+  }
+
+  if (Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'className')) {
+    NonStandardHTMLElement.className = ElementPatches.className;
+  }
+
+  // Avoid patching `innerHTML` if it does not exist on Element (IE)
+  // and we can patch accessors (hasDescriptors).
+  const ElementShouldHaveInnerHTML = !settings.hasDescriptors || 'innerHTML' in Element.prototype;
+
+  // setup patching
+  const patchMap = {
+    EventTarget: [EventTargetPatches],
+    Node: [NodePatches, !window.EventTarget ? EventTargetPatches : null],
+    Text: [SlotablePatches],
+    Element: [ElementPatches, ParentNodePatches, SlotablePatches,
+      ElementShouldHaveInnerHTML ? ElementOrShadowRootPatches : null,
+      !window.HTMLSlotElement ? SlotPatches : null],
+    HTMLElement: [HTMLElementPatches, NonStandardHTMLElement],
+    HTMLSlotElement: [SlotPatches],
+    DocumentFragment: [ParentNodeDocumentOrFragmentPatches, DocumentOrFragmentPatches],
+    Document: [DocumentPatches, ParentNodeDocumentOrFragmentPatches, DocumentOrFragmentPatches, DocumentOrShadowRootPatches],
+    Window: [WindowPatches]
+  };
+
+  const getPatchPrototype = (name) => window[name] && window[name].prototype;
+
+  // Note, must avoid patching accessors on prototypes when descriptors are not correct
+  // because the CustomElements polyfill checks if these exist before patching instances.
+  // CustomElements polyfill *only* cares about these accessors.
+  const disallowedNativePatches = settings.hasDescriptors ? null : ['innerHTML', 'textContent'];
+
+  /** @param {string=} prefix */
+  const applyPatches = (prefix) => {
+    const disallowed = prefix ? null : disallowedNativePatches;
+    for (let p in patchMap) {
+      const proto = getPatchPrototype(p);
+      patchMap[p].forEach(patch => proto && patch &&
+          patchProperties(proto, patch, prefix, disallowed));
+    }
+  };
+
+  const addShadyPrefixedProperties = () => {
+    // perform shady patches
+    applyPatches(SHADY_PREFIX);
+
+    // install `_activeElement` because some browsers (older Chrome/Safari) do not have
+    // a 'configurable' `activeElement` accesssor.
+    const descriptor = DocumentOrShadowRootPatches.activeElement;
+    Object.defineProperty(document, '_activeElement', descriptor);
+
+    // On Window, we're patching `addEventListener` which is a weird auto-bound
+    // property that is not directly on the Window prototype.
+    patchProperties(Window.prototype, WindowPatches, SHADY_PREFIX);
+  };
+
+  /**
+  @license
+  Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+
+  if (settings.inUse) {
+
+    let ShadyDOM = {
+      // TODO(sorvell): remove when Polymer does not depend on this.
+      'inUse': settings.inUse,
+      // NOTE: old browsers without prototype accessors (very old Chrome
+      // and Safari) need manually patched accessors to properly set
+      // `innerHTML` and `textContent` when an element is:
+      // (1) inside a shadowRoot
+      // (2) does not have special (slot) children itself
+      // (3) and setting the property needs to provoke distribution (because
+      // a nested slot is added/removed)
+      'patch': (node) => {
+        patchInsideElementAccessors(node);
+        patchOutsideElementAccessors(node);
+        return node;
+      },
+      'isShadyRoot': isShadyRoot,
+      'enqueue': enqueue,
+      'flush': flush$1,
+      'flushInitial': (root) => {
+        root._flushInitial();
+      },
+      'settings': settings,
+      'filterMutations': filterMutations,
+      'observeChildren': observeChildren,
+      'unobserveChildren': unobserveChildren,
+      // Set to true to defer native custom elements connection until the
+      // document has fully parsed. This enables custom elements that create
+      // shadowRoots to be defined while the document is loading. Elements
+      // customized as they are created by the parser will successfully
+      // render with this flag on.
+      'deferConnectionCallbacks': settings['deferConnectionCallbacks'],
+      // Set to true to speed up the polyfill slightly at the cost of correctness
+      // * does not patch querySelector/All on Document or DocumentFragment
+      // * does not wrap connected/disconnected callbacks to de-dup these
+      // when using native customElements
+      // * does not wait to process children of elements with shadowRoots
+      // meaning shadowRoots should not be created while an element is parsing
+      // (e.g. if a custom element that creates a shadowRoot is defined before
+      // a candidate element in the document below it.
+      'preferPerformance': settings['preferPerformance'],
+      // Integration point with ShadyCSS to disable styling MutationObserver,
+      // as ShadyDOM will now handle dynamic scoping.
+      'handlesDynamicScoping': true,
+      'wrap': settings.noPatch ? wrap : (n) => n,
+      'Wrapper': Wrapper,
+      'composedPath': composedPath,
+      // Set to true to avoid patching regular platform property names. When set,
+      // Shadow DOM compatible behavior is only available when accessing DOM
+      // API using `ShadyDOM.wrap`, e.g. `ShadyDOM.wrap(element).shadowRoot`.
+      // This setting provides a small performance boost, but requires all DOM API
+      // access that requires Shadow DOM behavior to be proxied via `ShadyDOM.wrap`.
+      'noPatch': settings.noPatch,
+      'nativeMethods': nativeMethods,
+      'nativeTree': nativeTree
+    };
+
+    window['ShadyDOM'] = ShadyDOM;
+
+    // Modifies native prototypes for Node, Element, etc. to
+    // make native platform behavior available at prefixed names, e.g.
+    // `utils.NATIVE_PREFIX + 'firstChild'` or `__shady_native_firstChild`.
+    // This allows the standard names to be safely patched while retaining the
+    // ability for native behavior to be used. This polyfill manipulates DOM
+    // by using this saved native behavior.
+    // Note, some browsers do not have proper element descriptors for
+    // accessors; in this case, native behavior for these accessors is simulated
+    // via a TreeWalker.
+    addNativePrefixedProperties();
+
+    // Modifies native prototypes for Node, Element, etc. to make ShadowDOM
+    // behavior available at prefixed names, e.g.
+    // `utils.SHADY_PREFIX + 'firstChild` or `__shady_firstChild`. This is done
+    // so this polyfill can perform Shadow DOM style DOM manipulation.
+    // Because patching normal platform property names is optional, these prefixed
+    // names are used internally.
+    addShadyPrefixedProperties();
+
+    // Modifies native prototypes for Node, Element, etc. to patch
+    // regular platform property names to have Shadow DOM compatible API behavior.
+    // This applies the utils.SHADY_PREFIX behavior to normal names. For example,
+    // if `noPatch` is not set, then `el.__shady_firstChild` is equivalent to
+    // `el.firstChild`.
+    // NOTE, on older browsers (old Chrome/Safari) native accessors cannot be
+    // patched on prototypes (e.g. Node.prototype.firstChild cannot be modified).
+    // On these browsers, instance level patching is performed where needed; this
+    // instance patching is only done when `noPatch` is *not* set.
+    if (!settings.noPatch) {
+      applyPatches();
+      // Patch click event behavior only if we're patching
+      patchClick();
+    }
+
+    // For simplicity, patch events unconditionally.
+    // Patches the event system to have Shadow DOM compatible behavior (e.g.
+    // event retargeting). When `noPatch` is set, retargeting is only available
+    // when adding event listeners and dispatching events via `ShadyDOM.wrap`
+    // (e.g. `ShadyDOM.wrap(element).addEventListener(...)`).
+    patchEvents();
+
+    window.ShadowRoot = /** @type {function(new:ShadowRoot)} */(ShadyRoot);
+  }
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  const reservedTagList = new Set([
+    'annotation-xml',
+    'color-profile',
+    'font-face',
+    'font-face-src',
+    'font-face-uri',
+    'font-face-format',
+    'font-face-name',
+    'missing-glyph',
+  ]);
+
+  /**
+   * @param {string} localName
+   * @returns {boolean}
+   */
+  function isValidCustomElementName(localName) {
+    const reserved = reservedTagList.has(localName);
+    const validForm = /^[a-z][.0-9_a-z]*-[\-.0-9_a-z]*$/.test(localName);
+    return !reserved && validForm;
+  }
+
+  /**
+   * @param {!Node} node
+   * @return {boolean}
+   */
+  function isConnected(node) {
+    // Use `Node#isConnected`, if defined.
+    const nativeValue = node.isConnected;
+    if (nativeValue !== undefined) {
+      return nativeValue;
+    }
+
+    /** @type {?Node|undefined} */
+    let current = node;
+    while (current && !(current.__CE_isImportDocument || current instanceof Document)) {
+      current = current.parentNode || (window.ShadowRoot && current instanceof ShadowRoot ? current.host : undefined);
+    }
+    return !!(current && (current.__CE_isImportDocument || current instanceof Document));
+  }
+
+  /**
+   * @param {!Node} root
+   * @param {!Node} start
+   * @return {?Node}
+   */
+  function nextSiblingOrAncestorSibling(root, start) {
+    let node = start;
+    while (node && node !== root && !node.nextSibling) {
+      node = node.parentNode;
+    }
+    return (!node || node === root) ? null : node.nextSibling;
+  }
+
+  /**
+   * @param {!Node} root
+   * @param {!Node} start
+   * @return {?Node}
+   */
+  function nextNode(root, start) {
+    return start.firstChild ? start.firstChild : nextSiblingOrAncestorSibling(root, start);
+  }
+
+  /**
+   * @param {!Node} root
+   * @param {!function(!Element)} callback
+   * @param {!Set<Node>=} visitedImports
+   */
+  function walkDeepDescendantElements(root, callback, visitedImports = new Set()) {
+    let node = root;
+    while (node) {
+      if (node.nodeType === Node.ELEMENT_NODE) {
+        const element = /** @type {!Element} */(node);
+
+        callback(element);
+
+        const localName = element.localName;
+        if (localName === 'link' && element.getAttribute('rel') === 'import') {
+          // If this import (polyfilled or not) has it's root node available,
+          // walk it.
+          const importNode = /** @type {!Node} */ (element.import);
+          if (importNode instanceof Node && !visitedImports.has(importNode)) {
+            // Prevent multiple walks of the same import root.
+            visitedImports.add(importNode);
+
+            for (let child = importNode.firstChild; child; child = child.nextSibling) {
+              walkDeepDescendantElements(child, callback, visitedImports);
+            }
+          }
+
+          // Ignore descendants of import links to prevent attempting to walk the
+          // elements created by the HTML Imports polyfill that we just walked
+          // above.
+          node = nextSiblingOrAncestorSibling(root, element);
+          continue;
+        } else if (localName === 'template') {
+          // Ignore descendants of templates. There shouldn't be any descendants
+          // because they will be moved into `.content` during construction in
+          // browsers that support template but, in case they exist and are still
+          // waiting to be moved by a polyfill, they will be ignored.
+          node = nextSiblingOrAncestorSibling(root, element);
+          continue;
+        }
+
+        // Walk shadow roots.
+        const shadowRoot = element.__CE_shadowRoot;
+        if (shadowRoot) {
+          for (let child = shadowRoot.firstChild; child; child = child.nextSibling) {
+            walkDeepDescendantElements(child, callback, visitedImports);
+          }
+        }
+      }
+
+      node = nextNode(root, node);
+    }
+  }
+
+  /**
+   * Used to suppress Closure's "Modifying the prototype is only allowed if the
+   * constructor is in the same scope" warning without using
+   * `@suppress {newCheckTypes, duplicate}` because `newCheckTypes` is too broad.
+   *
+   * @param {!Object} destination
+   * @param {string} name
+   * @param {*} value
+   */
+  function setPropertyUnchecked(destination, name, value) {
+    destination[name] = value;
+  }
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  /**
+   * @enum {number}
+   */
+  const CustomElementState = {
+    custom: 1,
+    failed: 2,
+  };
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  class CustomElementInternals {
+    constructor() {
+      /** @type {!Map<string, !CustomElementDefinition>} */
+      this._localNameToDefinition = new Map();
+
+      /** @type {!Map<!Function, !CustomElementDefinition>} */
+      this._constructorToDefinition = new Map();
+
+      /** @type {!Array<!function(!Node)>} */
+      this._patchesNode = [];
+
+      /** @type {!Array<!function(!Element)>} */
+      this._patchesElement = [];
+
+      /** @type {boolean} */
+      this._hasPatches = false;
+    }
+
+    /**
+     * @param {string} localName
+     * @param {!CustomElementDefinition} definition
+     */
+    setDefinition(localName, definition) {
+      this._localNameToDefinition.set(localName, definition);
+      this._constructorToDefinition.set(definition.constructorFunction, definition);
+    }
+
+    /**
+     * @param {string} localName
+     * @return {!CustomElementDefinition|undefined}
+     */
+    localNameToDefinition(localName) {
+      return this._localNameToDefinition.get(localName);
+    }
+
+    /**
+     * @param {!Function} constructor
+     * @return {!CustomElementDefinition|undefined}
+     */
+    constructorToDefinition(constructor) {
+      return this._constructorToDefinition.get(constructor);
+    }
+
+    /**
+     * @param {!function(!Node)} patch
+     */
+    addNodePatch(patch) {
+      this._hasPatches = true;
+      this._patchesNode.push(patch);
+    }
+
+    /**
+     * @param {!function(!Element)} patch
+     */
+    addElementPatch(patch) {
+      this._hasPatches = true;
+      this._patchesElement.push(patch);
+    }
+
+    /**
+     * @param {!Node} node
+     */
+    patchTree(node) {
+      if (!this._hasPatches) return;
+
+      walkDeepDescendantElements(node, element => this.patchElement(element));
+    }
+
+    /**
+     * @param {!Node} node
+     */
+    patchNode(node) {
+      if (!this._hasPatches) return;
+
+      if (node.__CE_patched) return;
+      node.__CE_patched = true;
+
+      for (let i = 0; i < this._patchesNode.length; i++) {
+        this._patchesNode[i](node);
+      }
+    }
+
+    /**
+     * @param {!Element} element
+     */
+    patchElement(element) {
+      if (!this._hasPatches) return;
+
+      if (element.__CE_patched) return;
+      element.__CE_patched = true;
+
+      for (let i = 0; i < this._patchesNode.length; i++) {
+        this._patchesNode[i](element);
+      }
+
+      for (let i = 0; i < this._patchesElement.length; i++) {
+        this._patchesElement[i](element);
+      }
+    }
+
+    /**
+     * @param {!Node} root
+     */
+    connectTree(root) {
+      const elements = [];
+
+      walkDeepDescendantElements(root, element => elements.push(element));
+
+      for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        if (element.__CE_state === CustomElementState.custom) {
+          this.connectedCallback(element);
+        } else {
+          this.upgradeElement(element);
+        }
+      }
+    }
+
+    /**
+     * @param {!Node} root
+     */
+    disconnectTree(root) {
+      const elements = [];
+
+      walkDeepDescendantElements(root, element => elements.push(element));
+
+      for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        if (element.__CE_state === CustomElementState.custom) {
+          this.disconnectedCallback(element);
+        }
+      }
+    }
+
+    /**
+     * Upgrades all uncustomized custom elements at and below a root node for
+     * which there is a definition. When custom element reaction callbacks are
+     * assumed to be called synchronously (which, by the current DOM / HTML spec
+     * definitions, they are *not*), callbacks for both elements customized
+     * synchronously by the parser and elements being upgraded occur in the same
+     * relative order.
+     *
+     * NOTE: This function, when used to simulate the construction of a tree that
+     * is already created but not customized (i.e. by the parser), does *not*
+     * prevent the element from reading the 'final' (true) state of the tree. For
+     * example, the element, during truly synchronous parsing / construction would
+     * see that it contains no children as they have not yet been inserted.
+     * However, this function does not modify the tree, the element will
+     * (incorrectly) have children. Additionally, self-modification restrictions
+     * for custom element constructors imposed by the DOM spec are *not* enforced.
+     *
+     *
+     * The following nested list shows the steps extending down from the HTML
+     * spec's parsing section that cause elements to be synchronously created and
+     * upgraded:
+     *
+     * The "in body" insertion mode:
+     * https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-inbody
+     * - Switch on token:
+     *   .. other cases ..
+     *   -> Any other start tag
+     *      - [Insert an HTML element](below) for the token.
+     *
+     * Insert an HTML element:
+     * https://html.spec.whatwg.org/multipage/syntax.html#insert-an-html-element
+     * - Insert a foreign element for the token in the HTML namespace:
+     *   https://html.spec.whatwg.org/multipage/syntax.html#insert-a-foreign-element
+     *   - Create an element for a token:
+     *     https://html.spec.whatwg.org/multipage/syntax.html#create-an-element-for-the-token
+     *     - Will execute script flag is true?
+     *       - (Element queue pushed to the custom element reactions stack.)
+     *     - Create an element:
+     *       https://dom.spec.whatwg.org/#concept-create-element
+     *       - Sync CE flag is true?
+     *         - Constructor called.
+     *         - Self-modification restrictions enforced.
+     *       - Sync CE flag is false?
+     *         - (Upgrade reaction enqueued.)
+     *     - Attributes appended to element.
+     *       (`attributeChangedCallback` reactions enqueued.)
+     *     - Will execute script flag is true?
+     *       - (Element queue popped from the custom element reactions stack.
+     *         Reactions in the popped stack are invoked.)
+     *   - (Element queue pushed to the custom element reactions stack.)
+     *   - Insert the element:
+     *     https://dom.spec.whatwg.org/#concept-node-insert
+     *     - Shadow-including descendants are connected. During parsing
+     *       construction, there are no shadow-*excluding* descendants.
+     *       However, the constructor may have validly attached a shadow
+     *       tree to itself and added descendants to that shadow tree.
+     *       (`connectedCallback` reactions enqueued.)
+     *   - (Element queue popped from the custom element reactions stack.
+     *     Reactions in the popped stack are invoked.)
+     *
+     * @param {!Node} root
+     * @param {{
+     *   visitedImports: (!Set<!Node>|undefined),
+     *   upgrade: (!function(!Element)|undefined),
+     * }=} options
+     */
+    patchAndUpgradeTree(root, options = {}) {
+      const visitedImports = options.visitedImports || new Set();
+      const upgrade = options.upgrade || (element => this.upgradeElement(element));
+
+      const elements = [];
+
+      const gatherElements = element => {
+        if (element.localName === 'link' && element.getAttribute('rel') === 'import') {
+          // The HTML Imports polyfill sets a descendant element of the link to
+          // the `import` property, specifically this is *not* a Document.
+          const importNode = /** @type {?Node} */ (element.import);
+
+          if (importNode instanceof Node) {
+            importNode.__CE_isImportDocument = true;
+            // Connected links are associated with the registry.
+            importNode.__CE_hasRegistry = true;
+          }
+
+          if (importNode && importNode.readyState === 'complete') {
+            importNode.__CE_documentLoadHandled = true;
+          } else {
+            // If this link's import root is not available, its contents can't be
+            // walked. Wait for 'load' and walk it when it's ready.
+            element.addEventListener('load', () => {
+              const importNode = /** @type {!Node} */ (element.import);
+
+              if (importNode.__CE_documentLoadHandled) return;
+              importNode.__CE_documentLoadHandled = true;
+
+              // Clone the `visitedImports` set that was populated sync during
+              // the `patchAndUpgradeTree` call that caused this 'load' handler to
+              // be added. Then, remove *this* link's import node so that we can
+              // walk that import again, even if it was partially walked later
+              // during the same `patchAndUpgradeTree` call.
+              const clonedVisitedImports = new Set(visitedImports);
+              clonedVisitedImports.delete(importNode);
+
+              this.patchAndUpgradeTree(importNode, {visitedImports: clonedVisitedImports, upgrade});
+            });
+          }
+        } else {
+          elements.push(element);
+        }
+      };
+
+      // `walkDeepDescendantElements` populates (and internally checks against)
+      // `visitedImports` when traversing a loaded import.
+      walkDeepDescendantElements(root, gatherElements, visitedImports);
+
+      if (this._hasPatches) {
+        for (let i = 0; i < elements.length; i++) {
+          this.patchElement(elements[i]);
+        }
+      }
+
+      for (let i = 0; i < elements.length; i++) {
+        upgrade(elements[i]);
+      }
+    }
+
+    /**
+     * @param {!HTMLElement} element
+     */
+    upgradeElement(element) {
+      const currentState = element.__CE_state;
+      if (currentState !== undefined) return;
+
+      // Prevent elements created in documents without a browsing context from
+      // upgrading.
+      //
+      // https://html.spec.whatwg.org/multipage/custom-elements.html#look-up-a-custom-element-definition
+      //   "If document does not have a browsing context, return null."
+      //
+      // https://html.spec.whatwg.org/multipage/window-object.html#dom-document-defaultview
+      //   "The defaultView IDL attribute of the Document interface, on getting,
+      //   must return this Document's browsing context's WindowProxy object, if
+      //   this Document has an associated browsing context, or null otherwise."
+      const ownerDocument = element.ownerDocument;
+      if (
+        !ownerDocument.defaultView &&
+        !(ownerDocument.__CE_isImportDocument && ownerDocument.__CE_hasRegistry)
+      ) return;
+
+      const definition = this.localNameToDefinition(element.localName);
+      if (!definition) return;
+
+      definition.constructionStack.push(element);
+
+      const constructor = definition.constructorFunction;
+      try {
+        try {
+          let result = new (constructor)();
+          if (result !== element) {
+            throw new Error('The custom element constructor did not produce the element being upgraded.');
+          }
+        } finally {
+          definition.constructionStack.pop();
+        }
+      } catch (e) {
+        element.__CE_state = CustomElementState.failed;
+        throw e;
+      }
+
+      element.__CE_state = CustomElementState.custom;
+      element.__CE_definition = definition;
+
+      if (definition.attributeChangedCallback) {
+        const observedAttributes = definition.observedAttributes;
+        for (let i = 0; i < observedAttributes.length; i++) {
+          const name = observedAttributes[i];
+          const value = element.getAttribute(name);
+          if (value !== null) {
+            this.attributeChangedCallback(element, name, null, value, null);
+          }
+        }
+      }
+
+      if (isConnected(element)) {
+        this.connectedCallback(element);
+      }
+    }
+
+    /**
+     * @param {!Element} element
+     */
+    connectedCallback(element) {
+      const definition = element.__CE_definition;
+      if (definition.connectedCallback) {
+        definition.connectedCallback.call(element);
+      }
+    }
+
+    /**
+     * @param {!Element} element
+     */
+    disconnectedCallback(element) {
+      const definition = element.__CE_definition;
+      if (definition.disconnectedCallback) {
+        definition.disconnectedCallback.call(element);
+      }
+    }
+
+    /**
+     * @param {!Element} element
+     * @param {string} name
+     * @param {?string} oldValue
+     * @param {?string} newValue
+     * @param {?string} namespace
+     */
+    attributeChangedCallback(element, name, oldValue, newValue, namespace) {
+      const definition = element.__CE_definition;
+      if (
+        definition.attributeChangedCallback &&
+        definition.observedAttributes.indexOf(name) > -1
+      ) {
+        definition.attributeChangedCallback.call(element, name, oldValue, newValue, namespace);
+      }
+    }
+  }
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  class DocumentConstructionObserver {
+    constructor(internals, doc) {
+      /**
+       * @type {!CustomElementInternals}
+       */
+      this._internals = internals;
+
+      /**
+       * @type {!Document}
+       */
+      this._document = doc;
+
+      /**
+       * @type {MutationObserver|undefined}
+       */
+      this._observer = undefined;
+
+
+      // Simulate tree construction for all currently accessible nodes in the
+      // document.
+      this._internals.patchAndUpgradeTree(this._document);
+
+      if (this._document.readyState === 'loading') {
+        this._observer = new MutationObserver(this._handleMutations.bind(this));
+
+        // Nodes created by the parser are given to the observer *before* the next
+        // task runs. Inline scripts are run in a new task. This means that the
+        // observer will be able to handle the newly parsed nodes before the inline
+        // script is run.
+        this._observer.observe(this._document, {
+          childList: true,
+          subtree: true,
+        });
+      }
+    }
+
+    disconnect() {
+      if (this._observer) {
+        this._observer.disconnect();
+      }
+    }
+
+    /**
+     * @param {!Array<!MutationRecord>} mutations
+     */
+    _handleMutations(mutations) {
+      // Once the document's `readyState` is 'interactive' or 'complete', all new
+      // nodes created within that document will be the result of script and
+      // should be handled by patching.
+      const readyState = this._document.readyState;
+      if (readyState === 'interactive' || readyState === 'complete') {
+        this.disconnect();
+      }
+
+      for (let i = 0; i < mutations.length; i++) {
+        const addedNodes = mutations[i].addedNodes;
+        for (let j = 0; j < addedNodes.length; j++) {
+          const node = addedNodes[j];
+          this._internals.patchAndUpgradeTree(node);
+        }
+      }
+    }
+  }
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  /**
+   * @template T
+   */
+  class Deferred {
+    constructor() {
+      /**
+       * @private
+       * @type {T|undefined}
+       */
+      this._value = undefined;
+
+      /**
+       * @private
+       * @type {Function|undefined}
+       */
+      this._resolve = undefined;
+
+      /**
+       * @private
+       * @type {!Promise<T>}
+       */
+      this._promise = new Promise(resolve => {
+        this._resolve = resolve;
+
+        if (this._value) {
+          resolve(this._value);
+        }
+      });
+    }
+
+    /**
+     * @param {T} value
+     */
+    resolve(value) {
+      if (this._value) {
+        throw new Error('Already resolved.');
+      }
+
+      this._value = value;
+
+      if (this._resolve) {
+        this._resolve(value);
+      }
+    }
+
+    /**
+     * @return {!Promise<T>}
+     */
+    toPromise() {
+      return this._promise;
+    }
+  }
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  /**
+   * @unrestricted
+   */
+  class CustomElementRegistry {
+
+    /**
+     * @param {!CustomElementInternals} internals
+     */
+    constructor(internals) {
+      /**
+       * @private
+       * @type {boolean}
+       */
+      this._elementDefinitionIsRunning = false;
+
+      /**
+       * @private
+       * @type {!CustomElementInternals}
+       */
+      this._internals = internals;
+
+      /**
+       * @private
+       * @type {!Map<string, !Deferred<undefined>>}
+       */
+      this._whenDefinedDeferred = new Map();
+
+      /**
+       * The default flush callback triggers the document walk synchronously.
+       * @private
+       * @type {!Function}
+       */
+      this._flushCallback = fn => fn();
+
+      /**
+       * @private
+       * @type {boolean}
+       */
+      this._flushPending = false;
+
+      /**
+       * @private
+       * @type {!Array<!CustomElementDefinition>}
+       */
+      this._pendingDefinitions = [];
+
+      /**
+       * @private
+       * @type {!DocumentConstructionObserver}
+       */
+      this._documentConstructionObserver = new DocumentConstructionObserver(internals, document);
+    }
+
+    /**
+     * @param {string} localName
+     * @param {!Function} constructor
+     */
+    define(localName, constructor) {
+      if (!(constructor instanceof Function)) {
+        throw new TypeError('Custom element constructors must be functions.');
+      }
+
+      if (!isValidCustomElementName(localName)) {
+        throw new SyntaxError(`The element name '${localName}' is not valid.`);
+      }
+
+      if (this._internals.localNameToDefinition(localName)) {
+        throw new Error(`A custom element with name '${localName}' has already been defined.`);
+      }
+
+      if (this._elementDefinitionIsRunning) {
+        throw new Error('A custom element is already being defined.');
+      }
+      this._elementDefinitionIsRunning = true;
+
+      let connectedCallback;
+      let disconnectedCallback;
+      let adoptedCallback;
+      let attributeChangedCallback;
+      let observedAttributes;
+      try {
+        /** @type {!Object} */
+        const prototype = constructor.prototype;
+        if (!(prototype instanceof Object)) {
+          throw new TypeError('The custom element constructor\'s prototype is not an object.');
+        }
+
+        function getCallback(name) {
+          const callbackValue = prototype[name];
+          if (callbackValue !== undefined && !(callbackValue instanceof Function)) {
+            throw new Error(`The '${name}' callback must be a function.`);
+          }
+          return callbackValue;
+        }
+
+        connectedCallback = getCallback('connectedCallback');
+        disconnectedCallback = getCallback('disconnectedCallback');
+        adoptedCallback = getCallback('adoptedCallback');
+        attributeChangedCallback = getCallback('attributeChangedCallback');
+        observedAttributes = constructor['observedAttributes'] || [];
+      } catch (e) {
+        return;
+      } finally {
+        this._elementDefinitionIsRunning = false;
+      }
+
+      const definition = {
+        localName,
+        constructorFunction: constructor,
+        connectedCallback,
+        disconnectedCallback,
+        adoptedCallback,
+        attributeChangedCallback,
+        observedAttributes,
+        constructionStack: [],
+      };
+
+      this._internals.setDefinition(localName, definition);
+      this._pendingDefinitions.push(definition);
+
+      // If we've already called the flush callback and it hasn't called back yet,
+      // don't call it again.
+      if (!this._flushPending) {
+        this._flushPending = true;
+        this._flushCallback(() => this._flush());
+      }
+    }
+
+    upgrade(element) {
+      this._internals.patchAndUpgradeTree(element);
+    }
+
+    _flush() {
+      // If no new definitions were defined, don't attempt to flush. This could
+      // happen if a flush callback keeps the function it is given and calls it
+      // multiple times.
+      if (this._flushPending === false) return;
+      this._flushPending = false;
+
+      const pendingDefinitions = this._pendingDefinitions;
+
+      /**
+       * Unupgraded elements with definitions that were defined *before* the last
+       * flush, in document order.
+       * @type {!Array<!HTMLElement>}
+       */
+      const elementsWithStableDefinitions = [];
+
+      /**
+       * A map from `localName`s of definitions that were defined *after* the last
+       * flush to unupgraded elements matching that definition, in document order.
+       * @type {!Map<string, !Array<!HTMLElement>>}
+       */
+      const elementsWithPendingDefinitions = new Map();
+      for (let i = 0; i < pendingDefinitions.length; i++) {
+        elementsWithPendingDefinitions.set(pendingDefinitions[i].localName, []);
+      }
+
+      this._internals.patchAndUpgradeTree(document, {
+        upgrade: element => {
+          // Ignore the element if it has already upgraded or failed to upgrade.
+          if (element.__CE_state !== undefined) return;
+
+          const localName = element.localName;
+
+          // If there is an applicable pending definition for the element, add the
+          // element to the list of elements to be upgraded with that definition.
+          const pendingElements = elementsWithPendingDefinitions.get(localName);
+          if (pendingElements) {
+            pendingElements.push(element);
+          // If there is *any other* applicable definition for the element, add it
+          // to the list of elements with stable definitions that need to be upgraded.
+          } else if (this._internals.localNameToDefinition(localName)) {
+            elementsWithStableDefinitions.push(element);
+          }
+        },
+      });
+
+      // Upgrade elements with 'stable' definitions first.
+      for (let i = 0; i < elementsWithStableDefinitions.length; i++) {
+        this._internals.upgradeElement(elementsWithStableDefinitions[i]);
+      }
+
+      // Upgrade elements with 'pending' definitions in the order they were defined.
+      while (pendingDefinitions.length > 0) {
+        const definition = pendingDefinitions.shift();
+        const localName = definition.localName;
+
+        // Attempt to upgrade all applicable elements.
+        const pendingUpgradableElements = elementsWithPendingDefinitions.get(definition.localName);
+        for (let i = 0; i < pendingUpgradableElements.length; i++) {
+          this._internals.upgradeElement(pendingUpgradableElements[i]);
+        }
+
+        // Resolve any promises created by `whenDefined` for the definition.
+        const deferred = this._whenDefinedDeferred.get(localName);
+        if (deferred) {
+          deferred.resolve(undefined);
+        }
+      }
+    }
+
+    /**
+     * @param {string} localName
+     * @return {Function|undefined}
+     */
+    get(localName) {
+      const definition = this._internals.localNameToDefinition(localName);
+      if (definition) {
+        return definition.constructorFunction;
+      }
+
+      return undefined;
+    }
+
+    /**
+     * @param {string} localName
+     * @return {!Promise<undefined>}
+     */
+    whenDefined(localName) {
+      if (!isValidCustomElementName(localName)) {
+        return Promise.reject(new SyntaxError(`'${localName}' is not a valid custom element name.`));
+      }
+
+      const prior = this._whenDefinedDeferred.get(localName);
+      if (prior) {
+        return prior.toPromise();
+      }
+
+      const deferred = new Deferred();
+      this._whenDefinedDeferred.set(localName, deferred);
+
+      const definition = this._internals.localNameToDefinition(localName);
+      // Resolve immediately only if the given local name has a definition *and*
+      // the full document walk to upgrade elements with that local name has
+      // already happened.
+      if (definition && !this._pendingDefinitions.some(d => d.localName === localName)) {
+        deferred.resolve(undefined);
+      }
+
+      return deferred.toPromise();
+    }
+
+    polyfillWrapFlushCallback(outer) {
+      this._documentConstructionObserver.disconnect();
+      const inner = this._flushCallback;
+      this._flushCallback = flush => outer(() => inner(flush));
+    }
+  }
+
+  // Closure compiler exports.
+  window['CustomElementRegistry'] = CustomElementRegistry;
+  CustomElementRegistry.prototype['define'] = CustomElementRegistry.prototype.define;
+  CustomElementRegistry.prototype['upgrade'] = CustomElementRegistry.prototype.upgrade;
+  CustomElementRegistry.prototype['get'] = CustomElementRegistry.prototype.get;
+  CustomElementRegistry.prototype['whenDefined'] = CustomElementRegistry.prototype.whenDefined;
+  CustomElementRegistry.prototype['polyfillWrapFlushCallback'] = CustomElementRegistry.prototype.polyfillWrapFlushCallback;
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  var Native = {
+    Document_createElement: window.Document.prototype.createElement,
+    Document_createElementNS: window.Document.prototype.createElementNS,
+    Document_importNode: window.Document.prototype.importNode,
+    Document_prepend: window.Document.prototype['prepend'],
+    Document_append: window.Document.prototype['append'],
+    DocumentFragment_prepend: window.DocumentFragment.prototype['prepend'],
+    DocumentFragment_append: window.DocumentFragment.prototype['append'],
+    Node_cloneNode: window.Node.prototype.cloneNode,
+    Node_appendChild: window.Node.prototype.appendChild,
+    Node_insertBefore: window.Node.prototype.insertBefore,
+    Node_removeChild: window.Node.prototype.removeChild,
+    Node_replaceChild: window.Node.prototype.replaceChild,
+    Node_textContent: Object.getOwnPropertyDescriptor(window.Node.prototype, 'textContent'),
+    Element_attachShadow: window.Element.prototype['attachShadow'],
+    Element_innerHTML: Object.getOwnPropertyDescriptor(window.Element.prototype, 'innerHTML'),
+    Element_getAttribute: window.Element.prototype.getAttribute,
+    Element_setAttribute: window.Element.prototype.setAttribute,
+    Element_removeAttribute: window.Element.prototype.removeAttribute,
+    Element_getAttributeNS: window.Element.prototype.getAttributeNS,
+    Element_setAttributeNS: window.Element.prototype.setAttributeNS,
+    Element_removeAttributeNS: window.Element.prototype.removeAttributeNS,
+    Element_insertAdjacentElement: window.Element.prototype['insertAdjacentElement'],
+    Element_insertAdjacentHTML: window.Element.prototype['insertAdjacentHTML'],
+    Element_prepend: window.Element.prototype['prepend'],
+    Element_append: window.Element.prototype['append'],
+    Element_before: window.Element.prototype['before'],
+    Element_after: window.Element.prototype['after'],
+    Element_replaceWith: window.Element.prototype['replaceWith'],
+    Element_remove: window.Element.prototype['remove'],
+    HTMLElement: window.HTMLElement,
+    HTMLElement_innerHTML: Object.getOwnPropertyDescriptor(window.HTMLElement.prototype, 'innerHTML'),
+    HTMLElement_insertAdjacentElement: window.HTMLElement.prototype['insertAdjacentElement'],
+    HTMLElement_insertAdjacentHTML: window.HTMLElement.prototype['insertAdjacentHTML'],
+  };
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  /**
+   * This class exists only to work around Closure's lack of a way to describe
+   * singletons. It represents the 'already constructed marker' used in custom
+   * element construction stacks.
+   *
+   * https://html.spec.whatwg.org/#concept-already-constructed-marker
+   * @extends AlreadyConstructedMarkerType
+   */
+  class AlreadyConstructedMarker {}
+
+  var AlreadyConstructedMarker$1 = new AlreadyConstructedMarker();
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  /**
+   * @param {!CustomElementInternals} internals
+   */
+  function PatchHTMLElement(internals) {
+    window['HTMLElement'] = (function() {
+      /**
+       * @type {function(new: HTMLElement): !HTMLElement}
+       */
+      function HTMLElement() {
+        // This should really be `new.target` but `new.target` can't be emulated
+        // in ES5. Assuming the user keeps the default value of the constructor's
+        // prototype's `constructor` property, this is equivalent.
+        const constructor = /** @type {!Function} */ (this.constructor);
+
+        const definition = internals.constructorToDefinition(constructor);
+        if (!definition) {
+          throw new Error('The custom element being constructed was not registered with `customElements`.');
+        }
+
+        const constructionStack = definition.constructionStack;
+
+        if (constructionStack.length === 0) {
+          const element = /** @type {!HTMLElement} */ (Native.Document_createElement.call(document, definition.localName));
+          Object.setPrototypeOf(element, constructor.prototype);
+          element.__CE_state = CustomElementState.custom;
+          element.__CE_definition = definition;
+          internals.patchElement(element);
+          return element;
+        }
+
+        const lastIndex = constructionStack.length - 1;
+        const element = constructionStack[lastIndex];
+        if (element === AlreadyConstructedMarker$1) {
+          throw new Error('The HTMLElement constructor was either called reentrantly for this constructor or called multiple times.');
+        }
+        const toConstructElement = /** @type {!HTMLElement} */ (element);
+        constructionStack[lastIndex] = AlreadyConstructedMarker$1;
+
+        Object.setPrototypeOf(toConstructElement, constructor.prototype);
+        internals.patchElement(toConstructElement);
+
+        return toConstructElement;
+      }
+
+      HTMLElement.prototype = Native.HTMLElement.prototype;
+      // Safari 9 has `writable: false` on the propertyDescriptor
+      // Make it writable so that TypeScript can patch up the
+      // constructor in the ES5 compiled code.
+      Object.defineProperty(HTMLElement.prototype, 'constructor', {
+        writable: true,
+        configurable: true,
+        enumerable: false,
+        value: HTMLElement
+      });
+
+      return HTMLElement;
+    })();
+  }
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  /**
+   * @param {!CustomElementInternals} internals
+   * @param {!Object} destination
+   * @param {!ParentNodeNativeMethods} builtIn
+   */
+  function PatchParentNode(internals, destination, builtIn) {
+    /**
+     * @param {!function(...(!Node|string))} builtInMethod
+     * @return {!function(...(!Node|string))}
+     */
+    function appendPrependPatch(builtInMethod) {
+      return /** @this {!Node} */ function(...nodes) {
+        /**
+         * A copy of `nodes`, with any DocumentFragment replaced by its children.
+         * @type {!Array<!Node>}
+         */
+        const flattenedNodes = [];
+
+        /**
+         * Elements in `nodes` that were connected before this call.
+         * @type {!Array<!Node>}
+         */
+        const connectedElements = [];
+
+        for (var i = 0; i < nodes.length; i++) {
+          const node = nodes[i];
+
+          if (node instanceof Element && isConnected(node)) {
+            connectedElements.push(node);
+          }
+
+          if (node instanceof DocumentFragment) {
+            for (let child = node.firstChild; child; child = child.nextSibling) {
+              flattenedNodes.push(child);
+            }
+          } else {
+            flattenedNodes.push(node);
+          }
+        }
+
+        builtInMethod.apply(this, nodes);
+
+        for (let i = 0; i < connectedElements.length; i++) {
+          internals.disconnectTree(connectedElements[i]);
+        }
+
+        if (isConnected(this)) {
+          for (let i = 0; i < flattenedNodes.length; i++) {
+            const node = flattenedNodes[i];
+            if (node instanceof Element) {
+              internals.connectTree(node);
+            }
+          }
+        }
+      };
+    }
+
+    if (builtIn.prepend !== undefined) {
+      setPropertyUnchecked(destination, 'prepend', appendPrependPatch(builtIn.prepend));
+    }
+
+    if (builtIn.append !== undefined) {
+      setPropertyUnchecked(destination, 'append', appendPrependPatch(builtIn.append));
+    }
+  }
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  /**
+   * @param {!CustomElementInternals} internals
+   */
+  function PatchDocument(internals) {
+    setPropertyUnchecked(Document.prototype, 'createElement',
+      /**
+       * @this {Document}
+       * @param {string} localName
+       * @return {!Element}
+       */
+      function(localName) {
+        // Only create custom elements if this document is associated with the registry.
+        if (this.__CE_hasRegistry) {
+          const definition = internals.localNameToDefinition(localName);
+          if (definition) {
+            return new (definition.constructorFunction)();
+          }
+        }
+
+        const result = /** @type {!Element} */
+          (Native.Document_createElement.call(this, localName));
+        internals.patchElement(result);
+        return result;
+      });
+
+    setPropertyUnchecked(Document.prototype, 'importNode',
+      /**
+       * @this {Document}
+       * @param {!Node} node
+       * @param {boolean=} deep
+       * @return {!Node}
+       */
+      function(node, deep) {
+        const clone = /** @type {!Node} */ (Native.Document_importNode.call(this, node, !!deep));
+        // Only create custom elements if this document is associated with the registry.
+        if (!this.__CE_hasRegistry) {
+          internals.patchTree(clone);
+        } else {
+          internals.patchAndUpgradeTree(clone);
+        }
+        return clone;
+      });
+
+    const NS_HTML = "http://www.w3.org/1999/xhtml";
+
+    setPropertyUnchecked(Document.prototype, 'createElementNS',
+      /**
+       * @this {Document}
+       * @param {?string} namespace
+       * @param {string} localName
+       * @return {!Element}
+       */
+      function(namespace, localName) {
+        // Only create custom elements if this document is associated with the registry.
+        if (this.__CE_hasRegistry && (namespace === null || namespace === NS_HTML)) {
+          const definition = internals.localNameToDefinition(localName);
+          if (definition) {
+            return new (definition.constructorFunction)();
+          }
+        }
+
+        const result = /** @type {!Element} */
+          (Native.Document_createElementNS.call(this, namespace, localName));
+        internals.patchElement(result);
+        return result;
+      });
+
+    PatchParentNode(internals, Document.prototype, {
+      prepend: Native.Document_prepend,
+      append: Native.Document_append,
+    });
+  }
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  /**
+   * @param {!CustomElementInternals} internals
+   */
+  function PatchDocumentFragment(internals) {
+    PatchParentNode(internals, DocumentFragment.prototype, {
+      prepend: Native.DocumentFragment_prepend,
+      append: Native.DocumentFragment_append,
+    });
+  }
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  /**
+   * @param {!CustomElementInternals} internals
+   */
+  function PatchNode(internals) {
+    // `Node#nodeValue` is implemented on `Attr`.
+    // `Node#textContent` is implemented on `Attr`, `Element`.
+
+    setPropertyUnchecked(Node.prototype, 'insertBefore',
+      /**
+       * @this {Node}
+       * @param {!Node} node
+       * @param {?Node} refNode
+       * @return {!Node}
+       */
+      function(node, refNode) {
+        if (node instanceof DocumentFragment) {
+          const insertedNodes = Array.prototype.slice.apply(node.childNodes);
+          const nativeResult = Native.Node_insertBefore.call(this, node, refNode);
+
+          // DocumentFragments can't be connected, so `disconnectTree` will never
+          // need to be called on a DocumentFragment's children after inserting it.
+
+          if (isConnected(this)) {
+            for (let i = 0; i < insertedNodes.length; i++) {
+              internals.connectTree(insertedNodes[i]);
+            }
+          }
+
+          return nativeResult;
+        }
+
+        const nodeWasConnected = isConnected(node);
+        const nativeResult = Native.Node_insertBefore.call(this, node, refNode);
+
+        if (nodeWasConnected) {
+          internals.disconnectTree(node);
+        }
+
+        if (isConnected(this)) {
+          internals.connectTree(node);
+        }
+
+        return nativeResult;
+      });
+
+    setPropertyUnchecked(Node.prototype, 'appendChild',
+      /**
+       * @this {Node}
+       * @param {!Node} node
+       * @return {!Node}
+       */
+      function(node) {
+        if (node instanceof DocumentFragment) {
+          const insertedNodes = Array.prototype.slice.apply(node.childNodes);
+          const nativeResult = Native.Node_appendChild.call(this, node);
+
+          // DocumentFragments can't be connected, so `disconnectTree` will never
+          // need to be called on a DocumentFragment's children after inserting it.
+
+          if (isConnected(this)) {
+            for (let i = 0; i < insertedNodes.length; i++) {
+              internals.connectTree(insertedNodes[i]);
+            }
+          }
+
+          return nativeResult;
+        }
+
+        const nodeWasConnected = isConnected(node);
+        const nativeResult = Native.Node_appendChild.call(this, node);
+
+        if (nodeWasConnected) {
+          internals.disconnectTree(node);
+        }
+
+        if (isConnected(this)) {
+          internals.connectTree(node);
+        }
+
+        return nativeResult;
+      });
+
+    setPropertyUnchecked(Node.prototype, 'cloneNode',
+      /**
+       * @this {Node}
+       * @param {boolean=} deep
+       * @return {!Node}
+       */
+      function(deep) {
+        const clone = Native.Node_cloneNode.call(this, !!deep);
+        // Only create custom elements if this element's owner document is
+        // associated with the registry.
+        if (!this.ownerDocument.__CE_hasRegistry) {
+          internals.patchTree(clone);
+        } else {
+          internals.patchAndUpgradeTree(clone);
+        }
+        return clone;
+      });
+
+    setPropertyUnchecked(Node.prototype, 'removeChild',
+      /**
+       * @this {Node}
+       * @param {!Node} node
+       * @return {!Node}
+       */
+      function(node) {
+        const nodeWasConnected = isConnected(node);
+        const nativeResult = Native.Node_removeChild.call(this, node);
+
+        if (nodeWasConnected) {
+          internals.disconnectTree(node);
+        }
+
+        return nativeResult;
+      });
+
+    setPropertyUnchecked(Node.prototype, 'replaceChild',
+      /**
+       * @this {Node}
+       * @param {!Node} nodeToInsert
+       * @param {!Node} nodeToRemove
+       * @return {!Node}
+       */
+      function(nodeToInsert, nodeToRemove) {
+        if (nodeToInsert instanceof DocumentFragment) {
+          const insertedNodes = Array.prototype.slice.apply(nodeToInsert.childNodes);
+          const nativeResult = Native.Node_replaceChild.call(this, nodeToInsert, nodeToRemove);
+
+          // DocumentFragments can't be connected, so `disconnectTree` will never
+          // need to be called on a DocumentFragment's children after inserting it.
+
+          if (isConnected(this)) {
+            internals.disconnectTree(nodeToRemove);
+            for (let i = 0; i < insertedNodes.length; i++) {
+              internals.connectTree(insertedNodes[i]);
+            }
+          }
+
+          return nativeResult;
+        }
+
+        const nodeToInsertWasConnected = isConnected(nodeToInsert);
+        const nativeResult = Native.Node_replaceChild.call(this, nodeToInsert, nodeToRemove);
+        const thisIsConnected = isConnected(this);
+
+        if (thisIsConnected) {
+          internals.disconnectTree(nodeToRemove);
+        }
+
+        if (nodeToInsertWasConnected) {
+          internals.disconnectTree(nodeToInsert);
+        }
+
+        if (thisIsConnected) {
+          internals.connectTree(nodeToInsert);
+        }
+
+        return nativeResult;
+      });
+
+
+    function patch_textContent(destination, baseDescriptor) {
+      Object.defineProperty(destination, 'textContent', {
+        enumerable: baseDescriptor.enumerable,
+        configurable: true,
+        get: baseDescriptor.get,
+        set: /** @this {Node} */ function(assignedValue) {
+          // If this is a text node then there are no nodes to disconnect.
+          if (this.nodeType === Node.TEXT_NODE) {
+            baseDescriptor.set.call(this, assignedValue);
+            return;
+          }
+
+          let removedNodes = undefined;
+          // Checking for `firstChild` is faster than reading `childNodes.length`
+          // to compare with 0.
+          if (this.firstChild) {
+            // Using `childNodes` is faster than `children`, even though we only
+            // care about elements.
+            const childNodes = this.childNodes;
+            const childNodesLength = childNodes.length;
+            if (childNodesLength > 0 && isConnected(this)) {
+              // Copying an array by iterating is faster than using slice.
+              removedNodes = new Array(childNodesLength);
+              for (let i = 0; i < childNodesLength; i++) {
+                removedNodes[i] = childNodes[i];
+              }
+            }
+          }
+
+          baseDescriptor.set.call(this, assignedValue);
+
+          if (removedNodes) {
+            for (let i = 0; i < removedNodes.length; i++) {
+              internals.disconnectTree(removedNodes[i]);
+            }
+          }
+        },
+      });
+    }
+
+    if (Native.Node_textContent && Native.Node_textContent.get) {
+      patch_textContent(Node.prototype, Native.Node_textContent);
+    } else {
+      internals.addNodePatch(function(element) {
+        patch_textContent(element, {
+          enumerable: true,
+          configurable: true,
+          // NOTE: This implementation of the `textContent` getter assumes that
+          // text nodes' `textContent` getter will not be patched.
+          get: /** @this {Node} */ function() {
+            /** @type {!Array<string>} */
+            const parts = [];
+
+            for (let i = 0; i < this.childNodes.length; i++) {
+              const childNode = this.childNodes[i];
+              if (childNode.nodeType === Node.COMMENT_NODE) {
+                continue;
+              }
+              parts.push(childNode.textContent);
+            }
+
+            return parts.join('');
+          },
+          set: /** @this {Node} */ function(assignedValue) {
+            while (this.firstChild) {
+              Native.Node_removeChild.call(this, this.firstChild);
+            }
+            // `textContent = null | undefined | ''` does not result in
+            // a TextNode childNode
+            if (assignedValue != null && assignedValue !== '') {
+              Native.Node_appendChild.call(this, document.createTextNode(assignedValue));
+            }
+          },
+        });
+      });
+    }
+  }
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  /**
+   * @param {!CustomElementInternals} internals
+   * @param {!Object} destination
+   * @param {!ChildNodeNativeMethods} builtIn
+   */
+  function PatchChildNode(internals, destination, builtIn) {
+    /**
+     * @param {!function(...(!Node|string))} builtInMethod
+     * @return {!function(...(!Node|string))}
+     */
+    function beforeAfterPatch(builtInMethod) {
+      return /** @this {!Node} */ function(...nodes) {
+        /**
+         * A copy of `nodes`, with any DocumentFragment replaced by its children.
+         * @type {!Array<!Node>}
+         */
+        const flattenedNodes = [];
+
+        /**
+         * Elements in `nodes` that were connected before this call.
+         * @type {!Array<!Node>}
+         */
+        const connectedElements = [];
+
+        for (var i = 0; i < nodes.length; i++) {
+          const node = nodes[i];
+
+          if (node instanceof Element && isConnected(node)) {
+            connectedElements.push(node);
+          }
+
+          if (node instanceof DocumentFragment) {
+            for (let child = node.firstChild; child; child = child.nextSibling) {
+              flattenedNodes.push(child);
+            }
+          } else {
+            flattenedNodes.push(node);
+          }
+        }
+
+        builtInMethod.apply(this, nodes);
+
+        for (let i = 0; i < connectedElements.length; i++) {
+          internals.disconnectTree(connectedElements[i]);
+        }
+
+        if (isConnected(this)) {
+          for (let i = 0; i < flattenedNodes.length; i++) {
+            const node = flattenedNodes[i];
+            if (node instanceof Element) {
+              internals.connectTree(node);
+            }
+          }
+        }
+      };
+    }
+
+    if (builtIn.before !== undefined) {
+      setPropertyUnchecked(destination, 'before', beforeAfterPatch(builtIn.before));
+    }
+
+    if (builtIn.before !== undefined) {
+      setPropertyUnchecked(destination, 'after', beforeAfterPatch(builtIn.after));
+    }
+
+    if (builtIn.replaceWith !== undefined) {
+      setPropertyUnchecked(destination, 'replaceWith',
+        /**
+         * @param {...(!Node|string)} nodes
+         * @this {!Node}
+         */
+        function(...nodes) {
+          /**
+           * A copy of `nodes`, with any DocumentFragment replaced by its children.
+           * @type {!Array<!Node|string>}
+           */
+          const flattenedNodes = [];
+
+          /**
+           * Elements in `nodes` that were connected before this call.
+           * @type {!Array<!Node>}
+           */
+          const connectedElements = [];
+
+          for (var i = 0; i < nodes.length; i++) {
+            const node = nodes[i];
+
+            if (node instanceof Element && isConnected(node)) {
+              connectedElements.push(node);
+            }
+
+            if (node instanceof DocumentFragment) {
+              for (let child = node.firstChild; child; child = child.nextSibling) {
+                flattenedNodes.push(child);
+              }
+            } else {
+              flattenedNodes.push(node);
+            }
+          }
+
+          const wasConnected = isConnected(this);
+
+          builtIn.replaceWith.apply(this, nodes);
+
+          for (let i = 0; i < connectedElements.length; i++) {
+            internals.disconnectTree(connectedElements[i]);
+          }
+
+          if (wasConnected) {
+            internals.disconnectTree(this);
+            for (let i = 0; i < flattenedNodes.length; i++) {
+              const node = flattenedNodes[i];
+              if (node instanceof Element) {
+                internals.connectTree(node);
+              }
+            }
+          }
+        });
+      }
+
+    if (builtIn.remove !== undefined) {
+      setPropertyUnchecked(destination, 'remove',
+        /** @this {!Node} */
+        function() {
+          const wasConnected = isConnected(this);
+
+          builtIn.remove.call(this);
+
+          if (wasConnected) {
+            internals.disconnectTree(this);
+          }
+        });
+    }
+  }
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  /**
+   * @param {!CustomElementInternals} internals
+   */
+  function PatchElement(internals) {
+    if (Native.Element_attachShadow) {
+      setPropertyUnchecked(Element.prototype, 'attachShadow',
+        /**
+         * @this {Element}
+         * @param {!{mode: string}} init
+         * @return {ShadowRoot}
+         */
+        function(init) {
+          const shadowRoot = Native.Element_attachShadow.call(this, init);
+          internals.patchNode(shadowRoot);
+          this.__CE_shadowRoot = shadowRoot;
+          return shadowRoot;
+        });
+    }
+
+
+    function patch_innerHTML(destination, baseDescriptor) {
+      Object.defineProperty(destination, 'innerHTML', {
+        enumerable: baseDescriptor.enumerable,
+        configurable: true,
+        get: baseDescriptor.get,
+        set: /** @this {Element} */ function(htmlString) {
+          const isConnected$1 = isConnected(this);
+
+          // NOTE: In IE11, when using the native `innerHTML` setter, all nodes
+          // that were previously descendants of the context element have all of
+          // their children removed as part of the set - the entire subtree is
+          // 'disassembled'. This work around walks the subtree *before* using the
+          // native setter.
+          /** @type {!Array<!Element>|undefined} */
+          let removedElements = undefined;
+          if (isConnected$1) {
+            removedElements = [];
+            walkDeepDescendantElements(this, element => {
+              if (element !== this) {
+                removedElements.push(element);
+              }
+            });
+          }
+
+          baseDescriptor.set.call(this, htmlString);
+
+          if (removedElements) {
+            for (let i = 0; i < removedElements.length; i++) {
+              const element = removedElements[i];
+              if (element.__CE_state === CustomElementState.custom) {
+                internals.disconnectedCallback(element);
+              }
+            }
+          }
+
+          // Only create custom elements if this element's owner document is
+          // associated with the registry.
+          if (!this.ownerDocument.__CE_hasRegistry) {
+            internals.patchTree(this);
+          } else {
+            internals.patchAndUpgradeTree(this);
+          }
+          return htmlString;
+        },
+      });
+    }
+
+    if (Native.Element_innerHTML && Native.Element_innerHTML.get) {
+      patch_innerHTML(Element.prototype, Native.Element_innerHTML);
+    } else if (Native.HTMLElement_innerHTML && Native.HTMLElement_innerHTML.get) {
+      patch_innerHTML(HTMLElement.prototype, Native.HTMLElement_innerHTML);
+    } else {
+      internals.addElementPatch(function(element) {
+        patch_innerHTML(element, {
+          enumerable: true,
+          configurable: true,
+          // Implements getting `innerHTML` by performing an unpatched `cloneNode`
+          // of the element and returning the resulting element's `innerHTML`.
+          // TODO: Is this too expensive?
+          get: /** @this {Element} */ function() {
+            return /** @type {!Element} */ (
+                       Native.Node_cloneNode.call(this, true))
+                .innerHTML;
+          },
+          // Implements setting `innerHTML` by creating an unpatched element,
+          // setting `innerHTML` of that element and replacing the target
+          // element's children with those of the unpatched element.
+          set: /** @this {Element} */ function(assignedValue) {
+            // NOTE: re-route to `content` for `template` elements.
+            // We need to do this because `template.appendChild` does not
+            // route into `template.content`.
+            const isTemplate = (this.localName === 'template');
+            /** @type {!Node} */
+            const content = isTemplate ? (/** @type {!HTMLTemplateElement} */
+              (this)).content : this;
+            /** @type {!Element} */
+            const rawElement = Native.Document_createElementNS.call(document,
+                this.namespaceURI, this.localName);
+            rawElement.innerHTML = assignedValue;
+
+            while (content.childNodes.length > 0) {
+              Native.Node_removeChild.call(content, content.childNodes[0]);
+            }
+            const container = isTemplate ?
+                /** @type {!HTMLTemplateElement} */ (rawElement).content :
+                rawElement;
+            while (container.childNodes.length > 0) {
+              Native.Node_appendChild.call(content, container.childNodes[0]);
+            }
+          },
+        });
+      });
+    }
+
+
+    setPropertyUnchecked(Element.prototype, 'setAttribute',
+      /**
+       * @this {Element}
+       * @param {string} name
+       * @param {string} newValue
+       */
+      function(name, newValue) {
+        // Fast path for non-custom elements.
+        if (this.__CE_state !== CustomElementState.custom) {
+          return Native.Element_setAttribute.call(this, name, newValue);
+        }
+
+        const oldValue = Native.Element_getAttribute.call(this, name);
+        Native.Element_setAttribute.call(this, name, newValue);
+        newValue = Native.Element_getAttribute.call(this, name);
+        internals.attributeChangedCallback(this, name, oldValue, newValue, null);
+      });
+
+    setPropertyUnchecked(Element.prototype, 'setAttributeNS',
+      /**
+       * @this {Element}
+       * @param {?string} namespace
+       * @param {string} name
+       * @param {string} newValue
+       */
+      function(namespace, name, newValue) {
+        // Fast path for non-custom elements.
+        if (this.__CE_state !== CustomElementState.custom) {
+          return Native.Element_setAttributeNS.call(this, namespace, name, newValue);
+        }
+
+        const oldValue = Native.Element_getAttributeNS.call(this, namespace, name);
+        Native.Element_setAttributeNS.call(this, namespace, name, newValue);
+        newValue = Native.Element_getAttributeNS.call(this, namespace, name);
+        internals.attributeChangedCallback(this, name, oldValue, newValue, namespace);
+      });
+
+    setPropertyUnchecked(Element.prototype, 'removeAttribute',
+      /**
+       * @this {Element}
+       * @param {string} name
+       */
+      function(name) {
+        // Fast path for non-custom elements.
+        if (this.__CE_state !== CustomElementState.custom) {
+          return Native.Element_removeAttribute.call(this, name);
+        }
+
+        const oldValue = Native.Element_getAttribute.call(this, name);
+        Native.Element_removeAttribute.call(this, name);
+        if (oldValue !== null) {
+          internals.attributeChangedCallback(this, name, oldValue, null, null);
+        }
+      });
+
+    setPropertyUnchecked(Element.prototype, 'removeAttributeNS',
+      /**
+       * @this {Element}
+       * @param {?string} namespace
+       * @param {string} name
+       */
+      function(namespace, name) {
+        // Fast path for non-custom elements.
+        if (this.__CE_state !== CustomElementState.custom) {
+          return Native.Element_removeAttributeNS.call(this, namespace, name);
+        }
+
+        const oldValue = Native.Element_getAttributeNS.call(this, namespace, name);
+        Native.Element_removeAttributeNS.call(this, namespace, name);
+        // In older browsers, `Element#getAttributeNS` may return the empty string
+        // instead of null if the attribute does not exist. For details, see;
+        // https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttributeNS#Notes
+        const newValue = Native.Element_getAttributeNS.call(this, namespace, name);
+        if (oldValue !== newValue) {
+          internals.attributeChangedCallback(this, name, oldValue, newValue, namespace);
+        }
+      });
+
+
+    function patch_insertAdjacentElement(destination, baseMethod) {
+      setPropertyUnchecked(destination, 'insertAdjacentElement',
+        /**
+         * @this {Element}
+         * @param {string} position
+         * @param {!Element} element
+         * @return {?Element}
+         */
+        function(position, element) {
+          const wasConnected = isConnected(element);
+          const insertedElement = /** @type {!Element} */
+            (baseMethod.call(this, position, element));
+
+          if (wasConnected) {
+            internals.disconnectTree(element);
+          }
+
+          if (isConnected(insertedElement)) {
+            internals.connectTree(element);
+          }
+          return insertedElement;
+        });
+    }
+
+    if (Native.HTMLElement_insertAdjacentElement) {
+      patch_insertAdjacentElement(HTMLElement.prototype, Native.HTMLElement_insertAdjacentElement);
+    } else if (Native.Element_insertAdjacentElement) {
+      patch_insertAdjacentElement(Element.prototype, Native.Element_insertAdjacentElement);
+    } else {
+      console.warn('Custom Elements: `Element#insertAdjacentElement` was not patched.');
+    }
+
+
+    function patch_insertAdjacentHTML(destination, baseMethod) {
+      /**
+       * Patches and upgrades all nodes which are siblings between `start`
+       * (inclusive) and `end` (exclusive). If `end` is `null`, then all siblings
+       * following `start` will be patched and upgraded.
+       * @param {!Node} start
+       * @param {?Node} end
+       */
+      function upgradeNodesInRange(start, end) {
+        const nodes = [];
+        for (let node = start; node !== end; node = node.nextSibling) {
+          nodes.push(node);
+        }
+        for (let i = 0; i < nodes.length; i++) {
+          internals.patchAndUpgradeTree(nodes[i]);
+        }
+      }
+
+      setPropertyUnchecked(destination, 'insertAdjacentHTML',
+        /**
+         * @this {Element}
+         * @param {string} position
+         * @param {string} text
+         */
+        function(position, text) {
+          position = position.toLowerCase();
+
+          if (position === "beforebegin") {
+            const marker = this.previousSibling;
+            baseMethod.call(this, position, text);
+            upgradeNodesInRange(marker || /** @type {!Node} */ (this.parentNode.firstChild), this);
+          } else if (position === "afterbegin") {
+            const marker = this.firstChild;
+            baseMethod.call(this, position, text);
+            upgradeNodesInRange(/** @type {!Node} */ (this.firstChild), marker);
+          } else if (position === "beforeend") {
+            const marker = this.lastChild;
+            baseMethod.call(this, position, text);
+            upgradeNodesInRange(marker || /** @type {!Node} */ (this.firstChild), null);
+          } else if (position === "afterend") {
+            const marker = this.nextSibling;
+            baseMethod.call(this, position, text);
+            upgradeNodesInRange(/** @type {!Node} */ (this.nextSibling), marker);
+          } else {
+            throw new SyntaxError(`The value provided (${String(position)}) is ` +
+              "not one of 'beforebegin', 'afterbegin', 'beforeend', or 'afterend'.");
+          }
+        });
+    }
+
+    if (Native.HTMLElement_insertAdjacentHTML) {
+      patch_insertAdjacentHTML(HTMLElement.prototype, Native.HTMLElement_insertAdjacentHTML);
+    } else if (Native.Element_insertAdjacentHTML) {
+      patch_insertAdjacentHTML(Element.prototype, Native.Element_insertAdjacentHTML);
+    } else {
+      console.warn('Custom Elements: `Element#insertAdjacentHTML` was not patched.');
+    }
+
+
+    PatchParentNode(internals, Element.prototype, {
+      prepend: Native.Element_prepend,
+      append: Native.Element_append,
+    });
+
+    PatchChildNode(internals, Element.prototype, {
+      before: Native.Element_before,
+      after: Native.Element_after,
+      replaceWith: Native.Element_replaceWith,
+      remove: Native.Element_remove,
+    });
+  }
+
+  /**
+   * @license
+   * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+   * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+   * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+   * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+   * Code distributed by Google as part of the polymer project is also
+   * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+   */
+
+  const priorCustomElements = window['customElements'];
+
+  if (!priorCustomElements ||
+       priorCustomElements['forcePolyfill'] ||
+       (typeof priorCustomElements['define'] != 'function') ||
+       (typeof priorCustomElements['get'] != 'function')) {
+    /** @type {!CustomElementInternals} */
+    const internals = new CustomElementInternals();
+
+    PatchHTMLElement(internals);
+    PatchDocument(internals);
+    PatchDocumentFragment(internals);
+    PatchNode(internals);
+    PatchElement(internals);
+
+    // The main document is always associated with the registry.
+    document.__CE_hasRegistry = true;
+
+    /** @type {!CustomElementRegistry} */
+    const customElements = new CustomElementRegistry(internals);
+
+    Object.defineProperty(window, 'customElements', {
+      configurable: true,
+      enumerable: true,
+      value: customElements,
+    });
+  }
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /** @unrestricted */
+  class StyleNode {
+    constructor() {
+      /** @type {number} */
+      this['start'] = 0;
+      /** @type {number} */
+      this['end'] = 0;
+      /** @type {StyleNode} */
+      this['previous'] = null;
+      /** @type {StyleNode} */
+      this['parent'] = null;
+      /** @type {Array<StyleNode>} */
+      this['rules'] = null;
+      /** @type {string} */
+      this['parsedCssText'] = '';
+      /** @type {string} */
+      this['cssText'] = '';
+      /** @type {boolean} */
+      this['atRule'] = false;
+      /** @type {number} */
+      this['type'] = 0;
+      /** @type {string} */
+      this['keyframesName'] = '';
+      /** @type {string} */
+      this['selector'] = '';
+      /** @type {string} */
+      this['parsedSelector'] = '';
+    }
+  }
+
+  // given a string of css, return a simple rule tree
+  /**
+   * @param {string} text
+   * @return {StyleNode}
+   */
+  function parse(text) {
+    text = clean(text);
+    return parseCss(lex(text), text);
+  }
+
+  // remove stuff we don't care about that may hinder parsing
+  /**
+   * @param {string} cssText
+   * @return {string}
+   */
+  function clean(cssText) {
+    return cssText.replace(RX.comments, '').replace(RX.port, '');
+  }
+
+  // super simple {...} lexer that returns a node tree
+  /**
+   * @param {string} text
+   * @return {StyleNode}
+   */
+  function lex(text) {
+    let root = new StyleNode();
+    root['start'] = 0;
+    root['end'] = text.length;
+    let n = root;
+    for (let i = 0, l = text.length; i < l; i++) {
+      if (text[i] === OPEN_BRACE) {
+        if (!n['rules']) {
+          n['rules'] = [];
+        }
+        let p = n;
+        let previous = p['rules'][p['rules'].length - 1] || null;
+        n = new StyleNode();
+        n['start'] = i + 1;
+        n['parent'] = p;
+        n['previous'] = previous;
+        p['rules'].push(n);
+      } else if (text[i] === CLOSE_BRACE) {
+        n['end'] = i + 1;
+        n = n['parent'] || root;
+      }
+    }
+    return root;
+  }
+
+  // add selectors/cssText to node tree
+  /**
+   * @param {StyleNode} node
+   * @param {string} text
+   * @return {StyleNode}
+   */
+  function parseCss(node, text) {
+    let t = text.substring(node['start'], node['end'] - 1);
+    node['parsedCssText'] = node['cssText'] = t.trim();
+    if (node['parent']) {
+      let ss = node['previous'] ? node['previous']['end'] : node['parent']['start'];
+      t = text.substring(ss, node['start'] - 1);
+      t = _expandUnicodeEscapes(t);
+      t = t.replace(RX.multipleSpaces, ' ');
+      // TODO(sorvell): ad hoc; make selector include only after last ;
+      // helps with mixin syntax
+      t = t.substring(t.lastIndexOf(';') + 1);
+      let s = node['parsedSelector'] = node['selector'] = t.trim();
+      node['atRule'] = (s.indexOf(AT_START) === 0);
+      // note, support a subset of rule types...
+      if (node['atRule']) {
+        if (s.indexOf(MEDIA_START) === 0) {
+          node['type'] = types.MEDIA_RULE;
+        } else if (s.match(RX.keyframesRule)) {
+          node['type'] = types.KEYFRAMES_RULE;
+          node['keyframesName'] =
+            node['selector'].split(RX.multipleSpaces).pop();
+        }
+      } else {
+        if (s.indexOf(VAR_START) === 0) {
+          node['type'] = types.MIXIN_RULE;
+        } else {
+          node['type'] = types.STYLE_RULE;
+        }
+      }
+    }
+    let r$ = node['rules'];
+    if (r$) {
+      for (let i = 0, l = r$.length, r;
+        (i < l) && (r = r$[i]); i++) {
+        parseCss(r, text);
+      }
+    }
+    return node;
+  }
+
+  /**
+   * conversion of sort unicode escapes with spaces like `\33 ` (and longer) into
+   * expanded form that doesn't require trailing space `\000033`
+   * @param {string} s
+   * @return {string}
+   */
+  function _expandUnicodeEscapes(s) {
+    return s.replace(/\\([0-9a-f]{1,6})\s/gi, function() {
+      let code = arguments[1],
+        repeat = 6 - code.length;
+      while (repeat--) {
+        code = '0' + code;
+      }
+      return '\\' + code;
+    });
+  }
+
+  /**
+   * stringify parsed css.
+   * @param {StyleNode} node
+   * @param {boolean=} preserveProperties
+   * @param {string=} text
+   * @return {string}
+   */
+  function stringify(node, preserveProperties, text = '') {
+    // calc rule cssText
+    let cssText = '';
+    if (node['cssText'] || node['rules']) {
+      let r$ = node['rules'];
+      if (r$ && !_hasMixinRules(r$)) {
+        for (let i = 0, l = r$.length, r;
+          (i < l) && (r = r$[i]); i++) {
+          cssText = stringify(r, preserveProperties, cssText);
+        }
+      } else {
+        cssText = preserveProperties ? node['cssText'] :
+          removeCustomProps(node['cssText']);
+        cssText = cssText.trim();
+        if (cssText) {
+          cssText = '  ' + cssText + '\n';
+        }
+      }
+    }
+    // emit rule if there is cssText
+    if (cssText) {
+      if (node['selector']) {
+        text += node['selector'] + ' ' + OPEN_BRACE + '\n';
+      }
+      text += cssText;
+      if (node['selector']) {
+        text += CLOSE_BRACE + '\n\n';
+      }
+    }
+    return text;
+  }
+
+  /**
+   * @param {Array<StyleNode>} rules
+   * @return {boolean}
+   */
+  function _hasMixinRules(rules) {
+    let r = rules[0];
+    return Boolean(r) && Boolean(r['selector']) && r['selector'].indexOf(VAR_START) === 0;
+  }
+
+  /**
+   * @param {string} cssText
+   * @return {string}
+   */
+  function removeCustomProps(cssText) {
+    cssText = removeCustomPropAssignment(cssText);
+    return removeCustomPropApply(cssText);
+  }
+
+  /**
+   * @param {string} cssText
+   * @return {string}
+   */
+  function removeCustomPropAssignment(cssText) {
+    return cssText
+      .replace(RX.customProp, '')
+      .replace(RX.mixinProp, '');
+  }
+
+  /**
+   * @param {string} cssText
+   * @return {string}
+   */
+  function removeCustomPropApply(cssText) {
+    return cssText
+      .replace(RX.mixinApply, '')
+      .replace(RX.varApply, '');
+  }
+
+  /** @enum {number} */
+  const types = {
+    STYLE_RULE: 1,
+    KEYFRAMES_RULE: 7,
+    MEDIA_RULE: 4,
+    MIXIN_RULE: 1000
+  };
+
+  const OPEN_BRACE = '{';
+  const CLOSE_BRACE = '}';
+
+  // helper regexp's
+  const RX = {
+    comments: /\/\*[^*]*\*+([^/*][^*]*\*+)*\//gim,
+    port: /@import[^;]*;/gim,
+    customProp: /(?:^[^;\-\s}]+)?--[^;{}]*?:[^{};]*?(?:[;\n]|$)/gim,
+    mixinProp: /(?:^[^;\-\s}]+)?--[^;{}]*?:[^{};]*?{[^}]*?}(?:[;\n]|$)?/gim,
+    mixinApply: /@apply\s*\(?[^);]*\)?\s*(?:[;\n]|$)?/gim,
+    varApply: /[^;:]*?:[^;]*?var\([^;]*\)(?:[;\n]|$)?/gim,
+    keyframesRule: /^@[^\s]*keyframes/,
+    multipleSpaces: /\s+/g
+  };
+
+  const VAR_START = '--';
+  const MEDIA_START = '@media';
+  const AT_START = '@';
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  const nativeShadow = !(window['ShadyDOM'] && window['ShadyDOM']['inUse']);
+  let nativeCssVariables_;
+
+  /**
+   * @param {(ShadyCSSOptions | ShadyCSSInterface)=} settings
+   */
+  function calcCssVariables(settings) {
+    if (settings && settings['shimcssproperties']) {
+      nativeCssVariables_ = false;
+    } else {
+      // chrome 49 has semi-working css vars, check if box-shadow works
+      // safari 9.1 has a recalc bug: https://bugs.webkit.org/show_bug.cgi?id=155782
+      // However, shim css custom properties are only supported with ShadyDOM enabled,
+      // so fall back on native if we do not detect ShadyDOM
+      // Edge 15: custom properties used in ::before and ::after will also be used in the parent element
+      // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12414257/
+      nativeCssVariables_ = nativeShadow || Boolean(!navigator.userAgent.match(/AppleWebKit\/601|Edge\/15/) &&
+        window.CSS && CSS.supports && CSS.supports('box-shadow', '0 0 0 var(--foo)'));
+    }
+  }
+
+  /** @type {string | undefined} */
+  let cssBuild;
+  if (window.ShadyCSS && window.ShadyCSS.cssBuild !== undefined) {
+    cssBuild = window.ShadyCSS.cssBuild;
+  }
+
+  /** @type {boolean} */
+  const disableRuntime = Boolean(window.ShadyCSS && window.ShadyCSS.disableRuntime);
+
+  if (window.ShadyCSS && window.ShadyCSS.nativeCss !== undefined) {
+    nativeCssVariables_ = window.ShadyCSS.nativeCss;
+  } else if (window.ShadyCSS) {
+    calcCssVariables(window.ShadyCSS);
+    // reset window variable to let ShadyCSS API take its place
+    window.ShadyCSS = undefined;
+  } else {
+    calcCssVariables(window['WebComponents'] && window['WebComponents']['flags']);
+  }
+
+  // Hack for type error under new type inference which doesn't like that
+  // nativeCssVariables is updated in a function and assigns the type
+  // `function(): ?` instead of `boolean`.
+  const nativeCssVariables = /** @type {boolean} */(nativeCssVariables_);
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  const VAR_ASSIGN = /(?:^|[;\s{]\s*)(--[\w-]*?)\s*:\s*(?:((?:'(?:\\'|.)*?'|"(?:\\"|.)*?"|\([^)]*?\)|[^};{])+)|\{([^}]*)\}(?:(?=[;\s}])|$))/gi;
+  const MIXIN_MATCH = /(?:^|\W+)@apply\s*\(?([^);\n]*)\)?/gi;
+  const VAR_CONSUMED = /(--[\w-]+)\s*([:,;)]|$)/gi;
+  const ANIMATION_MATCH = /(animation\s*:)|(animation-name\s*:)/;
+  const MEDIA_MATCH = /@media\s(.*)/;
+  const BRACKETED = /\{[^}]*\}/g;
+  const HOST_PREFIX = '(?:^|[^.#[:])';
+  const HOST_SUFFIX = '($|[.:[\\s>+~])';
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /** @type {!Set<string>} */
+  const styleTextSet = new Set();
+
+  const scopingAttribute = 'shady-unscoped';
+
+  /**
+   * Add a specifically-marked style to the document directly, and only one copy of that style.
+   *
+   * @param {!HTMLStyleElement} style
+   * @return {undefined}
+   */
+  function processUnscopedStyle(style) {
+    const text = style.textContent;
+    if (!styleTextSet.has(text)) {
+      styleTextSet.add(text);
+      const newStyle = style.cloneNode(true);
+      document.head.appendChild(newStyle);
+    }
+  }
+
+  /**
+   * Check if a style is supposed to be unscoped
+   * @param {!HTMLStyleElement} style
+   * @return {boolean} true if the style has the unscoping attribute
+   */
+  function isUnscopedStyle(style) {
+    return style.hasAttribute(scopingAttribute);
+  }
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /**
+   * @param {string|StyleNode} rules
+   * @param {function(StyleNode)=} callback
+   * @return {string}
+   */
+  function toCssText (rules, callback) {
+    if (!rules) {
+      return '';
+    }
+    if (typeof rules === 'string') {
+      rules = parse(rules);
+    }
+    if (callback) {
+      forEachRule(rules, callback);
+    }
+    return stringify(rules, nativeCssVariables);
+  }
+
+  /**
+   * @param {HTMLStyleElement} style
+   * @return {StyleNode}
+   */
+  function rulesForStyle(style) {
+    if (!style['__cssRules'] && style.textContent) {
+      style['__cssRules'] = parse(style.textContent);
+    }
+    return style['__cssRules'] || null;
+  }
+
+  // Tests if a rule is a keyframes selector, which looks almost exactly
+  // like a normal selector but is not (it has nothing to do with scoping
+  // for example).
+  /**
+   * @param {StyleNode} rule
+   * @return {boolean}
+   */
+  function isKeyframesSelector(rule) {
+    return Boolean(rule['parent']) &&
+    rule['parent']['type'] === types.KEYFRAMES_RULE;
+  }
+
+  /**
+   * @param {StyleNode} node
+   * @param {Function=} styleRuleCallback
+   * @param {Function=} keyframesRuleCallback
+   * @param {boolean=} onlyActiveRules
+   */
+  function forEachRule(node, styleRuleCallback, keyframesRuleCallback, onlyActiveRules) {
+    if (!node) {
+      return;
+    }
+    let skipRules = false;
+    let type = node['type'];
+    if (onlyActiveRules) {
+      if (type === types.MEDIA_RULE) {
+        let matchMedia = node['selector'].match(MEDIA_MATCH);
+        if (matchMedia) {
+          // if rule is a non matching @media rule, skip subrules
+          if (!window.matchMedia(matchMedia[1]).matches) {
+            skipRules = true;
+          }
+        }
+      }
+    }
+    if (type === types.STYLE_RULE) {
+      styleRuleCallback(node);
+    } else if (keyframesRuleCallback &&
+      type === types.KEYFRAMES_RULE) {
+      keyframesRuleCallback(node);
+    } else if (type === types.MIXIN_RULE) {
+      skipRules = true;
+    }
+    let r$ = node['rules'];
+    if (r$ && !skipRules) {
+      for (let i=0, l=r$.length, r; (i<l) && (r=r$[i]); i++) {
+        forEachRule(r, styleRuleCallback, keyframesRuleCallback, onlyActiveRules);
+      }
+    }
+  }
+
+  // add a string of cssText to the document.
+  /**
+   * @param {string} cssText
+   * @param {string} moniker
+   * @param {Node} target
+   * @param {Node} contextNode
+   * @return {HTMLStyleElement}
+   */
+  function applyCss(cssText, moniker, target, contextNode) {
+    let style = createScopeStyle(cssText, moniker);
+    applyStyle(style, target, contextNode);
+    return style;
+  }
+
+  /**
+   * @param {string} cssText
+   * @param {string} moniker
+   * @return {HTMLStyleElement}
+   */
+  function createScopeStyle(cssText, moniker) {
+    let style = /** @type {HTMLStyleElement} */(document.createElement('style'));
+    if (moniker) {
+      style.setAttribute('scope', moniker);
+    }
+    style.textContent = cssText;
+    return style;
+  }
+
+  /**
+   * Track the position of the last added style for placing placeholders
+   * @type {Node}
+   */
+  let lastHeadApplyNode = null;
+
+  // insert a comment node as a styling position placeholder.
+  /**
+   * @param {string} moniker
+   * @return {!Comment}
+   */
+  function applyStylePlaceHolder(moniker) {
+    let placeHolder = document.createComment(' Shady DOM styles for ' +
+      moniker + ' ');
+    let after = lastHeadApplyNode ?
+      lastHeadApplyNode['nextSibling'] : null;
+    let scope = document.head;
+    scope.insertBefore(placeHolder, after || scope.firstChild);
+    lastHeadApplyNode = placeHolder;
+    return placeHolder;
+  }
+
+  /**
+   * @param {HTMLStyleElement} style
+   * @param {?Node} target
+   * @param {?Node} contextNode
+   */
+  function applyStyle(style, target, contextNode) {
+    target = target || document.head;
+    let after = (contextNode && contextNode.nextSibling) ||
+      target.firstChild;
+    target.insertBefore(style, after);
+    if (!lastHeadApplyNode) {
+      lastHeadApplyNode = style;
+    } else {
+      // only update lastHeadApplyNode if the new style is inserted after the old lastHeadApplyNode
+      let position = style.compareDocumentPosition(lastHeadApplyNode);
+      if (position === Node.DOCUMENT_POSITION_PRECEDING) {
+        lastHeadApplyNode = style;
+      }
+    }
+  }
+
+  /**
+   * Walk from text[start] matching parens and
+   * returns position of the outer end paren
+   * @param {string} text
+   * @param {number} start
+   * @return {number}
+   */
+  function findMatchingParen(text, start) {
+    let level = 0;
+    for (let i=start, l=text.length; i < l; i++) {
+      if (text[i] === '(') {
+        level++;
+      } else if (text[i] === ')') {
+        if (--level === 0) {
+          return i;
+        }
+      }
+    }
+    return -1;
+  }
+
+  /**
+   * @param {string} str
+   * @param {function(string, string, string, string)} callback
+   */
+  function processVariableAndFallback(str, callback) {
+    // find 'var('
+    let start = str.indexOf('var(');
+    if (start === -1) {
+      // no var?, everything is prefix
+      return callback(str, '', '', '');
+    }
+    //${prefix}var(${inner})${suffix}
+    let end = findMatchingParen(str, start + 3);
+    let inner = str.substring(start + 4, end);
+    let prefix = str.substring(0, start);
+    // suffix may have other variables
+    let suffix = processVariableAndFallback(str.substring(end + 1), callback);
+    let comma = inner.indexOf(',');
+    // value and fallback args should be trimmed to match in property lookup
+    if (comma === -1) {
+      // variable, no fallback
+      return callback(prefix, inner.trim(), '', suffix);
+    }
+    // var(${value},${fallback})
+    let value = inner.substring(0, comma).trim();
+    let fallback = inner.substring(comma + 1).trim();
+    return callback(prefix, value, fallback, suffix);
+  }
+
+  /**
+   * @param {Element} element
+   * @param {string} value
+   */
+  function setElementClassRaw(element, value) {
+    // use native setAttribute provided by ShadyDOM when setAttribute is patched
+    if (nativeShadow) {
+      element.setAttribute('class', value);
+    } else {
+      window['ShadyDOM']['nativeMethods']['setAttribute'].call(element, 'class', value);
+    }
+  }
+
+  /**
+   * @type {function(*):*}
+   */
+  const wrap$1 = window['ShadyDOM'] && window['ShadyDOM']['wrap'] || ((node) => node);
+
+  /**
+   * @param {Element | {is: string, extends: string}} element
+   * @return {{is: string, typeExtension: string}}
+   */
+  function getIsExtends(element) {
+    let localName = element['localName'];
+    let is = '', typeExtension = '';
+    /*
+    NOTE: technically, this can be wrong for certain svg elements
+    with `-` in the name like `<font-face>`
+    */
+    if (localName) {
+      if (localName.indexOf('-') > -1) {
+        is = localName;
+      } else {
+        typeExtension = localName;
+        is = (element.getAttribute && element.getAttribute('is')) || '';
+      }
+    } else {
+      is = /** @type {?} */(element).is;
+      typeExtension = /** @type {?} */(element).extends;
+    }
+    return {is, typeExtension};
+  }
+
+  /**
+   * @param {Element|DocumentFragment} element
+   * @return {string}
+   */
+  function gatherStyleText(element) {
+    /** @type {!Array<string>} */
+    const styleTextParts = [];
+    const styles = /** @type {!NodeList<!HTMLStyleElement>} */(element.querySelectorAll('style'));
+    for (let i = 0; i < styles.length; i++) {
+      const style = styles[i];
+      if (isUnscopedStyle(style)) {
+        if (!nativeShadow) {
+          processUnscopedStyle(style);
+          style.parentNode.removeChild(style);
+        }
+      } else {
+        styleTextParts.push(style.textContent);
+        style.parentNode.removeChild(style);
+      }
+    }
+    return styleTextParts.join('').trim();
+  }
+
+  /**
+   * Split a selector separated by commas into an array in a smart way
+   * @param {string} selector
+   * @return {!Array<string>}
+   */
+  function splitSelectorList(selector) {
+    const parts = [];
+    let part = '';
+    for (let i = 0; i >= 0 && i < selector.length; i++) {
+      // A selector with parentheses will be one complete part
+      if (selector[i] === '(') {
+        // find the matching paren
+        const end = findMatchingParen(selector, i);
+        // push the paren block into the part
+        part += selector.slice(i, end + 1);
+        // move the index to after the paren block
+        i = end;
+      } else if (selector[i] === ',') {
+        parts.push(part);
+        part = '';
+      } else {
+        part += selector[i];
+      }
+    }
+    // catch any pieces after the last comma
+    if (part) {
+      parts.push(part);
+    }
+    return parts;
+  }
+
+  const CSS_BUILD_ATTR = 'css-build';
+
+  /**
+   * Return the polymer-css-build "build type" applied to this element
+   *
+   * @param {!HTMLElement} element
+   * @return {string} Can be "", "shady", or "shadow"
+   */
+  function getCssBuild(element) {
+    if (cssBuild !== undefined) {
+      return /** @type {string} */(cssBuild);
+    }
+    if (element.__cssBuild === undefined) {
+      // try attribute first, as it is the common case
+      const attrValue = element.getAttribute(CSS_BUILD_ATTR);
+      if (attrValue) {
+        element.__cssBuild = attrValue;
+      } else {
+        const buildComment = getBuildComment(element);
+        if (buildComment !== '') {
+          // remove build comment so it is not needlessly copied into every element instance
+          removeBuildComment(element);
+        }
+        element.__cssBuild = buildComment;
+      }
+    }
+    return element.__cssBuild || '';
+  }
+
+  /**
+   * Check if the given element, either a <template> or <style>, has been processed
+   * by polymer-css-build.
+   *
+   * If so, then we can make a number of optimizations:
+   * - polymer-css-build will decompose mixins into individual CSS Custom Properties,
+   * so the ApplyShim can be skipped entirely.
+   * - Under native ShadowDOM, the style text can just be copied into each instance
+   * without modification
+   * - If the build is "shady" and ShadyDOM is in use, the styling does not need
+   * scoping beyond the shimming of CSS Custom Properties
+   *
+   * @param {!HTMLElement} element
+   * @return {boolean}
+   */
+  function elementHasBuiltCss(element) {
+    return getCssBuild(element) !== '';
+  }
+
+  /**
+   * For templates made with tagged template literals, polymer-css-build will
+   * insert a comment of the form `<!--css-build:shadow-->`
+   *
+   * @param {!HTMLElement} element
+   * @return {string}
+   */
+  function getBuildComment(element) {
+    const buildComment = element.localName === 'template' ?
+        /** @type {!HTMLTemplateElement} */ (element).content.firstChild :
+        element.firstChild;
+    if (buildComment instanceof Comment) {
+      const commentParts = buildComment.textContent.trim().split(':');
+      if (commentParts[0] === CSS_BUILD_ATTR) {
+        return commentParts[1];
+      }
+    }
+    return '';
+  }
+
+  /**
+   * Check if the css build status is optimal, and do no unneeded work.
+   *
+   * @param {string=} cssBuild CSS build status
+   * @return {boolean} css build is optimal or not
+   */
+  function isOptimalCssBuild(cssBuild = '') {
+    // CSS custom property shim always requires work
+    if (cssBuild === '' || !nativeCssVariables) {
+      return false;
+    }
+    return nativeShadow ? cssBuild === 'shadow' : cssBuild === 'shady';
+  }
+
+  /**
+   * @param {!HTMLElement} element
+   */
+  function removeBuildComment(element) {
+    const buildComment = element.localName === 'template' ?
+        /** @type {!HTMLTemplateElement} */ (element).content.firstChild :
+        element.firstChild;
+    buildComment.parentNode.removeChild(buildComment);
+  }
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /* Transforms ShadowDOM styling into ShadyDOM styling
+
+  * scoping:
+
+    * elements in scope get scoping selector class="x-foo-scope"
+    * selectors re-written as follows:
+
+      div button -> div.x-foo-scope button.x-foo-scope
+
+  * :host -> scopeName
+
+  * :host(...) -> scopeName...
+
+  * ::slotted(...) -> scopeName > ...
+
+  * ...:dir(ltr|rtl) -> [dir="ltr|rtl"] ..., ...[dir="ltr|rtl"]
+
+  * :host(:dir[rtl]) -> scopeName:dir(rtl) -> [dir="rtl"] scopeName, scopeName[dir="rtl"]
+
+  */
+  const SCOPE_NAME = 'style-scope';
+
+  class StyleTransformer {
+    get SCOPE_NAME() {
+      return SCOPE_NAME;
+    }
+    /**
+     * Given a node and scope name, add a scoping class to each node
+     * in the tree. This facilitates transforming css into scoped rules.
+     * @param {!Node} node
+     * @param {string} scope
+     * @param {boolean=} shouldRemoveScope
+     * @deprecated
+     */
+    dom(node, scope, shouldRemoveScope) {
+      const fn = (node) => {
+        this.element(node, scope || '', shouldRemoveScope);
+      };
+      this._transformDom(node, fn);
+    }
+
+    /**
+     * Given a node and scope name, add a scoping class to each node in the tree.
+     * @param {!Node} node
+     * @param {string} scope
+     */
+    domAddScope(node, scope) {
+      const fn = (node) => {
+        this.element(node, scope || '');
+      };
+      this._transformDom(node, fn);
+    }
+
+    /**
+     * @param {!Node} startNode
+     * @param {!function(!Node)} transformer
+     */
+    _transformDom(startNode, transformer) {
+      if (startNode.nodeType === Node.ELEMENT_NODE) {
+        transformer(startNode);
+      }
+      let c$;
+      if (startNode.localName === 'template') {
+        const template = /** @type {!HTMLTemplateElement} */ (startNode);
+        // In case the template is in svg context, fall back to the node
+        // since it won't be an HTMLTemplateElement with a .content property
+        c$ = (template.content || template._content || template).childNodes;
+      } else {
+        c$ = /** @type {!ParentNode} */ (startNode).children ||
+            startNode.childNodes;
+      }
+      if (c$) {
+        for (let i = 0; i < c$.length; i++) {
+          this._transformDom(c$[i], transformer);
+        }
+      }
+    }
+
+    /**
+     * @param {?} element
+     * @param {?} scope
+     * @param {?=} shouldRemoveScope
+     */
+    element(element, scope, shouldRemoveScope) {
+      // note: if using classes, we add both the general 'style-scope' class
+      // as well as the specific scope. This enables easy filtering of all
+      // `style-scope` elements
+      if (scope) {
+        // note: svg on IE does not have classList so fallback to class
+        if (element.classList) {
+          if (shouldRemoveScope) {
+            element.classList.remove(SCOPE_NAME);
+            element.classList.remove(scope);
+          } else {
+            element.classList.add(SCOPE_NAME);
+            element.classList.add(scope);
+          }
+        } else if (element.getAttribute) {
+          let c = element.getAttribute(CLASS);
+          if (shouldRemoveScope) {
+            if (c) {
+              let newValue = c.replace(SCOPE_NAME, '').replace(scope, '');
+              setElementClassRaw(element, newValue);
+            }
+          } else {
+            let newValue = (c ? c + ' ' : '') + SCOPE_NAME + ' ' + scope;
+            setElementClassRaw(element, newValue);
+          }
+        }
+      }
+    }
+
+    /**
+     * Given a node, replace the scoping class to each subnode in the tree.
+     * @param {!Node} node
+     * @param {string} oldScope
+     * @param {string} newScope
+     */
+    domReplaceScope(node, oldScope, newScope) {
+      const fn = (node) => {
+        this.element(node, oldScope, true);
+        this.element(node, newScope);
+      };
+      this._transformDom(node, fn);
+    }
+    /**
+     * Given a node, remove the scoping class to each subnode in the tree.
+     * @param {!Node} node
+     * @param {string} oldScope
+     */
+    domRemoveScope(node, oldScope) {
+      const fn = (node) => {
+        this.element(node, oldScope || '', true);
+      };
+      this._transformDom(node, fn);
+    }
+
+    /**
+     * @param {?} element
+     * @param {?} styleRules
+     * @param {?=} callback
+     * @param {string=} cssBuild
+     * @param {string=} cssText
+     * @return {string}
+     */
+    elementStyles(element, styleRules, callback, cssBuild = '', cssText = '') {
+      // no need to shim selectors if settings.useNativeShadow, also
+      // a shady css build will already have transformed selectors
+      // NOTE: This method may be called as part of static or property shimming.
+      // When there is a targeted build it will not be called for static shimming,
+      // but when the property shim is used it is called and should opt out of
+      // static shimming work when a proper build exists.
+      if (cssText === '') {
+        if (nativeShadow || cssBuild === 'shady') {
+          cssText = toCssText(styleRules, callback);
+        } else {
+          let {is, typeExtension} = getIsExtends(element);
+          cssText = this.css(styleRules, is, typeExtension, callback) + '\n\n';
+        }
+      }
+      return cssText.trim();
+    }
+
+    // Given a string of cssText and a scoping string (scope), returns
+    // a string of scoped css where each selector is transformed to include
+    // a class created from the scope. ShadowDOM selectors are also transformed
+    // (e.g. :host) to use the scoping selector.
+    css(rules, scope, ext, callback) {
+      let hostScope = this._calcHostScope(scope, ext);
+      scope = this._calcElementScope(scope);
+      let self = this;
+      return toCssText(rules, function(/** StyleNode */rule) {
+        if (!rule.isScoped) {
+          self.rule(rule, scope, hostScope);
+          rule.isScoped = true;
+        }
+        if (callback) {
+          callback(rule, scope, hostScope);
+        }
+      });
+    }
+
+    _calcElementScope(scope) {
+      if (scope) {
+        return CSS_CLASS_PREFIX + scope;
+      } else {
+        return '';
+      }
+    }
+
+    _calcHostScope(scope, ext) {
+      return ext ? `[is=${scope}]` : scope;
+    }
+
+    rule(rule, scope, hostScope) {
+      this._transformRule(rule, this._transformComplexSelector,
+        scope, hostScope);
+    }
+
+    /**
+     * transforms a css rule to a scoped rule.
+     *
+     * @param {StyleNode} rule
+     * @param {Function} transformer
+     * @param {string=} scope
+     * @param {string=} hostScope
+     */
+    _transformRule(rule, transformer, scope, hostScope) {
+      // NOTE: save transformedSelector for subsequent matching of elements
+      // against selectors (e.g. when calculating style properties)
+      rule['selector'] = rule.transformedSelector =
+        this._transformRuleCss(rule, transformer, scope, hostScope);
+    }
+
+    /**
+     * @param {StyleNode} rule
+     * @param {Function} transformer
+     * @param {string=} scope
+     * @param {string=} hostScope
+     */
+    _transformRuleCss(rule, transformer, scope, hostScope) {
+      let p$ = splitSelectorList(rule['selector']);
+      // we want to skip transformation of rules that appear in keyframes,
+      // because they are keyframe selectors, not element selectors.
+      if (!isKeyframesSelector(rule)) {
+        for (let i=0, l=p$.length, p; (i<l) && (p=p$[i]); i++) {
+          p$[i] = transformer.call(this, p, scope, hostScope);
+        }
+      }
+      return p$.filter((part) => Boolean(part)).join(COMPLEX_SELECTOR_SEP);
+    }
+
+    /**
+     * @param {string} selector
+     * @return {string}
+     */
+    _twiddleNthPlus(selector) {
+      return selector.replace(NTH, (m, type, inside) => {
+        if (inside.indexOf('+') > -1) {
+          inside = inside.replace(/\+/g, '___');
+        } else if (inside.indexOf('___') > -1) {
+          inside = inside.replace(/___/g, '+');
+        }
+        return `:${type}(${inside})`;
+      });
+    }
+
+    /**
+     * Preserve `:matches()` selectors by replacing them with MATCHES_REPLACMENT
+     * and returning an array of `:matches()` selectors.
+     * Use `_replacesMatchesPseudo` to replace the `:matches()` parts
+     *
+     * @param {string} selector
+     * @return {{selector: string, matches: !Array<string>}}
+     */
+    _preserveMatchesPseudo(selector) {
+      /** @type {!Array<string>} */
+      const matches = [];
+      let match;
+      while ((match = selector.match(MATCHES))) {
+        const start = match.index;
+        const end = findMatchingParen(selector, start);
+        if (end === -1) {
+          throw new Error(`${match.input} selector missing ')'`)
+        }
+        const part = selector.slice(start, end + 1);
+        selector = selector.replace(part, MATCHES_REPLACEMENT);
+        matches.push(part);
+      }
+      return {selector, matches};
+    }
+
+    /**
+     * Replace MATCHES_REPLACMENT character with the given set of `:matches()`
+     * selectors.
+     *
+     * @param {string} selector
+     * @param {!Array<string>} matches
+     * @return {string}
+     */
+    _replaceMatchesPseudo(selector, matches) {
+      const parts = selector.split(MATCHES_REPLACEMENT);
+      return matches.reduce((acc, cur, idx) => acc + cur + parts[idx + 1], parts[0]);
+    }
+
+  /**
+   * @param {string} selector
+   * @param {string} scope
+   * @param {string=} hostScope
+   */
+    _transformComplexSelector(selector, scope, hostScope) {
+      let stop = false;
+      selector = selector.trim();
+      // Remove spaces inside of selectors like `:nth-of-type` because it confuses SIMPLE_SELECTOR_SEP
+      let isNth = NTH.test(selector);
+      if (isNth) {
+        selector = selector.replace(NTH, (m, type, inner) => `:${type}(${inner.replace(/\s/g, '')})`);
+        selector = this._twiddleNthPlus(selector);
+      }
+      // Preserve selectors like `:-webkit-any` so that SIMPLE_SELECTOR_SEP does
+      // not get confused by spaces inside the pseudo selector
+      const isMatches = MATCHES.test(selector);
+      /** @type {!Array<string>} */
+      let matches;
+      if (isMatches) {
+        ({selector, matches} = this._preserveMatchesPseudo(selector));
+      }
+      selector = selector.replace(SLOTTED_START, `${HOST} $1`);
+      selector = selector.replace(SIMPLE_SELECTOR_SEP, (m, c, s) => {
+        if (!stop) {
+          let info = this._transformCompoundSelector(s, c, scope, hostScope);
+          stop = stop || info.stop;
+          c = info.combinator;
+          s = info.value;
+        }
+        return c + s;
+      });
+      // replace `:matches()` selectors
+      if (isMatches) {
+        selector = this._replaceMatchesPseudo(selector, matches);
+      }
+      if (isNth) {
+        selector = this._twiddleNthPlus(selector);
+      }
+      selector = selector.replace(DIR_PAREN, (m, before, dir, after) =>
+        `[dir="${dir}"] ${before}${after}, ${before}[dir="${dir}"]${after}`);
+      return selector;
+    }
+
+    _transformCompoundSelector(selector, combinator, scope, hostScope) {
+      // replace :host with host scoping class
+      let slottedIndex = selector.indexOf(SLOTTED);
+      if (selector.indexOf(HOST) >= 0) {
+        selector = this._transformHostSelector(selector, hostScope);
+      // replace other selectors with scoping class
+      } else if (slottedIndex !== 0) {
+        selector = scope ? this._transformSimpleSelector(selector, scope) :
+          selector;
+      }
+      // mark ::slotted() scope jump to replace with descendant selector + arg
+      // also ignore left-side combinator
+      let slotted = false;
+      if (slottedIndex >= 0) {
+        combinator = '';
+        slotted = true;
+      }
+      // process scope jumping selectors up to the scope jump and then stop
+      let stop;
+      if (slotted) {
+        stop = true;
+        if (slotted) {
+          // .zonk ::slotted(.foo) -> .zonk.scope > .foo
+          selector = selector.replace(SLOTTED_PAREN, (m, paren) => ` > ${paren}`);
+        }
+      }
+      return {value: selector, combinator, stop};
+    }
+
+    _transformSimpleSelector(selector, scope) {
+      const attributes = selector.split(/(\[.+?\])/);
+
+      const output = [];
+      for (let i = 0; i < attributes.length; i++) {
+        // Do not attempt to transform any attribute selector content
+        if ((i % 2) === 1) {
+          output.push(attributes[i]);
+        } else {
+          const part = attributes[i];
+
+          if (!(part === '' && i === attributes.length - 1)) {
+            let p$ = part.split(PSEUDO_PREFIX);
+            p$[0] += scope;
+            output.push(p$.join(PSEUDO_PREFIX));
+          }
+        }
+      }
+
+      return output.join('');
+    }
+
+    // :host(...) -> scopeName...
+    _transformHostSelector(selector, hostScope) {
+      let m = selector.match(HOST_PAREN);
+      let paren = m && m[2].trim() || '';
+      if (paren) {
+        if (!paren[0].match(SIMPLE_SELECTOR_PREFIX)) {
+          // paren starts with a type selector
+          let typeSelector = paren.split(SIMPLE_SELECTOR_PREFIX)[0];
+          // if the type selector is our hostScope then avoid pre-pending it
+          if (typeSelector === hostScope) {
+            return paren;
+          // otherwise, this selector should not match in this scope so
+          // output a bogus selector.
+          } else {
+            return SELECTOR_NO_MATCH;
+          }
+        } else {
+          // make sure to do a replace here to catch selectors like:
+          // `:host(.foo)::before`
+          return selector.replace(HOST_PAREN, function(m, host, paren) {
+            return hostScope + paren;
+          });
+        }
+      // if no paren, do a straight :host replacement.
+      // TODO(sorvell): this should not strictly be necessary but
+      // it's needed to maintain support for `:host[foo]` type selectors
+      // which have been improperly used under Shady DOM. This should be
+      // deprecated.
+      } else {
+        return selector.replace(HOST, hostScope);
+      }
+    }
+
+    /**
+     * @param {StyleNode} rule
+     */
+    documentRule(rule) {
+      // reset selector in case this is redone.
+      rule['selector'] = rule['parsedSelector'];
+      this.normalizeRootSelector(rule);
+      this._transformRule(rule, this._transformDocumentSelector);
+    }
+
+    /**
+     * @param {StyleNode} rule
+     */
+    normalizeRootSelector(rule) {
+      if (rule['selector'] === ROOT) {
+        rule['selector'] = 'html';
+      }
+    }
+
+  /**
+   * @param {string} selector
+   */
+    _transformDocumentSelector(selector) {
+      if (selector.match(HOST)) {
+        // remove ':host' type selectors in document rules
+        return '';
+      } else if (selector.match(SLOTTED)) {
+        return this._transformComplexSelector(selector, SCOPE_DOC_SELECTOR)
+      } else {
+        return this._transformSimpleSelector(selector.trim(), SCOPE_DOC_SELECTOR);
+      }
+    }
+  }
+
+  const NTH = /:(nth[-\w]+)\(([^)]+)\)/;
+  const SCOPE_DOC_SELECTOR = `:not(.${SCOPE_NAME})`;
+  const COMPLEX_SELECTOR_SEP = ',';
+  const SIMPLE_SELECTOR_SEP = /(^|[\s>+~]+)((?:\[.+?\]|[^\s>+~=[])+)/g;
+  const SIMPLE_SELECTOR_PREFIX = /[[.:#*]/;
+  const HOST = ':host';
+  const ROOT = ':root';
+  const SLOTTED = '::slotted';
+  const SLOTTED_START = new RegExp(`^(${SLOTTED})`);
+  // NOTE: this supports 1 nested () pair for things like
+  // :host(:not([selected]), more general support requires
+  // parsing which seems like overkill
+  const HOST_PAREN = /(:host)(?:\(((?:\([^)(]*\)|[^)(]*)+?)\))/;
+  // similar to HOST_PAREN
+  const SLOTTED_PAREN = /(?:::slotted)(?:\(((?:\([^)(]*\)|[^)(]*)+?)\))/;
+  const DIR_PAREN = /(.*):dir\((?:(ltr|rtl))\)(.*)/;
+  const CSS_CLASS_PREFIX = '.';
+  const PSEUDO_PREFIX = ':';
+  const CLASS = 'class';
+  const SELECTOR_NO_MATCH = 'should_not_match';
+  const MATCHES = /:(?:matches|any|-(?:webkit|moz)-any)/;
+  const MATCHES_REPLACEMENT = '\u{e000}';
+
+  var StyleTransformer$1 = new StyleTransformer();
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /** @const {string} */
+  const infoKey = '__styleInfo';
+
+  class StyleInfo {
+    /**
+     * @param {Element} node
+     * @return {StyleInfo}
+     */
+    static get(node) {
+      if (node) {
+        return node[infoKey];
+      } else {
+        return null;
+      }
+    }
+    /**
+     * @param {!Element} node
+     * @param {StyleInfo} styleInfo
+     * @return {StyleInfo}
+     */
+    static set(node, styleInfo) {
+      node[infoKey] = styleInfo;
+      return styleInfo;
+    }
+    /**
+     * @param {StyleNode} ast
+     * @param {Node=} placeholder
+     * @param {Array<string>=} ownStylePropertyNames
+     * @param {string=} elementName
+     * @param {string=} typeExtension
+     * @param {string=} cssBuild
+     */
+    constructor(ast, placeholder, ownStylePropertyNames, elementName, typeExtension, cssBuild) {
+      /** @type {StyleNode} */
+      this.styleRules = ast || null;
+      /** @type {Node} */
+      this.placeholder = placeholder || null;
+      /** @type {!Array<string>} */
+      this.ownStylePropertyNames = ownStylePropertyNames || [];
+      /** @type {Object} */
+      this.overrideStyleProperties = null;
+      /** @type {string} */
+      this.elementName = elementName || '';
+      /** @type {string} */
+      this.cssBuild = cssBuild || '';
+      /** @type {string} */
+      this.typeExtension = typeExtension || '';
+      /** @type {Object<string, string>} */
+      this.styleProperties = null;
+      /** @type {?string} */
+      this.scopeSelector = null;
+      /** @type {HTMLStyleElement} */
+      this.customStyle = null;
+    }
+    _getStyleRules() {
+      return this.styleRules;
+    }
+  }
+
+  /* eslint-disable-next-line no-self-assign */
+  StyleInfo.prototype['_getStyleRules'] = StyleInfo.prototype._getStyleRules;
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  // TODO: dedupe with shady
+  /**
+   * @param {string} selector
+   * @return {boolean}
+   * @this {Element}
+   */
+  const matchesSelector$1 = function(selector) {
+    const method = this.matches || this.matchesSelector ||
+      this.mozMatchesSelector || this.msMatchesSelector ||
+      this.oMatchesSelector || this.webkitMatchesSelector;
+    return method && method.call(this, selector);
+  };
+
+  const IS_IE$1 = navigator.userAgent.match('Trident');
+
+  const XSCOPE_NAME = 'x-scope';
+
+  class StyleProperties {
+    get XSCOPE_NAME() {
+      return XSCOPE_NAME;
+    }
+  /**
+   * decorates styles with rule info and returns an array of used style property names
+   *
+   * @param {StyleNode} rules
+   * @return {Array<string>}
+   */
+    decorateStyles(rules) {
+      let self = this, props = {}, keyframes = [], ruleIndex = 0;
+      forEachRule(rules, function(rule) {
+        self.decorateRule(rule);
+        // mark in-order position of ast rule in styles block, used for cache key
+        rule.index = ruleIndex++;
+        self.collectPropertiesInCssText(rule.propertyInfo.cssText, props);
+      }, function onKeyframesRule(rule) {
+        keyframes.push(rule);
+      });
+      // Cache all found keyframes rules for later reference:
+      rules._keyframes = keyframes;
+      // return this list of property names *consumes* in these styles.
+      let names = [];
+      for (let i in props) {
+        names.push(i);
+      }
+      return names;
+    }
+
+    // decorate a single rule with property info
+    decorateRule(rule) {
+      if (rule.propertyInfo) {
+        return rule.propertyInfo;
+      }
+      let info = {}, properties = {};
+      let hasProperties = this.collectProperties(rule, properties);
+      if (hasProperties) {
+        info.properties = properties;
+        // TODO(sorvell): workaround parser seeing mixins as additional rules
+        rule['rules'] = null;
+      }
+      info.cssText = this.collectCssText(rule);
+      rule.propertyInfo = info;
+      return info;
+    }
+
+    // collects the custom properties from a rule's cssText
+    collectProperties(rule, properties) {
+      let info = rule.propertyInfo;
+      if (info) {
+        if (info.properties) {
+          Object.assign(properties, info.properties);
+          return true;
+        }
+      } else {
+        let m, rx = VAR_ASSIGN;
+        let cssText = rule['parsedCssText'];
+        let value;
+        let any;
+        while ((m = rx.exec(cssText))) {
+          // note: group 2 is var, 3 is mixin
+          value = (m[2] || m[3]).trim();
+          // value of 'inherit' or 'unset' is equivalent to not setting the property here
+          if (value !== 'inherit' || value !== 'unset') {
+            properties[m[1].trim()] = value;
+          }
+          any = true;
+        }
+        return any;
+      }
+
+    }
+
+    // returns cssText of properties that consume variables/mixins
+    collectCssText(rule) {
+      return this.collectConsumingCssText(rule['parsedCssText']);
+    }
+
+    // NOTE: we support consumption inside mixin assignment
+    // but not production, so strip out {...}
+    collectConsumingCssText(cssText) {
+      return cssText.replace(BRACKETED, '')
+        .replace(VAR_ASSIGN, '');
+    }
+
+    collectPropertiesInCssText(cssText, props) {
+      let m;
+      while ((m = VAR_CONSUMED.exec(cssText))) {
+        let name = m[1];
+        // This regex catches all variable names, and following non-whitespace char
+        // If next char is not ':', then variable is a consumer
+        if (m[2] !== ':') {
+          props[name] = true;
+        }
+      }
+    }
+
+    // turns custom properties into realized values.
+    reify(props) {
+      // big perf optimization here: reify only *own* properties
+      // since this object has __proto__ of the element's scope properties
+      let names = Object.getOwnPropertyNames(props);
+      for (let i=0, n; i < names.length; i++) {
+        n = names[i];
+        props[n] = this.valueForProperty(props[n], props);
+      }
+    }
+
+    // given a property value, returns the reified value
+    // a property value may be:
+    // (1) a literal value like: red or 5px;
+    // (2) a variable value like: var(--a), var(--a, red), or var(--a, --b) or
+    // var(--a, var(--b));
+    // (3) a literal mixin value like { properties }. Each of these properties
+    // can have values that are: (a) literal, (b) variables, (c) @apply mixins.
+    valueForProperty(property, props) {
+      // case (1) default
+      // case (3) defines a mixin and we have to reify the internals
+      if (property) {
+        if (property.indexOf(';') >=0) {
+          property = this.valueForProperties(property, props);
+        } else {
+          // case (2) variable
+          let self = this;
+          let fn = function(prefix, value, fallback, suffix) {
+            if (!value) {
+              return prefix + suffix;
+            }
+            let propertyValue = self.valueForProperty(props[value], props);
+            // if value is "initial", then the variable should be treated as unset
+            if (!propertyValue || propertyValue === 'initial') {
+              // fallback may be --a or var(--a) or literal
+              propertyValue = self.valueForProperty(props[fallback] || fallback, props) ||
+              fallback;
+            } else if (propertyValue === 'apply-shim-inherit') {
+              // CSS build will replace `inherit` with `apply-shim-inherit`
+              // for use with native css variables.
+              // Since we have full control, we can use `inherit` directly.
+              propertyValue = 'inherit';
+            }
+            return prefix + (propertyValue || '') + suffix;
+          };
+          property = processVariableAndFallback(property, fn);
+        }
+      }
+      return property && property.trim() || '';
+    }
+
+    // note: we do not yet support mixin within mixin
+    valueForProperties(property, props) {
+      let parts = property.split(';');
+      for (let i=0, p, m; i<parts.length; i++) {
+        if ((p = parts[i])) {
+          MIXIN_MATCH.lastIndex = 0;
+          m = MIXIN_MATCH.exec(p);
+          if (m) {
+            p = this.valueForProperty(props[m[1]], props);
+          } else {
+            let colon = p.indexOf(':');
+            if (colon !== -1) {
+              let pp = p.substring(colon);
+              pp = pp.trim();
+              pp = this.valueForProperty(pp, props) || pp;
+              p = p.substring(0, colon) + pp;
+            }
+          }
+          parts[i] = (p && p.lastIndexOf(';') === p.length - 1) ?
+            // strip trailing ;
+            p.slice(0, -1) :
+            p || '';
+        }
+      }
+      return parts.join(';');
+    }
+
+    applyProperties(rule, props) {
+      let output = '';
+      // dynamically added sheets may not be decorated so ensure they are.
+      if (!rule.propertyInfo) {
+        this.decorateRule(rule);
+      }
+      if (rule.propertyInfo.cssText) {
+        output = this.valueForProperties(rule.propertyInfo.cssText, props);
+      }
+      rule['cssText'] = output;
+    }
+
+    // Apply keyframe transformations to the cssText of a given rule. The
+    // keyframeTransforms object is a map of keyframe names to transformer
+    // functions which take in cssText and spit out transformed cssText.
+    applyKeyframeTransforms(rule, keyframeTransforms) {
+      let input = rule['cssText'];
+      let output = rule['cssText'];
+      if (rule.hasAnimations == null) {
+        // Cache whether or not the rule has any animations to begin with:
+        rule.hasAnimations = ANIMATION_MATCH.test(input);
+      }
+      // If there are no animations referenced, we can skip transforms:
+      if (rule.hasAnimations) {
+        let transform;
+        // If we haven't transformed this rule before, we iterate over all
+        // transforms:
+        if (rule.keyframeNamesToTransform == null) {
+          rule.keyframeNamesToTransform = [];
+          for (let keyframe in keyframeTransforms) {
+            transform = keyframeTransforms[keyframe];
+            output = transform(input);
+            // If the transform actually changed the CSS text, we cache the
+            // transform name for future use:
+            if (input !== output) {
+              input = output;
+              rule.keyframeNamesToTransform.push(keyframe);
+            }
+          }
+        } else {
+          // If we already have a list of keyframe names that apply to this
+          // rule, we apply only those keyframe name transforms:
+          for (let i = 0; i < rule.keyframeNamesToTransform.length; ++i) {
+            transform = keyframeTransforms[rule.keyframeNamesToTransform[i]];
+            input = transform(input);
+          }
+          output = input;
+        }
+      }
+      rule['cssText'] = output;
+    }
+
+    // Test if the rules in these styles matches the given `element` and if so,
+    // collect any custom properties into `props`.
+    /**
+     * @param {StyleNode} rules
+     * @param {Element} element
+     */
+    propertyDataFromStyles(rules, element) {
+      let props = {};
+      // generates a unique key for these matches
+      let o = [];
+      // note: active rules excludes non-matching @media rules
+      forEachRule(rules, (rule) => {
+        // TODO(sorvell): we could trim the set of rules at declaration
+        // time to only include ones that have properties
+        if (!rule.propertyInfo) {
+          this.decorateRule(rule);
+        }
+        // match element against transformedSelector: selector may contain
+        // unwanted uniquification and parsedSelector does not directly match
+        // for :host selectors.
+        let selectorToMatch = rule.transformedSelector || rule['parsedSelector'];
+        if (element && rule.propertyInfo.properties && selectorToMatch) {
+          if (matchesSelector$1.call(element, selectorToMatch)) {
+            this.collectProperties(rule, props);
+            // produce numeric key for these matches for lookup
+            addToBitMask(rule.index, o);
+          }
+        }
+      }, null, true);
+      return {properties: props, key: o};
+    }
+
+    /**
+     * @param {Element} scope
+     * @param {StyleNode} rule
+     * @param {string} cssBuild
+     * @param {function(Object)} callback
+     */
+    whenHostOrRootRule(scope, rule, cssBuild, callback) {
+      if (!rule.propertyInfo) {
+        this.decorateRule(rule);
+      }
+      if (!rule.propertyInfo.properties) {
+        return;
+      }
+      let {is, typeExtension} = getIsExtends(scope);
+      let hostScope = is ?
+        StyleTransformer$1._calcHostScope(is, typeExtension) :
+        'html';
+      let parsedSelector = rule['parsedSelector'];
+      let isRoot = (parsedSelector === ':host > *' || parsedSelector === 'html');
+      let isHost = parsedSelector.indexOf(':host') === 0 && !isRoot;
+      // build info is either in scope (when scope is an element) or in the style
+      // when scope is the default scope; note: this allows default scope to have
+      // mixed mode built and unbuilt styles.
+      if (cssBuild === 'shady') {
+        // :root -> x-foo > *.x-foo for elements and html for custom-style
+        isRoot = parsedSelector === (hostScope + ' > *.' + hostScope) || parsedSelector.indexOf('html') !== -1;
+        // :host -> x-foo for elements, but sub-rules have .x-foo in them
+        isHost = !isRoot && parsedSelector.indexOf(hostScope) === 0;
+      }
+      if (!isRoot && !isHost) {
+        return;
+      }
+      let selectorToMatch = hostScope;
+      if (isHost) {
+        // need to transform :host because `:host` does not work with `matches`
+        if (!rule.transformedSelector) {
+          // transform :host into a matchable selector
+          rule.transformedSelector =
+          StyleTransformer$1._transformRuleCss(
+            rule,
+            StyleTransformer$1._transformComplexSelector,
+            StyleTransformer$1._calcElementScope(is),
+            hostScope
+          );
+        }
+        selectorToMatch = rule.transformedSelector || hostScope;
+      }
+      callback({
+        selector: selectorToMatch,
+        isHost: isHost,
+        isRoot: isRoot
+      });
+    }
+  /**
+   * @param {Element} scope
+   * @param {StyleNode} rules
+   * @param {string} cssBuild
+   * @return {Object}
+   */
+    hostAndRootPropertiesForScope(scope, rules, cssBuild) {
+      let hostProps = {}, rootProps = {};
+      // note: active rules excludes non-matching @media rules
+      forEachRule(rules, (rule) => {
+        // if scope is StyleDefaults, use _element for matchesSelector
+        this.whenHostOrRootRule(scope, rule, cssBuild, (info) => {
+          let element = scope._element || scope;
+          if (matchesSelector$1.call(element, info.selector)) {
+            if (info.isHost) {
+              this.collectProperties(rule, hostProps);
+            } else {
+              this.collectProperties(rule, rootProps);
+            }
+          }
+        });
+      }, null, true);
+      return {rootProps: rootProps, hostProps: hostProps};
+    }
+
+    /**
+     * @param {Element} element
+     * @param {Object} properties
+     * @param {string} scopeSelector
+     */
+    transformStyles(element, properties, scopeSelector) {
+      let self = this;
+      let {is, typeExtension} = getIsExtends(element);
+      let hostSelector = StyleTransformer$1
+        ._calcHostScope(is, typeExtension);
+      let rxHostSelector = element.extends ?
+        '\\' + hostSelector.slice(0, -1) + '\\]' :
+        hostSelector;
+      let hostRx = new RegExp(HOST_PREFIX + rxHostSelector +
+        HOST_SUFFIX);
+      let {styleRules: rules, cssBuild} = StyleInfo.get(element);
+      let keyframeTransforms =
+        this._elementKeyframeTransforms(element, rules, scopeSelector);
+      return StyleTransformer$1.elementStyles(element, rules, function(rule) {
+        self.applyProperties(rule, properties);
+        if (!nativeShadow &&
+            !isKeyframesSelector(rule) &&
+            rule['cssText']) {
+          // NOTE: keyframe transforms only scope munge animation names, so it
+          // is not necessary to apply them in ShadowDOM.
+          self.applyKeyframeTransforms(rule, keyframeTransforms);
+          self._scopeSelector(rule, hostRx, hostSelector, scopeSelector);
+        }
+      }, cssBuild);
+    }
+
+    /**
+     * @param {Element} element
+     * @param {StyleNode} rules
+     * @param {string} scopeSelector
+     * @return {Object}
+     */
+    _elementKeyframeTransforms(element, rules, scopeSelector) {
+      let keyframesRules = rules._keyframes;
+      let keyframeTransforms = {};
+      if (!nativeShadow && keyframesRules) {
+        // For non-ShadowDOM, we transform all known keyframes rules in
+        // advance for the current scope. This allows us to catch keyframes
+        // rules that appear anywhere in the stylesheet:
+        for (let i = 0, keyframesRule = keyframesRules[i];
+             i < keyframesRules.length;
+             keyframesRule = keyframesRules[++i]) {
+          this._scopeKeyframes(keyframesRule, scopeSelector);
+          keyframeTransforms[keyframesRule['keyframesName']] =
+              this._keyframesRuleTransformer(keyframesRule);
+        }
+      }
+      return keyframeTransforms;
+    }
+
+    // Generate a factory for transforming a chunk of CSS text to handle a
+    // particular scoped keyframes rule.
+    /**
+     * @param {StyleNode} keyframesRule
+     * @return {function(string):string}
+     */
+    _keyframesRuleTransformer(keyframesRule) {
+      return function(cssText) {
+        return cssText.replace(
+            keyframesRule.keyframesNameRx,
+            keyframesRule.transformedKeyframesName);
+      };
+    }
+
+  /**
+   * Transforms `@keyframes` names to be unique for the current host.
+   * Example: @keyframes foo-anim -> @keyframes foo-anim-x-foo-0
+   *
+   * @param {StyleNode} rule
+   * @param {string} scopeId
+   */
+    _scopeKeyframes(rule, scopeId) {
+      // Animation names are of the form [\w-], so ensure that the name regex does not partially apply
+      // to similarly named keyframe names by checking for a word boundary at the beginning and
+      // a non-word boundary or `-` at the end.
+      rule.keyframesNameRx = new RegExp(`\\b${rule['keyframesName']}(?!\\B|-)`, 'g');
+      rule.transformedKeyframesName = rule['keyframesName'] + '-' + scopeId;
+      rule.transformedSelector = rule.transformedSelector || rule['selector'];
+      rule['selector'] = rule.transformedSelector.replace(
+          rule['keyframesName'], rule.transformedKeyframesName);
+    }
+
+    // Strategy: x scope shim a selector e.g. to scope `.x-foo-42` (via classes):
+    // non-host selector: .a.x-foo -> .x-foo-42 .a.x-foo
+    // host selector: x-foo.wide -> .x-foo-42.wide
+    // note: we use only the scope class (.x-foo-42) and not the hostSelector
+    // (x-foo) to scope :host rules; this helps make property host rules
+    // have low specificity. They are overrideable by class selectors but,
+    // unfortunately, not by type selectors (e.g. overriding via
+    // `.special` is ok, but not by `x-foo`).
+    /**
+     * @param {StyleNode} rule
+     * @param {RegExp} hostRx
+     * @param {string} hostSelector
+     * @param {string} scopeId
+     */
+    _scopeSelector(rule, hostRx, hostSelector, scopeId) {
+      rule.transformedSelector = rule.transformedSelector || rule['selector'];
+      let selector = rule.transformedSelector;
+      let scope = '.' + scopeId;
+      let parts = splitSelectorList(selector);
+      for (let i=0, l=parts.length, p; (i<l) && (p=parts[i]); i++) {
+        parts[i] = p.match(hostRx) ?
+          p.replace(hostSelector, scope) :
+          scope + ' ' + p;
+      }
+      rule['selector'] = parts.join(',');
+    }
+
+    /**
+     * @param {Element} element
+     * @param {string} selector
+     * @param {string} old
+     */
+    applyElementScopeSelector(element, selector, old) {
+      let c = element.getAttribute('class') || '';
+      let v = c;
+      if (old) {
+        v = c.replace(
+          new RegExp('\\s*' + XSCOPE_NAME + '\\s*' + old + '\\s*', 'g'), ' ');
+      }
+      v += (v ? ' ' : '') + XSCOPE_NAME + ' ' + selector;
+      if (c !== v) {
+        setElementClassRaw(element, v);
+      }
+    }
+
+    /**
+     * @param {HTMLElement} element
+     * @param {Object} properties
+     * @param {string} selector
+     * @param {HTMLStyleElement} style
+     * @return {HTMLStyleElement}
+     */
+    applyElementStyle(element, properties, selector, style) {
+      // calculate cssText to apply
+      let cssText = style ? style.textContent || '' :
+        this.transformStyles(element, properties, selector);
+      // if shady and we have a cached style that is not style, decrement
+      let styleInfo = StyleInfo.get(element);
+      let s = styleInfo.customStyle;
+      if (s && !nativeShadow && (s !== style)) {
+        s['_useCount']--;
+        if (s['_useCount'] <= 0 && s.parentNode) {
+          s.parentNode.removeChild(s);
+        }
+      }
+      // apply styling always under native or if we generated style
+      // or the cached style is not in document(!)
+      if (nativeShadow) {
+        // update existing style only under native
+        if (styleInfo.customStyle) {
+          styleInfo.customStyle.textContent = cssText;
+          style = styleInfo.customStyle;
+        // otherwise, if we have css to apply, do so
+        } else if (cssText) {
+          // apply css after the scope style of the element to help with
+          // style precedence rules.
+          style = applyCss(cssText, selector, element.shadowRoot,
+            styleInfo.placeholder);
+        }
+      } else {
+        // shady and no cache hit
+        if (!style) {
+          // apply css after the scope style of the element to help with
+          // style precedence rules.
+          if (cssText) {
+            style = applyCss(cssText, selector, null,
+              styleInfo.placeholder);
+          }
+        // shady and cache hit but not in document
+        } else if (!style.parentNode) {
+          if (IS_IE$1 && cssText.indexOf('@media') > -1) {
+              // @media rules may be stale in IE 10 and 11
+              // refresh the text content of the style to revalidate them.
+            style.textContent = cssText;
+          }
+          applyStyle(style, null, styleInfo.placeholder);
+        }
+      }
+      // ensure this style is our custom style and increment its use count.
+      if (style) {
+        style['_useCount'] = style['_useCount'] || 0;
+        // increment use count if we changed styles
+        if (styleInfo.customStyle != style) {
+          style['_useCount']++;
+        }
+        styleInfo.customStyle = style;
+      }
+      return style;
+    }
+
+    /**
+     * @param {Element} style
+     * @param {Object} properties
+     */
+    applyCustomStyle(style, properties) {
+      let rules = rulesForStyle(/** @type {HTMLStyleElement} */(style));
+      let self = this;
+      style.textContent = toCssText(rules, function(/** StyleNode */rule) {
+        let css = rule['cssText'] = rule['parsedCssText'];
+        if (rule.propertyInfo && rule.propertyInfo.cssText) {
+          // remove property assignments
+          // so next function isn't confused
+          // NOTE: we have 3 categories of css:
+          // (1) normal properties,
+          // (2) custom property assignments (--foo: red;),
+          // (3) custom property usage: border: var(--foo); @apply(--foo);
+          // In elements, 1 and 3 are separated for efficiency; here they
+          // are not and this makes this case unique.
+          css = removeCustomPropAssignment(/** @type {string} */(css));
+          // replace with reified properties, scenario is same as mixin
+          rule['cssText'] = self.valueForProperties(css, properties);
+        }
+      });
+    }
+  }
+
+  /**
+   * @param {number} n
+   * @param {Array<number>} bits
+   */
+  function addToBitMask(n, bits) {
+    let o = parseInt(n / 32, 10);
+    let v = 1 << (n % 32);
+    bits[o] = (bits[o] || 0) | v;
+  }
+
+  var StyleProperties$1 = new StyleProperties();
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /** @type {!Object<string, !Node>} */
+  const placeholderMap = {};
+
+  /**
+   * @param {string} elementName
+   * @return {Node}
+   */
+  function getStylePlaceholder(elementName) {
+    return placeholderMap[elementName] || null;
+  }
+
+  /**
+   * @param {string} elementName
+   */
+  function ensureStylePlaceholder(elementName) {
+    if (!placeholderMap[elementName]) {
+      placeholderMap[elementName] = applyStylePlaceHolder(elementName);
+    }
+  }
+
+  /**
+   * @const {CustomElementRegistry}
+   */
+  const ce = window['customElements'];
+  if (ce && !nativeShadow && !disableRuntime) {
+    /**
+     * @const {function(this:CustomElementRegistry, string,function(new:HTMLElement),{extends: string}=)}
+     */
+    const origDefine = ce['define'];
+    /**
+     * @param {string} name
+     * @param {function(new:HTMLElement)} clazz
+     * @param {{extends: string}=} options
+     */
+    const wrappedDefine = (name, clazz, options) => {
+      ensureStylePlaceholder(name);
+      origDefine.call(/** @type {!CustomElementRegistry} */(ce), name, clazz, options);
+    };
+    ce['define'] = wrappedDefine;
+  }
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  class StyleCache {
+    constructor(typeMax = 100) {
+      // map element name -> [{properties, styleElement, scopeSelector}]
+      this.cache = {};
+      /** @type {number} */
+      this.typeMax = typeMax;
+    }
+
+    _validate(cacheEntry, properties, ownPropertyNames) {
+      for (let idx = 0; idx < ownPropertyNames.length; idx++) {
+        let pn = ownPropertyNames[idx];
+        if (cacheEntry.properties[pn] !== properties[pn]) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+    store(tagname, properties, styleElement, scopeSelector) {
+      let list = this.cache[tagname] || [];
+      list.push({properties, styleElement, scopeSelector});
+      if (list.length > this.typeMax) {
+        list.shift();
+      }
+      this.cache[tagname] = list;
+    }
+
+    fetch(tagname, properties, ownPropertyNames) {
+      let list = this.cache[tagname];
+      if (!list) {
+        return;
+      }
+      // reverse list for most-recent lookups
+      for (let idx = list.length - 1; idx >= 0; idx--) {
+        let entry = list[idx];
+        if (this._validate(entry, properties, ownPropertyNames)) {
+          return entry;
+        }
+      }
+    }
+  }
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  let flush$2 = function() {};
+
+  /**
+   * @param {!Element} element
+   * @return {string}
+   */
+  function getClasses(element) {
+    if (element.classList && element.classList.value) {
+      return element.classList.value;
+    } else {
+      // NOTE: className is patched to remove scoping classes in ShadyDOM
+      // use getAttribute('class') instead, which is unpatched
+      return element.getAttribute('class') || '';
+    }
+  }
+
+  const scopeRegExp = new RegExp(`${StyleTransformer$1.SCOPE_NAME}\\s*([^\\s]*)`);
+
+  /**
+   * @param {!Element} element
+   * @return {string}
+   */
+  function getCurrentScope(element) {
+    const match = getClasses(element).match(scopeRegExp);
+    if (match) {
+      return match[1];
+    } else {
+      return '';
+    }
+  }
+
+  /**
+   * @param {!Node} node
+   */
+  function getOwnerScope(node) {
+    const ownerRoot = wrap$1(node).getRootNode();
+    if (ownerRoot === node || ownerRoot === node.ownerDocument) {
+      return '';
+    }
+    const host = /** @type {!ShadowRoot} */(ownerRoot).host;
+    if (!host) {
+      // this may actually be a document fragment
+      return '';
+    }
+    return getIsExtends(host).is;
+  }
+
+  /**
+   * @param {!HTMLElement|!HTMLDocument} element
+   */
+  function ensureCorrectSubtreeScoping(element) {
+    // find unscoped subtree nodes
+    const unscopedNodes = window['ShadyDOM']['nativeMethods']['querySelectorAll'].call(
+      element, `:not(.${StyleTransformer$1.SCOPE_NAME})`);
+
+    for (let j = 0; j < unscopedNodes.length; j++) {
+      // it's possible, during large batch inserts, that nodes that aren't
+      // scoped within the current scope were added.
+      // To make sure that any unscoped nodes that were inserted in the current batch are correctly styled,
+      // query all unscoped nodes and force their style-scope to be applied.
+      // This could happen if a sub-element appended an unscoped node in its shadowroot and this function
+      // runs on a parent element of the host of that unscoped node:
+      // parent-element -> element -> unscoped node
+      // Here unscoped node should have the style-scope element, not parent-element.
+      const unscopedNode = unscopedNodes[j];
+      const scopeForPreviouslyUnscopedNode = getOwnerScope(unscopedNode);
+      if (scopeForPreviouslyUnscopedNode) {
+        StyleTransformer$1.element(unscopedNode, scopeForPreviouslyUnscopedNode);
+      }
+    }
+  }
+
+  /**
+   * @param {HTMLElement} el
+   * @return {boolean}
+   */
+  function isElementWithBuiltCss(el) {
+    if (el.localName === 'style' || el.localName === 'template') {
+      return elementHasBuiltCss(el);
+    }
+    return false;
+  }
+
+  /**
+   * @param {Array<MutationRecord|null>|null} mxns
+   */
+  function handler(mxns) {
+    for (let x=0; x < mxns.length; x++) {
+      let mxn = mxns[x];
+      if (mxn.target === document.documentElement ||
+        mxn.target === document.head) {
+        continue;
+      }
+      for (let i=0; i < mxn.addedNodes.length; i++) {
+        let n = mxn.addedNodes[i];
+        if (n.nodeType !== Node.ELEMENT_NODE) {
+          continue;
+        }
+        n = /** @type {HTMLElement} */(n); // eslint-disable-line no-self-assign
+        let root = n.getRootNode();
+        let currentScope = getCurrentScope(n);
+        // node was scoped, but now is in document
+        // If this element has built css, we must not remove scoping as this node
+        // will be used as a template or style without re - applying scoping as an optimization
+        if (currentScope && root === n.ownerDocument && !isElementWithBuiltCss(n)) {
+          StyleTransformer$1.domRemoveScope(n, currentScope);
+        } else if (root instanceof ShadowRoot) {
+          const newScope = getOwnerScope(n);
+          // rescope current node and subtree if necessary
+          if (newScope !== currentScope) {
+            StyleTransformer$1.domReplaceScope(n, currentScope, newScope);
+          }
+          // make sure all the subtree elements are scoped correctly
+          ensureCorrectSubtreeScoping(n);
+        }
+      }
+    }
+  }
+
+  // if native Shadow DOM is being used, or ShadyDOM handles dynamic scoiping, do not activate the MutationObserver
+  if (!nativeShadow && !(window['ShadyDOM'] && window['ShadyDOM']['handlesDynamicScoping'])) {
+    let observer = new MutationObserver(handler);
+    let start = (node) => {
+      observer.observe(node, {childList: true, subtree: true});
+    };
+    let nativeCustomElements = (window['customElements'] &&
+      !window['customElements']['polyfillWrapFlushCallback']);
+    // need to start immediately with native custom elements
+    // TODO(dfreedm): with polyfilled HTMLImports and native custom elements
+    // excessive mutations may be observed; this can be optimized via cooperation
+    // with the HTMLImports polyfill.
+    if (nativeCustomElements) {
+      start(document);
+    } else {
+      let delayedStart = () => {
+        start(document.body);
+      };
+      // use polyfill timing if it's available
+      if (window['HTMLImports']) {
+        window['HTMLImports']['whenReady'](delayedStart);
+      // otherwise push beyond native imports being ready
+      // which requires RAF + readystate interactive.
+      } else {
+        requestAnimationFrame(function() {
+          if (document.readyState === 'loading') {
+            let listener = function() {
+              delayedStart();
+              document.removeEventListener('readystatechange', listener);
+            };
+            document.addEventListener('readystatechange', listener);
+          } else {
+            delayedStart();
+          }
+        });
+      }
+    }
+
+    flush$2 = function() {
+      handler(observer.takeRecords());
+    };
+  }
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /**
+   * @const {!Object<string, !HTMLTemplateElement>}
+   */
+  const templateMap = {};
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /*
+   * Utilities for handling invalidating apply-shim mixins for a given template.
+   *
+   * The invalidation strategy involves keeping track of the "current" version of a template's mixins, and updating that count when a mixin is invalidated.
+   * The template
+   */
+
+  /** @const {string} */
+  const CURRENT_VERSION = '_applyShimCurrentVersion';
+
+  /** @const {string} */
+  const NEXT_VERSION = '_applyShimNextVersion';
+
+  /** @const {string} */
+  const VALIDATING_VERSION = '_applyShimValidatingVersion';
+
+  /**
+   * @const {Promise<void>}
+   */
+  const promise$2 = Promise.resolve();
+
+  /**
+   * @param {string} elementName
+   */
+  function invalidate(elementName){
+    let template = templateMap[elementName];
+    if (template) {
+      invalidateTemplate(template);
+    }
+  }
+
+  /**
+   * This function can be called multiple times to mark a template invalid
+   * and signal that the style inside must be regenerated.
+   *
+   * Use `startValidatingTemplate` to begin an asynchronous validation cycle.
+   * During that cycle, call `templateIsValidating` to see if the template must
+   * be revalidated
+   * @param {HTMLTemplateElement} template
+   */
+  function invalidateTemplate(template) {
+    // default the current version to 0
+    template[CURRENT_VERSION] = template[CURRENT_VERSION] || 0;
+    // ensure the "validating for" flag exists
+    template[VALIDATING_VERSION] = template[VALIDATING_VERSION] || 0;
+    // increment the next version
+    template[NEXT_VERSION] = (template[NEXT_VERSION] || 0) + 1;
+  }
+
+  /**
+   * @param {HTMLTemplateElement} template
+   * @return {boolean}
+   */
+  function templateIsValid(template) {
+    return template[CURRENT_VERSION] === template[NEXT_VERSION];
+  }
+
+  /**
+   * Returns true if the template is currently invalid and `startValidating` has been called since the last invalidation.
+   * If false, the template must be validated.
+   * @param {HTMLTemplateElement} template
+   * @return {boolean}
+   */
+  function templateIsValidating(template) {
+    return !templateIsValid(template) && template[VALIDATING_VERSION] === template[NEXT_VERSION];
+  }
+
+  /**
+   * Begin an asynchronous invalidation cycle.
+   * This should be called after every validation of a template
+   *
+   * After one microtask, the template will be marked as valid until the next call to `invalidateTemplate`
+   * @param {HTMLTemplateElement} template
+   */
+  function startValidatingTemplate(template) {
+    // remember that the current "next version" is the reason for this validation cycle
+    template[VALIDATING_VERSION] = template[NEXT_VERSION];
+    // however, there only needs to be one async task to clear the counters
+    if (!template._validating) {
+      template._validating = true;
+      promise$2.then(function() {
+        // sync the current version to let future invalidations cause a refresh cycle
+        template[CURRENT_VERSION] = template[NEXT_VERSION];
+        template._validating = false;
+      });
+    }
+  }
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /**
+   * @param {Element} element
+   * @param {Object=} properties
+   */
+  function updateNativeProperties(element, properties) {
+    // remove previous properties
+    for (let p in properties) {
+      // NOTE: for bc with shim, don't apply null values.
+      if (p === null) {
+        element.style.removeProperty(p);
+      } else {
+        element.style.setProperty(p, properties[p]);
+      }
+    }
+  }
+
+  /**
+   * return true if `cssText` contains a mixin definition or consumption
+   * @param {string} cssText
+   * @return {boolean}
+   */
+  function detectMixin(cssText) {
+    const has = MIXIN_MATCH.test(cssText) || VAR_ASSIGN.test(cssText);
+    // reset state of the regexes
+    MIXIN_MATCH.lastIndex = 0;
+    VAR_ASSIGN.lastIndex = 0;
+    return has;
+  }
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /** @type {Promise<void>} */
+  let readyPromise = null;
+
+  /** @type {?function(?function())} */
+  let whenReady = window['HTMLImports'] && window['HTMLImports']['whenReady'] || null;
+
+  /** @type {function()} */
+  let resolveFn;
+
+  /**
+   * @param {?function()} callback
+   */
+  function documentWait(callback) {
+    requestAnimationFrame(function() {
+      if (whenReady) {
+        whenReady(callback);
+      } else {
+        if (!readyPromise) {
+          readyPromise = new Promise((resolve) => {resolveFn = resolve;});
+          if (document.readyState === 'complete') {
+            resolveFn();
+          } else {
+            document.addEventListener('readystatechange', () => {
+              if (document.readyState === 'complete') {
+                resolveFn();
+              }
+            });
+          }
+        }
+        readyPromise.then(function(){ callback && callback(); });
+      }
+    });
+  }
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  const SEEN_MARKER = '__seenByShadyCSS';
+  const CACHED_STYLE = '__shadyCSSCachedStyle';
+
+  /** @type {?function(!HTMLStyleElement)} */
+  let transformFn = null;
+
+  /** @type {?function()} */
+  let validateFn = null;
+
+  /**
+  This interface is provided to add document-level <style> elements to ShadyCSS for processing.
+  These styles must be processed by ShadyCSS to simulate ShadowRoot upper-bound encapsulation from outside styles
+  In addition, these styles may also need to be processed for @apply rules and CSS Custom Properties
+
+  To add document-level styles to ShadyCSS, one can call `ShadyCSS.addDocumentStyle(styleElement)` or `ShadyCSS.addDocumentStyle({getStyle: () => styleElement})`
+
+  In addition, if the process used to discover document-level styles can be synchronously flushed, one should set `ShadyCSS.documentStyleFlush`.
+  This function will be called when calculating styles.
+
+  An example usage of the document-level styling api can be found in `examples/document-style-lib.js`
+
+  @unrestricted
+  */
+  class CustomStyleInterface {
+    constructor() {
+      /** @type {!Array<!CustomStyleProvider>} */
+      this['customStyles'] = [];
+      this['enqueued'] = false;
+      // NOTE(dfreedm): use quotes here to prevent closure inlining to `function(){}`;
+      documentWait(() => {
+        if (window['ShadyCSS']['flushCustomStyles']) {
+          window['ShadyCSS']['flushCustomStyles']();
+        }
+      });
+    }
+    /**
+     * Queue a validation for new custom styles to batch style recalculations
+     */
+    enqueueDocumentValidation() {
+      if (this['enqueued'] || !validateFn) {
+        return;
+      }
+      this['enqueued'] = true;
+      documentWait(validateFn);
+    }
+    /**
+     * @param {!HTMLStyleElement} style
+     */
+    addCustomStyle(style) {
+      if (!style[SEEN_MARKER]) {
+        style[SEEN_MARKER] = true;
+        this['customStyles'].push(style);
+        this.enqueueDocumentValidation();
+      }
+    }
+    /**
+     * @param {!CustomStyleProvider} customStyle
+     * @return {HTMLStyleElement}
+     */
+    getStyleForCustomStyle(customStyle) {
+      if (customStyle[CACHED_STYLE]) {
+        return customStyle[CACHED_STYLE];
+      }
+      let style;
+      if (customStyle['getStyle']) {
+        style = customStyle['getStyle']();
+      } else {
+        style = customStyle;
+      }
+      return style;
+    }
+    /**
+     * @return {!Array<!CustomStyleProvider>}
+     */
+    processStyles() {
+      const cs = this['customStyles'];
+      for (let i = 0; i < cs.length; i++) {
+        const customStyle = cs[i];
+        if (customStyle[CACHED_STYLE]) {
+          continue;
+        }
+        const style = this.getStyleForCustomStyle(customStyle);
+        if (style) {
+          // HTMLImports polyfill may have cloned the style into the main document,
+          // which is referenced with __appliedElement.
+          const styleToTransform = /** @type {!HTMLStyleElement} */(style['__appliedElement'] || style);
+          if (transformFn) {
+            transformFn(styleToTransform);
+          }
+          customStyle[CACHED_STYLE] = styleToTransform;
+        }
+      }
+      return cs;
+    }
+  }
+
+  /* eslint-disable no-self-assign */
+  CustomStyleInterface.prototype['addCustomStyle'] = CustomStyleInterface.prototype.addCustomStyle;
+  CustomStyleInterface.prototype['getStyleForCustomStyle'] = CustomStyleInterface.prototype.getStyleForCustomStyle;
+  CustomStyleInterface.prototype['processStyles'] = CustomStyleInterface.prototype.processStyles;
+  /* eslint-enable no-self-assign */
+
+  Object.defineProperties(CustomStyleInterface.prototype, {
+    'transformCallback': {
+      /** @return {?function(!HTMLStyleElement)} */
+      get() {
+        return transformFn;
+      },
+      /** @param {?function(!HTMLStyleElement)} fn */
+      set(fn) {
+        transformFn = fn;
+      }
+    },
+    'validateCallback': {
+      /** @return {?function()} */
+      get() {
+        return validateFn;
+      },
+      /**
+       * @param {?function()} fn
+       * @this {CustomStyleInterface}
+       */
+      set(fn) {
+        let needsEnqueue = false;
+        if (!validateFn) {
+          needsEnqueue = true;
+        }
+        validateFn = fn;
+        if (needsEnqueue) {
+          this.enqueueDocumentValidation();
+        }
+      },
+    }
+  });
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /** @type {!Object<string, string>} */
+  const adoptedCssTextMap = {};
+
+  /**
+   * @const {StyleCache}
+   */
+  const styleCache = new StyleCache();
+
+  class ScopingShim {
+    constructor() {
+      this._scopeCounter = {};
+      this._documentOwner = /** @type {!HTMLElement} */(document.documentElement);
+      let ast = new StyleNode();
+      ast['rules'] = [];
+      this._documentOwnerStyleInfo = StyleInfo.set(this._documentOwner, new StyleInfo(ast));
+      this._elementsHaveApplied = false;
+      /** @type {?Object} */
+      this._applyShim = null;
+      /** @type {?CustomStyleInterfaceInterface} */
+      this._customStyleInterface = null;
+    }
+    flush() {
+      flush$2();
+    }
+    _generateScopeSelector(name) {
+      let id = this._scopeCounter[name] = (this._scopeCounter[name] || 0) + 1;
+      return `${name}-${id}`;
+    }
+    getStyleAst(style) {
+      return rulesForStyle(style);
+    }
+    styleAstToString(ast) {
+      return toCssText(ast);
+    }
+    _gatherStyles(template) {
+      return gatherStyleText(template.content);
+    }
+    /**
+     * Prepare the styling and template for the given element type
+     *
+     * @param {!HTMLTemplateElement} template
+     * @param {string} elementName
+     * @param {string=} typeExtension
+     */
+    prepareTemplate(template, elementName, typeExtension) {
+      this.prepareTemplateDom(template, elementName);
+      this.prepareTemplateStyles(template, elementName, typeExtension);
+    }
+    /**
+     * Prepare styling for the given element type
+     * @param {!HTMLTemplateElement} template
+     * @param {string} elementName
+     * @param {string=} typeExtension
+     */
+    prepareTemplateStyles(template, elementName, typeExtension) {
+      if (template._prepared || disableRuntime) {
+        return;
+      }
+      // style placeholders are only used when ShadyDOM is active
+      if (!nativeShadow) {
+        ensureStylePlaceholder(elementName);
+      }
+      template._prepared = true;
+      template.name = elementName;
+      template.extends = typeExtension;
+      templateMap[elementName] = template;
+      let cssBuild = getCssBuild(template);
+      const optimalBuild = isOptimalCssBuild(cssBuild);
+      let info = {
+        is: elementName,
+        extends: typeExtension,
+      };
+      let cssText = this._gatherStyles(template) + (adoptedCssTextMap[elementName] || '');
+      // check if the styling has mixin definitions or uses
+      this._ensure();
+      if (!optimalBuild) {
+        let hasMixins = !cssBuild && detectMixin(cssText);
+        let ast = parse(cssText);
+        // only run the applyshim transforms if there is a mixin involved
+        if (hasMixins && nativeCssVariables && this._applyShim) {
+          this._applyShim['transformRules'](ast, elementName);
+        }
+        template['_styleAst'] = ast;
+      }
+      let ownPropertyNames = [];
+      if (!nativeCssVariables) {
+        ownPropertyNames = StyleProperties$1.decorateStyles(template['_styleAst']);
+      }
+      if (!ownPropertyNames.length || nativeCssVariables) {
+        let root = nativeShadow ? template.content : null;
+        let placeholder = getStylePlaceholder(elementName);
+        let style = this._generateStaticStyle(info, template['_styleAst'], root, placeholder, cssBuild, optimalBuild ? cssText : '');
+        template._style = style;
+      }
+      template._ownPropertyNames = ownPropertyNames;
+    }
+
+    /**
+     * @param {!Array<string>} cssTextArray
+     * @param {string} elementName
+     */
+    prepareAdoptedCssText(cssTextArray, elementName) {
+      adoptedCssTextMap[elementName] = cssTextArray.join(' ');
+    }
+    /**
+     * Prepare template for the given element type
+     * @param {!HTMLTemplateElement} template
+     * @param {string} elementName
+     */
+    prepareTemplateDom(template, elementName) {
+      if (disableRuntime) {
+        return;
+      }
+      const cssBuild = getCssBuild(template);
+      if (!nativeShadow && cssBuild !== 'shady' && !template._domPrepared) {
+        template._domPrepared = true;
+        StyleTransformer$1.domAddScope(template.content, elementName);
+      }
+    }
+    /**
+     * @param {!{is: string, extends: (string|undefined)}} info
+     * @param {!StyleNode} rules
+     * @param {DocumentFragment} shadowroot
+     * @param {Node} placeholder
+     * @param {string} cssBuild
+     * @param {string=} cssText
+     * @return {?HTMLStyleElement}
+     */
+    _generateStaticStyle(info, rules, shadowroot, placeholder, cssBuild, cssText) {
+      cssText = StyleTransformer$1.elementStyles(info, rules, null, cssBuild, cssText);
+      if (cssText.length) {
+        return applyCss(cssText, info.is, shadowroot, placeholder);
+      }
+      return null;
+    }
+    _prepareHost(host) {
+      const {is, typeExtension} = getIsExtends(host);
+      const placeholder = getStylePlaceholder(is);
+      const template = templateMap[is];
+      if (!template) {
+        return;
+      }
+      const ast = template['_styleAst'];
+      const ownStylePropertyNames = template._ownPropertyNames;
+      const cssBuild = getCssBuild(template);
+      const styleInfo = new StyleInfo(
+        ast,
+        placeholder,
+        ownStylePropertyNames,
+        is,
+        typeExtension,
+        cssBuild
+      );
+      StyleInfo.set(host, styleInfo);
+      return styleInfo;
+    }
+    _ensureApplyShim() {
+      if (this._applyShim) {
+        return;
+      } else if (window.ShadyCSS && window.ShadyCSS.ApplyShim) {
+        this._applyShim = /** @type {!Object} */ (window.ShadyCSS.ApplyShim);
+        this._applyShim['invalidCallback'] = invalidate;
+      }
+    }
+    _ensureCustomStyleInterface() {
+      if (this._customStyleInterface) {
+        return;
+      } else if (window.ShadyCSS && window.ShadyCSS.CustomStyleInterface) {
+        this._customStyleInterface = /** @type {!CustomStyleInterfaceInterface} */(window.ShadyCSS.CustomStyleInterface);
+        /** @type {function(!HTMLStyleElement)} */
+        this._customStyleInterface['transformCallback'] = (style) => {this.transformCustomStyleForDocument(style);};
+        this._customStyleInterface['validateCallback'] = () => {
+          requestAnimationFrame(() => {
+            if (this._customStyleInterface['enqueued'] || this._elementsHaveApplied) {
+              this.flushCustomStyles();
+            }
+          });
+        };
+      }
+    }
+    _ensure() {
+      this._ensureApplyShim();
+      this._ensureCustomStyleInterface();
+    }
+    /**
+     * Flush and apply custom styles to document
+     */
+    flushCustomStyles() {
+      if (disableRuntime) {
+        return;
+      }
+      this._ensure();
+      if (!this._customStyleInterface) {
+        return;
+      }
+      let customStyles = this._customStyleInterface['processStyles']();
+      // early return if custom-styles don't need validation
+      if (!this._customStyleInterface['enqueued']) {
+        return;
+      }
+      // bail if custom styles are built optimally
+      if (isOptimalCssBuild(this._documentOwnerStyleInfo.cssBuild)) {
+        return;
+      }
+      if (!nativeCssVariables) {
+        this._updateProperties(this._documentOwner, this._documentOwnerStyleInfo);
+        this._applyCustomStyles(customStyles);
+        if (this._elementsHaveApplied) {
+          // if custom elements have upgraded and there are no native css variables, we must recalculate the whole tree
+          this.styleDocument();
+        }
+      } else if (!this._documentOwnerStyleInfo.cssBuild) {
+        this._revalidateCustomStyleApplyShim(customStyles);
+      }
+      this._customStyleInterface['enqueued'] = false;
+    }
+    /**
+     * Apply styles for the given element
+     *
+     * @param {!HTMLElement} host
+     * @param {Object=} overrideProps
+     */
+    styleElement(host, overrideProps) {
+      if (disableRuntime) {
+        if (overrideProps) {
+          if (!StyleInfo.get(host)) {
+            StyleInfo.set(host, new StyleInfo(null));
+          }
+          const styleInfo = /** @type {!StyleInfo} */(StyleInfo.get(host));
+          this._mixOverrideStyleProps(styleInfo, overrideProps);
+          this.styleElementNativeVariables(host, styleInfo);
+        }
+        return;
+      }
+      const styleInfo = StyleInfo.get(host) || this._prepareHost(host);
+      // if there is no style info at this point, bail
+      if (!styleInfo) {
+        return;
+      }
+      // Only trip the `elementsHaveApplied` flag if a node other that the root document has `applyStyle` called
+      if (!this._isRootOwner(host)) {
+        this._elementsHaveApplied = true;
+      }
+      if (overrideProps) {
+        this._mixOverrideStyleProps(styleInfo, overrideProps);
+      }
+      if (!nativeCssVariables) {
+        this.styleElementShimVariables(host, styleInfo);
+      } else {
+        this.styleElementNativeVariables(host, styleInfo);
+      }
+    }
+    /**
+     * @param {!StyleInfo} styleInfo
+     * @param {Object} overrideProps
+     */
+    _mixOverrideStyleProps(styleInfo, overrideProps) {
+      styleInfo.overrideStyleProperties =
+        styleInfo.overrideStyleProperties || {};
+      Object.assign(styleInfo.overrideStyleProperties, overrideProps);
+    }
+    /**
+     * @param {!HTMLElement} host
+     * @param {!StyleInfo} styleInfo
+     */
+    styleElementShimVariables(host, styleInfo) {
+      this.flush();
+      this._updateProperties(host, styleInfo);
+      if (styleInfo.ownStylePropertyNames && styleInfo.ownStylePropertyNames.length) {
+        this._applyStyleProperties(host, styleInfo);
+      }
+    }
+    /**
+     * @param {!HTMLElement} host
+     * @param {!StyleInfo} styleInfo
+     */
+    styleElementNativeVariables(host, styleInfo) {
+      const { is } = getIsExtends(host);
+      if (styleInfo.overrideStyleProperties) {
+        updateNativeProperties(host, styleInfo.overrideStyleProperties);
+      }
+      const template = templateMap[is];
+      // bail early if there is no shadowroot for this element
+      if (!template && !this._isRootOwner(host)) {
+        return;
+      }
+      // bail early if the template was built with polymer-css-build
+      if (template && elementHasBuiltCss(template)) {
+        return;
+      }
+      if (template && template._style && !templateIsValid(template)) {
+        // update template
+        if (!templateIsValidating(template)) {
+          this._ensure();
+          this._applyShim && this._applyShim['transformRules'](template['_styleAst'], is);
+          template._style.textContent = StyleTransformer$1.elementStyles(host, styleInfo.styleRules);
+          startValidatingTemplate(template);
+        }
+        // update instance if native shadowdom
+        if (nativeShadow) {
+          let root = host.shadowRoot;
+          if (root) {
+            let style = root.querySelector('style');
+            if (style) {
+              style.textContent = StyleTransformer$1.elementStyles(host, styleInfo.styleRules);
+            }
+          }
+        }
+        styleInfo.styleRules = template['_styleAst'];
+      }
+    }
+    _styleOwnerForNode(node) {
+      let root = wrap$1(node).getRootNode();
+      let host = root.host;
+      if (host) {
+        if (StyleInfo.get(host) || this._prepareHost(host)) {
+          return host;
+        } else {
+          return this._styleOwnerForNode(host);
+        }
+      }
+      return this._documentOwner;
+    }
+    _isRootOwner(node) {
+      return (node === this._documentOwner);
+    }
+    _applyStyleProperties(host, styleInfo) {
+      let is = getIsExtends(host).is;
+      let cacheEntry = styleCache.fetch(is, styleInfo.styleProperties, styleInfo.ownStylePropertyNames);
+      let cachedScopeSelector = cacheEntry && cacheEntry.scopeSelector;
+      let cachedStyle = cacheEntry ? cacheEntry.styleElement : null;
+      let oldScopeSelector = styleInfo.scopeSelector;
+      // only generate new scope if cached style is not found
+      styleInfo.scopeSelector = cachedScopeSelector || this._generateScopeSelector(is);
+      let style = StyleProperties$1.applyElementStyle(host, styleInfo.styleProperties, styleInfo.scopeSelector, cachedStyle);
+      if (!nativeShadow) {
+        StyleProperties$1.applyElementScopeSelector(host, styleInfo.scopeSelector, oldScopeSelector);
+      }
+      if (!cacheEntry) {
+        styleCache.store(is, styleInfo.styleProperties, style, styleInfo.scopeSelector);
+      }
+      return style;
+    }
+    _updateProperties(host, styleInfo) {
+      let owner = this._styleOwnerForNode(host);
+      let ownerStyleInfo = StyleInfo.get(owner);
+      let ownerProperties = ownerStyleInfo.styleProperties;
+      // style owner has not updated properties yet
+      // go up the chain and force property update,
+      // except if the owner is the document
+      if (owner !== this._documentOwner && !ownerProperties) {
+        this._updateProperties(owner, ownerStyleInfo);
+        ownerProperties = ownerStyleInfo.styleProperties;
+      }
+      let props = Object.create(ownerProperties || null);
+      let hostAndRootProps = StyleProperties$1.hostAndRootPropertiesForScope(host, styleInfo.styleRules, styleInfo.cssBuild);
+      let propertyData = StyleProperties$1.propertyDataFromStyles(ownerStyleInfo.styleRules, host);
+      let propertiesMatchingHost = propertyData.properties;
+      Object.assign(
+        props,
+        hostAndRootProps.hostProps,
+        propertiesMatchingHost,
+        hostAndRootProps.rootProps
+      );
+      this._mixinOverrideStyles(props, styleInfo.overrideStyleProperties);
+      StyleProperties$1.reify(props);
+      styleInfo.styleProperties = props;
+    }
+    _mixinOverrideStyles(props, overrides) {
+      for (let p in overrides) {
+        let v = overrides[p];
+        // skip override props if they are not truthy or 0
+        // in order to fall back to inherited values
+        if (v || v === 0) {
+          props[p] = v;
+        }
+      }
+    }
+    /**
+     * Update styles of the whole document
+     *
+     * @param {Object=} properties
+     */
+    styleDocument(properties) {
+      this.styleSubtree(this._documentOwner, properties);
+    }
+    /**
+     * Update styles of a subtree
+     *
+     * @param {!HTMLElement} host
+     * @param {Object=} properties
+     */
+    styleSubtree(host, properties) {
+      const wrappedHost = wrap$1(host);
+      let root = wrappedHost.shadowRoot;
+      if (root || this._isRootOwner(host)) {
+        this.styleElement(host, properties);
+      }
+      // process the shadowdom children of `host`
+      let shadowChildren =
+          root && (/** @type {!ParentNode} */ (root).children || root.childNodes);
+      if (shadowChildren) {
+        for (let i = 0; i < shadowChildren.length; i++) {
+          let c = /** @type {!HTMLElement} */(shadowChildren[i]);
+          this.styleSubtree(c);
+        }
+      } else {
+        // process the lightdom children of `host`
+        let children = wrappedHost.children || wrappedHost.childNodes;
+        if (children) {
+          for (let i = 0; i < children.length; i++) {
+            let c = /** @type {!HTMLElement} */(children[i]);
+            this.styleSubtree(c);
+          }
+        }
+      }
+    }
+    /* Custom Style operations */
+    _revalidateCustomStyleApplyShim(customStyles) {
+      for (let i = 0; i < customStyles.length; i++) {
+        let c = customStyles[i];
+        let s = this._customStyleInterface['getStyleForCustomStyle'](c);
+        if (s) {
+          this._revalidateApplyShim(s);
+        }
+      }
+    }
+    _applyCustomStyles(customStyles) {
+      for (let i = 0; i < customStyles.length; i++) {
+        let c = customStyles[i];
+        let s = this._customStyleInterface['getStyleForCustomStyle'](c);
+        if (s) {
+          StyleProperties$1.applyCustomStyle(s, this._documentOwnerStyleInfo.styleProperties);
+        }
+      }
+    }
+    transformCustomStyleForDocument(style) {
+      const cssBuild = getCssBuild(style);
+      if (cssBuild !== this._documentOwnerStyleInfo.cssBuild) {
+        this._documentOwnerStyleInfo.cssBuild = cssBuild;
+      }
+      if (isOptimalCssBuild(cssBuild)) {
+        return;
+      }
+      let ast = rulesForStyle(style);
+      forEachRule(ast, (rule) => {
+        if (nativeShadow) {
+          StyleTransformer$1.normalizeRootSelector(rule);
+        } else {
+          StyleTransformer$1.documentRule(rule);
+        }
+        if (nativeCssVariables && cssBuild === '') {
+          this._ensure();
+          this._applyShim && this._applyShim['transformRule'](rule);
+        }
+      });
+      if (nativeCssVariables) {
+        style.textContent = toCssText(ast);
+      } else {
+        this._documentOwnerStyleInfo.styleRules['rules'].push(ast);
+      }
+    }
+    _revalidateApplyShim(style) {
+      if (nativeCssVariables && this._applyShim) {
+        let ast = rulesForStyle(style);
+        this._ensure();
+        this._applyShim['transformRules'](ast);
+        style.textContent = toCssText(ast);
+      }
+    }
+    getComputedStyleValue(element, property) {
+      let value;
+      if (!nativeCssVariables) {
+        // element is either a style host, or an ancestor of a style host
+        let styleInfo = StyleInfo.get(element) || StyleInfo.get(this._styleOwnerForNode(element));
+        value = styleInfo.styleProperties[property];
+      }
+      // fall back to the property value from the computed styling
+      value = value || window.getComputedStyle(element).getPropertyValue(property);
+      // trim whitespace that can come after the `:` in css
+      // example: padding: 2px -> " 2px"
+      return value ? value.trim() : '';
+    }
+    // given an element and a classString, replaces
+    // the element's class with the provided classString and adds
+    // any necessary ShadyCSS static and property based scoping selectors
+    setElementClass(element, classString) {
+      let root = wrap$1(element).getRootNode();
+      let classes = classString ? classString.split(/\s/) : [];
+      let scopeName = root.host && root.host.localName;
+      // If no scope, try to discover scope name from existing class.
+      // This can occur if, for example, a template stamped element that
+      // has been scoped is manipulated when not in a root.
+      if (!scopeName) {
+        var classAttr = element.getAttribute('class');
+        if (classAttr) {
+          let k$ = classAttr.split(/\s/);
+          for (let i=0; i < k$.length; i++) {
+            if (k$[i] === StyleTransformer$1.SCOPE_NAME) {
+              scopeName = k$[i+1];
+              break;
+            }
+          }
+        }
+      }
+      if (scopeName) {
+        classes.push(StyleTransformer$1.SCOPE_NAME, scopeName);
+      }
+      if (!nativeCssVariables) {
+        let styleInfo = StyleInfo.get(element);
+        if (styleInfo && styleInfo.scopeSelector) {
+          classes.push(StyleProperties$1.XSCOPE_NAME, styleInfo.scopeSelector);
+        }
+      }
+      setElementClassRaw(element, classes.join(' '));
+    }
+    _styleInfoForNode(node) {
+      return StyleInfo.get(node);
+    }
+    /**
+     * @param {!Element} node
+     * @param {string} scope
+     */
+    scopeNode(node, scope) {
+      StyleTransformer$1.element(node, scope);
+    }
+    /**
+     * @param {!Element} node
+     * @param {string} scope
+     */
+    unscopeNode(node, scope) {
+      StyleTransformer$1.element(node, scope, true);
+    }
+    /**
+     * @param {!Node} node
+     * @return {string}
+     */
+    scopeForNode(node) {
+      return getOwnerScope(node);
+    }
+    /**
+     * @param {!Element} node
+     * @return {string}
+     */
+    currentScopeForNode(node) {
+      return getCurrentScope(node);
+    }
+  }
+
+  /* exports */
+  /* eslint-disable no-self-assign */
+  ScopingShim.prototype['flush'] = ScopingShim.prototype.flush;
+  ScopingShim.prototype['prepareTemplate'] = ScopingShim.prototype.prepareTemplate;
+  ScopingShim.prototype['styleElement'] = ScopingShim.prototype.styleElement;
+  ScopingShim.prototype['styleDocument'] = ScopingShim.prototype.styleDocument;
+  ScopingShim.prototype['styleSubtree'] = ScopingShim.prototype.styleSubtree;
+  ScopingShim.prototype['getComputedStyleValue'] = ScopingShim.prototype.getComputedStyleValue;
+  ScopingShim.prototype['setElementClass'] = ScopingShim.prototype.setElementClass;
+  ScopingShim.prototype['_styleInfoForNode'] = ScopingShim.prototype._styleInfoForNode;
+  ScopingShim.prototype['transformCustomStyleForDocument'] = ScopingShim.prototype.transformCustomStyleForDocument;
+  ScopingShim.prototype['getStyleAst'] = ScopingShim.prototype.getStyleAst;
+  ScopingShim.prototype['styleAstToString'] = ScopingShim.prototype.styleAstToString;
+  ScopingShim.prototype['flushCustomStyles'] = ScopingShim.prototype.flushCustomStyles;
+  ScopingShim.prototype['scopeNode'] = ScopingShim.prototype.scopeNode;
+  ScopingShim.prototype['unscopeNode'] = ScopingShim.prototype.unscopeNode;
+  ScopingShim.prototype['scopeForNode'] = ScopingShim.prototype.scopeForNode;
+  ScopingShim.prototype['currentScopeForNode'] = ScopingShim.prototype.currentScopeForNode;
+  ScopingShim.prototype['prepareAdoptedCssText'] = ScopingShim.prototype.prepareAdoptedCssText;
+  /* eslint-enable no-self-assign */
+  Object.defineProperties(ScopingShim.prototype, {
+    'nativeShadow': {
+      get() {
+        return nativeShadow;
+      }
+    },
+    'nativeCss': {
+      get() {
+        return nativeCssVariables;
+      }
+    }
+  });
+
+  /**
+  @license
+  Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  */
+
+  /** @const {ScopingShim} */
+  const scopingShim$1 = new ScopingShim();
+
+  let ApplyShim, CustomStyleInterface$1;
+
+  if (window['ShadyCSS']) {
+    ApplyShim = window['ShadyCSS']['ApplyShim'];
+    CustomStyleInterface$1 = window['ShadyCSS']['CustomStyleInterface'];
+  }
+
+  window.ShadyCSS = {
+    ScopingShim: scopingShim$1,
+    /**
+     * @param {!HTMLTemplateElement} template
+     * @param {string} elementName
+     * @param {string=} elementExtends
+     */
+    prepareTemplate(template, elementName, elementExtends) {
+      scopingShim$1.flushCustomStyles();
+      scopingShim$1.prepareTemplate(template, elementName, elementExtends);
+    },
+
+    /**
+     * @param {!HTMLTemplateElement} template
+     * @param {string} elementName
+     */
+    prepareTemplateDom(template, elementName) {
+      scopingShim$1.prepareTemplateDom(template, elementName);
+    },
+
+    /**
+     * @param {!HTMLTemplateElement} template
+     * @param {string} elementName
+     * @param {string=} elementExtends
+     */
+    prepareTemplateStyles(template, elementName, elementExtends) {
+      scopingShim$1.flushCustomStyles();
+      scopingShim$1.prepareTemplateStyles(template, elementName, elementExtends);
+    },
+    /**
+     * @param {!HTMLElement} element
+     * @param {Object=} properties
+     */
+    styleSubtree(element, properties) {
+      scopingShim$1.flushCustomStyles();
+      scopingShim$1.styleSubtree(element, properties);
+    },
+
+    /**
+     * @param {!HTMLElement} element
+     */
+    styleElement(element) {
+      scopingShim$1.flushCustomStyles();
+      scopingShim$1.styleElement(element);
+    },
+
+    /**
+     * @param {Object=} properties
+     */
+    styleDocument(properties) {
+      scopingShim$1.flushCustomStyles();
+      scopingShim$1.styleDocument(properties);
+    },
+
+    flushCustomStyles() {
+      scopingShim$1.flushCustomStyles();
+    },
+
+    /**
+     * @param {Element} element
+     * @param {string} property
+     * @return {string}
+     */
+    getComputedStyleValue(element, property) {
+      return scopingShim$1.getComputedStyleValue(element, property);
+    },
+
+    nativeCss: nativeCssVariables,
+
+    nativeShadow: nativeShadow,
+
+    cssBuild: cssBuild,
+
+    disableRuntime: disableRuntime,
+  };
+
+  if (ApplyShim) {
+    window.ShadyCSS.ApplyShim = ApplyShim;
+  }
+
+  if (CustomStyleInterface$1) {
+    window.ShadyCSS.CustomStyleInterface = CustomStyleInterface$1;
+  }
+
+  document.dispatchEvent(new CustomEvent('WebComponentsReady', { bubbles: true }));
+
+}());
