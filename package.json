@@ -23,7 +23,7 @@
     "@webcomponents/shadycss": "1.9.3",
     "@webcomponents/shadydom": "1.7.0",
     "@webcomponents/template": "1.4.1",
-    "@webcomponents/webcomponents-platform": "1.0.0",
+    "@webcomponents/webcomponents-platform": "1.0.1",
     "core-js": "3.5.0"
   },
   "devDependencies": {
