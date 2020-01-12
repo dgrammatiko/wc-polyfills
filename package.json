@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.8.0",
-    "@babel/preset-env": "7.8.0",
+    "@babel/preset-env": "7.8.2",
     "@gfx/zopfli": "1.0.14",
     "babel-loader": "8.0.6",
     "babel-plugin-external-helpers": "6.22.0",
