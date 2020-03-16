@@ -19,7 +19,7 @@
   "homepage": "https://github.com/dgrammatiko/wc-polyfills#readme",
   "dependencies": {
     "@ungap/url-search-params": "0.1.4",
-    "@webcomponents/custom-elements": "1.4.0",
+    "@webcomponents/custom-elements": "1.4.1",
     "@webcomponents/shadycss": "1.9.5",
     "@webcomponents/shadydom": "1.7.2",
     "@webcomponents/template": "1.4.1",
