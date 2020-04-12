@@ -18,7 +18,3 @@ For browsers with ES5 support:
 - Clone the repo
 - run `npm install`
 - run `node build.js` or `npm run build`
-
-
-## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdgrammatiko%2Fwc-polyfills.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdgrammatiko%2Fwc-polyfills?ref=badge_large)
