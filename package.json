@@ -27,7 +27,7 @@
     "core-js": "3.6.5"
   },
   "devDependencies": {
-    "@babel/core": "7.12.1",
+    "@babel/core": "7.12.3",
     "@babel/preset-env": "7.12.1",
     "@gfx/zopfli": "1.0.15",
     "babel-loader": "8.1.0",
