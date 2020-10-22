@@ -22,7 +22,7 @@
     "@webcomponents/custom-elements": "1.4.3",
     "@webcomponents/shadycss": "1.10.2",
     "@webcomponents/shadydom": "1.8.0",
-    "@webcomponents/template": "1.4.3",
+    "@webcomponents/template": "1.4.4",
     "@webcomponents/webcomponents-platform": "1.0.1",
     "core-js": "3.6.5"
   },
