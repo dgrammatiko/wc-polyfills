@@ -30,7 +30,7 @@
     "@babel/core": "7.12.9",
     "@babel/preset-env": "7.12.7",
     "@gfx/zopfli": "1.0.15",
-    "babel-loader": "8.2.1",
+    "babel-loader": "8.2.2",
     "babel-plugin-external-helpers": "6.22.0",
     "babel-preset-es2015": "6.24.1",
     "brotli": "1.3.2",
