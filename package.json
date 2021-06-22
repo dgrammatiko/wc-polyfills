@@ -24,7 +24,7 @@
     "@webcomponents/shadydom": "1.8.0",
     "@webcomponents/template": "1.4.4",
     "@webcomponents/webcomponents-platform": "1.0.1",
-    "core-js": "3.15.0"
+    "core-js": "3.15.1"
   },
   "devDependencies": {
     "@babel/core": "7.14.6",
